@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>PHRMS | @ViewBag.Title</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- Add local styles, mostly for plugins css file -->
+    @if (IsSectionDefined("Styles"))
+    {@RenderSection("Styles", required: false)}
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="~/vendor/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="~/vendor/metisMenu/dist/metisMenu.css">
+    <link rel="stylesheet" href="~/vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="~/vendor/tags/jquery.tagsinput.min.css">
+    <link rel="stylesheet" href="~/vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="~/vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css">
+    <link rel="stylesheet" href="~/vendor/bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="~/vendor/toastr/build/toastr.min.css">
+    <link rel="stylesheet" href="~/vendor/bootstrap-tour/build/css/bootstrap-tour.min.css">
+    <link rel="stylesheet" href="~/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="~/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="~/fonts/pe-icon-7-stroke/css/helper.css">
+    <link rel="stylesheet" href="~/styles/style.css">
+</head>
+<body class="blank">
+
+    <!-- Simple splash screen-->
+    <div class="splash"> <div class="color-line"></div><div class="splash-title"><h1>MyHealthRecord</h1><p>Personal Health Record Management System</p><img src="~/images/loading-bars.svg" width="64" height="64" /> </div> </div>
+    <!--[if lt IE 7]>
+    <p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="color-line"></div>
+
+    <div class="back-link">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary" style="display:none;">Back to Home</a>
+    </div>
+
+    <!-- Main view  -->
+    @RenderBody()
+
+    <!-- Vendor scripts -->
+    <script src="~/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="~/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/vendor/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="~/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/Vendor/moment/moment.js"></script>
+    <script src="~/vendor/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="~/vendor/iCheck/icheck.min.js"></script>
+    <script src="~/vendor/sparkline/index.js"></script>
+    <script src="~/vendor/toastr/build/toastr.min.js"></script>
+    <script src="~/vendor/tags/jquery.tagsinput.min.js"></script>
+    <script src="~/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="~/vendor/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+    <script src="~/vendor/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).bind("load", function () {
+            // Remove splash screen after load
+            $('.splash').css('display', 'none')
+        })
+    </script>
+    <!-- Handler for local scripts -->
+    @RenderSection("scripts", required: false)
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,457 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Profile";
+    Layout = "_Layout";
+}
+@using Microsoft.AspNet.Http
+<link href="~/vendor/bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
+<link href="~/vendor/sweetalert/lib/sweet-alert.css" rel="stylesheet" />
+@*<link href="~/vendor/jquery-ui/themes/base/autocomplete.css" rel="stylesheet" />*@
+@model PHRMS.ViewModels.ProfileViewModel
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+
+            <div id="hbreadcrumb" class="pull-right m-t-lg">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="@Url.Action("Dashboard", "Account")">Dashboard</a></li>
+                    <li class="active">
+                        <span>Basic Profile</span>
+                    </li>
+                    @*<li class="active">
+                            <span>User Profile</span>
+                        </li>*@
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                Profile
+            </h2>
+            <small>Includes your essential information including demographics, emergency details and insurance details.</small>
+        </div>
+    </div>
+</div>
+<div class="content animate-panel">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="panel-tools">
+                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                        <a class="closebox"><i class="fa fa-times"></i></a>
+                    </div>
+                    @Context.Session.GetString("FirstName")'s Profile Details
+                </div>
+                <div class="panel-body">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer">
+                                <h4 class="panel-title">
+                                    <a>
+                                        Personal Information
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body" id="divPanelPersonalInfo">
+                                    @*@if (Model.oPersonalInformation != null)
+                                        {*@
+                                    @Html.Partial("_personalInformation", Model.oPersonalInformation)
+                                    @*}*@
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading collapsed" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="cursor:pointer">
+                                <h4 class="panel-title">
+                                    <a>
+                                        Emergency Information
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    @Html.Partial("_emergencyInformation", Model.oEmergencyInformation)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading collapsed" role="tab" id="headingThree" style="cursor:pointer" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h4 class="panel-title">
+                                    <a>
+                                        Employer Information
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    @Html.Partial("_employerInformation", Model.oEmployerInformation)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading collapsed" role="tab" id="headingFour" style="cursor:pointer" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <h4 class="panel-title">
+                                    <a>
+                                        Insurance Information
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    @Html.Partial("_insuranceInformation", Model.oInsuranceInformation)
+                                </div>
+                            </div>
+                        </div>
+                        @*<div class="panel panel-default">
+                            <div class="panel-heading collapsed" role="tab" id="headingFive" style="cursor:pointer" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <h4 class="panel-title">
+                                    <a>
+                                        Legal Information
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    @Html.Partial("_legalInformation", Model.oLegalInformation)
+                                </div>
+                            </div>
+                        </div>*@
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading collapsed" role="tab" id="headingSix" style="cursor:pointer" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <h4 class="panel-title">
+                                    <a>
+                                        Preferred Hospital
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    @Html.Partial("_prefrences", Model.oPreferences)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/vendor/sweetalert/lib/sweet-alert.min.js"></script>
+<script src="~/vendor/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+@*<script src="~/js/jquery.autocomplete.js"></script>*@
+<script src="@Url.Content("~/js/jquery.validate.js")"></script>
+<script src="@Url.Content("~/js/jquery.validate.unobtrusive.js")"></script>
+<script type="text/javascript">
+    var uploadOk = 0
+    $(document).ready(function () {
+
+        //$('#btnEmrSubmit').click(function () {
+
+            //var PC_State = $('#PC_State').val();
+            //if (PC_State != "") {
+               // $('#frmEmergencyInfo').submit();
+
+            //} else {
+
+               // swal({
+                   // title: "Oops!",
+                  // text: "The State field is required..",
+                   // type: "error"
+            // });
+           //}
+        // });
+       
+
+
+        //$(".edit").click(function () {
+        //    alert("dadad");
+        //    alert($(this).closest("div.form-horizontal").attr("id"));
+        //    $(this).closest("div.form-horizontal").hide();
+        //    $("#frm" + $(this).closest("div.form-horizontal").attr("id")).show();
+        //});
+
+        //$('.tdatepicker').datepicker({
+        //    format: 'dd/mm/yyyy',
+        //    autoclose: true
+        //});
+
+        //$("input[name='DiffAbled'][value='True']").click(function () {
+        //    $("#divDiffAbledType").show();
+        //});
+        //$("input[name='DiffAbled'][value='False']").click(function () {
+        //    $("#divDiffAbledType").hide();
+        //});
+
+        //$("form").submit(function () {
+        //    if ($(this).valid()) {
+        //        $('.splash').fadeIn();
+        //    }
+        //});
+
+        //GetPostalCodes();
+    });
+
+    $(document)
+      .ajaxStart(function () {
+          $('.splash').fadeIn();
+      })
+      .ajaxStop(function () {
+          $('.splash').fadeOut();
+      });
+
+    $(document).on('change', 'input:radio[id^="Power_Attorney"]', function (event) {
+        if ($(this).val() === 'True')
+            $(".rdPA").show();
+        else
+            $(".rdPA").hide();
+    });
+
+    $(document).on('change', 'input:radio[id^="DiffAbled"]', function (event) {
+        if ($(this).val() === 'True')
+            $("#divDiffAbledType").show();
+        else
+            $("#divDiffAbledType").hide();
+    });
+
+    $(document).on('change', 'input:radio[id^="Care_Directive"]', function (event) {
+        if ($(this).val() === 'True')
+            $(".rdCD").show();
+        else
+            $(".rdCD").hide();
+    });
+
+    $(document).on('change', 'input:radio[id^="Living_Will"]', function (event) {
+        if ($(this).val() === 'True')
+            $(".rdLW").show();
+        else
+            $(".rdLW").hide();
+    });
+
+    $(document).on('click', ".edit", function () {
+        $(this).closest("div.form-horizontal").hide();
+        $("#frm" + $(this).closest("div.form-horizontal").attr("id")).show();
+    });
+
+    $(document).on('click', "#btnReupload", function () {
+        $(".form-control", $(this).parent()).show();
+        $(".btn", $(this).parent()).hide();
+    });
+
+    $('body').on('focus', ".tdatepicker", function () {
+        $(this).datepicker({
+            format: 'dd/mm/yyyy',
+            autoclose: true,
+            endDate: '+0d'
+        });
+    });
+
+    $('body').on('focus', ".idatepicker", function () {
+        $(this).datepicker({
+            format: 'dd/mm/yyyy',
+            autoclose: true,
+            startDate: new Date()
+        });
+    });
+
+    $(document).on('click', ".cancel", function () {
+        $("#" + $(this).closest("form").attr("id").substr(3)).show();
+        //$(this).parent().parent().parent().parent().closest("div.form-horizontal").show();
+        $(this).closest("form").hide();
+    });
+
+    $(document).on('submit', "form", function () {
+       
+        //debugger
+        var file;
+        if ($(this).valid()) {
+            var frmId = $(this).attr("id");
+            if (frmId == "frmPersonalInfo") {
+                file = document.getElementById("txtFileName");
+            }
+            $.ajax({
+                url: this.action,
+                type: this.method,
+                data: $(this).serialize(),
+                success: function (result) {
+                    //alert(result.error);
+                    //alert(result.view);
+                    if (result.error > 0) {
+                        if (frmId == "frmPersonalInfo") {
+                            SaveFiles(file);
+                            $(".full-name", ".profile-picture").html($(".first-name", $(result.view)).text() + " " + $(".last-name", $(result.view)).text());
+                        }
+                        //alert($("#" + frmId).parent().parent().parent().attr("class"));
+                        $("#" + frmId).parent().parent().parent().html(result.view);
+                        $(document).bind("pageinit");
+                        swal({
+                            title: "Success!",
+                            text: "Details saved successfully!",
+                            type: "success"
+                        });
+                    }
+                    else {
+                        swal({
+                            title: "Oops!",
+                            text: "Something went wrong! Please try again.",
+                            type: "error"
+                        });
+                    }
+                    $.ajax({
+                        url: ROOT + "Common/GetProfilePercentage",
+                        type: "POST",
+                        data: {},
+                        success: function (result) {
+                            document.getElementById("setProgress").style.width = result + "%";
+                           
+                            if(result>80)
+                            {
+                                document.getElementById("setValue").innerHTML = result + "% Completed";
+                                $("#setValue").css("background-color", "#62cb31").css("border-right", " 4px solid #58b62c");
+                            }
+                            else {
+
+                                document.getElementById("setValue").innerHTML = result + "% Completed";
+                                $("#setValue").css("background-color", "red").css("border-right", " 4px solid red");
+                            }
+                          
+                        }
+
+                    });
+                    $("#" + frmId).removeData('validator');
+                    $("#" + frmId).removeData('unobtrusiveValidation');
+                    $.validator.unobtrusive.parse("#" + frmId);
+
+                },
+                error: function () {
+                    swal({
+                        title: "Oops!",
+                        text: "Something went wrong! Please try again.",
+                        type: "error"
+                    });
+
+                }
+            });
+        }
+        return false;
+    });
+
+    function GetPostalCodes() {
+        $(".autosuggest").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    url: ROOT + "Common/GetPostalCodesFromMaster",
+                    data: JSON.stringify(request.term),
+                    dataType: "json",
+                    success: function (data) {
+                        response(data);
+                    },
+                    error: function (result) {
+
+                    }
+                });
+            }
+        });
+    }
+
+    function fileupdate() {
+        uploadOk = 0;
+        var x = document.getElementById("txtFileName");
+        var txt = "";
+        if ('files' in x) {
+            if (x.files.length == 0) {
+                txt = "Select one file.";
+            } else {
+                for (var i = 0; i < x.files.length; i++) {
+                    var file = x.files[i];
+                    if (file.type == "image/jpeg" || file.type == "image/png") {
+                        uploadOk = 1;
+                    }
+                    else {
+                        uploadOk = 0;
+                        txt = "Only jpeg, jpg and png formats are alowed!";
+                    }
+                }
+            }
+        }
+        else {
+            if (x.value == "") {
+                txt += "Select one or more files.";
+            } else {
+                txt += "The files property is not supported by your browser!";
+                txt += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead.
+            }
+        }
+
+        if (uploadOk == 0) {
+            swal({
+                title: "Note!",
+                text: txt,
+                type: "warning"
+            });
+            $('#txtFileName').val('');
+        }
+        //document.getElementById("demo").innerHTML = txt;
+        //$("#btnSave").addClass("upload");
+        //var ext = $('#txtFileName').val().split('.').pop().toLowerCase();
+        //if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
+        //    swal({
+        //        title: "Note!",
+        //        text: "Only jpeg, jpg, gif and png formats are alowed!",
+        //        type: "warning"
+        //    });
+        //    $('#txtFileName').val('');
+        //}
+        //if (uploadOk == 0) {
+        //    swal({
+        //        title: "Note!",
+        //        text: txt,
+        //        type: "warning"
+        //    });
+        //}
+    }
+
+    function SaveFiles(file) {
+        if (uploadOk == 1) {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    status = xhr.status;
+                    data = JSON.parse(xhr.responseText);
+                    if (status == 200) {
+                        swal({
+                            title: "Success!",
+                            text: "Image Uploaded Successfully!",
+                            type: "success"
+                        });
+                        uploadOk = 0;
+                        $("#txtFileName").val("");
+                        //alert(xhr.responseText);
+                    }
+                    else {
+                        swal({
+                            title: "Oops!",
+                            text: "Failed to upload image!",
+                            type: "error"
+                        });
+                    }
+                }
+            }
+            xhr.open("POST", ROOT + 'Profile/UploadFileRevised', true);
+            xhr.setRequestHeader("X_FILENAME", file.files[0].name);
+            xhr.setRequestHeader("X_FILETYPE", "2");
+            xhr.send(file.files[0]);
+        }
+    }
+</script>

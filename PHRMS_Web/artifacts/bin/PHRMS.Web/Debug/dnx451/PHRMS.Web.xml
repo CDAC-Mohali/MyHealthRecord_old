@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PHRMS.Web</name>
+    </assembly>
+    <members>
+        <member name="M:PHRMS.Web.Controllers.CommonController.GetPostalCodesFromMaster(System.String)">
+            <summary>
+            This method is used to get list of pincodes from PinCodes table 
+            </summary>
+            <param name="strPostalCode">partial pincode.</param>
+            <returns></returns>
+            
+        </member>
+        <member name="T:PHRMS.Web.Controllers.OpenEMRController">
+            <summary>
+            
+            </summary>
+            
+        </member>
+    </members>
+</doc>

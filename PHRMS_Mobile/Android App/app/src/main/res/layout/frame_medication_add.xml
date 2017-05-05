@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".modules.addfragments.PHRMS_Medication_Fragment_Add">
+
+    <!-- Toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--guides.codepath.com/android/using-the-app-toolbar-->
+        <!--custom toolbar android-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_addMedication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/IBSave_Medication"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:background="?android:selectableItemBackground"-->
+            <!--android:clickable="true"-->
+            <!--android:padding="@dimen/padding_large"-->
+            <!--android:src="@drawable/ic_done_white_36dp"-->
+            <!--android:tint="@color/white" />-->
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:focusableInTouchMode="true">
+
+        <ProgressBar
+            android:id="@+id/ProgressBarAddMedication"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:theme="@style/Widget.AppCompat.ProgressBar"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/svMedicationAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_large">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtMedicationName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/MedicationName"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+
+                        <TextView
+                            android:id="@+id/txtMedicationNameValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:clickable="true"
+                            android:drawableRight="@drawable/find_replace"
+                            android:drawableTint="@color/colorPrimary"
+                            android:gravity="center_vertical"
+                            android:text="@string/MedicationSearch"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@drawable/textview_selector" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtMedicationAreyou"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/MedicationAreyou"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+                        <RadioGroup
+                            android:id="@+id/rdgrpMedicationAreyou"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="normal"
+                            android:weightSum="1">
+
+                            <RadioButton
+                                android:id="@+id/rdMedicationAreyouYes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".50"
+                                android:checked="true"
+                                android:text="Yes"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textStyle="normal" />
+
+                            <RadioButton
+                                android:id="@+id/rdMedicationAreyouNo"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".50"
+                                android:checked="false"
+                                android:text="No"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textStyle="normal" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/txtMedicationDateFP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/MedicationDateFP"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_MedicationDateFP_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintAnimationEnabled="false"
+                            app:hintEnabled="false">
+
+                            <EditText
+                                android:id="@+id/edMedicationDateFP_Value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                                android:focusable="false"
+                                android:hint="@string/MedicationDateFPEdit"
+                                android:inputType="date" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtMedicationRoute"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/MedicationRoute"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+                        <Spinner
+                            android:id="@+id/sp_MedicationRoute_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:spinnerMode="dialog"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/txtMedicationStrength"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/MedicationStrength"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_MedicationStrength_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintAnimationEnabled="false"
+                            app:hintEnabled="false">
+
+                            <EditText
+                                android:id="@+id/edMedicationStrength_Value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                                android:hint="@string/MedicationStrengthEditText"
+                                android:inputType="numberDecimal"
+                                android:maxLength="8" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtMedicationDT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/MedicationDT"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <Spinner
+                                android:id="@+id/sp_MedicationDT_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                                android:layout_weight=".5"
+                                android:spinnerMode="dialog"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="normal" />
+
+                            <Spinner
+                                android:id="@+id/sp_MedicationDT_Unit_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                                android:layout_weight=".5"
+                                android:spinnerMode="dialog"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtMedicationFT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/MedicationFT"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+                        <Spinner
+                            android:id="@+id/sp_MedicationFT_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:spinnerMode="dialog"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtMedicationLI"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/MedicationLI"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+
+                        <EditText
+                            android:id="@+id/edMedicationLI_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:hint="@string/MedicationLIEdit"
+                            android:inputType="text"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtMedicationN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/MedicationN"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+
+                        <EditText
+                            android:id="@+id/edMedicationN_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:hint="@string/MedicationNEdit"
+                            android:inputType="textMultiLine"
+                            android:lines="3"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!--https://assist-software.net/snippets/android-button-place-image-center-and-text-bottom-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/txtMedicationAttachments"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="@string/MedicationAttachments"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="normal" />
+
+
+                            <ImageButton
+                                android:id="@+id/imgbtnMedicationAttachments"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/imageheight"
+                                android:layout_weight=".5"
+                                android:background="?android:selectableItemBackground"
+                                android:clickable="true"
+                                android:src="@drawable/ic_add_a_photo_black_48dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

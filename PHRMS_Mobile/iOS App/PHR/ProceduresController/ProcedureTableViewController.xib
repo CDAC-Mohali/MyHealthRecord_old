@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProcedureTableViewController">
+            <connections>
+                <outlet property="procedureNameTableView" destination="kiy-uU-W3m" id="PGL-Ly-fpK"/>
+                <outlet property="searchBar" destination="Kh3-Yf-VHY" id="jG1-u1-FAa"/>
+                <outlet property="view" destination="PkX-PZ-I1y" id="Sef-w6-aqF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PkX-PZ-I1y">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kiy-uU-W3m">
+                    <rect key="frame" x="0.0" y="44" width="768" height="980"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="FD5-4p-DKl"/>
+                        <outlet property="delegate" destination="-1" id="yHA-Yi-Z0B"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" placeholder="Type minimum two Characters" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kh3-Yf-VHY">
+                    <rect key="frame" x="51" y="0.0" width="717" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="3oW-vn-sTj"/>
+                        <constraint firstAttribute="height" constant="44" id="ct0-DP-dZh"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="3oW-vn-sTj"/>
+                            <exclude reference="ct0-DP-dZh"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="3oW-vn-sTj"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="ct0-DP-dZh"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Ra7-I0-dkd"/>
+                    </connections>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNS-mM-G96">
+                    <rect key="frame" x="0.0" y="0.0" width="51" height="44"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="KmV-s3-uCb"/>
+                        <constraint firstAttribute="width" constant="51" id="W4W-sB-T3U"/>
+                    </constraints>
+                    <state key="normal" title="Back" backgroundImage="btnBackground"/>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="7FF-zj-IBv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kiy-uU-W3m" firstAttribute="top" secondItem="Kh3-Yf-VHY" secondAttribute="bottom" id="3I1-da-FSg"/>
+                <constraint firstItem="kiy-uU-W3m" firstAttribute="leading" secondItem="PkX-PZ-I1y" secondAttribute="leading" id="4gu-g9-inc"/>
+                <constraint firstItem="kiy-uU-W3m" firstAttribute="centerX" secondItem="PkX-PZ-I1y" secondAttribute="centerX" id="5Uh-fh-ymc"/>
+                <constraint firstAttribute="trailing" secondItem="Kh3-Yf-VHY" secondAttribute="trailing" id="5Uv-F8-AMH"/>
+                <constraint firstItem="kiy-uU-W3m" firstAttribute="leading" secondItem="PkX-PZ-I1y" secondAttribute="leading" id="CHm-eP-X2d"/>
+                <constraint firstItem="Kh3-Yf-VHY" firstAttribute="top" secondItem="PkX-PZ-I1y" secondAttribute="top" id="DMY-92-ne5"/>
+                <constraint firstAttribute="trailing" secondItem="Kh3-Yf-VHY" secondAttribute="trailing" id="Jmy-U9-NJv"/>
+                <constraint firstItem="Kh3-Yf-VHY" firstAttribute="top" secondItem="PkX-PZ-I1y" secondAttribute="top" id="N3N-t5-du3"/>
+                <constraint firstItem="Kh3-Yf-VHY" firstAttribute="leading" secondItem="kNS-mM-G96" secondAttribute="trailing" id="TfR-Hr-91V"/>
+                <constraint firstItem="kNS-mM-G96" firstAttribute="leading" secondItem="PkX-PZ-I1y" secondAttribute="leading" id="YeA-rw-ctK"/>
+                <constraint firstItem="kiy-uU-W3m" firstAttribute="top" secondItem="Kh3-Yf-VHY" secondAttribute="bottom" id="bvl-oR-RVr"/>
+                <constraint firstItem="kNS-mM-G96" firstAttribute="top" secondItem="PkX-PZ-I1y" secondAttribute="top" id="eag-iw-1Ou"/>
+                <constraint firstAttribute="trailing" secondItem="kiy-uU-W3m" secondAttribute="trailing" id="hNk-nL-GqJ"/>
+                <constraint firstAttribute="bottom" secondItem="kiy-uU-W3m" secondAttribute="bottom" id="hh2-3t-OGl"/>
+                <constraint firstAttribute="trailing" secondItem="kiy-uU-W3m" secondAttribute="trailing" id="i1r-8t-9j5"/>
+                <constraint firstAttribute="bottom" secondItem="kiy-uU-W3m" secondAttribute="bottom" id="iP1-4E-BVi"/>
+                <constraint firstItem="kiy-uU-W3m" firstAttribute="centerX" secondItem="PkX-PZ-I1y" secondAttribute="centerX" id="pCR-cN-9Td"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="5Uv-F8-AMH"/>
+                    <exclude reference="DMY-92-ne5"/>
+                    <exclude reference="Jmy-U9-NJv"/>
+                    <exclude reference="N3N-t5-du3"/>
+                    <exclude reference="3I1-da-FSg"/>
+                    <exclude reference="4gu-g9-inc"/>
+                    <exclude reference="5Uh-fh-ymc"/>
+                    <exclude reference="CHm-eP-X2d"/>
+                    <exclude reference="bvl-oR-RVr"/>
+                    <exclude reference="hNk-nL-GqJ"/>
+                    <exclude reference="hh2-3t-OGl"/>
+                    <exclude reference="i1r-8t-9j5"/>
+                    <exclude reference="iP1-4E-BVi"/>
+                    <exclude reference="pCR-cN-9Td"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="DMY-92-ne5"/>
+                    <include reference="Jmy-U9-NJv"/>
+                    <include reference="4gu-g9-inc"/>
+                    <include reference="5Uh-fh-ymc"/>
+                    <include reference="bvl-oR-RVr"/>
+                    <include reference="hh2-3t-OGl"/>
+                    <include reference="i1r-8t-9j5"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="5Uv-F8-AMH"/>
+                    <include reference="N3N-t5-du3"/>
+                    <include reference="3I1-da-FSg"/>
+                    <include reference="CHm-eP-X2d"/>
+                    <include reference="hNk-nL-GqJ"/>
+                    <include reference="iP1-4E-BVi"/>
+                    <include reference="pCR-cN-9Td"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="477" y="342"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btnBackground" width="250" height="100"/>
+    </resources>
+</document>

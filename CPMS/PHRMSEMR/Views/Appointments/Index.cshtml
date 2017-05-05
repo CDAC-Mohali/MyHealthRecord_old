@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IPagedList<EMRViewModels.Appointment_FeesViewModel>
+@{
+    var Docname = ((EMRViewModels.CustomPrincipalSerializeModel)Session["DocSessionData"]).DoctorName;
+}
+
+<div class="content animate-panel">
+    <div class="row">
+        <div class="col-lg-12 text-center m-t-md">
+            <h2>Welcome Dr. @Docname.ToUpper()</h2>
+            @*<p>This Interface is an extension to PHRMS Application.</p>*@
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel">
+                <div class="panel-heading">
+
+                    <div class="panel-tools pull-left" style="width:96%;">
+                        <ul class="list-inline">
+                            <li>
+                                @using (Ajax.BeginForm("Index", "Appointments", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "ManageGrid", OnSuccess = "OnSuccess('firsttag')" }, new { @Id = "FirstType", @class = "form-inline value_search" }))
+                                {
+                                    <input type="hidden" value="1" name="Type" />
+                                    <input type="hidden" value="2" name="From" />
+                                    <a href="#" onclick="$('#FirstType').submit()" class="antag firsttag" style="color:black;">Today /</a>
+
+                                }
+                            </li>
+                            <li>
+                                @using (Ajax.BeginForm("Index", "Dashboard", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "ManageGrid", OnSuccess = "OnSuccess('weektag')" }, new { @Id = "SecondType", @class = "form-inline value_search" }))
+                                {
+                                    <input type="hidden" value="2" name="Type" />
+                                    <input type="hidden" value="2" name="From" />
+                                    <a href="#" onclick="$('#SecondType').submit()" class="antag weektag">Week /</a>
+                                }
+                            </li>
+                            <li>
+                                @using (Ajax.BeginForm("Index", "Dashboard", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "ManageGrid", OnSuccess = "OnSuccess('monthtag')" }, new { @Id = "ThirdType", @class = "form-inline value_search" }))
+                                {
+                                    <input type="hidden" value="3" name="Type" />
+                                    <input type="hidden" value="2" name="From" />
+                                    <a href="#" onclick="$('#ThirdType').submit()" class="antag monthtag">Month</a>
+                                }
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="/Patient/RegisterNewPatient">
+                        <i class="fa fa-user-plus fa-2x" data-toggle="tooltip" title="Register New Patient" data-placement="left"></i>
+                    </a>
+                </div>
+                <div class="panel-body list">
+                    @Html.Partial("_AppointmentsGrid")
+                </div>
+                <div class="content animate-panel">
+                    <div class="row">
+                        @Html.Action("EMRPatientDetail")
+                    </div>
+                    <div class="row">
+                        @Html.Action("PatientGenderGraph")
+                        @Html.Action("PatientRegionGraph")
+                           </div>
+                    <div class="row">
+                        @Html.Action("GetPatientLastWeekDetail")
+                        </div>
+               
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</div>
+<script>
+    function OnSuccess(Id) {
+        $(".antag").css("color", "#9d9fa2");
+        $("." + Id).css("color", "black");
+    }
+</script>
+
+
+<style>
+    .bp-chart {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+        .bp-chart .table {
+            margin-bottom: 0;
+        }
+</style>
+<link href="~/vendor/sweetalert/lib/sweet-alert.css" rel="stylesheet" />
+@section Scripts {
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+
+
+    @* Fusion Charts *@
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/fusioncharts.js"></script>
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.carbon.js"></script>
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.zune.js"></script>
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.ocean.js"></script>
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.fint.js"></script>
+    <script src="~/vendor/fusioncharts-jquery-plugin-master/fusioncharts-jquery-plugin-master/src/fusioncharts-jquery-plugin.js"></script>
+    @*<script src="~/js/jquery.dashboard.js"></script>*@
+
+}
+
+

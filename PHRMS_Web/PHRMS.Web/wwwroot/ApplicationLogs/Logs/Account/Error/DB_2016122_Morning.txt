@@ -1,0 +1,14 @@
+
+
+ERROR OCCURRED
+
+DATE & TIME: 12-02-2016 10:04:01
+
+SOURCE: mscorlib
+
+METHOD: System.Guid Parse(System.String)
+ERROR: Value cannot be null.
+Parameter name: input
+STACKTRACE:    at System.Guid.Parse(String input)
+   at PHRMS.Web.Controllers.AccountController.GetNotifications() in E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\Controllers\AccountController.cs:line 725
+

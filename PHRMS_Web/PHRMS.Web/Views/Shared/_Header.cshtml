@@ -1,0 +1,377 @@
+﻿
+<style>
+    .datecls{
+        width:35px!important;
+    }
+    .red{
+        color:red;
+    }
+
+    .doublebrdr{
+            margin-top: 3px!important;
+    margin-bottom: 16px!important;
+    }
+
+    .modal-header {
+        padding: 12px 30px !important;
+    }
+</style>
+@model PHRMS.ViewModels.PersonalViewModel
+<div class="color-line">
+</div>
+<div id="logo" class="light-version">
+
+    @*<img src="~/images/digital india.png" style="height:35px; width:35px;" />*@
+    <img src="~/images/myHealthRecordlogo.png" style="height:35px; width:30px;" />
+    <span>
+        MyHealthRecord
+    </span>
+</div>
+<nav role="navigation">
+    <div class="header-link hide-menu"><i class="fa fa-bars"></i></div>
+    <div class="small-logo">
+        <span class="text-primary">HOMER APP</span>
+    </div>
+    <form role="search" class="navbar-form-custom" method="post" action="#">
+        <div class="form-group">
+            <input type="text" placeholder="" class="form-control" name="search">
+        </div>
+    </form>
+    <div class="navbar-right">
+        <ul class="nav navbar-nav no-borders">
+            <li class="dropdown" style="display:none;">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                    <i class="pe-7s-speaker"></i>
+                </a>
+                <ul class="dropdown-menu hdropdown notification animated flipInX">
+                    <li>
+                        <a>
+                            <span class="label label-success">NEW</span> It is a long established.
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="label label-warning">WAR</span> There are many variations.
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="label label-danger">ERR</span> Contrary to popular belief.
+                        </a>
+                    </li>
+                    <li class="summary"><a href="#">See all notifications</a></li>
+                </ul>
+            </li>
+            <li class="dropdown mega-dropdown">
+                <a class="dropdown-toggle label-menu-corner" title="Feedback" href="~/Account/Feedback">
+                    <i class="pe-7s-comment"></i>
+                    <span class="label label-success">Feedback</span>
+                </a>
+
+            </li>
+            <li class="dropdown">
+                @Html.Partial("_NotificationGrid")
+            </li>
+
+            @*<div class="row dropdown-menu mega-dropdown-menu" style="border-top: 1.5px solid #e67e22;">
+                    <div class="col-lg-12">
+                        <div class="hpanel">
+                            <div class="panel-heading">
+                                Please submit your feedback here:
+                            </div>
+                            <div class="panel-body">
+                                <input type="text" class="form-control Static FbSubject" placeholder="Subject" />
+                                <div class="summernote1">
+                                </div>
+                            </div>
+                            <div class="panel-footer"><button type="submit" id="btnSubmit" class="btn btn-primary">Submit</button></div>
+                        </div>
+                    </div>
+                </div>*@
+
+            <li>
+                <a data-toggle="modal" data-target="#myModal" title="Health History">
+                    <i class="fa fa-print"></i>
+                </a>
+            </li>
+           
+            <li>
+                <a data-toggle="modal" onclick="SharingCalled()" title="Sharing">
+                    <i class="fa fa-share-alt"></i>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="@Url.Action("Index", "MedicalContactRecords")" title="Medical Contacts">
+                    <i class="fa fa-user-md"></i>
+                </a>
+                @*<div class="dropdown-menu hdropdown bigmenu animated flipInX">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="@Url.Action("Projects", "AppViews")">
+                                            <i class="pe pe-7s-portfolio text-info"></i>
+                                            <h5>Projects</h5>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="@Url.Action("Mailbox", "AppViews")">
+                                            <i class="pe pe-7s-mail text-warning"></i>
+                                            <h5>Email</h5>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="@Url.Action("Contacts", "AppViews")">
+                                            <i class="pe pe-7s-users text-success"></i>
+                                            <h5>Contacts</h5>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="@Url.Action("Forum", "AppViews")">
+                                            <i class="pe pe-7s-comment text-info"></i>
+                                            <h5>Forum</h5>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="@Url.Action("Index", "Analytics")">
+                                            <i class="pe pe-7s-graph1 text-danger"></i>
+                                            <h5>Analytics</h5>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="@Url.Action("FileManager", "AppViews")">
+                                            <i class="pe pe-7s-box1 text-success"></i>
+                                            <h5>Files</h5>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>*@
+            </li>
+            <li class="dropdown" style="display:none;">
+                <a class="dropdown-toggle label-menu-corner" href="#" data-toggle="dropdown" title="Notifications">
+                    <i class="pe-7s-bell"></i>
+                    <span class="label label-success">4</span>
+                </a>
+                <ul class="dropdown-menu hdropdown animated flipInX">
+                    <div class="title">
+                        You have 4 new messages
+                    </div>
+                    <li>
+                        <a>
+                            Your Immunization is Pending.
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Please take your medicine today.
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Run more to lose weight.
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Check your Blood Pressure today.
+                        </a>
+                    </li>
+                    <li class="summary"><a href="#">See All Messages</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" id="sidebar" class="right-sidebar-toggle" title="Recent Activity Summary">
+                    <i class="pe-7s-upload pe-7s-news-paper"></i>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="modal" onclick="AppointmentCalled()" title="Book Appointment">
+                    <i class="fa fa-book"></i>
+                </a>
+            </li>
+            <li>
+                <a href="~/Account/ChangePassword" title="Change Password">
+                    <i class="pe-7s-lock "></i>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="~/Home/LogOff" title="Logout">
+                    <i class="pe-7s-power pe-rotate-90 text-danger"></i>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+</nav>
+<script>
+    function AppointmentCalled() {
+      
+      
+        $('#AppointmentModel').modal('toggle');
+      
+    }
+    $(document).ready(function () {
+        $.ajax({
+            type: "Get",
+            contentType: "application/json; charset=utf-8",
+            url: ROOT + "Profile/GetPatientDetails",
+            success: function (data) {
+              
+             
+                $('#p_middle_name').html(data.oPersonalInformation.FirstName);
+
+                $('#p_last_name').html(data.oPersonalInformation.LastName);
+                $('#p_pin').html(data.oPersonalInformation.Pin);
+                $('#p_email').html(data.oPersonalInformation.Email);
+                $('#p_mobile').html(data.oPersonalInformation.Cell_Phone);
+                $('#p_address').html(data.oPersonalInformation.City_Vill_Town);
+            
+                $('#state_cd').html(data.oPersonalInformation.strState);
+                var dob = (data.oPersonalInformation.strDOB.split("-"));
+                var dbday = dob[0];
+                var dbmonth = dob[1];
+                var dbyear = dob[2];
+                $('#dob_day').html(dbday);
+                $('#dob_mon').html(dbmonth);
+                $('#dob_yr').html(dbyear);
+
+                if (data.oPersonalInformation.Gender == "M")
+                {
+                    $("#genderspan").html('Male');
+                 }
+                else if (data.oPersonalInformation.Gender == "F")
+                {
+
+                    $("#genderspan").html('Female');
+                }
+                else
+                {
+                    $("#genderspan").html('Other');
+
+                }
+
+               
+
+            }
+        });
+    });
+</script>
+
+
+<div class="modal fade" id="AppointmentModel" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+ 
+
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header text-center">
+                <h4 class="modal-title">Book Appointment</h4>
+            
+            </div>
+            <div class="modal-body content animate-panel">
+             <div class="row">
+                    <div class="col-lg-12">
+                           <div class="col-lg-6">
+
+                                <label>First Name<span class="red"></span></label>
+                                @*<input type="text" id="p_middle_name" name="p_middle_name" value="" readonly onblur="makeuppercase('p_middle_name')" style="width:180px; height:20px;">*@
+                                <p class="form-control-static first-name" id="p_middle_name"></p>
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <label>Last Name</label>
+                                @*<input type="text" id="p_last_name" name="p_last_name" value="" readonly onblur="makeuppercase('p_last_name')" style="width:180px; height:20px;">*@
+                                <p class="form-control-static first-name" id="p_last_name"></p>
+                            </div>
+               </div>
+             </div>
+                <hr class="doublebrdr">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-lg-6">
+                            <label>Gender<span class="red"></span></label>
+                            <div class="gender">
+                            <span id="genderspan"></span>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                           <label>Date Of Birth<span class="red"></span></label>
+                            <br/>
+                               <span id="dob_day" class="datecls" readonly name="dob_day"></span>/
+                            <span id="dob_mon" class="datecls" readonly name="dob_day"></span>/
+                            <span id="dob_yr" class="datecls" readonly name="dob_day"></span>
+                                 
+                        </div>
+                    </div>
+                </div>
+                <hr class="doublebrdr">
+                
+                <div class="margin10"></div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-lg-6">
+                            <label>e-Mail Id</label><br/>
+                            @*<input type="text" id="p_email" name="p_email" readonly style="width:180px; height:20px;">*@
+                            <p class="form-control-static first-name" id="p_email"></p>
+                        </div>
+                        <div class="col-lg-6">
+                            <label>Mobile No.<span class="red"></span></label>
+                            @*<input type="text" value="" id="p_mobile"  readonly name="p_mobile" style="width:180px; height:20px;">*@
+                            <p class="form-control-static first-name" id="p_mobile"></p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="doublebrdr">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-lg-6">
+                            <label>Address<span class="red"></span></label><br/>
+                            @*<input type="text" id="p_address" name="p_address" readonly  style="width:180px; height:50px;">*@
+                            <p class="form-control-static first-name" id="p_address"></p>
+                        </div>
+                        <div class="col-lg-6">
+                            <label>State</label><br/>
+                            <p class="form-control-static first-name" id="state_cd"></p>                          
+                        </div>
+                    </div>
+                </div>
+                <hr class="doublebrdr">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-lg-6">
+                            <label>Country</label><br/>
+                          <span>INDIA</span>
+                            
+                           
+                        </div>
+                        <div class="col-lg-6">
+                            <label>Pin Code</label><br/>
+                            @*<input type="text" id="p_pin" name="p_pin" maxlength="6" readonly onkeypress="return isNumberKey(event);" style="width:180px; height:20px;">*@
+                            <p class="form-control-static first-name" id="p_pin"></p>
+                        </div>
+                       
+                       
+                    </div>
+                </div>
+               
+               
+                
+            </div>
+            <div class="modal-footer">
+                
+                <div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    @*<button type="button" class="btn btn-primary">View Report</button>*@
+                    <a href="javascript:void(0);" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

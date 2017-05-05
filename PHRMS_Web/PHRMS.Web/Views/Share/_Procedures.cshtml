@@ -1,0 +1,61 @@
+﻿@model List<PHRMS.ViewModels.ProceduresViewModel>
+<div class="gj-grid-wrapper">
+    <table id="grid" class="footable table table-bordered table-hover gj-grid-table">
+        <thead>
+            <tr>
+                <th class="" style="width: 20%;text-align: left;">
+                    <div style="float: left">Procedure Name</div>
+                </th>
+               
+                <th class="" style="width: 20%; text-align: left;">
+                    <div style="float: left">Date of Procedure</div>
+                </th>
+                <th class="" style="width: 20%; text-align: left;">
+
+                    <div style="float: left">Diagnosed by Doctor/Hospital</div>
+                </th>
+                <th class="" style="width: 30%; text-align: left;">
+
+                    <div style="float: left">Notes</div>
+                </th>
+                <th class="" style="width: 10%; text-align: left;">
+
+                    <div style="float: left">Attachments</div>
+                </th>
+                @*<th class="" style="width: 34px; text-align: left;">
+
+                    <div style="float: left">Discharge Summary(If Any)</div>
+                </th>*@
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Item in Model)
+            {
+                <tr class="">
+                    <td style="text-align: left;"><div data-role="display">@Item.ProcedureName</div></td>
+                    @*<td style="text-align: left;"><div data-role="display">@Item.strStartDate</div></td>*@
+
+                    <td style="text-align: left;"><div data-role="display">@Item.strEndDate</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.SurgeonName</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.Comments</div></td>
+                    @*<td style="text-align: left;"><div data-role="display">@Item.SurgeonName</div></td>*@
+                    <td style="text-align: left;">
+                        <div data-role="display" class="lightBoxGallery">
+                            @foreach (var SubItem in Item.lstFileModels)
+                            {
+                                <a href="@Url.Content("~/")Images\Procedures\@SubItem.FileName" data-gallery="" target="_blank">
+                                    <img name="@SubItem.FileName" src="@Url.Content("~/")Images\Procedures\@SubItem.FileName" width="50%">
+                                </a>
+                            }
+                        </div>
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+</div>

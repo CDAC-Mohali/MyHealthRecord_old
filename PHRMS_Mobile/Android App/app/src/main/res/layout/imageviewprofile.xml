@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".modules.useables.ProfileImageChange">
+
+    <!-- Toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_ProfileImageFullScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageButton
+                android:id="@+id/IBSave_ProfileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="end"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/padding_large"
+                android:src="@drawable/ic_save_white_48dp"
+                android:tint="@color/white" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/cardviewcolor">
+
+
+        <ImageButton
+            android:id="@+id/imagebtn_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_add_a_photo_black_48dp" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBarFullScreenProfileImage"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagebtn_profile"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/Widget.AppCompat.ProgressBar"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

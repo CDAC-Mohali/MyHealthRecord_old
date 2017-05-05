@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+
+.inter_links_bar
+{
+  width:45%;
+  float:left;
+  padding-top:20px;
+  border:0px solid blue;
+  font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+  font-size:12px;
+}
+
+
+.inter_main
+{
+  width:100%;
+  float:left;
+  margin-top:10px;
+  border:0px solid red;
+}
+
+.inter_main_container
+{
+	 width:65%;
+	 margin:auto;
+	 max-width:1000px;
+	 background-position:center;
+	 margin-top:10px;
+	 border:0px solid black;
+}
+
+
+.main_heading
+{
+	width:100%;
+	float:left; 
+	font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+	font-size:24px; 
+	color:#042436; 
+	margin:20x 0 40px 0;
+	border:0px solid black;
+}
+
+.inter_wrapper
+{
+  width:100%; 
+  float:left;
+  margin-top:3px;
+  margin-bottom:3px;
+  border:0px solid blue;
+}
+
+.inter_left_panel
+{
+  width:22%;
+  float:left;
+  margin-right:5px;
+  border:0px solid red;
+}
+
+
+
+.inter_ul
+{
+  list-style:none;
+  margin-top:20px;
+
+}
+
+
+.inter_left_bar
+{
+  float:left; 
+  margin-top:4px;   
+  width:100%;
+}
+
+
+
+.inter_left_span
+{
+	 
+	 margin-top:20px;
+	 font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+	 font-size:12px;
+	 
+	 float:left;
+	 color:#666;
+}
+
+
+.left-menu-internal
+{
+	line-height:50px;
+}
+
+.left-menu-internal a
+{
+	font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+	margin-left:5px;
+	font-size:13px;
+	color:#333;
+}
+
+
+
+.inter_right_panel
+{
+	float:left;
+	width:75%;
+	margin:3px 0 0 10px;
+	border:0px solid blue;
+}
+
+.inter_right_para
+{
+  font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+  font-size:15px;
+  color:#333;
+  text-align:justify; 
+  line-height:20px;
+}
+
+.inter_show
+{
+  margin-top:10px;
+}
+
+.inter_show_span
+{
+	font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+	font-style:italic; 
+	font-size:13px; color:#333;
+}
+
+.inter_app_div
+{
+	float:left; 
+	width:100%;
+	margin:20px 0 0 0;
+	border:0px solid red;
+	
+}
+
+
+.inter_app_head
+{
+  font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+  font-size:16px;
+  color:#333; 
+  margin:3px 0 20px 0;
+  
+}
+
+ .inter_img1
+ {
+	float:left;
+	width:31%;
+	margin:5px 0 0 10px;
+	height:380px;
+ }
+
+.inter_img2
+{
+ float:left; 
+ width:31%;
+ margin:5px 0 0 15px;
+ border:5px solid black;
+}
+
+.inter_suggess
+{
+  font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+  font-size:14px; 
+  /*font-style:italic;
+  font-weight:bold;*/
+  float:left; 
+  color:Black;
+  margin:20px 0 0 0;
+}
+
+
+
+

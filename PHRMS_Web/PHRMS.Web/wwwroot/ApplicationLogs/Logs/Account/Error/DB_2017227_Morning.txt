@@ -1,0 +1,10 @@
+
+ERROR OCCURRED
+
+DATE & TIME: 02-27-2017 10:49:07
+SOURCE: .Net SqlClient Data Provider
+METHOD: System.Collections.Generic.List`1[PHRMS.ViewModels.NotificationViewModel] GetNotifications(System.Guid)
+ERROR: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=5230; handshake=9072; 
+STACKTRACE:    at PHRMS.BLL.CatalogService.GetNotifications(Guid userId) in D:\PHRMS\PHRMS.BLL\AccountComponent.cs:line 184
+   at PHRMS.Web.Controllers.AccountController.GetNotifications() in D:\PHRMS\PHRMS.Web\Controllers\AccountController.cs:line 842
+

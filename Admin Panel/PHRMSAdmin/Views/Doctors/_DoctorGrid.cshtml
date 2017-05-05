@@ -1,0 +1,188 @@
+﻿@model IPagedList<PHRMSAdmin.Models.DoctorModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<style>
+
+
+</style>
+<div id="ManageGrid">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+
+            <thead>
+                <tr style="background-color: #cacaca;">
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Hospital Name
+                    </th>
+                    <th>
+                        Licence Number
+                    </th>
+                    <th>
+                        Email Address
+                    </th>
+                    <th>
+                        Mobile Number
+                    </th>
+                    <th>
+                        Qualification
+                    </th>
+                    <th>
+                        Status
+                    </th>
+                    <th>
+                        Approved/Rejected Time
+                    </th>
+                    <th width="8%">
+
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+            {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(Item => item.name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(Item => item.HospitalName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(Item => item.license_number)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(Item => item.email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(Item => item.phone_number)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(Item => item.qualification_set)
+                        </td>
+                        <td>
+                            @if (item.IsApproved == 3)
+                            {
+                                @*<a style="text-decoration:underline;color:blue" data-toggle="modal" onclick="SetStatus('@item.docid')" id="id_@item.docid">Rejected</a>*@
+                                <text> Rejected </text>
+                            }
+                            else if (item.IsApproved == 2)
+                            {
+                                <text> Approved </text>
+                            }
+                            else
+                            {
+                                <text> Pending </text>
+                                @*<a style="text-decoration:underline;color:blue" data-toggle="modal" onclick="SetStatus('@item.docid')" id="id_@item.docid">Pending</a>*@
+                            }
+
+
+                        </td>
+                        <td>@item.ApprovedDate</td>
+                        <td>
+                            <a href="@Request.ApplicationPath.TrimEnd('/')/Doctors/Details/@item.docid" class="text-primary">
+                                <i title="View" class="fa fa-eye"></i>
+
+                            </a> &nbsp;
+                            @*<a title="Edit" href="@Request.ApplicationPath.TrimEnd('/')/Doctor/Edit/@item.UserId" class="text-primary">
+                                    <i class="fa fa-edit "></i>
+
+                                </a> &nbsp;
+
+                                <a href="#" class="text-danger" data-toggle="modal"
+                                   onclick="SetMessageDialog('Delete','@Request.ApplicationPath.TrimEnd('/')/Doctor/Delete','@item.UserId','Do You want To delete ?')">
+                                    <i class="fa fa-trash-o"></i>
+                                </a>*@
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    <div class="panel-footer">
+        @Html.Partial("_GridPaging", Model)
+
+    </div>
+    @Html.Partial("_MessageDialog", 1)
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Set Status</h4>
+            </div>
+            <div class="modal-body">
+                Status
+                <div class="search_div">
+                    @*<span>User</span>*@
+                    <input type="hidden" name="DocId" id="DocId" />
+
+                    <select class="form-control" name="Status" id="Status">
+
+                        <option value="2">Approved</option>
+                        <option value="3">Rejected</option>
+
+                    </select>
+                </div>
+                Remarks
+                <div>
+                    <textarea placeholder="Write your Remarks here." id="Remarks" name="Remarks" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" onclick="SaveStatus()">Submit</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="closemodal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function SetStatus(Id) {
+
+        $("#DocId").val(Id);
+        $("#myModal").modal('show');
+
+    }
+    function SaveStatus() {
+        $.ajax({
+
+            type: "POST",
+
+            contentType: "application/json; charset=utf-8",
+
+            data: '{"DocId" :"' + $("#DocId").val() + '",    "Status" : "' + $("#Status").val() + '", "Remarks" : "' + $("#Remarks").val() + '"}',
+            //
+            url: ROOT + "Doctors/SaveStatus",
+
+            success: function (data) {
+                $("#closemodal").click();
+                $("#SearchButton").click();
+
+                //    if (data == 1) {
+                //        $("#id_" + $("#DocId").val()).text("Pending");
+                //    }
+                //    else if (data == 2) {
+                //        $("#id_" + $("#DocId").val()).text("Approved");
+                //    }
+                //    else if (data == 3) {
+                //        $("#id_" + $("#DocId").val()).text("Rejected");
+                //    }
+            }
+
+        });
+    }
+</script>

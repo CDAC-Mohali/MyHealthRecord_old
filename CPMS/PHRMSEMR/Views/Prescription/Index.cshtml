@@ -1,0 +1,367 @@
+﻿@using EMRViewModels
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model EMRComplete
+<div id="page-wrapper">
+    @{ var session = ((CustomPrincipalSerializeModel)Session["DocSessionData"]);
+
+        int age = 0;
+        age = DateTime.Now.Subtract(Convert.ToDateTime(@session.StrDOB)).Days;
+        age = age / 365;
+    }
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel-body" id="Presifno">
+                    <div class="col-lg-12 text-center m-t-md">
+                        <h1>Patient : @session.Name</h1>
+
+                        <p>
+                            <strong>Age: </strong>@age Years | <strong>Gender: </strong>@session.Gender| | <strong>Ph: </strong>@session.Phone
+                            @if (!string.IsNullOrEmpty(session.Email))
+                            {
+                                <strong>|Email: </strong>@session.Email;
+                            }
+                        </p>
+
+                    </div>
+                </div>
+                <div class="hpanel">
+                    <ul class="nav nav-tabs">
+                        @*<li class="active"><a data-toggle="tab" href="#tab-1"> New Patient/Re-Visit</a></li>*@
+
+                        @if (session != null && !(session.DocPatientId.Equals(Guid.Empty)))
+                        {
+                            <li class="active"><a data-toggle="tab" href="#tab-1">Prescription</a></li>
+                            <li><a data-toggle="tab" href="#tab-3"> Previous Visits</a></li>
+                            if (session != null && !(session.PhrmsUserId.Equals(Guid.Empty)))
+                            {
+                            <li><a data-toggle="tab" href="#tab-2"> PHR Detail</a></li>
+                            }
+                            <li><a data-toggle="tab" href="#tab-4"> Trends</a></li>
+                        }
+
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+
+
+                            @Html.Partial("_Prescription", Model)
+
+                        </div>
+                        <div id="tab-3" class="tab-pane">
+                            <div class="panel-body">
+                                @Html.Action("GetPreviousVisitData")
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane">
+                            <div class="panel-body">
+                                <!-- /. ROW  -->
+
+
+                                @Html.Action("PatientDetail")
+
+                            </div>
+                        </div>
+                        @*<div id="tab-4" class="tab-pane"> </div>*@
+                           
+                        <div id="tab-4" class="tab-pane">
+                            @*<div class="normalheader transition animated fadeIn" style="text-align:center">
+                                <div class="hpanel hgreen">
+                                    <div class="panel-body">
+                                        <a class="small-header-action" href="">
+                                            <div class="clip-header">
+                                                <i class="fa fa-arrow-up"></i>
+                                            </div>
+                                        </a>
+                                        <h5 class="font-light m-b-xs text-success" id="tipHeader">
+                                            <i class="fa fa-heart-o text-danger"></i> Health Tip
+                                        </h5>
+                                        <div id="hbreadcrumb" class="pull-right m-t-lg">
+                                        </div>
+                                        <h7 id="healthTipCtrl" style="color:#B76215;"></h7>
+                                    </div>
+                                </div>
+                            </div><br />*@
+                            <br />
+                        <div class="col-lg-6">
+                                <div class="panel panel-success">
+                                    <div class="panel-heading">
+                                        Blood Pressure
+                                    </div>
+                                    <!-- /.panel-heading -->
+                                    <div class="panel-body">
+                                        <div class="row">
+                                        <div class="col-md-8" style="text-align:center;">
+                                                <div class="bp-chart-container">
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                             </div>
+                            </div>
+                         <div class="col-lg-6">
+                                <div class="panel panel-success">
+                                    <div class="panel-heading">
+                                        Blood Glucose
+                                    </div>
+                                    <!-- /.panel-heading -->
+                                    <div class="panel-body">
+                                        <div class="row">
+                                           
+                                            <div class="col-md-8" style="text-align:center;">
+                                                <div class="glucose-chart-container">
+                                       </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+@*<div class="splash">
+    <div class="color-line"></div>
+    <div class="splash-title">
+        <h1>MyHealthRecord - Doctor's Panel</h1>
+        <p>Loading Modules and Logging You In. Please Wait ...</p>
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+</div>*@
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+<script src="~/vendor/fusioncharts-n-xt-developer/js/fusioncharts.js"></script>
+<script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.carbon.js"></script>
+<script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.zune.js"></script>
+<script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.ocean.js"></script>
+<script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.fint.js"></script>
+@*<script src="~/vendor/fusioncharts-suite-xt/js/fusioncharts.js"></script>*@
+@*<script src="~/vendor/fusioncharts-suite-xt/js/fusioncharts.gantt.js"></script>*@
+@*<script src="~/vendor/fusioncharts-suite-xt/js/themes/fusioncharts.theme.carbon.js"></script>*@
+@*<script src="~/vendor/fusioncharts-suite-xt/js/themes/fusioncharts.theme.fint.js"></script>
+    <script src="~/vendor/fusioncharts-suite-xt/js/themes/fusioncharts.theme.ocean.js"></script>
+     <script src="~/vendor/fusioncharts-suite-xt/js/themes/fusioncharts.theme.zune.js"></script>*@
+<script src="~/vendor/fusioncharts-jquery-plugin-master/fusioncharts-jquery-plugin-master/src/fusioncharts-jquery-plugin.js"></script>
+@*<script src="~/vendor/sweetalert/lib/sweet-alert.min.js"></script>*@
+<script src="~/Scripts/jquery.prescription.js"></script>
+
+
+
+
+
+<script>
+    var $loading = $('.splash').hide();
+    $(document).ajaxStart(function () {
+        $loading.show();
+    }).ajaxStop(function () {
+        $loading.hide();
+    });
+
+
+
+
+    $(document).ready(function ()
+    {
+      var ROOT = "@Url.Content("~/")";
+        $.ajax({
+            type: "Post",
+            contentType: "application/json; charset=utf-8",
+            url: ROOT + "Prescription/GetBPandPulseData",
+            dataType: "json",
+            success: function (data) {
+
+
+
+                var sysdata = [];
+                var diadata = [];
+                var pulsedata = [];
+
+                if (data) {
+                    var temp = {};
+                    var categories = [];
+                    var category = [];
+                    for (var i in data) {
+
+                        //alert(i.Date);
+
+                        temp["label"] = data[i].Date;
+                        category.push(temp);
+                        temp = {};
+                        temp["value"] = data[i].Systolic;
+                        sysdata.push(temp);
+                        temp = {};
+                        temp["value"] = data[i].Diastolic;
+                        diadata.push(temp);
+                        temp = {};
+                        temp["value"] = data[i].Pulse;
+                        pulsedata.push(temp);
+                    }
+                    temp = {};
+                    temp["category"] = category;
+                    categories.push(temp);
+
+
+                }
+                else
+                    return 0;
+
+                var dataset = [];
+                if (sysdata != "" || diadata != "" || diadata != "") {
+
+                    dataset = [
+                                {
+                                    "seriesname": "Systolic (in mmHg)",
+                                    "data": sysdata
+                                },
+                                {
+                                    "seriesname": "Diastolic (in mmHg)",
+
+                                    "showvalues": "0",
+                                    "data": diadata
+                                },
+                                {
+                                    "seriesname": "Pulse",
+                                    "renderas": "line",
+                                    "showvalues": "0",
+                                    "data": pulsedata
+                                }
+                    ];
+                }
+
+                $(".bp-chart-container").insertFusionCharts({
+                    type: "mscombi2d",
+                    width: "350",
+                    height: "425",
+                    dataFormat: "json",
+                    dataSource: {
+                        "chart": {
+                            "caption": "Blood Pressure and Pulse",
+                            "xaxisname": "Date",
+                            "yaxisname": "Blood Pressure and Pulse",
+                            "theme": "zune",
+                        },
+                        "categories": categories,
+                        "dataset": dataset
+                    }
+                });
+            }
+        });
+
+
+         var ROOT = "@Url.Content("~/")";
+        $.ajax({
+            type: "Post",
+            contentType: "application/json; charset=utf-8",
+            url: ROOT + "Prescription/GetGlucoseData",
+            dataType: "json",
+            success: function (data) {
+                if (data) {
+                    var glucosedata = [];
+                    var temp = {};
+                    for (var i in data) {
+                        temp["label"] = data[i][1];
+                        temp["value"] = parseInt(data[i][0]);
+                        glucosedata.push(temp);
+                        temp = {};
+                    }
+
+                }
+                else
+                    return 0;
+                $(".glucose-chart-container").insertFusionCharts({
+                    type: "line",
+                    width: "350",
+                    height: "400",
+                    dataFormat: "json",
+                    dataSource: {
+                        chart: {
+                            caption: "Blood Glucose",
+                            theme: "ocean"
+                        },
+                        data: glucosedata
+                    }
+
+                });
+            }
+        });
+
+
+            //$.ajax({
+            //    type: "Post",
+            //    contentType: "application/json; charset=utf-8",
+            //    url: ROOT + "Prescription/GetHealthTip",
+            //    dataType: "json",
+            //    success: function (data) {
+            //        if (data) {
+            //            //alert(data);
+            //            $('#tipHeader').addClass('animated infinite bounceIn');
+            //            $.each(data.split(''), function (i, letter) {
+
+            //                //we add 100*i ms delay to each letter 
+            //                setTimeout(function () {
+
+            //                    //we add the letter to the container
+            //                    $('#healthTipCtrl').html($('#healthTipCtrl').html() + letter);
+
+            //                }, 50 * i);
+            //            });
+            //        }
+            //    }
+            //});
+       
+
+    });
+
+
+    function OnSuccessMessage() {
+        toastr.success('Success!', 'PHR data');
+    }
+    function OnBeginMessage() {
+        toastr.info('Fetching MyHealthRecord data!', 'PHR data');
+    }
+
+    function GenerateOTP(Type) {
+
+        $.ajax({
+            type: "Post",
+            contentType: "application/json; charset=utf-8",
+            url: "/PatientDetail/GenerateOTP",
+            data: '{"Type":' + '"' + Type + '"}',
+            dataType: "json",
+            success: function (data) {
+
+                if (data) {
+
+                    $("#otpButton").hide();
+                    $("#otpForm").show();
+                    toastr.success('OTP Sent Successfully!', 'OTP');
+                  }
+                else {
+                    toastr.error('Something went Wrong', 'Error');
+
+                }
+
+            },
+            error: function (result) {
+
+            }
+
+        });
+    }
+</script>

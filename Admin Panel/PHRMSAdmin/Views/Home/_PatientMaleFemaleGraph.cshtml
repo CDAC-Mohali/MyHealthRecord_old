@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "_PatientMaleFemaleGraph";
+    Layout = null;
+}
+
+
+@model  PHRMSAdmin.Models.PatientCustomModel
+<script>
+
+        $(document).ready(function () {
+
+            $("#Patient_single").insertFusionCharts({
+                type: 'doughnut2d',
+                renderAt: 'chart-container',
+                width: "425",
+                height: "425",
+                dataFormat: 'json',
+                dataSource: {
+                    "chart": {
+                        "caption": "",
+                      //  "subCaption": "Last year",
+                        "numberPrefix": "",
+                        "showBorder": "0",
+                        "use3DLighting": "0",
+                        "enableSmartLabels": "0",
+                        "startingAngle": "310",
+                        "showLabels": "0",
+                        "showPercentValues": "1",
+                        "showLegend": "1",
+                        "defaultCenterLabel": "Total : @Model.Count.ToString()",
+                        "centerLabel": " $label: $value",
+                        "centerLabelBold": "1",
+                        "showTooltip": "0",
+                        "decimals": "0",
+                        "useDataPlotColorForLabels": "1",
+                        "theme": "fint"
+                    },
+                    data: [
+
+
+                                {
+                                    label: 'Male',
+                                    value: '@Model.MaleCount'
+
+                                },
+                              {
+                                  label: 'Female',
+                                  value: '@Model.FeMaleCount'
+
+                              },
+                              ,
+                              {
+                                  label: 'Not Specified',
+                                  value: '@Model.OthersCount'
+
+                              },
+
+                    ]
+                }
+            });
+        });
+
+
+    </script>
+
+
+
+
+
+<div class="col-lg-6">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Users Gender Distribution
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-8">
+                    <div id="Patient_single" style="height: 425px;"></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

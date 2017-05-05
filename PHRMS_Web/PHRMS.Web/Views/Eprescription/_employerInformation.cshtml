@@ -1,0 +1,73 @@
+﻿@model PHRMS.ViewModels.EmployerViewModel
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-horizontal" role="form" id="EmployerInfo">
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.EmployerName, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.EmployerName)</p>
+                </div>
+                @Html.LabelFor(m => m.EmployerPhone, new { @class = "col-lg-2 control-label" })
+                @*<label class="control-label col-lg-2" for="Email">Email Address:</label>*@
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.EmployerPhone)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.EmpAddressLine1, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static">@Html.DisplayFor(m => m.EmpAddressLine1)</p>
+                </div>
+                @Html.LabelFor(m => m.EmpAddressLine2, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static">@Html.DisplayFor(m => m.EmpAddressLine2)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @* Newly added fields *@
+                @Html.LabelFor(m => m.EmpCity_Vill_Town, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static">@Html.DisplayFor(m => m.EmpCity_Vill_Town)</p>
+                </div>
+
+                @Html.LabelFor(m => m.EmpDistrict, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static">@Html.DisplayFor(m => m.EmpDistrict)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.strState, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.strState)</p>
+                </div>
+                @Html.LabelFor(m => m.EmpPin, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.EmpPin)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.EmployerOccupation, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.EmployerOccupation)</p>
+                </div>
+                @Html.LabelFor(m => m.CUG, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.CUG)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+           
+        </div>
+    
+    </div>
+</div>

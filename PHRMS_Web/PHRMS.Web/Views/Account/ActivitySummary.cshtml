@@ -1,0 +1,170 @@
+﻿@{
+    Layout = "_Layout";
+    ViewBag.Title = "Recent Activities";
+}
+@model List<PHRMS.ViewModels.UserActivityViewModels>
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel hblue">
+        <div class="panel-body">
+            <div id="hbreadcrumb" class="pull-right">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="@Url.Action("Dashboard", "Account")">Dashboard</a></li>
+                    <li>
+                        <span>Activity Summary</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                Recent Activity Summary
+            </h2>
+            <div>
+                <small>
+                    This page summarizes the series of activities performed by you in PHRMS with the timestamp.
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content animate-panel">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+
+                    </div>
+                    @*@Model.PersonalViewModel.FirstName's Profile Details*@
+                    Recent Activities Performed
+                </div>
+                <div class="panel-body">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="gj-grid-wrapper">
+                            <table id="grid" class="footable table table-bordered table-hover gj-grid-table" data-source="/Allergies/GetAllergiesGridList">
+                                <thead>
+                                    <tr>
+                                        
+                                        <th class="gj-grid-bootstrap-thead-cell" style="width: 150px;text-align: left; background-color: lightgray">
+                                            <div style="float: left">Module</div>
+                                        </th>
+                                        <th class="gj-grid-bootstrap-thead-cell" style="width: 200px; text-align: left;background-color: lightgray">
+                                            <div style="float: left">Subject</div>
+                                        </th>
+                                        <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;background-color: lightgray">
+
+                                            <div style="float: left">Timestamp</div>
+                                        </th>
+                                        <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;background-color: lightgray">
+                                            <div style="float: left">Action</div>
+                                        </th>
+                                        <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;background-color: lightgray">
+                                            <div style="float: left">Performed By</div>
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var Item in Model)
+                                    {
+                                        @if (Item.ActivityName != "")
+                                        {
+                                            <tr class="">
+
+                                                @if (Item.strModuleName.Equals("Allergies"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="fa fa-pagelines" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                                else if (@Item.strModuleName.Equals("HealthCondition"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="fa fa-stethoscope" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                                else if (@Item.strModuleName.Equals("Immunization"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="fa fa-eyedropper" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                                else if (@Item.strModuleName.Equals("Procedures"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="fa pe-7s-scissors" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                                else if (@Item.strModuleName.Equals("Lab"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="fa fa-flask" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                                else if (@Item.strModuleName.Equals("Prescription"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="pe-7s-note2" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                                else if (@Item.strModuleName.Equals("Medication"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="fa fa-medkit" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                                else if (@Item.strModuleName.Equals("Activity"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="fa fa-heart" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                                else if (@Item.strModuleName.Equals("Blood Pressure"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="fa fa-heart" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                                else if (@Item.strModuleName.Equals("Blood Glucose"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="fa fa-heart" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                                else if (@Item.strModuleName.Equals("Weight"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="fa fa-child" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                                else if (@Item.strModuleName.Equals("Profile Picture"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="fa fa-picture-o" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                                else if (@Item.strModuleName.Equals("Unknown"))
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving"> <i class="fa fa-question-circle-o" style="color:#3498db;"></i>&nbsp;  &nbsp; @Item.strModuleName</div></td>
+                                                }
+                                               
+                                                <td style="text-align: left;"><div data-role="display">@Item.ActivityName</div></td>
+                                                <td style="text-align: left;"><div data-role="display">@Item.strTimeStamp</div></td>
+                                                @if (Item.Operation == 1)
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display">Added</div></td>
+                                                }
+                                                else if (Item.Operation == 2)
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display">Updated</div></td>
+                                                }
+                                                else
+                                                {
+                                                    <td style="text-align: left;"><div data-role="display">Archived</div></td>
+                                                }
+                                                <td style="text-align: left;"><div data-role="display">@Item.UserName</div></td>
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+
+                            </table>
+                        </div>
+                        @*@if (Model.AllergyViewModel != null)
+                                {
+                            <div class="panel panel-default">
+                                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                    <div class="panel-body">
+                                        @Html.Partial("_alleryInformation", Model.AllergyViewModel)
+                                    </div>
+                                </div>
+                            </div>
+                            }*@
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+@*<script>
+
+    </script>*@

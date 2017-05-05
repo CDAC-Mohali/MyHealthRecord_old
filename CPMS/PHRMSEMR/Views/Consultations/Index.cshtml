@@ -1,0 +1,50 @@
+﻿
+@model IPagedList<EMRViewModels.DoctorUserMappingViewModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="page-wrapper">
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-lg-12 text-center m-t-md">
+                <h2>CONSULTATIONS</h2>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="hpanel">
+                    <!-- /. ROW  -->
+                    <div class="panel-body list">
+                        @using (Ajax.BeginForm("Index", "Consultations", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "ManageGrid" }, new { @class = "form-inline value_search" }))
+                        {
+
+                            <div class="search_div">
+                                <input type="hidden" name="Page" value="@Model.PageNumber" />
+                                <input type="text" name="Keyword" class="form-control" value="" placeholder="Name/Email/Mobile" />
+                             
+                                <button class="btn btn-orange" type="submit" id="SearchButton">
+                                    <i class="fa fa-search"></i>
+                                </button>
+
+
+                            </div>
+                        }
+                        @*@Html.Partial("_SearchConsultations")*@
+                        @Html.Partial("_ConsultationsGrid", Model)
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+

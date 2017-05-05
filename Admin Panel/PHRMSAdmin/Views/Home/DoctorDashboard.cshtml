@@ -1,0 +1,144 @@
+﻿
+@{
+    ViewBag.Title = "DashBoard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="normalheader transition animated fadeIn small-header" style="text-align:center">
+    <div class="hpanel hgreen">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+            <h4 class="font-light m-b-xs text-success" id="tipHeader">
+                <i class="fa icon-dashboard text-danger"></i> Dashboard
+            </h4>
+            <div id="hbreadcrumb" class="pull-right">
+            </div>
+            <h7 id="healthTipCtrl" style="color:#B76215;"></h7>
+        </div>
+    </div>
+</div>
+<div class="content animate-panel">
+
+    @* Widget Starts Here
+        ...............ROW 1................ *@
+
+    @*<div class="row">
+            @Html.Action("DoctorMapRepresentation")
+
+
+
+        </div>*@
+
+    <div class="row">
+        @Html.Action("DoctorDetail")
+
+
+
+
+    </div>
+    <div class="row">
+
+        @Html.Action("DoctorMaleFemaleGraph")
+
+        @Html.Action("DoctorRegionGraph")
+    </div>
+
+
+    <div class="row">
+        @Html.Action("EMRPatientDetail")
+    </div>
+    <div class="row">
+        @Html.Action("EMRPatientMaleFemaleGraph")
+        @Html.Action("EMRPatientRegionGraph")
+       
+        
+    </div>
+    @*<div class="row">
+
+
+
+
+        </div>*@
+
+
+    @*<div class="row">
+
+            @Html.Action("AllergyGraph")
+              @Html.Action("ProblemGraph")
+
+        </div>*@
+    @* ..............ROW 2................ *@
+
+
+
+
+    @* Graphs Start Here *@
+
+
+
+
+
+</div>
+
+<div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header text-center">
+                <h4 class="modal-title">Welcome!</h4>
+                <small class="font-bold">Personal Health Record Management System (Alpha Version)</small>
+            </div>
+            <div class="modal-body">
+                <p>
+                    We are constantly striving to improve the user experience. Your feedback about various aspects of PHRMS would be highly valued and appreciated.
+                    <br /><br />
+                    Thanking you in anticipation.
+                    <br /><br />
+                    Team-PHRMS<br />
+                    HIED, C-DAC Mohali
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .bp-chart {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+        .bp-chart .table {
+            margin-bottom: 0;
+        }
+</style>
+<link href="~/vendor/sweetalert/lib/sweet-alert.css" rel="stylesheet" />
+@section Scripts {
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+
+
+    @* Fusion Charts *@
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/fusioncharts.js"></script>
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.carbon.js"></script>
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.zune.js"></script>
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.ocean.js"></script>
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.fint.js"></script>
+
+    @*<script src="~/vendor/fusioncharts-suite-xt/js/fusioncharts.gantt.js"></script>*@
+
+    <script src="~/vendor/fusioncharts-jquery-plugin-master/fusioncharts-jquery-plugin-master/src/fusioncharts-jquery-plugin.js"></script>
+    @*<script src="~/vendor/sweetalert/lib/sweet-alert.min.js"></script>*@
+    @*<script src="~/js/jquery.dashboard.js"></script>*@
+
+}
+
+

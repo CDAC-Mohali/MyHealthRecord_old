@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllergyTableViewController">
+            <connections>
+                <outlet property="allergyNameTableView" destination="WYM-4I-rPt" id="SHH-yQ-tF2"/>
+                <outlet property="backButton" destination="5Iw-WF-g28" id="hy8-oW-yVh"/>
+                <outlet property="searchBar" destination="hzd-XR-dfS" id="gIZ-vS-Wds"/>
+                <outlet property="view" destination="l01-KI-68e" id="YLp-Vn-KND"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="l01-KI-68e">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WYM-4I-rPt">
+                    <rect key="frame" x="0.0" y="44" width="768" height="980"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CeY-rZ-GNg"/>
+                        <outlet property="delegate" destination="-1" id="1Md-0Y-tzz"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" placeholder="Search here" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzd-XR-dfS">
+                    <rect key="frame" x="49" y="0.0" width="719" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="287-yU-wR2"/>
+                        <constraint firstAttribute="height" constant="44" id="9XN-Be-e9D"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="287-yU-wR2"/>
+                            <exclude reference="9XN-Be-e9D"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="9XN-Be-e9D"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="287-yU-wR2"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="hLa-Jp-fEB"/>
+                    </connections>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Iw-WF-g28">
+                    <rect key="frame" x="0.0" y="0.0" width="49" height="44"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="TX3-JZ-w0H"/>
+                        <constraint firstAttribute="height" constant="44" id="atW-2a-ui9"/>
+                    </constraints>
+                    <state key="normal" title="Back" backgroundImage="btnBackground"/>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="vX6-64-oik"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WYM-4I-rPt" firstAttribute="centerX" secondItem="l01-KI-68e" secondAttribute="centerX" id="0uv-bi-aPX"/>
+                <constraint firstAttribute="bottom" secondItem="WYM-4I-rPt" secondAttribute="bottom" id="2iF-pA-0I8"/>
+                <constraint firstItem="hzd-XR-dfS" firstAttribute="leading" secondItem="5Iw-WF-g28" secondAttribute="trailing" id="J1G-3V-tgT"/>
+                <constraint firstItem="hzd-XR-dfS" firstAttribute="top" secondItem="l01-KI-68e" secondAttribute="top" id="NBf-VM-3vY"/>
+                <constraint firstItem="WYM-4I-rPt" firstAttribute="top" secondItem="hzd-XR-dfS" secondAttribute="bottom" id="TdJ-dn-URx"/>
+                <constraint firstAttribute="trailing" secondItem="hzd-XR-dfS" secondAttribute="trailing" id="Wwo-Fm-fh3"/>
+                <constraint firstAttribute="trailing" secondItem="WYM-4I-rPt" secondAttribute="trailing" id="aR2-4d-2o4"/>
+                <constraint firstItem="WYM-4I-rPt" firstAttribute="centerX" secondItem="l01-KI-68e" secondAttribute="centerX" id="bXY-8L-rPH"/>
+                <constraint firstItem="hzd-XR-dfS" firstAttribute="top" secondItem="l01-KI-68e" secondAttribute="top" id="cDz-A8-7rd"/>
+                <constraint firstItem="WYM-4I-rPt" firstAttribute="top" secondItem="hzd-XR-dfS" secondAttribute="bottom" id="cpZ-fy-Pnt"/>
+                <constraint firstAttribute="bottom" secondItem="WYM-4I-rPt" secondAttribute="bottom" id="fIh-f5-bCb"/>
+                <constraint firstAttribute="trailing" secondItem="hzd-XR-dfS" secondAttribute="trailing" id="fR5-rR-LpP"/>
+                <constraint firstItem="WYM-4I-rPt" firstAttribute="leading" secondItem="l01-KI-68e" secondAttribute="leading" id="fnx-tY-52f"/>
+                <constraint firstItem="5Iw-WF-g28" firstAttribute="leading" secondItem="l01-KI-68e" secondAttribute="leading" id="g6Q-MX-Jf1"/>
+                <constraint firstItem="WYM-4I-rPt" firstAttribute="leading" secondItem="l01-KI-68e" secondAttribute="leading" id="mqV-d9-cdF"/>
+                <constraint firstAttribute="trailing" secondItem="WYM-4I-rPt" secondAttribute="trailing" id="nar-XT-DnQ"/>
+                <constraint firstAttribute="bottom" secondItem="WYM-4I-rPt" secondAttribute="bottom" id="wDO-VG-vDV"/>
+                <constraint firstItem="5Iw-WF-g28" firstAttribute="top" secondItem="l01-KI-68e" secondAttribute="top" id="zPX-x6-KAS"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="NBf-VM-3vY"/>
+                    <exclude reference="Wwo-Fm-fh3"/>
+                    <exclude reference="cDz-A8-7rd"/>
+                    <exclude reference="fR5-rR-LpP"/>
+                    <exclude reference="0uv-bi-aPX"/>
+                    <exclude reference="2iF-pA-0I8"/>
+                    <exclude reference="TdJ-dn-URx"/>
+                    <exclude reference="aR2-4d-2o4"/>
+                    <exclude reference="bXY-8L-rPH"/>
+                    <exclude reference="cpZ-fy-Pnt"/>
+                    <exclude reference="fIh-f5-bCb"/>
+                    <exclude reference="fnx-tY-52f"/>
+                    <exclude reference="mqV-d9-cdF"/>
+                    <exclude reference="nar-XT-DnQ"/>
+                    <exclude reference="wDO-VG-vDV"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="cDz-A8-7rd"/>
+                    <include reference="fR5-rR-LpP"/>
+                    <include reference="0uv-bi-aPX"/>
+                    <include reference="TdJ-dn-URx"/>
+                    <include reference="aR2-4d-2o4"/>
+                    <include reference="fnx-tY-52f"/>
+                    <include reference="wDO-VG-vDV"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="NBf-VM-3vY"/>
+                    <include reference="Wwo-Fm-fh3"/>
+                    <exclude reference="2iF-pA-0I8"/>
+                    <include reference="bXY-8L-rPH"/>
+                    <include reference="cpZ-fy-Pnt"/>
+                    <include reference="fIh-f5-bCb"/>
+                    <include reference="mqV-d9-cdF"/>
+                    <include reference="nar-XT-DnQ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="33" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btnBackground" width="250" height="100"/>
+    </resources>
+</document>

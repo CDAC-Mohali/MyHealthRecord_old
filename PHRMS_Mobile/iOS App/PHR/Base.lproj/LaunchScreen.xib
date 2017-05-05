@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="0be-Aw-4Mq" customClass="LaunchScreen">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="zGS-uf-KEI"/>
+                <viewControllerLayoutGuide type="bottom" id="Aoa-Ue-KKT"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="ZRT-XB-9al">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyHealthRecord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlI-Zs-I8G">
+                        <rect key="frame" x="20" y="298" width="335" height="71"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="71" id="V1u-d9-rVU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="36"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="6YA-3O-3hc">
+                        <rect key="frame" x="141" y="164" width="93" height="94"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="9ZN-Yv-WW7"/>
+                            <constraint firstAttribute="height" constant="94" id="sOF-Do-wjU"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="6YA-3O-3hc" firstAttribute="centerX" secondItem="ZRT-XB-9al" secondAttribute="centerX" id="2Yx-g4-D6I"/>
+                    <constraint firstItem="hlI-Zs-I8G" firstAttribute="centerY" secondItem="ZRT-XB-9al" secondAttribute="centerY" id="36u-7o-hVN"/>
+                    <constraint firstItem="hlI-Zs-I8G" firstAttribute="top" secondItem="6YA-3O-3hc" secondAttribute="bottom" constant="40" id="GFz-eI-L7s"/>
+                    <constraint firstItem="hlI-Zs-I8G" firstAttribute="centerX" secondItem="ZRT-XB-9al" secondAttribute="centerX" id="hDe-aN-2yZ"/>
+                    <constraint firstAttribute="trailing" secondItem="hlI-Zs-I8G" secondAttribute="trailing" constant="20" id="t1m-V2-bwb"/>
+                    <constraint firstItem="hlI-Zs-I8G" firstAttribute="leading" secondItem="ZRT-XB-9al" secondAttribute="leading" constant="20" id="wsm-NE-RRB"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="458.5" y="539.5"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="AppLogo" width="76" height="76"/>
+    </resources>
+</document>

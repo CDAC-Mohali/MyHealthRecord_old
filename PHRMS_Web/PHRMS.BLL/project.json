@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0-*",
+  "description": "PHRMS.BLL Class Library",
+  "authors": [ "Dell" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "PHRMS.Data": "1.0.0-*",
+    "Microsoft.Net.Http": "2.2.22",
+    "Microsoft.AspNet.Mvc.ViewFeatures": "6.0.0-rc1-final",
+    "Microsoft.AspNet.WebPages": "2.0.20505",
+    "System.Net.Http": "4.0.1-beta-23516",
+    "iTextSharp": "5.5.8"
+  },
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+        "System.Linq": "4.0.0",
+        "System.Threading": "4.0.0.0"
+      }
+    }
+  }
+}

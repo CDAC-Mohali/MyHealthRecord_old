@@ -1,0 +1,156 @@
+﻿@{
+    ViewBag.Title = "AddTask";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model List<PHRMSAdmin.Models.RoleTaskMappingModel>
+<div class="normalheader transition animated fadeIn small-header" style="text-align:center">
+    <div class="hpanel hgreen">
+        <div class="panel-body">
+
+            <h3 class="font-light m-b-xs" id="tipHeader">
+                <i class="fa icon-dashboard text-danger"></i> Update Role
+            </h3>
+            <div id="hbreadcrumb" class="pull-right">
+            </div>
+            <h7 id="healthTipCtrl" style="color:#B76215;"></h7>
+        </div>
+    </div>
+</div>
+<div id="page-wrapper">
+    <div id="page-inner">
+      
+        <div class="col-lg-12">
+            <div class="alert alert-success" id="SuccessMessage" style="display:none;">
+                <strong>Update Successfully.</strong>
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    @using (Html.BeginForm("UpdateRole", "Role"))
+                    {
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="hidden" name="RoleId" value="@Model[0].RoleId">
+                                        @Html.LabelFor(model => model[0].RoleModel.RoleName)<span style="color:red">*</span>
+                                        @Html.TextBoxFor(x => x[0].RoleModel.RoleName, new { @readonly = true, @class = "form-control", @placeholder = "Enter text" })
+                                        @Html.ValidationMessageFor(x => x[0].RoleModel.RoleName, "", new { @class = "text-danger" })
+
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="col-lg-12">
+
+
+                                    @if (ViewBag.Task != null)
+                                    {
+                                        <div class="form-group">
+
+
+
+
+                                            <div class="roll_show">
+                                                <label>Modules </label>
+
+
+                                            </div>
+                                            <div class="">
+                                                <div class="alert alert-success" role="alert">
+
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <label class="checkbox-inline">
+
+                                                                <input type="checkbox" id="CheckedAll" />
+                                                                All
+                                                            </label>
+                                                        </div>
+
+                                                        @foreach (PHRMSAdmin.Library.Tasks Item in ViewBag.Task)
+                                                        {
+                                                            <div class="col-md-2">
+                                                                <label class="checkbox-inline">
+                                                                    @if (Model.Where(s => s.TaskId == Item.TaskId).FirstOrDefault() != null)
+                                                                    {
+                                                                        <input type="checkbox" name="Task" onclick="childChange()" class="Tasks" value="@Item.TaskId" checked>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <input type="checkbox" name="Task" onclick="childChange()" class="Tasks" value="@Item.TaskId">
+                                                                    }
+
+                                                                    @Item.TaskName
+                                                                </label>
+                                                            </div>
+
+
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+
+                                    }
+
+                                </div>
+                                <!-- /.col-lg-12 -->
+
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+
+                    <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <button type="submit" class="btn btn-orange">Update</button>
+                            <a href="@Request.ApplicationPath.TrimEnd('/')/Role/Index" class="btn btn-primary">Back To List</a>
+                        </div>
+                    }
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+
+    </div>
+
+    <p></p>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $("#CheckedAll").change(function () {
+
+            if ($("#CheckedAll").is(":checked")) {
+
+                $("input:checkbox").each(function () {
+                    $(".Tasks").prop("checked", true);
+                });
+            }
+            else {
+
+                $("input:checkbox").each(function () {
+                    $(".Tasks").prop("checked", false);
+                });
+            }
+        });
+    });
+
+
+
+    function childChange() {
+
+        $("#CheckedAll").prop("checked", false);
+    }
+</script>

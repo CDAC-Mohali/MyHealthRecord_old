@@ -1,0 +1,77 @@
+{
+  "webroot": "wwwroot",
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "AutoMapper": "4.0.4",
+    "DocumentFormat.OpenXml": "2.5.0",
+    "EntityFramework.Commands": "7.0.0-rc1-final",
+    "EntityFramework.Core": "7.0.0-rc1-final",
+    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+    "ExpertPdfHtmlToPdf": "10.0.0.1",
+    "iTextSharp": "5.5.8",
+    "itextsharp.xmlworker": "5.5.9",
+    "jQuery.jqGrid": "4.4.4",
+    "Microsoft.AspNet.Diagnostics": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Http": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Http.Features": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Session": "1.0.0-rc1-final",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+    "Microsoft.Dnx.Compilation.CSharp": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Caching.Memory": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Caching.SqlServer": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Configuration.Abstractions": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+    "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+    "Microsoft.Framework.ConfigurationModel.Interfaces": "1.0.0-beta4",
+    "Microsoft.Framework.Logging": "1.0.0-beta8",
+    "Microsoft.Framework.Logging.Console": "1.0.0-beta8",
+    "Microsoft.Net.Http": "2.2.22",
+    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final",
+    "MvcPdfActionResult": "1.1.0",
+    "PHRMS.BLL": "1.0.0-*",
+    "PHRMS.Data": "1.0.0-*",
+    "PHRMS.ViewModels": "1.0.0-*",
+    "Rotativa.Core": "2.0.2.1",
+    "Rotativa.MVC": "2.0.3",
+    "Serilog.Framework.Logging": "1.0.0-rc1-final-10078",
+    "Serilog.Sinks.AzureDocumentDB": "1.5.7",
+    "System.Linq.Dynamic.Library": "1.1.14",
+    "System.Net.Http": "4.0.1-beta-23516",
+    "WkHtmlToXSharp.Win64": "1.2.24"
+  },
+  "commands": {
+    "web": "Microsoft.AspNet.Server.Kestrel",
+    "ef": "EntityFramework.Commands"
+  },
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+        "WindowsBase": "4.0.0"
+      },
+      "dependencies": {
+        "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final"
+      }
+    }
+  },
+
+  "publishExclude": [
+    "node_modules",
+    "bower_components",
+    "**.xproj",
+    "**.user",
+    "**.vspscc"
+  ],
+  "exclude": [
+    "wwwroot",
+    "node_modules",
+    "bower_components"
+  ]
+}

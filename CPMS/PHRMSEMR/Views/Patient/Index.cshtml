@@ -1,0 +1,403 @@
+﻿
+@model IPagedList<EMRViewModels.DocPatientDetailsViewModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="page-wrapper">
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <!-- /. ROW  -->
+                        @Html.Partial("_SearchPatient")
+                        @Html.Partial("_PatientList", Model)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="allergyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        @using (Ajax.BeginForm("SavePatientDetails", "Patient", new AjaxOptions { HttpMethod = "POST", OnSuccess = "OnSuccess", OnFailure = "OnFailure" }, new { @class = "form-horizontal", @id = "frmAddPatient" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="modal-content">
+                <div class="color-line"></div>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel">Patient Details</h4>
+                    <center></center>
+                </div>
+                <fieldset>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+
+                            <label for="fname" class="col-sm-2 control-label">Name of the Patient: <span style="color: red;">*</span> </label>
+
+                            <div class="col-sm-5">
+
+                                <input type="text" datacolumn="FirstName" class="form-control" placeholder="Patient's First Name" id="fname" name="FirstName" required="required" onchange="CheckHtmlTag(this)">
+
+                            </div>
+
+                            <div class="col-sm-5">
+
+                                <input type="text" datacolumn="LastName" class="form-control" placeholder="Patient's Last Name" id="lname" name="LastName" required="required" onchange="CheckHtmlTag(this)">
+
+                            </div>
+
+                        </div>
+
+                        @*<div class="hr-line-dashed"></div>
+
+                            <div class="form-group">
+
+                                <label for="fname" class="col-sm-2 control-label">S/o, D/o, W/o: <span style="color: red;">*</span> </label>
+
+                                <div class="col-sm-5">
+
+                                    <input type="text" datacolumn="FirstName" class="form-control" placeholder="S/o, D/o, W/o Name" id="fname" name="RelationName" required="required">
+
+                                </div>
+
+
+
+                            </div>*@
+
+                        <div class="hr-line-dashed"></div>
+
+
+                        <div class="form-group">
+
+                            <label for="dob" class="col-sm-2 control-label">DOB:  <span style="color: red;">*</span></label>
+
+                            <div class="col-sm-4">
+
+                                <div class="input-group date">
+
+                                    <input type="text" datacolumn="strDOB" class="form-control" id="dob" name="strDOB" required="required">
+
+                                    <div class="input-group-addon">
+
+                                        <span class="glyphicon glyphicon-th"></span>
+
+                                    </div>
+
+                                </div>
+
+                                <span id="helpBlock3" style="color: red;" class="help-block"></span>
+
+                            </div>
+
+                            <label class="col-sm-2 control-label">Gender:  <span style="color: red;">*</span></label>
+
+                            <div class="col-sm-4">
+                                <div class="radio radio-info radio-inline"><input type="radio" datacolumn="Gender" value="M" name="Gender" id="sex"><label for="male"> Male </label></div>
+                                <div class="radio radio-info radio-inline"><input type="radio" datacolumn="Gender" value="F" name="Gender" id="sex"><label for="female"> Female </label></div>
+                                <div class="radio radio-info radio-inline"><input type="radio" datacolumn="Gender" value="U" name="Gender" checked id="sex"><label for="unspecified"> Not Specified </label></div>
+                            </div>
+                            @*<div class="col-sm-4 radio radio-info radio-inline" >
+
+                                    Male:
+
+                                    <input type="radio" datacolumn="Gender" id="sex" name="Gender" value="M">
+
+                                    Female:
+
+                                    <input type="radio" datacolumn="Gender" id="sex" name="Gender" value="F">
+
+                                    Not-Specified:
+
+                                    <input type="radio" datacolumn="Gender" id="sex" name="Gender" value="U" checked="checked">
+
+                                    <span id="helpBlock4" style="color: red;" class="help-block"></span>
+
+                                </div>*@
+
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+
+                            <label for="phone_number" class="col-sm-2 control-label">Mobile Number: </label>
+
+                            <div class="col-sm-4">
+
+                                <div class="input-group">
+
+                                    <div class="input-group-addon">+91</div>
+                                    <input type="hidden" datacolumn="DocPatientId" id="DocPatientId" name="DocPatientId" />
+
+                                    <input type="text" placeholder="Phone Number" datacolumn="PhoneNumber" class="form-control" id="phone_number" name="PhoneNumber" maxlength="10" aria-required="true">
+
+                                </div>
+
+                                <span id="helpBlock1" style="color: red;" class="help-block"></span>
+
+                            </div>
+
+                            <label for="email" class="col-sm-2 control-label">Email: </label>
+
+                            <div class="col-sm-4">
+
+                                <input type="text" placeholder="Email" datacolumn="EmailAddress" class="form-control" id="email" name="EmailAddress" onchange="CheckHtmlTag(this)">
+
+                                <span id="helpBlock2" style="color: red;" class="help-block"></span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+
+                            <label for="address1" class="col-sm-2 control-label">Address: </label>
+
+                            <div class="col-sm-5">
+
+                                <input type="text" class="form-control" datacolumn="Address1" placeholder="Address Line 1" id="address1" name="Address1" onchange="CheckHtmlTag(this)">
+
+                            </div>
+
+                            <div class="col-sm-5">
+
+                                <input type="text" class="form-control" datacolumn="Address2" placeholder="Address Line 2" id="address2" name="Address2" onchange="CheckHtmlTag(this)">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="address1" class="col-sm-2 control-label"></label>
+
+                            <div class="col-sm-5">
+
+                                <input type="text" class="form-control" placeholder="Town/City" datacolumn="City_Vill_Town" id="town" name="City_Vill_Town" onchange="CheckHtmlTag(this)">
+
+                            </div>
+
+                            <div class="col-sm-5">
+
+                                <input type="text" class="form-control" placeholder="District" datacolumn="District" id="district" name="District" onchange="CheckHtmlTag(this)">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="address1" class="col-sm-2 control-label">State <span class="text-danger"> *</span></label>
+
+                            <div class="col-sm-5">
+
+                                <select class="form-control" id="state" name="State" datacolumn="State" required>
+
+                                    <option value="">--Select--</option>
+                                    <option value="30">Andaman and Nicobar Islands</option>
+                                    <option value="1">Andhra Pradesh</option>
+                                    <option value="2">Arunachal Pradesh</option>
+                                    <option value="3">Assam</option>
+                                    <option value="4">Bihar</option>
+                                    <option value="31">Chandigarh</option>
+                                    <option value="5">Chhattisgarh</option>
+                                    <option value="32">Dadra and Nagar Haveli</option>
+                                    <option value="33">Daman and Diu</option>
+                                    <option value="6">Goa</option>
+                                    <option value="7">Gujarat</option>
+                                    <option value="8">Haryana</option>
+                                    <option value="9">Himachal Pradesh</option>
+                                    <option value="10">Jammu and Kashmir</option>
+                                    <option value="11">Jharkhand</option>
+                                    <option value="12">Karnataka</option>
+                                    <option value="13">Kerala</option>
+                                    <option value="34">Lakshadweep</option>
+                                    <option value="14">Madhya Pradesh</option>
+                                    <option value="15">Maharashtra</option>
+                                    <option value="16">Manipur</option>
+                                    <option value="17">Meghalaya</option>
+                                    <option value="18">Mizoram</option>
+                                    <option value="19">Nagaland</option>
+                                    <option value="35">National Capital Territory of Delhi</option>
+                                    <option value="20">Odisha(Orissa)</option>
+                                    <option value="21">Punjab</option>
+                                    <option value="36">Puducherry</option>
+                                    <option value="22">Rajasthan</option>
+                                    <option value="23">Sikkim</option>
+                                    <option value="24">Tamil Nadu</option>
+                                    <option value="29">Telangana</option>
+                                    <option value="25">Tripura</option>
+                                    <option value="26">Uttar Pradesh</option>
+                                    <option value="27">Uttarakhand</option>
+                                    <option value="28">West Bengal</option>
+
+
+
+
+
+
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+
+                            <label for="ano" class="col-sm-2 control-label">Aadhaar No. </label>
+
+                            <div class="col-sm-10">
+
+                                <input type="text" datacolumn="AadhaarNumber" placeholder="Aadhaar Card Number" class="form-control" id="ano" name="AadhaarNumber" maxlength="12" onchange="CheckHtmlTag(this)">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="modal-footer">
+                        <button type="button" id="btnSave" class="btn btn-primary">Next</button>
+                        <a class="btn btn-default" data-dismiss="modal">Close</a>
+                    </div>
+                </fieldset>
+            </div>
+        }
+    </div>
+</div>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/jquery.patient.js"></script>
+<script src="~/Scripts/jquery.prescription.js"></script>
+<script>
+    var $loading = $('.splash').hide();
+    $(document).ajaxStart(function () {
+        $loading.show();
+    }).ajaxStop(function () {
+        $loading.hide();
+    });
+    $(document).ready(function () {
+        @if(ViewBag.NewRegister==true)
+        {
+            <text>
+        $("#allergyModal").modal("show");</text>
+
+        }
+    });
+
+    $("#Sphone_number").keydown(function (e) {
+        checkPhoneNumber(e);
+    });
+
+    $("#phone_number").keydown(function (e) {
+        checkPhoneNumber(e);
+    });
+
+
+    $("#btnSave").click(function () {
+
+        var recid = $("#DocPatientId").val();
+        if (isNaN(recid)) {
+             recid = 0;
+        }
+
+        $.ajax({
+            type: "Post",
+            contentType: "application/json; charset=utf-8",
+            url: "/PatientDetail/CheckPhoneRevist",
+            data: '{"Phone":' + '"' + $("#phone_number").val() + '","RecodeId":' + '"' + recid + '"}',
+
+            dataType: "json",
+            success: function (data) {
+             
+                if (data==0) {
+
+                    $("#frmAddPatient").submit();
+                }
+                else {
+                    toastr.error('Mobile number already exists.!')
+                      }
+
+            },
+            error: function (result) {
+
+            }
+
+        });
+    });
+
+
+    function checkPhoneNumber(e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+            // Allow: Ctrl+A, Command+A
+            (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+            // Allow: home, end, left, right, down, up
+            (e.keyCode >= 35 && e.keyCode <= 40)) {
+            // let it happen, don't do anything
+            return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    }
+
+
+
+    function CheckOTP() {
+        location.href = "/PatientDetail/CheckOTP?OTP=" + $("#otp").val() + "&" + "Type=1";
+    }
+
+    function GenerateOTP(Type) {
+       
+        $.ajax({
+            type: "Post",
+            contentType: "application/json; charset=utf-8",
+            url: "/PatientDetail/GenerateOTP",
+            data: '{"Type":' + '"' + Type + '"}',
+
+            dataType: "json",
+            success: function (data) {
+
+                if (data) {
+
+                    $("#otpButton").hide();
+                    $("#otpForm").show();
+                    swal({
+                        title: "Success!",
+                        text: "OTP Send successfully!",
+                        type:
+                        "success"
+                    });
+                }
+                else {
+                    swal({
+                        title: "Success!",
+                        text: "Something Went Wrong",
+                        type:
+                        "success"
+                    });
+
+                }
+
+            },
+            error: function (result) {
+
+            }
+
+        });
+    }
+
+</script>
+

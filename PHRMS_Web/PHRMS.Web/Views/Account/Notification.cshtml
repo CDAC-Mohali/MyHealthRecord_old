@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "_Layout";
+    ViewBag.Title = "Allergies";
+}
+@model List<PHRMS.ViewModels.NotificationViewModel>
+
+
+<div class="modal-body">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr style="background-color: #cacaca;">
+                    <th>
+                        Doctor Name
+                    </th>
+                    <th>
+                        Message
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(Item => item.MedicalContactName)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(Item => item.Message)
+                        </td>
+                        <td>
+                            @*<a href="/Eprescription/Index?RecordId=@item.userRecordId">Check Here</a>*@
+                            <a href="/Eprescription/ShareIndex?RecordId=@item.userRecordId">Check Here</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".modules.useables.ImageFullScreen">
+
+    <!-- Toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--guides.codepath.com/android/using-the-app-toolbar-->
+        <!--custom toolbar android-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_ImageFullScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageButton
+                android:id="@+id/IBSave_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="end"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/padding_large"
+                android:src="@drawable/ic_save_white_48dp"
+                android:tint="@color/white" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:background="@android:color/black">
+
+        <ProgressBar
+            android:id="@+id/ProgressBarFullScreenImage"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:theme="@style/Widget.AppCompat.ProgressBar"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,344 @@
+﻿2016-10-24 17:34:46.588 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-10-24 17:34:46.850 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-10-24 17:34:47.136 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-10-24 17:34:47.136 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-10-24 17:34:47.207 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-10-24 17:34:47.207 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-10-24 17:34:47.390 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:34:47.390 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:34:47.416 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"596665b4-fc4b-44ce-b80a-c17ab34a02d4"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-10-24 17:34:47.416 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"596665b4-fc4b-44ce-b80a-c17ab34a02d4"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-10-24 17:34:47.417 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-10-24 17:34:47.417 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-10-24 17:34:47.522 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-10-24 17:34:47.522 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-10-24 17:34:47.525 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-10-24 17:34:47.525 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-10-24 17:34:53.177 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-10-24 17:34:53.177 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-10-24 17:34:53.178 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-10-24 17:34:53.178 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-10-24 17:34:53.232 +05:30 Information: [Microsoft.Extensions.DependencyInjection.DataProtectionServices] User profile is available. Using '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2016-10-24 17:34:53.315 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.5891ms
+2016-10-24 17:34:53.316 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.5891ms
+2016-10-24 17:34:53.375 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/pic4.jpg  QueryString: 
+2016-10-24 17:34:53.375 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/pic22.jpg  QueryString: 
+2016-10-24 17:34:53.395 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/pic22.jpg"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\pic22.jpg"'
+2016-10-24 17:34:53.395 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/pic4.jpg"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\pic4.jpg"'
+2016-10-24 17:34:53.468 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/MyHealthRecord.png  QueryString: 
+2016-10-24 17:34:53.468 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/pic33.jpg  QueryString: 
+2016-10-24 17:34:53.468 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/pic1.jpg  QueryString: 
+2016-10-24 17:34:53.469 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/pic33.jpg"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\pic33.jpg"'
+2016-10-24 17:34:53.469 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/pic1.jpg"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\pic1.jpg"'
+2016-10-24 17:34:53.469 +05:30 Information:6 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The file "/images/MyHealthRecord.png" was not modified
+2016-10-24 17:34:53.471 +05:30 Debug:8 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Handled. Status code: 304 File: "/images/MyHealthRecord.png"
+2016-10-24 17:34:53.528 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.6391ms 200 text/html; charset=utf-8
+2016-10-24 17:34:53.533 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/011.png  QueryString: 
+2016-10-24 17:34:53.533 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/011.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\011.png"'
+2016-10-24 17:34:53.816 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.6688ms 200 text/html; charset=utf-8
+2016-10-24 17:34:53.816 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.036ms 304 image/png
+2016-10-24 17:34:53.849 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/homepage.png  QueryString: 
+2016-10-24 17:34:53.849 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/homepage.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\homepage.png"'
+2016-10-24 17:34:53.871 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/GetUserCount  QueryString: 
+2016-10-24 17:34:53.871 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/GetUserCount" does not match a supported file type
+2016-10-24 17:34:53.873 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:34:53.873 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.GetUserCount"
+2016-10-24 17:34:53.874 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.GetUserCount" with arguments (null) - ModelState is Valid'
+2016-10-24 17:34:53.946 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0094ms 200 image/png
+2016-10-24 17:34:54.143 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0765ms 200 image/jpeg
+2016-10-24 17:34:54.143 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0765ms 200 image/jpeg
+2016-10-24 17:34:54.143 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/05.png  QueryString: 
+2016-10-24 17:34:54.143 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/022.png  QueryString: 
+2016-10-24 17:34:54.143 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/05.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\05.png"'
+2016-10-24 17:34:54.143 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/022.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\022.png"'
+2016-10-24 17:34:54.143 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0672ms 200 image/jpeg
+2016-10-24 17:34:54.143 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/033.png  QueryString: 
+2016-10-24 17:34:54.144 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/033.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\033.png"'
+2016-10-24 17:34:54.188 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/MobileOS_iOS11.png  QueryString: 
+2016-10-24 17:34:54.188 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/MobileOS_iOS11.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\MobileOS_iOS11.png"'
+2016-10-24 17:34:54.248 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0094ms 200 image/png
+2016-10-24 17:34:54.248 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.011ms 200 image/png
+2016-10-24 17:34:54.250 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.011ms 200 image/png
+2016-10-24 17:34:54.454 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0922ms 200 image/png
+2016-10-24 17:34:54.454 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/044.png  QueryString: 
+2016-10-24 17:34:54.454 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/044.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\044.png"'
+2016-10-24 17:34:54.455 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0985ms 200 image/jpeg
+2016-10-24 17:34:54.455 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0266ms 200 image/png
+2016-10-24 17:34:54.455 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/MobileOS_Android11.png  QueryString: 
+2016-10-24 17:34:54.455 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/MobileOS_Android11.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\MobileOS_Android11.png"'
+2016-10-24 17:34:54.481 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-10-24 17:34:54.482 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-10-24 17:34:54.482 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:34:54.482 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"596665b4-fc4b-44ce-b80a-c17ab34a02d4"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-10-24 17:34:54.482 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-10-24 17:34:54.482 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-10-24 17:34:54.482 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-10-24 17:34:54.482 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-10-24 17:34:54.482 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-10-24 17:34:54.483 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0ms
+2016-10-24 17:34:54.535 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0093ms 200 image/png
+2016-10-24 17:34:54.553 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0109ms 200 image/png
+2016-10-24 17:34:54.561 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0078ms 200 text/html; charset=utf-8
+2016-10-24 17:34:55.091 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.GetUserCount", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:34:55.095 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:34:55.096 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:34:55.097 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:34:55.159 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.GetUserCount" in 0.1296ms
+2016-10-24 17:34:55.238 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.1375ms 200 application/json; charset=utf-8
+2016-10-24 17:34:55.512 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/Login  QueryString: 
+2016-10-24 17:34:55.512 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/Login" does not match a supported file type
+2016-10-24 17:34:55.512 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:34:55.512 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Login"' with id '"797a7a45-174a-4196-aeb9-90253d2869c5"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-10-24 17:34:55.512 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Login"
+2016-10-24 17:34:55.513 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Login" with arguments (null) - ModelState is Valid'
+2016-10-24 17:34:55.513 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Login", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-10-24 17:34:56.087 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Login"' was found.
+2016-10-24 17:34:56.087 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Login.cshtml".
+2016-10-24 17:34:57.502 +05:30 Debug: [Microsoft.AspNet.DataProtection.Repositories.FileSystemXmlRepository] Reading data from file '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys\key-5f1c56ec-ea6c-4ca0-94dd-5d694da1e15a.xml"'.
+2016-10-24 17:34:58.129 +05:30 Debug: [Microsoft.AspNet.DataProtection.Repositories.FileSystemXmlRepository] Reading data from file '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys\key-9455f2d2-73da-47e3-8f1d-7c981fd4ff2d.xml"'.
+2016-10-24 17:34:58.792 +05:30 Debug: [Microsoft.AspNet.DataProtection.KeyManagement.XmlKeyManager] Found key {5f1c56ec-ea6c-4ca0-94dd-5d694da1e15a}.
+2016-10-24 17:34:58.793 +05:30 Debug: [Microsoft.AspNet.DataProtection.KeyManagement.XmlKeyManager] Found key {9455f2d2-73da-47e3-8f1d-7c981fd4ff2d}.
+2016-10-24 17:34:58.798 +05:30 Debug: [Microsoft.AspNet.DataProtection.KeyManagement.DefaultKeyResolver] Considering key {5f1c56ec-ea6c-4ca0-94dd-5d694da1e15a} with expiration date 2017-01-12 05:27:20Z as default key.
+2016-10-24 17:34:58.803 +05:30 Debug: [Microsoft.AspNet.DataProtection.XmlEncryption.DpapiXmlDecryptor] Decrypting secret element using Windows DPAPI.
+2016-10-24 17:34:58.808 +05:30 Debug: [Microsoft.AspNet.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngCbcAuthenticatedEncryptorDescriptor] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2016-10-24 17:34:58.811 +05:30 Debug: [Microsoft.AspNet.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngCbcAuthenticatedEncryptorDescriptor] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2016-10-24 17:34:58.816 +05:30 Debug: [Microsoft.AspNet.DataProtection.KeyManagement.KeyRingProvider] Using key {5f1c56ec-ea6c-4ca0-94dd-5d694da1e15a} as the default key.
+2016-10-24 17:34:59.411 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Login" in 0.3906ms
+2016-10-24 17:34:59.490 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3985ms 200 text/html; charset=utf-8
+2016-10-24 17:35:01.052 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/x-www-form-urlencoded  ContentLength: 218  Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/Login  QueryString: 
+2016-10-24 17:35:01.053 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-10-24 17:35:01.053 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:01.053 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Login"
+2016-10-24 17:35:01.140 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Login" with arguments (["PHRMS.ViewModels.LoginModel"]) - ModelState is Valid'
+2016-10-24 17:35:01.654 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Login", returned result "Microsoft.AspNet.Mvc.RedirectToActionResult".'
+2016-10-24 17:35:01.654 +05:30 Information:1 [Microsoft.AspNet.Mvc.RedirectToActionResult] Executing RedirectResult, redirecting to "/Account/Dashboard".
+2016-10-24 17:35:01.655 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Login" in 0.0594ms
+2016-10-24 17:35:01.734 +05:30 Information: [Microsoft.AspNet.Session.DistributedSession] Session "57c3b6a5-a34b-7eca-73e2-e107314e14a1" started
+2016-10-24 17:35:01.841 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0781ms 302 
+2016-10-24 17:35:01.844 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/Dashboard  QueryString: 
+2016-10-24 17:35:01.845 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Account/Dashboard" does not match a supported file type
+2016-10-24 17:35:01.845 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:01.845 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.Dashboard"
+2016-10-24 17:35:01.977 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.Dashboard" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:01.978 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.AccountController.Dashboard", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-10-24 17:35:02.158 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Dashboard"' was found.
+2016-10-24 17:35:02.158 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Account/Dashboard.cshtml".
+2016-10-24 17:35:02.907 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.AccountController.Dashboard" in 0.1063ms
+2016-10-24 17:35:02.992 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Images/ProfilePics/Custom/3f8b75c3-367a-4598-8a6c-eea2516704e7.png  QueryString: 
+2016-10-24 17:35:02.992 +05:30 Information:6 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The file "/Images/ProfilePics/Custom/3f8b75c3-367a-4598-8a6c-eea2516704e7.png" was not modified
+2016-10-24 17:35:02.992 +05:30 Debug:8 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Handled. Status code: 304 File: "/Images/ProfilePics/Custom/3f8b75c3-367a-4598-8a6c-eea2516704e7.png"
+2016-10-24 17:35:03.070 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.1235ms 200 text/html; charset=utf-8
+2016-10-24 17:35:03.076 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0078ms 304 image/png
+2016-10-24 17:35:03.187 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /js/jquery.dashboard.js  QueryString: 
+2016-10-24 17:35:03.187 +05:30 Information:6 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The file "/js/jquery.dashboard.js" was not modified
+2016-10-24 17:35:03.187 +05:30 Debug:8 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Handled. Status code: 304 File: "/js/jquery.dashboard.js"
+2016-10-24 17:35:03.273 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0094ms 304 application/javascript
+2016-10-24 17:35:03.388 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/GetNotifications  QueryString: 
+2016-10-24 17:35:03.388 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Account/GetNotifications" does not match a supported file type
+2016-10-24 17:35:03.388 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:03.388 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.GetNotifications"
+2016-10-24 17:35:03.388 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.GetNotifications" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:03.408 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Dashboard/GetLatestAllergies  QueryString: 
+2016-10-24 17:35:03.408 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Dashboard/GetLatestProcedures  QueryString: 
+2016-10-24 17:35:03.408 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Dashboard/GetLatestAllergies" does not match a supported file type
+2016-10-24 17:35:03.408 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Dashboard/GetLatestProcedures" does not match a supported file type
+2016-10-24 17:35:03.408 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:03.408 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:03.408 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.DashboardController.GetLatestAllergies"
+2016-10-24 17:35:03.408 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.DashboardController.GetLatestProcedures"
+2016-10-24 17:35:03.409 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.DashboardController.GetLatestAllergies" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:03.409 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Dashboard/GetLatestMedications  QueryString: 
+2016-10-24 17:35:03.410 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.DashboardController.GetLatestProcedures" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:03.410 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Dashboard/GetLatestMedications" does not match a supported file type
+2016-10-24 17:35:03.410 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:03.410 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.DashboardController.GetLatestMedications"
+2016-10-24 17:35:03.410 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.DashboardController.GetLatestMedications" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:03.411 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Dashboard/GetLatestLabs  QueryString: 
+2016-10-24 17:35:03.411 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Dashboard/GetLatestLabs" does not match a supported file type
+2016-10-24 17:35:03.411 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:03.411 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.DashboardController.GetLatestLabs"
+2016-10-24 17:35:03.411 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json; charset=utf-8  ContentLength: 0  Scheme: http  Host: localhost:55016  PathBase:   Path: /Wellness/GetBMIForGraph  QueryString: 
+2016-10-24 17:35:03.412 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-10-24 17:35:03.412 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:03.412 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.DashboardController.GetLatestLabs" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:03.412 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.WellnessController.GetBMIForGraph"
+2016-10-24 17:35:03.753 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.DashboardController.GetLatestMedications", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:03.753 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:03.753 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:35:03.753 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:03.773 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.DashboardController.GetLatestMedications" in 0.036ms
+2016-10-24 17:35:03.833 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.DashboardController.GetLatestAllergies", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:03.833 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:03.834 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:35:03.834 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:03.834 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.DashboardController.GetLatestAllergies" in 0.0437ms
+2016-10-24 17:35:03.879 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0469ms 200 application/json; charset=utf-8
+2016-10-24 17:35:03.882 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.WellnessController.GetBMIForGraph" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:03.890 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Dashboard/GetLatestImmunizations  QueryString: 
+2016-10-24 17:35:03.890 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Dashboard/GetLatestImmunizations" does not match a supported file type
+2016-10-24 17:35:03.890 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:03.891 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.DashboardController.GetLatestImmunizations"
+2016-10-24 17:35:03.891 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.DashboardController.GetLatestImmunizations" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:03.914 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.DashboardController.GetLatestProcedures", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:03.914 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:03.914 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:35:03.914 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:03.914 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.DashboardController.GetLatestProcedures" in 0.0515ms
+2016-10-24 17:35:03.919 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0515ms 200 application/json; charset=utf-8
+2016-10-24 17:35:03.921 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Dashboard/GetLatestActivities  QueryString: 
+2016-10-24 17:35:03.922 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Dashboard/GetLatestActivities" does not match a supported file type
+2016-10-24 17:35:03.922 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:03.922 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.DashboardController.GetLatestActivities"
+2016-10-24 17:35:03.922 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.DashboardController.GetLatestActivities" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:03.994 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.DashboardController.GetLatestLabs", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:03.994 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:03.994 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:35:03.994 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:03.994 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.DashboardController.GetLatestLabs" in 0.0579ms
+2016-10-24 17:35:03.997 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0594ms 200 application/json; charset=utf-8
+2016-10-24 17:35:04.000 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Dashboard/UpdateAnalytics  QueryString: 
+2016-10-24 17:35:04.000 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Dashboard/UpdateAnalytics" does not match a supported file type
+2016-10-24 17:35:04.000 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:04.000 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.DashboardController.UpdateAnalytics"
+2016-10-24 17:35:04.000 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.DashboardController.UpdateAnalytics" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:04.074 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.DashboardController.GetLatestImmunizations", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:04.075 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:04.075 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:35:04.075 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:04.075 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.DashboardController.GetLatestImmunizations" in 0.0188ms
+2016-10-24 17:35:04.078 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0657ms 200 application/json; charset=utf-8
+2016-10-24 17:35:04.081 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Dashboard/GetGlucoseData  QueryString: 
+2016-10-24 17:35:04.081 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Dashboard/GetGlucoseData" does not match a supported file type
+2016-10-24 17:35:04.081 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:04.081 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.DashboardController.GetGlucoseData"
+2016-10-24 17:35:04.081 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.DashboardController.GetGlucoseData" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:04.161 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0281ms 200 application/json; charset=utf-8
+2016-10-24 17:35:04.163 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Dashboard/GetBPandPulseData  QueryString: 
+2016-10-24 17:35:04.163 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Dashboard/GetBPandPulseData" does not match a supported file type
+2016-10-24 17:35:04.163 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:04.163 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.DashboardController.GetBPandPulseData"
+2016-10-24 17:35:04.163 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.DashboardController.GetBPandPulseData" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:04.227 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.DashboardController.GetLatestActivities", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:04.228 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:04.228 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response.
+2016-10-24 17:35:04.228 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:04.228 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.DashboardController.GetLatestActivities" in 0.0313ms
+2016-10-24 17:35:04.310 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.DashboardController.GetGlucoseData", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:04.310 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:04.310 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:35:04.310 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:04.310 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.DashboardController.GetGlucoseData" in 0.0219ms
+2016-10-24 17:35:04.315 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0407ms 200 text/plain; charset=utf-8
+2016-10-24 17:35:04.318 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Dashboard/GetActivityData  QueryString: 
+2016-10-24 17:35:04.318 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Dashboard/GetActivityData" does not match a supported file type
+2016-10-24 17:35:04.318 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:04.318 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.DashboardController.GetActivityData"
+2016-10-24 17:35:04.318 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.DashboardController.GetActivityData" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:04.337 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.WellnessController.GetBMIForGraph", returned result "Microsoft.AspNet.Mvc.JsonResult".'
+2016-10-24 17:35:04.340 +05:30 Information:1 [Microsoft.AspNet.Mvc.JsonResult] Executing JsonResult, writing value "System.Collections.Generic.List`1[System.String]".
+2016-10-24 17:35:04.342 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.WellnessController.GetBMIForGraph" in 0.0922ms
+2016-10-24 17:35:04.352 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.DashboardController.GetBPandPulseData", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:04.352 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:04.352 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:35:04.352 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:04.378 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.DashboardController.GetBPandPulseData" in 0.0219ms
+2016-10-24 17:35:04.388 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.AccountController.GetNotifications", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:04.389 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:04.389 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:35:04.389 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:04.390 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.AccountController.GetNotifications" in 0.1ms
+2016-10-24 17:35:04.393 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0297ms 200 application/json; charset=utf-8
+2016-10-24 17:35:04.395 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Dashboard/GetHealthTip  QueryString: 
+2016-10-24 17:35:04.395 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Dashboard/GetHealthTip" does not match a supported file type
+2016-10-24 17:35:04.395 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:04.395 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.DashboardController.GetHealthTip"
+2016-10-24 17:35:04.395 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.DashboardController.GetHealthTip" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:04.424 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.1ms 200 application/json; charset=utf-8
+2016-10-24 17:35:04.463 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0297ms 200 application/json; charset=utf-8
+2016-10-24 17:35:04.474 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.1094ms 200 application/json; charset=utf-8
+2016-10-24 17:35:04.480 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.DashboardController.GetHealthTip", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:04.480 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:04.480 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response.
+2016-10-24 17:35:04.480 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:04.480 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.DashboardController.GetHealthTip" in 0.0078ms
+2016-10-24 17:35:04.486 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.DashboardController.GetActivityData", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:04.487 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:04.487 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:35:04.487 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:04.487 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.DashboardController.GetActivityData" in 0.0172ms
+2016-10-24 17:35:04.565 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0172ms 200 text/plain; charset=utf-8
+2016-10-24 17:35:04.571 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.025ms 200 application/json; charset=utf-8
+2016-10-24 17:35:04.573 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Dashboard/GetActivityData  QueryString: 
+2016-10-24 17:35:04.573 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Dashboard/GetActivityData" does not match a supported file type
+2016-10-24 17:35:04.573 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:04.573 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.DashboardController.GetActivityData"
+2016-10-24 17:35:04.573 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.DashboardController.GetActivityData" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:04.739 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.DashboardController.GetActivityData", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:04.739 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:04.739 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:35:04.739 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:04.739 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.DashboardController.GetActivityData" in 0.0172ms
+2016-10-24 17:35:04.824 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.025ms 200 application/json; charset=utf-8
+2016-10-24 17:35:05.316 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.DashboardController.UpdateAnalytics", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:05.316 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:05.316 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:35:05.316 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:05.323 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.DashboardController.UpdateAnalytics" in 0.1328ms
+2016-10-24 17:35:05.411 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.1421ms 200 application/json; charset=utf-8
+2016-10-24 17:35:14.063 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Eprescription  QueryString: 
+2016-10-24 17:35:14.063 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Eprescription" does not match a supported file type
+2016-10-24 17:35:14.063 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:14.063 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.EprescriptionController.Index"
+2016-10-24 17:35:14.150 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.EprescriptionController.Index" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:14.150 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.EprescriptionController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-10-24 17:35:14.273 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-10-24 17:35:14.273 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Eprescription/Index.cshtml".
+2016-10-24 17:35:14.347 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.EprescriptionController.Index" in 0.0297ms
+2016-10-24 17:35:14.402 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /vendor/toastr/build/toastr.min.css  QueryString: 
+2016-10-24 17:35:14.402 +05:30 Information:6 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The file "/vendor/toastr/build/toastr.min.css" was not modified
+2016-10-24 17:35:14.402 +05:30 Debug:8 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Handled. Status code: 304 File: "/vendor/toastr/build/toastr.min.css"
+2016-10-24 17:35:14.434 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0375ms 200 text/html; charset=utf-8
+2016-10-24 17:35:14.446 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /js/jquery.prescription.js  QueryString: 
+2016-10-24 17:35:14.447 +05:30 Information:6 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The file "/js/jquery.prescription.js" was not modified
+2016-10-24 17:35:14.447 +05:30 Debug:8 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Handled. Status code: 304 File: "/js/jquery.prescription.js"
+2016-10-24 17:35:14.492 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0094ms 304 text/css
+2016-10-24 17:35:14.531 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0078ms 304 application/javascript
+2016-10-24 17:35:14.553 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/GetNotifications  QueryString: 
+2016-10-24 17:35:14.553 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Account/GetNotifications" does not match a supported file type
+2016-10-24 17:35:14.553 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:14.553 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.GetNotifications"
+2016-10-24 17:35:14.553 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.GetNotifications" with arguments (null) - ModelState is Valid'
+2016-10-24 17:35:14.584 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Eprescription/GetPrescriptionGridList  QueryString: ?page=1&limit=10
+2016-10-24 17:35:14.584 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Eprescription/GetPrescriptionGridList" does not match a supported file type
+2016-10-24 17:35:14.584 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:14.584 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.EprescriptionController.GetPrescriptionGridList"
+2016-10-24 17:35:14.673 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.EprescriptionController.GetPrescriptionGridList" with arguments (["1", "10", "", "", ""]) - ModelState is Valid'
+2016-10-24 17:35:14.842 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.EprescriptionController.GetPrescriptionGridList", returned result "Microsoft.AspNet.Mvc.JsonResult".'
+2016-10-24 17:35:14.842 +05:30 Information:1 [Microsoft.AspNet.Mvc.JsonResult] Executing JsonResult, writing value "{ records = System.Collections.Generic.List`1[PHRMS.ViewModels.EprescriptionViewModel], total = 7 }".
+2016-10-24 17:35:14.859 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.EprescriptionController.GetPrescriptionGridList" in 0.0266ms
+2016-10-24 17:35:14.884 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.AccountController.GetNotifications", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-10-24 17:35:14.885 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-10-24 17:35:14.885 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-10-24 17:35:14.885 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-10-24 17:35:14.885 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.AccountController.GetNotifications" in 0.0328ms
+2016-10-24 17:35:14.943 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.036ms 200 application/json; charset=utf-8
+2016-10-24 17:35:14.971 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0422ms 200 application/json; charset=utf-8
+2016-10-24 17:35:23.287 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json; charset=UTF-8  ContentLength: 38  Scheme: http  Host: localhost:55016  PathBase:   Path: /Eprescription/GetPrescriptionById  QueryString: 
+2016-10-24 17:35:23.288 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-10-24 17:35:23.288 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:23.288 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.EprescriptionController.GetPrescriptionById"
+2016-10-24 17:35:23.395 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.EprescriptionController.GetPrescriptionById" with arguments (["5c24c020-a41e-4ecb-091d-08d3fc05001d"]) - ModelState is Valid'
+2016-10-24 17:35:24.216 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.EprescriptionController.GetPrescriptionById", returned result "Microsoft.AspNet.Mvc.JsonResult".'
+2016-10-24 17:35:24.217 +05:30 Information:1 [Microsoft.AspNet.Mvc.JsonResult] Executing JsonResult, writing value "PHRMS.ViewModels.EprescriptionViewModel".
+2016-10-24 17:35:24.219 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.EprescriptionController.GetPrescriptionById" in 0.0922ms
+2016-10-24 17:35:24.303 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.1016ms 200 application/json; charset=utf-8
+2016-10-24 17:35:26.368 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Eprescription/ShowReport  QueryString: ?EPrescriptionId=5c24c020-a41e-4ecb-091d-08d3fc05001d
+2016-10-24 17:35:26.369 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Eprescription/ShowReport" does not match a supported file type
+2016-10-24 17:35:26.369 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-10-24 17:35:26.369 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.EprescriptionController.ShowReport"
+2016-10-24 17:35:26.455 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.EprescriptionController.ShowReport" with arguments (["5c24c020-a41e-4ecb-091d-08d3fc05001d"]) - ModelState is Valid'
+2016-10-24 17:35:32.988 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.EprescriptionController.ShowReport", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-10-24 17:35:33.141 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"ShowReport"' was found.
+2016-10-24 17:35:33.141 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Eprescription/ShowReport.cshtml".
+2016-10-24 17:35:33.340 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.EprescriptionController.ShowReport" in 0.6968ms
+2016-10-24 17:35:33.424 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.7046ms 200 text/html; charset=utf-8

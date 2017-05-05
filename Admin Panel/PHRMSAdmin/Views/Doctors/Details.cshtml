@@ -1,0 +1,347 @@
+﻿@model PHRMSAdmin.Models.DoctorModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="normalheader transition animated fadeIn small-header" style="text-align:center">
+    <div class="hpanel hgreen">
+        <div class="panel-body">
+
+            <h3 class="font-light m-b-xs" id="tipHeader">
+                <i class="fa icon-dashboard text-danger"></i> Doctor Details
+            </h3>
+            <div id="hbreadcrumb" class="pull-right">
+            </div>
+            <h7 id="healthTipCtrl" style="color:#B76215;"></h7>
+        </div>
+    </div>
+</div>
+<div id="page-wrapper">
+
+    <div id="page-inner">
+
+
+        <!-- /. ROW  -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.name, "Name")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.name
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.LastName, "Surname")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.LastName
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.qualification_set, "Qualificaion")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.qualification_set
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.name, "Clinic Name")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.name
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.date_of_birth, "DoB")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.date_of_birth.ToString("dd/MM/yyyy")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Gender, "Sex")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.Gender
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.AddressLine1, "AddressLine1")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.AddressLine1
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.AddressLine2, "AddressLine2")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.AddressLine2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.email, "Email")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.email
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.phone_number, "Phone Number")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.phone_number
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.City, "City")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.City
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.State, "State")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.State
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.PIN, "PIN")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.PIN
+                                </div>
+                            </div>
+                            @*<div class="col-lg-3">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.AadhaarNo, "Aadhaar No")
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        @Model.AadhaarNo
+                                    </div>
+                                </div>*@
+                        </div>
+                        <div class="row">
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.AadhaarNo, "Aadhaar No")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.AadhaarNo
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.license_number, "License Number")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Model.license_number
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.HospitalName, "Enter By Doctor")
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    @Html.DisplayFor(s => Model.HospitalName)
+
+                                </div>
+                            </div>
+                            @if (!string.IsNullOrEmpty(@Model.DocFile))
+                            {
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.DocFile, "MCI Document")
+                                    </div>
+                                </div>
+                                <div class="lightBoxGallery col-lg-3" id="divGallery">
+
+                                    <a href="http://practice.myhealthrecord.nhp.gov.in/images/LicenseCopy/@Model.DocFile" data-gallery="" target="_blank">View Document</a>
+
+                                </div>
+                            }
+                        </div>
+                        @using (Html.BeginForm("UpdateHospital", "Doctors"))
+                        {
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        @Html.HiddenFor(s => s.docid)
+                                        @Html.LabelFor(model => model.MedicalCollegeId, "Hospital")<span style="color:red">*</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+                                        @Html.DropDownList("MedicalCollegeId", (List<SelectListItem>)ViewBag.HospitalList, new { @class = "form-control valid" })
+                                        @Html.ValidationMessageFor(x => x.MedicalCollegeId, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            if (Model.IsApproved != 2)
+                            {
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.IsApproved, "Status")
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            @Html.DropDownList("IsApproved", (List<SelectListItem>)ViewBag.StatusList, new { @class = "form-control valid" })
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.IsApproved, "Remarks")
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <textarea placeholder="Write your Remarks here." id="Remarks" name="Remarks" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="form-group">
+                                            @Html.HiddenFor(s => s.IsApproved)
+
+
+                                            @Html.LabelFor(model => model.IsApproved, "Status")
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            @if (Model.IsApproved == 1)
+                                            {
+                                                <text>Pending</text>
+                                            }
+                                            else if (Model.IsApproved == 2)
+                                            {
+                                                <text> Approved </text>
+                                            }
+                                            else
+                                            {
+                                                <text> Rejected </text>
+                                            }
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-orange" id="btnSubmit">Save</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        }
+
+
+                        <!-- /.col-lg-12 -->
+                        <!-- /.row (nested) -->
+                    </div>
+
+                    <!-- /.panel-body -->
+                    <div class="panel-footer">
+
+                        <a href="@Request.ApplicationPath.TrimEnd('/') /Doctors/Index" class="btn btn-primary">Back</a>
+                    </div>
+
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+
+    </div>
+
+
+</div>

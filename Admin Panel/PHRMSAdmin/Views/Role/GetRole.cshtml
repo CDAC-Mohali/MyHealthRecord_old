@@ -1,0 +1,121 @@
+﻿@{
+    ViewBag.Title = "AddTask";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model List<PHRMSAdmin.Models.RoleTaskMappingModel>
+
+<style>
+    .form_inline_list {
+        float: left;
+        margin: 0 0 0 15px;
+        padding: 0;
+        width: 81%;
+    }
+
+        .form_inline_list .checkbox-inline {
+            margin: 0px;
+            padding: 0px;
+        }
+</style>
+<div class="normalheader transition animated fadeIn small-header" style="text-align:center">
+    <div class="hpanel hgreen">
+        <div class="panel-body">
+
+            <h3 class="font-light m-b-xs" id="tipHeader">
+                <i class="fa icon-dashboard text-danger"></i> Role Details
+            </h3>
+            <div id="hbreadcrumb" class="pull-right">
+            </div>
+            <h7 id="healthTipCtrl" style="color:#B76215;"></h7>
+        </div>
+    </div>
+</div>
+<div id="page-wrapper">
+
+    <div id="page-inner">
+       
+        <!-- /. ROW  -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="panel">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.ValidationSummary(true)
+
+                        <div class="panel-body">
+
+
+
+
+
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model[0].RoleModel.RoleName, "Role")
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="form-group">
+
+                                        @Model[0].RoleModel.RoleName
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                            <div class="" style="margin-top:3em;">
+
+                                <div class="list_out_div alert alert-success">
+                                    <h3>Assigned Modules</h3>
+
+                                    <ul>
+                                        @foreach (var item in Model)
+                                        {
+
+                                            if (Model.Where(s => s.TaskId == item.TaskId).FirstOrDefault() != null)
+                                            {
+                                                <li> @Html.DisplayFor(modelItem => item.TasksModel.TaskName)</li>
+                                            }
+
+
+                                        }
+
+                                    </ul>
+
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+                    <!-- /.panel-body -->
+                        <div class="panel-footer">
+
+                            <a href="@Request.ApplicationPath.TrimEnd('/') /Role/Index" class="btn btn-primary">Back</a>
+                        </div>
+                    }
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+
+    </div>
+
+
+</div>

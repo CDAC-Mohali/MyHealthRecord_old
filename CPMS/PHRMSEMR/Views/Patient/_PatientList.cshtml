@@ -1,0 +1,29 @@
+﻿@model IPagedList<EMRViewModels.DocPatientDetailsViewModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+<div class="hpanel">
+    @*<center>
+        <h3>Patients List</h3>
+    </center>*@
+    <br>
+    <div class="col-lg-12" id="patList">
+        @using (Ajax.BeginForm("Index", "Patient", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "ManageGrid" }, new { @class = "form-inline value_search" }))
+        {
+
+            <div class="search_div">
+                @*<span>User</span>*@
+                @*<input type="hidden" name="Page" value="@Model.PageNumber" />*@
+                <input type="text" name="Keyword" id="Keyword" class="form-control" value="" placeholder="Search" />
+                <button class="btn btn-orange" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        }
+
+        @Html.Partial("_PatientGrid", Model)
+    </div>
+
+</div>
+

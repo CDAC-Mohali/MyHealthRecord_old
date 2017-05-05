@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "_PreviousVisits";
+}
+@model List<EMRViewModels.DoctorUserMappingViewModel>
+
+<div class="row" id="ManageGrid">
+    <div class="col-lg-12">
+        <div class="hpanel">
+            <div class="table-responsive project-list" id="ManageGrid">
+                <table id="aTable" class="table table-striped">
+                    <thead style="background-color: #4f6f8f; color: white;">
+                        <tr>
+                            <th>S. No.</th>
+                            <th>Patient Name</th>
+                            <th>Mobile</th>
+                            <th>Email</th>
+                            <th>Visited On</th>
+                            <th>View Detail</th>
+                        </tr>
+                    </thead>
+                    <tbody id="AppointmentList">
+                        @{ int counter = 1;}
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@counter</td>
+                                <td>@item.UsersViewModel.FirstName</td>
+                                <td>@item.UsersViewModel.MobileNo</td>
+                                <td>@item.UsersViewModel.Email</td>
+                                <td>@item.CreatedDate.ToString("dd/MM/yyyy")</td>
+                                <td><a href="/Prescription/ViewDetail/@item.PrescriptionId" target="_blank" style="color:blue;text-decoration:underline">View Detail</a></td>
+                            </tr>
+                            counter++;
+
+
+                        }
+                    </tbody>
+                </table>
+                @*@Html.Partial("_GridPaging", Model)*@
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Id</key>
+		<string>0</string>
+		<key>Name</key>
+		<string>Do Not Specify</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<string>1</string>
+		<key>Name</key>
+		<string>Physical Disability</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<string>2</string>
+		<key>Name</key>
+		<string>Speech and Language Disorder</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<string>3</string>
+		<key>Name</key>
+		<string>Vision Loss and blindness</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<string>4</string>
+		<key>Name</key>
+		<string>Others</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<string>5</string>
+		<key>Name</key>
+		<string>Not Specified</string>
+	</dict>
+</array>
+</plist>

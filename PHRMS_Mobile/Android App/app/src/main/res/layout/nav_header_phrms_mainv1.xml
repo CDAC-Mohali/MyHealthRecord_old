@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/padding_small"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/nav_header_height_navbar"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="@dimen/drawer_header_profile"-->
+            <!--android:layout_height="@dimen/drawer_header_profile"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+            <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+            <!--android:adjustViewBounds="true">-->
+
+            <!--<ProgressBar-->
+                <!--android:id="@+id/ProgressBarUserImage"-->
+                <!--style="?android:attr/progressBarStyleSmall"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageUser"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:contentDescription="User Image"-->
+                <!--android:scaleType="centerCrop" />-->
+
+        <!--</RelativeLayout>-->
+
+
+        <!--&lt;!&ndash;<com.android.volley.toolbox.NetworkImageView-->
+            <!--android:id="@+id/imageUser"-->
+            <!--android:layout_width="@dimen/drawer_header_profile"-->
+            <!--android:layout_height="@dimen/drawer_header_profile"-->
+            <!--android:layout_marginBottom="@dimen/standard_margin"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:contentDescription="User Image"/>&ndash;&gt;-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="56dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/textUsername"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:ellipsize="end"-->
+                <!--android:text="name"-->
+                <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/textUserEmail"-->
+                <!--style="@style/Widget.AppCompat.Spinner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:ellipsize="end"-->
+                <!--android:text="email"-->
+                <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textStyle="normal" />-->
+        <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lvline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardview_default_elevation"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtPrescriptionDocName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:text="@string/PrescriptionDocNamedisp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/txtPrescriptionDocName_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".65"
+                    android:ellipsize="end"
+                    android:text="@string/dataNA"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtPrescriptionHCName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:text="@string/PrescriptionHCNamedisp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+                <TextView
+                    android:id="@+id/txtPrescriptionHCName_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".65"
+                    android:ellipsize="end"
+                    android:text="@string/dataNA"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtPrescriptionAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:text="@string/PrescriptionAddressdisp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/txtPrescriptionAddress_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".65"
+                    android:ellipsize="end"
+                    android:text="@string/dataNA"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtPrescriptionPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:text="@string/PrescriptionPhonedisp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/txtPrescriptionPhone_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".65"
+                    android:ellipsize="end"
+                    android:text="@string/dataNA"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtPrescriptionD"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:text="@string/PrescriptionDdisp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/txtPrescriptionD_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".65"
+                    android:ellipsize="end"
+                    android:text="@string/dataNA"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtPrescriptionDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:text="@string/PrescriptionDatedisp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/txtPrescriptionDate_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".65"
+                    android:ellipsize="end"
+                    android:text="@string/dataNA"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtPrescriptionAttachment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:text="@string/PrescriptionAttachmentsdisp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <!--Changes for image loader-->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/imageheight"
+                    android:layout_weight=".65">
+
+                    <!--android:drawableTint="@color/colorPrimary"-->
+                    <!--android:drawableTop="@drawable/website"-->
+
+                    <Button
+                        android:id="@+id/IB_PrescriptionReportEMR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/transparent_background"
+                        android:clickable="true"
+                        android:text="@string/PrescriptionEMRLinkdisp"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/ProgressBarPrescriptionImage"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:theme="@style/Widget.AppCompat.ProgressBar"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imgPrescriptionAttachments_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/imageheight"
+                        android:contentDescription="@string/Prescriptiontitle"
+                        android:elevation="@dimen/padding_large"
+                        android:scaleType="fitCenter" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+
+
+ERROR OCCURRED
+
+DATE & TIME: 11-09-2016 10:28:01
+
+SOURCE: PHRMS.Web
+
+METHOD: Microsoft.AspNet.Mvc.IActionResult Index()
+ERROR: Attempted to divide by zero.
+STACKTRACE:    at PHRMS.Web.Controllers.HomeController.Index() in E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\Controllers\HomeController.cs:line 40
+
+
+
+ERROR OCCURRED
+
+DATE & TIME: 11-09-2016 10:28:27
+
+SOURCE: PHRMS.Web
+
+METHOD: Microsoft.AspNet.Mvc.IActionResult Index()
+ERROR: Attempted to divide by zero.
+STACKTRACE:    at PHRMS.Web.Controllers.HomeController.Index() in E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\Controllers\HomeController.cs:line 40
+
+
+
+ERROR OCCURRED
+
+DATE & TIME: 11-09-2016 10:28:43
+
+SOURCE: PHRMS.Web
+
+METHOD: Microsoft.AspNet.Mvc.IActionResult Index()
+ERROR: Attempted to divide by zero.
+STACKTRACE:    at PHRMS.Web.Controllers.HomeController.Index() in E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\Controllers\HomeController.cs:line 40
+
+
+
+ERROR OCCURRED
+
+DATE & TIME: 11-09-2016 10:28:46
+
+SOURCE: PHRMS.Web
+
+METHOD: Microsoft.AspNet.Mvc.IActionResult Index()
+ERROR: Attempted to divide by zero.
+STACKTRACE:    at PHRMS.Web.Controllers.HomeController.Index() in E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\Controllers\HomeController.cs:line 40
+
+
+
+ERROR OCCURRED
+
+DATE & TIME: 11-09-2016 10:28:55
+
+SOURCE: PHRMS.Web
+
+METHOD: Microsoft.AspNet.Mvc.IActionResult Index()
+ERROR: Attempted to divide by zero.
+STACKTRACE:    at PHRMS.Web.Controllers.HomeController.Index() in E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\Controllers\HomeController.cs:line 40
+

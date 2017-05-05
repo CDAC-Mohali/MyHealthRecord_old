@@ -1,0 +1,321 @@
+﻿@model EMRViewModels.DoctorViewModel
+@{EMRViewModels.PlaceViewModel PlaceViewModel = new EMRViewModels.PlaceViewModel();
+}
+<div class="text-center m-b-md">
+    <h3>Registration: Step 1</h3>
+    @*<small>A Request for Approval will be Generated after you fill the Form Below. You will be Contacted Shortly.</small>*@
+</div>
+<div class="hpanel">
+    <div class="panel-body">
+
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { id = "loginForm" }))
+        {
+            @Html.AntiForgeryToken()
+            <div id="DocForm" class="row">
+                <div class="form-group col-lg-6">
+
+
+
+                    <label for="dob">Name <span style="color: red;">*</span>:</label>@Html.ValidationMessageFor(m => m.name)
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Dr.</span>
+                        @Html.TextBoxFor(m => m.name, new { @class = "form-control", @required = "", @placeholder = "Name", @onchange = "CheckHtmlTag(this)" })
+
+                    </div>
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="dob">Surname: </label>@Html.ValidationMessageFor(m => m.LastName)
+                    @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @required = "", @placeholder = "Surname", @onchange = "CheckHtmlTag(this)" })
+
+                </div>
+                <!--<div class="form-group col-lg-6">
+                    <label>License/Registration Number <span style="color: red;">*</span>:</label>
+                    <input type="text" class="form-control" name="license" required>
+                </div> -->
+                <div class="form-group col-lg-6">
+                    <label for="dob">Date of Birth <span style="color: red;">*</span>:</label>
+                    <div class="input-group date">
+                        @*<input type="text" class="form-control" id="dob" name="date_of_birth" required = "">*@
+                        @Html.TextBoxFor(m => m.date_of_birth, new { @class = "form-control", @required = "", @id = "dob", @onchange = "CheckHtmlTag(this)" })
+
+
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="sex">Gender <span style="color: red;">*</span>:</label>
+                    <div style="padding-bottom:3%;padding-top:2%">
+                        <div class="radio radio-info radio-inline"><input type="radio" value="M" name="Gender" id="male" required><label for="male"> Male </label></div>
+                        <div class="radio radio-info radio-inline"><input type="radio" value="F" name="Gender" id="female" required><label for="female"> Female </label></div>
+                        <div class="radio radio-info radio-inline"><input type="radio" value="U" name="Gender" checked id="unspecified" required><label for="unspecified"> Not Specified </label></div>
+                    </div>
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="phone_number">Phone Number <span style="color: red;">*</span>:</label>@Html.ValidationMessageFor(m => m.phone_number)
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">+91</span>
+                        @Html.TextBoxFor(m => m.phone_number, new { @class = "form-control", @required = "", @placeholder = "Phone Number", @onchange = "CheckHtmlTag(this)" })
+
+                        @*<input type="tel" maxlength="10" class="form-control" id="phone_number" name="phone_number" required>*@
+                    </div>
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="email">Email <span style="color: red;">*</span>:</label>
+                    @Html.TextBoxFor(m => m.email, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.email)
+
+                    @*<input type="email" class="form-control" id="email" name="email" required>*@
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="password">Password <span style="color: red;">*</span>:</label>@Html.ValidationMessageFor(m => m.password)
+                    @Html.PasswordFor(m => m.password, new { @class = "form-control", @required = "", @autocomplete = "off" })
+
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="cpassword">Confirm Password <span style="color: red;">*</span>:</label>
+                    @Html.PasswordFor(m => m.Conf_password, new { @class = "form-control", @autocomplete = "off" })
+                    @Html.ValidationMessageFor(m => m.Conf_password)
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-lg-6">
+                    <label for="AadhaarNo">Aadhaar No: </label>@Html.ValidationMessageFor(m => m.AadhaarNo)
+                    @Html.TextBoxFor(m => m.AadhaarNo, new { @class = "form-control", @placeholder = "Aadhaar No", @maxlength = "12", @onchange = "CheckHtmlTag(this)" })
+               </div>
+
+
+
+            </div>
+            <div class="row">
+                <div id="Quals">
+                    <div class="form-group col-lg-6">
+                        <label for="certifications">Speciality<span style="color: red;">*</span>:</label>
+                        @Html.DropDownListFor(m => m.Speciality, (IEnumerable<SelectListItem>)ViewBag.SpecialityList, new { @class = "form-control", @required = "" })
+                    </div>
+                </div>
+
+                <div class="form-group col-lg-6" id="DivOtherspec">
+                    <label for="certifications">Other Speciality :</label>
+                    @Html.TextBoxFor(m => m.OtherSpeciality, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.OtherSpeciality)
+                </div>
+            </div>
+
+            <div id="Quals" class="row">
+                <div class="form-group col-lg-12">
+                    <label for="certifications">Qualifications-Seperated By [Tabs] <span style="color: red;">*</span>:</label>
+                    <input id="tags" type="text" class="form-control" name="qualification_set" required>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group col-lg-6">
+
+                    <label for="license">MCI Registration Number <span style="color: red;">*</span>:</label>@Html.ValidationMessageFor(m => PlaceViewModel.license_number)
+                    @Html.TextBoxFor(m => PlaceViewModel.license_number, new { @class = "form-control", @id = "license", @placeholder = "Enter MCI Registration Number", @required = "", @onchange = "CheckHtmlTag(this)" })
+
+
+                    @*<input type="text" placeholder="Enter MCI Registration Number" class="form-control" id="license" name="license_number" required="" aria-required="true" onchange="CheckHtmlTag(this)">*@
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="proof">Supporting Document <span style="color: red;">*</span>:</label>
+                    <div class="input-group">
+                        <input type="file"  name="file" class="form-control" id="proof" required="" placeholder="Upload File (.jpg/.pdf) confirming the License Number" aria-required="true" onchange="fileupdate()">
+                        <input type="text" id = "txtField"name="licence_copy" style="display:none;">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" onclick="UploadFile();">Upload!</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group col-lg-4">
+                    <label for="pp">Private Organization:</label>
+                    <input type="radio" id="pp1" name="private_practice" value="1">
+                </div>
+                <div class="form-group col-lg-4">
+                    <label>Public Organization:</label>
+                    <input type="radio" id="pp2" name="private_practice" value="2">
+                </div>
+                <div class="form-group col-lg-4">
+                    <label>Others</label>
+                    <input type="radio" id="pp3" name="private_practice" value="3" checked="">
+                </div>
+                <div class="form-group col-lg-12">
+                 
+                    <label for="certifications">Hospital<span style="color: red;">*</span>:</label>@Html.ValidationMessageFor(m => m.HospitalName)
+                    @Html.TextBoxFor(m => m.HospitalName, new { @class = "form-control", @placeholder = "Hospital Name", @required = "" })
+
+                    @*@Html.DropDownListFor(m => m.MedicalCollegeId, (IEnumerable<SelectListItem>)ViewBag.HospitalList, new { @class = "form-control" })*@
+                </div>
+                @*<div class="form-group col-lg-12">
+                        <label for="name">Hospital/Clinic Name <span style="color: red;">*</span>:</label>
+                        <input type="text" class="form-control" id="name" name="name" required="" aria-required="true" onchange="CheckHtmlTag(this)">
+                    </div>*@
+                <div class="form-group col-lg-6">
+                    <label for="address1">Address Line 1 <span style="color: red;">*</span>:</label>@Html.ValidationMessageFor(m => PlaceViewModel.AddressLine1)
+                    @Html.TextBoxFor(m => PlaceViewModel.AddressLine1, new { @class = "form-control", @id = "address1", @required = "", @onchange = "CheckHtmlTag(this)" })
+
+
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="address2">Address line 2 :</label>
+                    <input type="text" class="form-control" id="address2" name="AddressLine2" onchange="CheckHtmlTag(this)">
+                </div>
+                <div class="form-group col-lg-6">
+
+                    <label for="city">City/Town/District <span style="color: red;">*</span>: </label>@Html.ValidationMessageFor(m => PlaceViewModel.city)
+
+                    @Html.TextBoxFor(m => PlaceViewModel.city, new { @class = "form-control", @id = "city", @required = "", @onchange = "CheckHtmlTag(this)" })
+
+
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="state">State <span style="color: red;">*</span>:</label>
+                    <select name="state" id="state" class="form-control">
+                        <option value="30">Andaman and Nicobar Islands</option>
+                        <option value="1">Andhra Pradesh</option>
+                        <option value="2">Arunachal Pradesh</option>
+                        <option value="3">Assam</option>
+                        <option value="4">Bihar</option>
+                        <option value="31">Chandigarh</option>
+                        <option value="5">Chhattisgarh</option>
+                        <option value="32">Dadra and Nagar Haveli</option>
+                        <option value="33">Daman and Diu</option>
+                        <option value="6">Goa</option>
+                        <option value="7">Gujarat</option>
+                        <option value="8">Haryana</option>
+                        <option value="9">Himachal Pradesh</option>
+                        <option value="10">Jammu and Kashmir</option>
+                        <option value="11">Jharkhand</option>
+                        <option value="12">Karnataka</option>
+                        <option value="13">Kerala</option>
+                        <option value="34">Lakshadweep</option>
+                        <option value="14">Madhya Pradesh</option>
+                        <option value="15">Maharashtra</option>
+                        <option value="16">Manipur</option>
+                        <option value="17">Meghalaya</option>
+                        <option value="18">Mizoram</option>
+                        <option value="19">Nagaland</option>
+                        <option value="35">National Capital Territory of Delhi</option>
+                        <option value="20">Odisha(Orissa)</option>
+                        <option value="36">Puducherry</option>
+                        <option value="21">Punjab</option>
+                        <option value="22">Rajasthan</option>
+                        <option value="23">Sikkim</option>
+                        <option value="24">Tamil Nadu</option>
+                        <option value="29">Telangana</option>
+                        <option value="25">Tripura</option>
+                        <option value="26">Uttar Pradesh</option>
+                        <option value="27">Uttarakhand</option>
+                        <option value="28">West Bengal</option>
+
+
+
+                    </select>
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="pin">Pin Code <span style="color: red;">*</span>:</label>@Html.ValidationMessageFor(m => PlaceViewModel.pincode)
+                    @Html.TextBoxFor(m => PlaceViewModel.pincode, new { @class = "form-control", @id = "pin", @required = "", @onchange = "CheckHtmlTag(this)" })
+
+
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success" type="submit">Next</button>
+                <button class="btn btn-default" type="reset">Reset</button>
+            </div>
+            <input type="hidden" value="" name="data" />
+        }
+    </div>
+</div>
+<script>
+    var uploadOk = 0;
+    function UploadFile() {
+        var file = document.getElementById("proof");
+        if (uploadOk == 1) {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    status = xhr.status;
+                    data = JSON.parse(xhr.responseText);
+                    //alert(data.path);
+                    if (data.status == 200) {
+                        //alert(data.path);
+                        toastr.success("File uploaded successfully.", "Complete!");
+                        $("input[name='licence_copy']").val(data.path);
+                        //alert(xhr.responseText);
+                    }
+                    else {
+                        document.getElementById('proof').value = "";
+                        toastr.error("File cannot be uploaded.", "Error!");
+                        
+                    }
+                }
+            }
+            xhr.open("POST", '/Account/UploadFile', true);
+            xhr.setRequestHeader("X_FILENAME", file.files[0].name);
+            xhr.send(file.files[0]);
+        }
+    }
+
+    function fileupdate() {
+        var x = document.getElementById("proof");
+        var txt = "";
+        if ('files' in x) {
+            if (x.files.length == 0) {
+                txt = "Select one file.";
+            } else {
+                for (var i = 0; i < x.files.length; i++) {
+                    var file = x.files[i];
+                    //alert(file.type);
+                    if (file.type == "image/jpeg" || file.type == "image/jpg" || file.type == "image/gif" || file.type == "image/png" || file.type == "application/pdf") {
+                        uploadOk = 1;
+                    }
+                    else {
+                        uploadOk = 0;
+                        txt = "Only jpeg, jpg, gif, png and pdf formats are allowed!";
+                    }
+                }
+            }
+        }
+        else {
+            if (x.value == "") {
+                txt += "Select one or more files.";
+            } else {
+                txt += "The files property is not supported by your browser!";
+                txt += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead.
+            }
+        }
+
+        if (uploadOk == 0) {
+            toastr.error(txt, "Note!")
+
+            $('#proof').val('');
+        }
+    }
+
+    function CheckHtmlTag(Object) {
+
+        var reg = /<(.|\n)*?>/g;
+
+        if (reg.test($(Object).val()) == true) {
+
+            // var ErrorText = 'do not allow HTMLTAGS';
+            alert('Do Not Allow HTMLTAGS');
+
+            //swal({
+            //    title: "Oops!",
+            //    text: "do not allow HTMLTAGS!",
+            //    type: "error"
+            //});
+
+        }
+    }
+</script>
+
+
+
+

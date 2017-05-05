@@ -1,0 +1,116 @@
+﻿@model PHRMS.ViewModels.RegistrationViewModel
+@using Microsoft.AspNet.Http
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { id = "loginForm" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group col-lg-12">
+        <div class="col-lg-6">
+            @Html.LabelFor(m => m.FirstName)<span class="text-danger"> *</span>
+            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", @placeholder = "First Name" })
+            @Html.ValidationMessageFor(m => m.FirstName)
+        </div>
+
+        <div class="col-lg-6">
+            @Html.LabelFor(m => m.LastName)<span class="text-danger"> *</span>
+            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @placeholder = "Last Name" })
+            @Html.ValidationMessageFor(m => m.LastName)
+        </div>
+    </div>
+    <div class="form-group col-lg-12">
+        <div class="col-lg-3">
+            @Html.LabelFor(m => m.Gender)<span class="text-danger"> *</span>
+            
+        </div>
+
+        <div class="col-lg-9">
+
+            <div class="col-lg-3">
+                @Html.RadioButtonFor(model => model.Gender, "M")Male
+            </div>
+            <div class="col-lg-3">
+                @Html.RadioButtonFor(model => model.Gender, "F")Female
+            </div>
+            <div class="col-lg-3">
+                @Html.RadioButtonFor(model => model.Gender, "U")Others
+            </div>
+            <br />
+            @Html.ValidationMessageFor(m => m.Gender)
+        </div>
+    </div>
+        <div class="form-group col-lg-12">
+            <div class="col-lg-6">
+                @Html.LabelFor(m => m.MobileNo)
+                <span class="text-danger"> *</span>
+                <div class="input-group">
+                    <span class="input-group-addon">+91</span>
+                    @Html.TextBoxFor(m => m.MobileNo, new { @class = "form-control", @placeholder = "Mobile No.", @maxlength = 10 })
+                </div>
+                @Html.ValidationMessageFor(m => m.MobileNo)
+            </div>
+            <div class="col-lg-6">
+                @Html.LabelFor(m => m.Email)
+                <span class="text-danger"> *</span>
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
+                @Html.ValidationMessageFor(m => m.Email)
+            </div>
+        </div>
+        <div class="form-group col-lg-12">
+            <div class="col-lg-6">
+                @Html.LabelFor(m => m.Password)
+                <span class="text-danger"> *</span>
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password", @autocomplete = "off" })
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+            <div class="col-lg-6">
+                @Html.LabelFor(m => m.ConfirmPassword)<span class="text-danger"> *</span>
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @placeholder = "Confirm Password", @autocomplete = "off" })
+                @Html.ValidationMessageFor(m => m.ConfirmPassword)
+            </div>
+        </div>
+        <div class="form-group col-lg-12">
+            <div class="col-lg-6">
+                @Html.LabelFor(m => m.AadhaarNo)
+                @Html.TextBoxFor(m => m.AadhaarNo, new { @class = "form-control", @placeholder = "Aadhaar Number", maxlength = 12 })
+                @Html.ValidationMessageFor(m => m.AadhaarNo)
+            </div>
+            @*<div class="col-lg-6">
+                    @Html.LabelFor(m => m.DOB)
+                    @Html.TextBoxFor(m => m.DOB, new { @class = "form-control", @placeholder = "Date of Birth", @readonly = "readonly", style = " background-color: white;"})
+                    @Html.ValidationMessageFor(m => m.DOB)
+                </div>*@
+            <div class="col-lg-6">
+                @Html.LabelFor(m => m.State)<span class="text-danger"> *</span>
+                @Html.DropDownListFor(x => x.State, (IEnumerable<SelectListItem>)ViewBag.StatesList, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.State)
+            </div>
+            @*<div class="col-lg-6">
+                    @Html.LabelFor(m => m.CUG)
+                    @Html.TextBoxFor(m => m.CUG, new { @class = "form-control", @placeholder = "CUG(Optional)", maxlength = 5 })
+                </div>*@
+        </div>
+        <div class="form-group col-lg-12">
+            <div class="col-lg-6">
+                <div class="g-recaptcha" data-sitekey=""></div>
+            </div>
+            <div class="col-lg-6">
+                @Html.ValidationMessage("CustomValidation")
+            </div>
+        </div>
+        <div class="text-center col-lg-12">
+            <input type="submit" class="btn btn-success" value="Register" />
+            <a href="@Url.Action("Index", "Home")" class="btn btn-default">Cancel</a>
+        </div>
+        }
+        <script src="" async defer></script>
+
+        <script src="@Url.Content("~/phr_css/jquery-ui-1.11.4/jquery-ui.min.js")"></script>
+        @*<script type="text/javascript">
+                $(document).ready(function () {
+                    $("#DOB").datepicker({
+                        changeMonth: true,
+                        changeYear: true,
+                        maxDate: new Date
+                    });
+
+                });
+            </script>*@

@@ -1,0 +1,404 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".PHRMS_UserRegisteration">
+
+
+    <!-- Toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--guides.codepath.com/android/using-the-app-toolbar-->
+        <!--custom toolbar android-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_UserResgistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/viewProfileMasterHeadinguserprofile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/viewProfileHeaderuserprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivprofileuserprofile"
+                        android:layout_width="@dimen/imageview_padding"
+                        android:layout_height="@dimen/imageview_padding"
+                        android:backgroundTint="@color/cardviewcolor"
+                        android:src="@drawable/userprofile"
+                        android:tint="@color/white" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:text="@string/UserRegisterationtitle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewSwipeuserprofile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardviewcolor"
+            android:focusableInTouchMode="true">
+
+            <ProgressBar
+                android:id="@+id/ProgressBarProfileInfouserprofile"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:theme="@style/Widget.AppCompat.ProgressBar"
+                android:visibility="gone" />
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/profile_swipe_refreshuserprofile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                tools:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:id="@+id/lv_profileuserprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_medium">
+
+                    <LinearLayout
+                        android:id="@+id/lv_profileuserprofileRegForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:orientation="vertical">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_edfn_valueuserprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/edfn_valueuserprofile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/firstname"
+                                android:inputType="text"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="normal" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_edln_valueuserprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/edln_valueuserprofile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/lastname"
+                                android:inputType="text"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="normal" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/txtgender_valueuserprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sex"
+                            android:textSize="@dimen/spinner_labeltext" />
+
+                        <!--<Spinner-->
+                        <!--android:id="@+id/spgender_valueuserprofile"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:spinnerMode="dialog"-->
+                        <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+                        <!--android:textStyle="normal" />-->
+
+                        <RadioGroup
+                            android:id="@+id/rdgrpgender_valueuserprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="normal"
+                            android:weightSum="1">
+
+                            <RadioButton
+                                android:id="@+id/rdgrpgenderMale"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".33"
+                                android:checked="false"
+                                android:text="Male"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textStyle="normal" />
+
+                            <RadioButton
+                                android:id="@+id/rdgrpgenderFemale"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".33"
+                                android:checked="false"
+                                android:text="Female"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textStyle="normal" />
+
+                            <RadioButton
+                                android:id="@+id/rdgrpgenderOthers"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".34"
+                                android:checked="false"
+                                android:text="Others"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textStyle="normal" />
+
+                        </RadioGroup>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_mob_valueuserprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/edmob_valueuserprofile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/mobileno"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="normal" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_email_valueuserprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/edemail_valueuserprofile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/email"
+                                android:inputType="textEmailAddress"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="normal" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_pwd_valueuserprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/edpwd_valueuserprofile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="normal" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_cnfpwd_valueuserprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/edcnfpwd_valueuserprofile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Confirm Password"
+                                android:inputType="textPassword"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="normal" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_aadhaar_valueuserprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/edaadhaar_valueuserprofile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/aadhar"
+                                android:inputType="number"
+                                android:maxLength="12"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="normal" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/txtstateuserprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/state"
+                            android:textSize="@dimen/spinner_labeltext" />
+
+                        <Spinner
+                            android:id="@+id/spstateuserprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dialog"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lv_profileuserprofileOTPForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_vertical_margin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_valueuserprofileOTP"
+                            style="?android:textAppearanceLarge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="RegMessage"
+                            android:textStyle="normal" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_ed_valueuserprofileOTP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/ed_valueuserprofileOTP"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="OTP"
+                                android:inputType="number"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="normal" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/OTPResend_button"
+                                style="?android:textAppearanceLarge"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/buttonlogin"
+                                android:text="Resend OTP"
+                                android:textColor="@color/white"
+                                android:textStyle="normal"
+                                android:layout_weight=".50"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"/>
+
+                            <Button
+                                android:id="@+id/registerOTP_button"
+                                style="?android:textAppearanceLarge"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/buttonlogin"
+                                android:text="Register"
+                                android:textColor="@color/white"
+                                android:textStyle="normal"
+                                android:layout_weight=".48"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_aadhaar_Profileuserprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        android:src="@drawable/scan_aadhaar"
+        app:backgroundTint="@color/white"
+        app:fabSize="normal"
+        app:layout_anchor="@id/viewProfileHeaderuserprofile"
+        app:layout_anchorGravity="bottom|right|end"
+        app:rippleColor="@color/grey" />
+
+</android.support.design.widget.CoordinatorLayout>
+
+

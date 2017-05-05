@@ -1,0 +1,1798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0336081E70279000085F3F /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0336061E70279000085F3F /* Contacts.framework */; };
+		1A0336091E70279000085F3F /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0336071E70279000085F3F /* ContactsUI.framework */; };
+		1A03C0E41BF997E500848C16 /* SlideOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A03C0E31BF997E500848C16 /* SlideOutViewController.m */; };
+		1A03C0EB1BF9E13D00848C16 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A03C0EA1BF9E13D00848C16 /* AboutUsViewController.m */; };
+		1A0BE7311D7D2DAA00DF5393 /* AllergyTableViewCelliPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BE7301D7D2DAA00DF5393 /* AllergyTableViewCelliPhone.xib */; };
+		1A0BE7361D7D72F200DF5393 /* HealthConditionTableViewCelliPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BE7351D7D72F200DF5393 /* HealthConditionTableViewCelliPhone.xib */; };
+		1A0BE7381D7D8DFE00DF5393 /* ImmunizationTableViewCelliPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BE7371D7D8DFE00DF5393 /* ImmunizationTableViewCelliPhone.xib */; };
+		1A142F2A1C2920C3008C7982 /* BloodPresureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A142F281C2920C3008C7982 /* BloodPresureViewController.m */; };
+		1A142F2F1C2927DF008C7982 /* DiabetesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A142F2D1C2927DF008C7982 /* DiabetesViewController.m */; };
+		1A142F341C292815008C7982 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A142F321C292815008C7982 /* ActivityViewController.m */; };
+		1A142F381C292E0F008C7982 /* BloodPresureDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A142F371C292E0F008C7982 /* BloodPresureDetailViewController.m */; };
+		1A142F3F1C292EC4008C7982 /* AddBloodPresureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A142F3D1C292EC4008C7982 /* AddBloodPresureViewController.m */; };
+		1A142F401C292EC4008C7982 /* AddBloodPresureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A142F3E1C292EC4008C7982 /* AddBloodPresureViewController.xib */; };
+		1A142F441C293FF5008C7982 /* BloodPresureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A142F421C293FF5008C7982 /* BloodPresureTableViewCell.m */; };
+		1A142F451C293FF5008C7982 /* BloodPresureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A142F431C293FF5008C7982 /* BloodPresureTableViewCell.xib */; };
+		1A1BA5D71D2E6B2500C7CF49 /* ActivityName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A1BA5D61D2E6B2500C7CF49 /* ActivityName.plist */; };
+		1A27174A1C7F1D9E009D6CB6 /* EmergencyInforViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2717491C7F1D9E009D6CB6 /* EmergencyInforViewController.m */; };
+		1A27174D1C7F1DC1009D6CB6 /* EmployeeInforViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A27174C1C7F1DC1009D6CB6 /* EmployeeInforViewController.m */; };
+		1A2717501C7F1DD7009D6CB6 /* InsuranceInforViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A27174F1C7F1DD7009D6CB6 /* InsuranceInforViewController.m */; };
+		1A2717531C7F1DF5009D6CB6 /* PreferenceInforViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2717521C7F1DF5009D6CB6 /* PreferenceInforViewController.m */; };
+		1A27D1201C6DD9C7004AEB02 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A27D11E1C6DD9C7004AEB02 /* ActivityTableViewCell.m */; };
+		1A27D1211C6DD9C7004AEB02 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A27D11F1C6DD9C7004AEB02 /* ActivityTableViewCell.xib */; };
+		1A3FD53C1CB621760098D343 /* MedicationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3FD53A1CB621760098D343 /* MedicationTableViewController.m */; };
+		1A3FD53D1CB621760098D343 /* MedicationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3FD53B1CB621760098D343 /* MedicationTableViewController.xib */; };
+		1A3FD5411CB624BF0098D343 /* MedicationNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3FD53F1CB624BF0098D343 /* MedicationNameTableViewCell.m */; };
+		1A3FD5421CB624BF0098D343 /* MedicationNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3FD5401CB624BF0098D343 /* MedicationNameTableViewCell.xib */; };
+		1A4177BF1CEC7A6800397484 /* relationship.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A4177BE1CEC7A6800397484 /* relationship.plist */; };
+		1A4367FD1D129EE500221E5C /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4367FC1D129EE500221E5C /* LocalAuthentication.framework */; };
+		1A4EA5C71E15186B00586AFE /* SharingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EA5C61E15186B00586AFE /* SharingViewController.m */; };
+		1A5121F01C198AFB005B362E /* DashboardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5121EE1C198AFB005B362E /* DashboardTableViewCell.m */; };
+		1A5121F11C198AFB005B362E /* DashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5121EF1C198AFB005B362E /* DashboardTableViewCell.xib */; };
+		1A52963E1CBCF8A000BCB5E8 /* ProcedureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A52963C1CBCF8A000BCB5E8 /* ProcedureTableViewController.m */; };
+		1A52963F1CBCF8A000BCB5E8 /* ProcedureTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A52963D1CBCF8A000BCB5E8 /* ProcedureTableViewController.xib */; };
+		1A5296431CBCF8F200BCB5E8 /* ProcedureNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5296411CBCF8F200BCB5E8 /* ProcedureNameTableViewCell.m */; };
+		1A5296441CBCF8F200BCB5E8 /* ProcedureNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5296421CBCF8F200BCB5E8 /* ProcedureNameTableViewCell.xib */; };
+		1A53E1931DB881710066DDAB /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53E1921DB881710066DDAB /* HealthKit.framework */; };
+		1A54696C1D6B20B600DD0650 /* DayAxisValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A54696B1D6B20B600DD0650 /* DayAxisValueFormatter.m */; };
+		1A6504CB1D7E7BEE009215A0 /* ProceduresTableViewCelliPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6504CA1D7E7BEE009215A0 /* ProceduresTableViewCelliPhone.xib */; };
+		1A6504D01D7E9A09009215A0 /* LabsTestsTableViewCelliPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6504CF1D7E9A09009215A0 /* LabsTestsTableViewCelliPhone.xib */; };
+		1A6504D21D7EBE67009215A0 /* PrescriptionTableViewCelliPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6504D11D7EBE67009215A0 /* PrescriptionTableViewCelliPhone.xib */; };
+		1A6504D41D7ECD31009215A0 /* MedicationTableViewCelliPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6504D31D7ECD31009215A0 /* MedicationTableViewCelliPhone.xib */; };
+		1A6504D61D7EE3B9009215A0 /* DiabetesTableViewCelliPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6504D51D7EE3B9009215A0 /* DiabetesTableViewCelliPhone.xib */; };
+		1A6504D81D7EE3F8009215A0 /* BloodPressureTableViewCelliPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6504D71D7EE3F8009215A0 /* BloodPressureTableViewCelliPhone.xib */; };
+		1A6504DA1D7EE42C009215A0 /* ActivityTableViewCelliPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6504D91D7EE42C009215A0 /* ActivityTableViewCelliPhone.xib */; };
+		1A6504DC1D7EE448009215A0 /* WeightTableViewCelliPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6504DB1D7EE448009215A0 /* WeightTableViewCelliPhone.xib */; };
+		1A69CAC11C8D817F00D8C47B /* AllergyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A69CABF1C8D817F00D8C47B /* AllergyTableViewController.m */; };
+		1A69CAC21C8D817F00D8C47B /* AllergyTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A69CAC01C8D817F00D8C47B /* AllergyTableViewController.xib */; };
+		1A7918651D8FFCFE004B21AE /* GSHealthKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7918641D8FFCFE004B21AE /* GSHealthKitManager.m */; };
+		1A7A5CE31D21497600842156 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7A5CE21D21497600842156 /* Security.framework */; };
+		1A7BCF0B1C884D17003BD1B8 /* AllergyNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7BCF091C884D17003BD1B8 /* AllergyNameTableViewCell.m */; };
+		1A7BCF0C1C884D17003BD1B8 /* AllergyNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A7BCF0A1C884D17003BD1B8 /* AllergyNameTableViewCell.xib */; };
+		1A865D571C2A6240003ED70A /* DiabetesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A865D551C2A6240003ED70A /* DiabetesTableViewCell.m */; };
+		1A865D581C2A6240003ED70A /* DiabetesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A865D561C2A6240003ED70A /* DiabetesTableViewCell.xib */; };
+		1A865D5B1C2A693D003ED70A /* DiabetesDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A865D5A1C2A693D003ED70A /* DiabetesDetailsViewController.m */; };
+		1A865D5F1C2A7383003ED70A /* AddDiabetesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A865D5D1C2A7383003ED70A /* AddDiabetesViewController.m */; };
+		1A865D601C2A7383003ED70A /* AddDiabetesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A865D5E1C2A7383003ED70A /* AddDiabetesViewController.xib */; };
+		1A865D631C2A779D003ED70A /* ActivityDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A865D621C2A779D003ED70A /* ActivityDetailsViewController.m */; };
+		1A865D671C2A7833003ED70A /* AddActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A865D651C2A7833003ED70A /* AddActivityViewController.m */; };
+		1A865D681C2A7833003ED70A /* AddActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A865D661C2A7833003ED70A /* AddActivityViewController.xib */; };
+		1A8ACFB21CA911440090A644 /* HealthConditionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8ACFB01CA911440090A644 /* HealthConditionTableViewController.m */; };
+		1A8ACFB31CA911440090A644 /* HealthConditionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8ACFB11CA911440090A644 /* HealthConditionTableViewController.xib */; };
+		1A8ACFB71CA913550090A644 /* HealthConditionNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8ACFB51CA913550090A644 /* HealthConditionNameTableViewCell.m */; };
+		1A8ACFB81CA913550090A644 /* HealthConditionNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8ACFB61CA913550090A644 /* HealthConditionNameTableViewCell.xib */; };
+		1A9B380B1EBB1E6A00830A68 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9B380A1EBB1E6A00830A68 /* Charts.framework */; };
+		1AA1E54F1E92682500EFA48B /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1E54E1E92682500EFA48B /* SignUpViewController.m */; };
+		1AA327E51E5C14110041197B /* AddPrescriptionViewControlleriPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA327E41E5C14110041197B /* AddPrescriptionViewControlleriPhone.xib */; };
+		1AA9411A1DA642C1004687AF /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA941181DA642C1004687AF /* Main-iPad.storyboard */; };
+		1AA961791E711AD5003FFB8A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA961781E711AD5003FFB8A /* NotificationCenter.framework */; };
+		1AB004361CABA56B002CDCAA /* ImmunzationNameTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB004341CABA56B002CDCAA /* ImmunzationNameTableViewController.m */; };
+		1AB004371CABA56B002CDCAA /* ImmunzationNameTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB004351CABA56B002CDCAA /* ImmunzationNameTableViewController.xib */; };
+		1AB0043B1CABA591002CDCAA /* ImmunzationNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB004391CABA591002CDCAA /* ImmunzationNameTableViewCell.m */; };
+		1AB0043C1CABA591002CDCAA /* ImmunzationNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB0043A1CABA591002CDCAA /* ImmunzationNameTableViewCell.xib */; };
+		1AB383681E56DAE900B44B8D /* AddMedicalContactViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB383671E56DAE900B44B8D /* AddMedicalContactViewControlleriPad.xib */; };
+		1AB3836A1E56F80F00B44B8D /* AddAllergyViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB383691E56F80F00B44B8D /* AddAllergyViewControlleriPad.xib */; };
+		1AB467E31CBE4A6F0058F04B /* LabTestSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB467E11CBE4A6F0058F04B /* LabTestSearchTableViewCell.m */; };
+		1AB467E41CBE4A6F0058F04B /* LabTestSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB467E21CBE4A6F0058F04B /* LabTestSearchTableViewCell.xib */; };
+		1AB467E81CBE4A970058F04B /* LabTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB467E61CBE4A970058F04B /* LabTestTableViewController.m */; };
+		1AB467E91CBE4A970058F04B /* LabTestTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB467E71CBE4A970058F04B /* LabTestTableViewController.xib */; };
+		1AB4CEEC1E1263CC00910FFD /* AddMedicalContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4CEEA1E1263CC00910FFD /* AddMedicalContactViewController.m */; };
+		1AB4CEED1E1263CC00910FFD /* AddMedicalContactViewControlleriPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4CEEB1E1263CC00910FFD /* AddMedicalContactViewControlleriPhone.xib */; };
+		1AB5E7281DB48571000F8E3B /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB5E7271DB48571000F8E3B /* DashboardViewController.m */; };
+		1AB96F7B1E3F5B3000C22686 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB96F7A1E3F5B3000C22686 /* UserNotifications.framework */; };
+		1ABA72561CE1ECA900FD663D /* BloodGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ABA72541CE1ECA900FD663D /* BloodGroups.plist */; };
+		1ABA72571CE1ECA900FD663D /* DisabilityTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ABA72551CE1ECA900FD663D /* DisabilityTypes.plist */; };
+		1AC6A1771DDAEB2C0002607F /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6A1751DDAEB2C0002607F /* iTunesArtwork */; };
+		1AC6A1781DDAEB2C0002607F /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6A1761DDAEB2C0002607F /* iTunesArtwork@2x */; };
+		1ACC35961E965F8A00679E8B /* OTPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC35951E965F8A00679E8B /* OTPViewController.m */; };
+		1AD6D9231E5AC1BB00912F40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD6D9221E5AC1BB00912F40 /* Images.xcassets */; };
+		1AD877791E10E47200FDFA1E /* MedicalContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD877781E10E47200FDFA1E /* MedicalContactsViewController.m */; };
+		1AD8777B1E10EF6F00FDFA1E /* MedicalContactTableViewCelliPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AD8777A1E10EF6F00FDFA1E /* MedicalContactTableViewCelliPhone.xib */; };
+		1AD8777D1E10EF8700FDFA1E /* MedicalContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AD8777C1E10EF8700FDFA1E /* MedicalContactTableViewCell.xib */; };
+		1AD877801E10F4E400FDFA1E /* MedicalContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8777F1E10F4E400FDFA1E /* MedicalContactTableViewCell.m */; };
+		1AD877831E112F2600FDFA1E /* MedicalContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD877821E112F2600FDFA1E /* MedicalContactDetailViewController.m */; };
+		1AD944FB1CE35C5700DC5A0F /* XLMediaZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD944F81CE35C5700DC5A0F /* XLMediaZoom.m */; };
+		1AD944FC1CE35C5700DC5A0F /* XLVideoZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD944FA1CE35C5700DC5A0F /* XLVideoZoom.m */; };
+		1ADEB5681BCB7B2F00EB8361 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5671BCB7B2F00EB8361 /* main.m */; };
+		1ADEB5711BCB7B2F00EB8361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADEB56F1BCB7B2F00EB8361 /* Main.storyboard */; };
+		1ADEB5761BCB7B2F00EB8361 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ADEB5741BCB7B2F00EB8361 /* LaunchScreen.xib */; };
+		1ADEB5821BCB7B2F00EB8361 /* PHRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5811BCB7B2F00EB8361 /* PHRTests.m */; };
+		1ADEB58E1BCB7B8E00EB8361 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB58D1BCB7B8E00EB8361 /* AppDelegate.m */; };
+		1ADEB5971BCB7E3D00EB8361 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5961BCB7E3D00EB8361 /* SplashViewController.m */; };
+		1ADEB59A1BCB7E7400EB8361 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5991BCB7E7400EB8361 /* LoginController.m */; };
+		1ADEB5AB1BCB81A500EB8361 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5A91BCB81A500EB8361 /* NSData+Base64.m */; };
+		1ADEB5AC1BCB81A500EB8361 /* NSData+Base64.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1ADEB5AA1BCB81A500EB8361 /* NSData+Base64.podspec */; };
+		1ADEB5AF1BCB81EC00EB8361 /* BarButton_Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5AE1BCB81EC00EB8361 /* BarButton_Block.m */; };
+		1ADEB5F21BCB834300EB8361 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5EF1BCB834300EB8361 /* TPKeyboardAvoidingScrollView.m */; };
+		1ADEB5F31BCB834300EB8361 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5F11BCB834300EB8361 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		1ADEB6181BCB836600EB8361 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5F51BCB836600EB8361 /* AFHTTPRequestOperation.m */; };
+		1ADEB6191BCB836600EB8361 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5F71BCB836600EB8361 /* AFHTTPRequestOperationManager.m */; };
+		1ADEB61A1BCB836600EB8361 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5F91BCB836600EB8361 /* AFHTTPSessionManager.m */; };
+		1ADEB61B1BCB836600EB8361 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5FB1BCB836600EB8361 /* AFNetworkActivityIndicatorManager.m */; };
+		1ADEB61C1BCB836600EB8361 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB5FE1BCB836600EB8361 /* AFNetworkReachabilityManager.m */; };
+		1ADEB61D1BCB836600EB8361 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB6001BCB836600EB8361 /* AFSecurityPolicy.m */; };
+		1ADEB61E1BCB836600EB8361 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB6021BCB836600EB8361 /* AFURLConnectionOperation.m */; };
+		1ADEB61F1BCB836600EB8361 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB6041BCB836600EB8361 /* AFURLRequestSerialization.m */; };
+		1ADEB6201BCB836600EB8361 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB6061BCB836600EB8361 /* AFURLResponseSerialization.m */; };
+		1ADEB6211BCB836600EB8361 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB6081BCB836600EB8361 /* AFURLSessionManager.m */; };
+		1ADEB6221BCB836600EB8361 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB60A1BCB836600EB8361 /* UIActivityIndicatorView+AFNetworking.m */; };
+		1ADEB6231BCB836600EB8361 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB60C1BCB836600EB8361 /* UIAlertView+AFNetworking.m */; };
+		1ADEB6241BCB836600EB8361 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB60E1BCB836600EB8361 /* UIButton+AFNetworking.m */; };
+		1ADEB6251BCB836600EB8361 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB6101BCB836600EB8361 /* UIImageView+AFNetworking.m */; };
+		1ADEB6261BCB836600EB8361 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB6131BCB836600EB8361 /* UIProgressView+AFNetworking.m */; };
+		1ADEB6271BCB836600EB8361 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB6151BCB836600EB8361 /* UIRefreshControl+AFNetworking.m */; };
+		1ADEB6281BCB836600EB8361 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB6171BCB836600EB8361 /* UIWebView+AFNetworking.m */; };
+		1ADEB62F1BCB83D000EB8361 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB62E1BCB83D000EB8361 /* SWRevealViewController.m */; };
+		1ADEB6321BCB83EA00EB8361 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEB6311BCB83EA00EB8361 /* Reachability.m */; };
+		1AE26DD41E1A348300101753 /* HealthDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE26DD21E1A348300101753 /* HealthDataTableViewCell.m */; };
+		1AE26DD51E1A348300101753 /* HealthDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE26DD31E1A348300101753 /* HealthDataTableViewCell.xib */; };
+		1AE87C371E2CA0FF006F3451 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE87C361E2CA0FF006F3451 /* XMLReader.m */; };
+		1AEF3D5D1BFAEFA8003647B0 /* UserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF3D5C1BFAEFA8003647B0 /* UserProfileViewController.m */; };
+		1AF3A7F91BFC738400925D1F /* AddAllergyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A7F01BFC738400925D1F /* AddAllergyViewController.m */; };
+		1AF3A7FA1BFC738400925D1F /* AddAllergyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A7F11BFC738400925D1F /* AddAllergyViewController.xib */; };
+		1AF3A7FB1BFC738400925D1F /* AllergyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A7F31BFC738400925D1F /* AllergyDetailViewController.m */; };
+		1AF3A7FC1BFC738400925D1F /* AllergyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A7F51BFC738400925D1F /* AllergyTableViewCell.m */; };
+		1AF3A7FD1BFC738400925D1F /* AllergyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A7F61BFC738400925D1F /* AllergyTableViewCell.xib */; };
+		1AF3A7FE1BFC738400925D1F /* AllergyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A7F81BFC738400925D1F /* AllergyViewController.m */; };
+		1AF3A8091BFC740E00925D1F /* HealthConditionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8031BFC740E00925D1F /* HealthConditionDetailViewController.m */; };
+		1AF3A80A1BFC740E00925D1F /* HealthConditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8051BFC740E00925D1F /* HealthConditionTableViewCell.m */; };
+		1AF3A80B1BFC740E00925D1F /* HealthConditionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A8061BFC740E00925D1F /* HealthConditionTableViewCell.xib */; };
+		1AF3A80C1BFC740E00925D1F /* HealthConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8081BFC740E00925D1F /* HealthConditionViewController.m */; };
+		1AF3A8141BFC741F00925D1F /* ImmunizationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A80E1BFC741F00925D1F /* ImmunizationDetailViewController.m */; };
+		1AF3A8151BFC741F00925D1F /* ImmunizationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8101BFC741F00925D1F /* ImmunizationTableViewCell.m */; };
+		1AF3A8161BFC741F00925D1F /* ImmunizationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A8111BFC741F00925D1F /* ImmunizationTableViewCell.xib */; };
+		1AF3A8171BFC741F00925D1F /* ImmunizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8131BFC741F00925D1F /* ImmunizationViewController.m */; };
+		1AF3A81F1BFC742E00925D1F /* MedicationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8191BFC742E00925D1F /* MedicationDetailViewController.m */; };
+		1AF3A8201BFC742E00925D1F /* MedicationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A81B1BFC742E00925D1F /* MedicationTableViewCell.m */; };
+		1AF3A8211BFC742E00925D1F /* MedicationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A81C1BFC742E00925D1F /* MedicationTableViewCell.xib */; };
+		1AF3A8221BFC742E00925D1F /* MedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A81E1BFC742E00925D1F /* MedicationViewController.m */; };
+		1AF3A82A1BFC743D00925D1F /* PrescriptionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8241BFC743D00925D1F /* PrescriptionDetailViewController.m */; };
+		1AF3A82B1BFC743D00925D1F /* PrescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8261BFC743D00925D1F /* PrescriptionTableViewCell.m */; };
+		1AF3A82C1BFC743D00925D1F /* PrescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A8271BFC743D00925D1F /* PrescriptionTableViewCell.xib */; };
+		1AF3A82D1BFC743D00925D1F /* PrescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8291BFC743D00925D1F /* PrescriptionViewController.m */; };
+		1AF3A8351BFC744700925D1F /* ProceduresDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A82F1BFC744700925D1F /* ProceduresDetailViewController.m */; };
+		1AF3A8361BFC744700925D1F /* ProceduresTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8311BFC744700925D1F /* ProceduresTableViewCell.m */; };
+		1AF3A8371BFC744700925D1F /* ProceduresTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A8321BFC744700925D1F /* ProceduresTableViewCell.xib */; };
+		1AF3A8381BFC744700925D1F /* ProceduresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8341BFC744700925D1F /* ProceduresViewController.m */; };
+		1AF3A8401BFC745500925D1F /* LabsTestsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A83A1BFC745500925D1F /* LabsTestsTableViewCell.m */; };
+		1AF3A8411BFC745500925D1F /* LabsTestsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A83B1BFC745500925D1F /* LabsTestsTableViewCell.xib */; };
+		1AF3A8421BFC745500925D1F /* LabsTestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A83D1BFC745500925D1F /* LabsTestsViewController.m */; };
+		1AF3A8431BFC745500925D1F /* LabTestsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A83F1BFC745500925D1F /* LabTestsDetailViewController.m */; };
+		1AF3A8471BFC74D400925D1F /* AddLabTestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8451BFC74D400925D1F /* AddLabTestsViewController.m */; };
+		1AF3A8481BFC74D400925D1F /* AddLabTestsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A8461BFC74D400925D1F /* AddLabTestsViewController.xib */; };
+		1AF3A84C1BFC74F800925D1F /* AddProceduresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A84A1BFC74F800925D1F /* AddProceduresViewController.m */; };
+		1AF3A84D1BFC74F800925D1F /* AddProceduresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A84B1BFC74F800925D1F /* AddProceduresViewController.xib */; };
+		1AF3A8511BFC751000925D1F /* AddMedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A84F1BFC751000925D1F /* AddMedicationViewController.m */; };
+		1AF3A8521BFC751000925D1F /* AddMedicationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A8501BFC751000925D1F /* AddMedicationViewController.xib */; };
+		1AF3A8561BFC753100925D1F /* AddHealthConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8541BFC753100925D1F /* AddHealthConditionViewController.m */; };
+		1AF3A8571BFC753100925D1F /* AddHealthConditionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A8551BFC753100925D1F /* AddHealthConditionViewController.xib */; };
+		1AF3A85B1BFC755000925D1F /* AddPrescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A8591BFC755000925D1F /* AddPrescriptionViewController.m */; };
+		1AF3A85C1BFC755000925D1F /* AddPrescriptionViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A85A1BFC755000925D1F /* AddPrescriptionViewControlleriPad.xib */; };
+		1AF3A8601BFC756700925D1F /* AddImmunizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3A85E1BFC756700925D1F /* AddImmunizationViewController.m */; };
+		1AF3A8611BFC756700925D1F /* AddImmunizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF3A85F1BFC756700925D1F /* AddImmunizationViewController.xib */; };
+		1AF6659E1D06C03F00593541 /* States.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AF6659D1D06C03F00593541 /* States.plist */; };
+		1AFA7DEA1D3E1EB800EDBAD4 /* WeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFA7DE91D3E1EB800EDBAD4 /* WeightViewController.m */; };
+		1AFA7DEE1D3E1FD200EDBAD4 /* WeightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFA7DEC1D3E1FD200EDBAD4 /* WeightTableViewCell.m */; };
+		1AFA7DEF1D3E1FD200EDBAD4 /* WeightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AFA7DED1D3E1FD200EDBAD4 /* WeightTableViewCell.xib */; };
+		1AFA7DF21D3E200900EDBAD4 /* WeightDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFA7DF11D3E200900EDBAD4 /* WeightDetailViewController.m */; };
+		1AFA7DF61D3E202F00EDBAD4 /* AddWeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFA7DF41D3E202F00EDBAD4 /* AddWeightViewController.m */; };
+		1AFA7DF71D3E202F00EDBAD4 /* AddWeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AFA7DF51D3E202F00EDBAD4 /* AddWeightViewController.xib */; };
+		485061CE703D35325941FFFF /* Pods_PHRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053228F2D8E0646536DE002 /* Pods_PHRTests.framework */; };
+		98232A040D4A92932CC89791 /* Pods_PHR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED463F0F204142AA28EFF96E /* Pods_PHR.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1ADEB57C1BCB7B2F00EB8361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ADEB55A1BCB7B2F00EB8361 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ADEB5611BCB7B2F00EB8361;
+			remoteInfo = PHR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A41B35B1D6B0FC100424E49 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1053228F2D8E0646536DE002 /* Pods_PHRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PHRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0336061E70279000085F3F /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		1A0336071E70279000085F3F /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		1A03C0E21BF997E500848C16 /* SlideOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideOutViewController.h; sourceTree = "<group>"; };
+		1A03C0E31BF997E500848C16 /* SlideOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideOutViewController.m; sourceTree = "<group>"; };
+		1A03C0E91BF9E13D00848C16 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		1A03C0EA1BF9E13D00848C16 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		1A0BE7301D7D2DAA00DF5393 /* AllergyTableViewCelliPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllergyTableViewCelliPhone.xib; path = AllergyController/AllergyTableViewCelliPhone.xib; sourceTree = "<group>"; };
+		1A0BE7351D7D72F200DF5393 /* HealthConditionTableViewCelliPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HealthConditionTableViewCelliPhone.xib; path = HealthConditionController/HealthConditionTableViewCelliPhone.xib; sourceTree = "<group>"; };
+		1A0BE7371D7D8DFE00DF5393 /* ImmunizationTableViewCelliPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImmunizationTableViewCelliPhone.xib; path = ImmunizationController/ImmunizationTableViewCelliPhone.xib; sourceTree = "<group>"; };
+		1A142F271C2920C3008C7982 /* BloodPresureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BloodPresureViewController.h; path = DashboardController/BloodPresureViewController.h; sourceTree = "<group>"; };
+		1A142F281C2920C3008C7982 /* BloodPresureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BloodPresureViewController.m; path = DashboardController/BloodPresureViewController.m; sourceTree = "<group>"; };
+		1A142F2C1C2927DF008C7982 /* DiabetesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiabetesViewController.h; path = DashboardController/DiabetesViewController.h; sourceTree = "<group>"; };
+		1A142F2D1C2927DF008C7982 /* DiabetesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiabetesViewController.m; path = DashboardController/DiabetesViewController.m; sourceTree = "<group>"; };
+		1A142F311C292815008C7982 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityViewController.h; path = DashboardController/ActivityViewController.h; sourceTree = "<group>"; };
+		1A142F321C292815008C7982 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityViewController.m; path = DashboardController/ActivityViewController.m; sourceTree = "<group>"; };
+		1A142F361C292E0F008C7982 /* BloodPresureDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BloodPresureDetailViewController.h; path = DashboardController/BloodPresureDetailViewController.h; sourceTree = "<group>"; };
+		1A142F371C292E0F008C7982 /* BloodPresureDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BloodPresureDetailViewController.m; path = DashboardController/BloodPresureDetailViewController.m; sourceTree = "<group>"; };
+		1A142F3C1C292EC4008C7982 /* AddBloodPresureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddBloodPresureViewController.h; path = DashboardController/AddBloodPresureViewController.h; sourceTree = "<group>"; };
+		1A142F3D1C292EC4008C7982 /* AddBloodPresureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddBloodPresureViewController.m; path = DashboardController/AddBloodPresureViewController.m; sourceTree = "<group>"; };
+		1A142F3E1C292EC4008C7982 /* AddBloodPresureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddBloodPresureViewController.xib; path = DashboardController/AddBloodPresureViewController.xib; sourceTree = "<group>"; };
+		1A142F411C293FF5008C7982 /* BloodPresureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BloodPresureTableViewCell.h; path = DashboardController/BloodPresureTableViewCell.h; sourceTree = "<group>"; };
+		1A142F421C293FF5008C7982 /* BloodPresureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BloodPresureTableViewCell.m; path = DashboardController/BloodPresureTableViewCell.m; sourceTree = "<group>"; };
+		1A142F431C293FF5008C7982 /* BloodPresureTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BloodPresureTableViewCell.xib; path = DashboardController/BloodPresureTableViewCell.xib; sourceTree = "<group>"; };
+		1A1BA5D61D2E6B2500C7CF49 /* ActivityName.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ActivityName.plist; sourceTree = "<group>"; };
+		1A2717481C7F1D9E009D6CB6 /* EmergencyInforViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmergencyInforViewController.h; path = UserProfileController/EmergencyInforViewController.h; sourceTree = "<group>"; };
+		1A2717491C7F1D9E009D6CB6 /* EmergencyInforViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmergencyInforViewController.m; path = UserProfileController/EmergencyInforViewController.m; sourceTree = "<group>"; };
+		1A27174B1C7F1DC1009D6CB6 /* EmployeeInforViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmployeeInforViewController.h; path = UserProfileController/EmployeeInforViewController.h; sourceTree = "<group>"; };
+		1A27174C1C7F1DC1009D6CB6 /* EmployeeInforViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmployeeInforViewController.m; path = UserProfileController/EmployeeInforViewController.m; sourceTree = "<group>"; };
+		1A27174E1C7F1DD7009D6CB6 /* InsuranceInforViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InsuranceInforViewController.h; path = UserProfileController/InsuranceInforViewController.h; sourceTree = "<group>"; };
+		1A27174F1C7F1DD7009D6CB6 /* InsuranceInforViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InsuranceInforViewController.m; path = UserProfileController/InsuranceInforViewController.m; sourceTree = "<group>"; };
+		1A2717511C7F1DF5009D6CB6 /* PreferenceInforViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferenceInforViewController.h; path = UserProfileController/PreferenceInforViewController.h; sourceTree = "<group>"; };
+		1A2717521C7F1DF5009D6CB6 /* PreferenceInforViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferenceInforViewController.m; path = UserProfileController/PreferenceInforViewController.m; sourceTree = "<group>"; };
+		1A27D11D1C6DD9C7004AEB02 /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityTableViewCell.h; path = DashboardController/ActivityTableViewCell.h; sourceTree = "<group>"; };
+		1A27D11E1C6DD9C7004AEB02 /* ActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityTableViewCell.m; path = DashboardController/ActivityTableViewCell.m; sourceTree = "<group>"; };
+		1A27D11F1C6DD9C7004AEB02 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActivityTableViewCell.xib; path = DashboardController/ActivityTableViewCell.xib; sourceTree = "<group>"; };
+		1A3FD5391CB621760098D343 /* MedicationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicationTableViewController.h; path = MedicationController/MedicationTableViewController.h; sourceTree = "<group>"; };
+		1A3FD53A1CB621760098D343 /* MedicationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicationTableViewController.m; path = MedicationController/MedicationTableViewController.m; sourceTree = "<group>"; };
+		1A3FD53B1CB621760098D343 /* MedicationTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MedicationTableViewController.xib; path = MedicationController/MedicationTableViewController.xib; sourceTree = "<group>"; };
+		1A3FD53E1CB624BF0098D343 /* MedicationNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicationNameTableViewCell.h; path = MedicationController/MedicationNameTableViewCell.h; sourceTree = "<group>"; };
+		1A3FD53F1CB624BF0098D343 /* MedicationNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicationNameTableViewCell.m; path = MedicationController/MedicationNameTableViewCell.m; sourceTree = "<group>"; };
+		1A3FD5401CB624BF0098D343 /* MedicationNameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MedicationNameTableViewCell.xib; path = MedicationController/MedicationNameTableViewCell.xib; sourceTree = "<group>"; };
+		1A4177BE1CEC7A6800397484 /* relationship.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = relationship.plist; sourceTree = "<group>"; };
+		1A4367FC1D129EE500221E5C /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		1A4EA5C51E15186B00586AFE /* SharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SharingViewController.h; path = "MedicalContacts&Sharing/SharingViewController.h"; sourceTree = "<group>"; };
+		1A4EA5C61E15186B00586AFE /* SharingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SharingViewController.m; path = "MedicalContacts&Sharing/SharingViewController.m"; sourceTree = "<group>"; };
+		1A5121ED1C198AFB005B362E /* DashboardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DashboardTableViewCell.h; path = DashboardController/DashboardTableViewCell.h; sourceTree = "<group>"; };
+		1A5121EE1C198AFB005B362E /* DashboardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DashboardTableViewCell.m; path = DashboardController/DashboardTableViewCell.m; sourceTree = "<group>"; };
+		1A5121EF1C198AFB005B362E /* DashboardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DashboardTableViewCell.xib; path = DashboardController/DashboardTableViewCell.xib; sourceTree = "<group>"; };
+		1A52963B1CBCF8A000BCB5E8 /* ProcedureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProcedureTableViewController.h; path = ProceduresController/ProcedureTableViewController.h; sourceTree = "<group>"; };
+		1A52963C1CBCF8A000BCB5E8 /* ProcedureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProcedureTableViewController.m; path = ProceduresController/ProcedureTableViewController.m; sourceTree = "<group>"; };
+		1A52963D1CBCF8A000BCB5E8 /* ProcedureTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProcedureTableViewController.xib; path = ProceduresController/ProcedureTableViewController.xib; sourceTree = "<group>"; };
+		1A5296401CBCF8F200BCB5E8 /* ProcedureNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProcedureNameTableViewCell.h; path = ProceduresController/ProcedureNameTableViewCell.h; sourceTree = "<group>"; };
+		1A5296411CBCF8F200BCB5E8 /* ProcedureNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProcedureNameTableViewCell.m; path = ProceduresController/ProcedureNameTableViewCell.m; sourceTree = "<group>"; };
+		1A5296421CBCF8F200BCB5E8 /* ProcedureNameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProcedureNameTableViewCell.xib; path = ProceduresController/ProcedureNameTableViewCell.xib; sourceTree = "<group>"; };
+		1A53E1921DB881710066DDAB /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		1A54696A1D6B20B600DD0650 /* DayAxisValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayAxisValueFormatter.h; sourceTree = "<group>"; };
+		1A54696B1D6B20B600DD0650 /* DayAxisValueFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayAxisValueFormatter.m; sourceTree = "<group>"; };
+		1A54696D1D6B21D800DD0650 /* PHR-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHR-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A6504CA1D7E7BEE009215A0 /* ProceduresTableViewCelliPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProceduresTableViewCelliPhone.xib; path = ProceduresController/ProceduresTableViewCelliPhone.xib; sourceTree = "<group>"; };
+		1A6504CF1D7E9A09009215A0 /* LabsTestsTableViewCelliPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LabsTestsTableViewCelliPhone.xib; path = "Labs:TestsController/LabsTestsTableViewCelliPhone.xib"; sourceTree = "<group>"; };
+		1A6504D11D7EBE67009215A0 /* PrescriptionTableViewCelliPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PrescriptionTableViewCelliPhone.xib; path = PrescriptionController/PrescriptionTableViewCelliPhone.xib; sourceTree = "<group>"; };
+		1A6504D31D7ECD31009215A0 /* MedicationTableViewCelliPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MedicationTableViewCelliPhone.xib; path = MedicationController/MedicationTableViewCelliPhone.xib; sourceTree = "<group>"; };
+		1A6504D51D7EE3B9009215A0 /* DiabetesTableViewCelliPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiabetesTableViewCelliPhone.xib; path = DashboardController/DiabetesTableViewCelliPhone.xib; sourceTree = "<group>"; };
+		1A6504D71D7EE3F8009215A0 /* BloodPressureTableViewCelliPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BloodPressureTableViewCelliPhone.xib; path = DashboardController/BloodPressureTableViewCelliPhone.xib; sourceTree = "<group>"; };
+		1A6504D91D7EE42C009215A0 /* ActivityTableViewCelliPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActivityTableViewCelliPhone.xib; path = DashboardController/ActivityTableViewCelliPhone.xib; sourceTree = "<group>"; };
+		1A6504DB1D7EE448009215A0 /* WeightTableViewCelliPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeightTableViewCelliPhone.xib; path = DashboardController/WeightTableViewCelliPhone.xib; sourceTree = "<group>"; };
+		1A69CABE1C8D817F00D8C47B /* AllergyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllergyTableViewController.h; path = AllergyController/AllergyTableViewController.h; sourceTree = "<group>"; };
+		1A69CABF1C8D817F00D8C47B /* AllergyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllergyTableViewController.m; path = AllergyController/AllergyTableViewController.m; sourceTree = "<group>"; };
+		1A69CAC01C8D817F00D8C47B /* AllergyTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllergyTableViewController.xib; path = AllergyController/AllergyTableViewController.xib; sourceTree = "<group>"; };
+		1A7918621D8FF81E004B21AE /* PHR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PHR.entitlements; sourceTree = "<group>"; };
+		1A7918631D8FFCFE004B21AE /* GSHealthKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSHealthKitManager.h; sourceTree = "<group>"; };
+		1A7918641D8FFCFE004B21AE /* GSHealthKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSHealthKitManager.m; sourceTree = "<group>"; };
+		1A7A5CE21D21497600842156 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1A7BCF081C884D17003BD1B8 /* AllergyNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllergyNameTableViewCell.h; path = AllergyController/AllergyNameTableViewCell.h; sourceTree = "<group>"; };
+		1A7BCF091C884D17003BD1B8 /* AllergyNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllergyNameTableViewCell.m; path = AllergyController/AllergyNameTableViewCell.m; sourceTree = "<group>"; };
+		1A7BCF0A1C884D17003BD1B8 /* AllergyNameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllergyNameTableViewCell.xib; path = AllergyController/AllergyNameTableViewCell.xib; sourceTree = "<group>"; };
+		1A865D541C2A6240003ED70A /* DiabetesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiabetesTableViewCell.h; path = DashboardController/DiabetesTableViewCell.h; sourceTree = "<group>"; };
+		1A865D551C2A6240003ED70A /* DiabetesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiabetesTableViewCell.m; path = DashboardController/DiabetesTableViewCell.m; sourceTree = "<group>"; };
+		1A865D561C2A6240003ED70A /* DiabetesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiabetesTableViewCell.xib; path = DashboardController/DiabetesTableViewCell.xib; sourceTree = "<group>"; };
+		1A865D591C2A693D003ED70A /* DiabetesDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiabetesDetailsViewController.h; path = DashboardController/DiabetesDetailsViewController.h; sourceTree = "<group>"; };
+		1A865D5A1C2A693D003ED70A /* DiabetesDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiabetesDetailsViewController.m; path = DashboardController/DiabetesDetailsViewController.m; sourceTree = "<group>"; };
+		1A865D5C1C2A7383003ED70A /* AddDiabetesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddDiabetesViewController.h; path = DashboardController/AddDiabetesViewController.h; sourceTree = "<group>"; };
+		1A865D5D1C2A7383003ED70A /* AddDiabetesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddDiabetesViewController.m; path = DashboardController/AddDiabetesViewController.m; sourceTree = "<group>"; };
+		1A865D5E1C2A7383003ED70A /* AddDiabetesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddDiabetesViewController.xib; path = DashboardController/AddDiabetesViewController.xib; sourceTree = "<group>"; };
+		1A865D611C2A779D003ED70A /* ActivityDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityDetailsViewController.h; path = DashboardController/ActivityDetailsViewController.h; sourceTree = "<group>"; };
+		1A865D621C2A779D003ED70A /* ActivityDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityDetailsViewController.m; path = DashboardController/ActivityDetailsViewController.m; sourceTree = "<group>"; };
+		1A865D641C2A7833003ED70A /* AddActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddActivityViewController.h; path = DashboardController/AddActivityViewController.h; sourceTree = "<group>"; };
+		1A865D651C2A7833003ED70A /* AddActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddActivityViewController.m; path = DashboardController/AddActivityViewController.m; sourceTree = "<group>"; };
+		1A865D661C2A7833003ED70A /* AddActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddActivityViewController.xib; path = DashboardController/AddActivityViewController.xib; sourceTree = "<group>"; };
+		1A8ACFAF1CA911440090A644 /* HealthConditionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HealthConditionTableViewController.h; path = HealthConditionController/HealthConditionTableViewController.h; sourceTree = "<group>"; };
+		1A8ACFB01CA911440090A644 /* HealthConditionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HealthConditionTableViewController.m; path = HealthConditionController/HealthConditionTableViewController.m; sourceTree = "<group>"; };
+		1A8ACFB11CA911440090A644 /* HealthConditionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HealthConditionTableViewController.xib; path = HealthConditionController/HealthConditionTableViewController.xib; sourceTree = "<group>"; };
+		1A8ACFB41CA913550090A644 /* HealthConditionNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HealthConditionNameTableViewCell.h; path = HealthConditionController/HealthConditionNameTableViewCell.h; sourceTree = "<group>"; };
+		1A8ACFB51CA913550090A644 /* HealthConditionNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HealthConditionNameTableViewCell.m; path = HealthConditionController/HealthConditionNameTableViewCell.m; sourceTree = "<group>"; };
+		1A8ACFB61CA913550090A644 /* HealthConditionNameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HealthConditionNameTableViewCell.xib; path = HealthConditionController/HealthConditionNameTableViewCell.xib; sourceTree = "<group>"; };
+		1A9B380A1EBB1E6A00830A68 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Charts.framework; sourceTree = "<group>"; };
+		1AA1E54D1E92682500EFA48B /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = LoginController/SignUpViewController.h; sourceTree = "<group>"; };
+		1AA1E54E1E92682500EFA48B /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = LoginController/SignUpViewController.m; sourceTree = "<group>"; };
+		1AA327E41E5C14110041197B /* AddPrescriptionViewControlleriPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddPrescriptionViewControlleriPhone.xib; path = PrescriptionController/AddPrescriptionViewControlleriPhone.xib; sourceTree = "<group>"; };
+		1AA941191DA642C1004687AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main-iPad.storyboard"; sourceTree = "<group>"; };
+		1AA961781E711AD5003FFB8A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		1AB004331CABA56B002CDCAA /* ImmunzationNameTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImmunzationNameTableViewController.h; path = ImmunizationController/ImmunzationNameTableViewController.h; sourceTree = "<group>"; };
+		1AB004341CABA56B002CDCAA /* ImmunzationNameTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImmunzationNameTableViewController.m; path = ImmunizationController/ImmunzationNameTableViewController.m; sourceTree = "<group>"; };
+		1AB004351CABA56B002CDCAA /* ImmunzationNameTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImmunzationNameTableViewController.xib; path = ImmunizationController/ImmunzationNameTableViewController.xib; sourceTree = "<group>"; };
+		1AB004381CABA591002CDCAA /* ImmunzationNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImmunzationNameTableViewCell.h; path = ImmunizationController/ImmunzationNameTableViewCell.h; sourceTree = "<group>"; };
+		1AB004391CABA591002CDCAA /* ImmunzationNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImmunzationNameTableViewCell.m; path = ImmunizationController/ImmunzationNameTableViewCell.m; sourceTree = "<group>"; };
+		1AB0043A1CABA591002CDCAA /* ImmunzationNameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImmunzationNameTableViewCell.xib; path = ImmunizationController/ImmunzationNameTableViewCell.xib; sourceTree = "<group>"; };
+		1AB383671E56DAE900B44B8D /* AddMedicalContactViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddMedicalContactViewControlleriPad.xib; path = "MedicalContacts&Sharing/AddMedicalContactViewControlleriPad.xib"; sourceTree = "<group>"; };
+		1AB383691E56F80F00B44B8D /* AddAllergyViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddAllergyViewControlleriPad.xib; path = AllergyController/AddAllergyViewControlleriPad.xib; sourceTree = "<group>"; };
+		1AB467E01CBE4A6F0058F04B /* LabTestSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabTestSearchTableViewCell.h; path = "Labs:TestsController/LabTestSearchTableViewCell.h"; sourceTree = "<group>"; };
+		1AB467E11CBE4A6F0058F04B /* LabTestSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabTestSearchTableViewCell.m; path = "Labs:TestsController/LabTestSearchTableViewCell.m"; sourceTree = "<group>"; };
+		1AB467E21CBE4A6F0058F04B /* LabTestSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LabTestSearchTableViewCell.xib; path = "Labs:TestsController/LabTestSearchTableViewCell.xib"; sourceTree = "<group>"; };
+		1AB467E51CBE4A970058F04B /* LabTestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabTestTableViewController.h; path = "Labs:TestsController/LabTestTableViewController.h"; sourceTree = "<group>"; };
+		1AB467E61CBE4A970058F04B /* LabTestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabTestTableViewController.m; path = "Labs:TestsController/LabTestTableViewController.m"; sourceTree = "<group>"; };
+		1AB467E71CBE4A970058F04B /* LabTestTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LabTestTableViewController.xib; path = "Labs:TestsController/LabTestTableViewController.xib"; sourceTree = "<group>"; };
+		1AB4CEE91E1263CC00910FFD /* AddMedicalContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddMedicalContactViewController.h; path = "MedicalContacts&Sharing/AddMedicalContactViewController.h"; sourceTree = "<group>"; };
+		1AB4CEEA1E1263CC00910FFD /* AddMedicalContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddMedicalContactViewController.m; path = "MedicalContacts&Sharing/AddMedicalContactViewController.m"; sourceTree = "<group>"; };
+		1AB4CEEB1E1263CC00910FFD /* AddMedicalContactViewControlleriPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddMedicalContactViewControlleriPhone.xib; path = "MedicalContacts&Sharing/AddMedicalContactViewControlleriPhone.xib"; sourceTree = "<group>"; };
+		1AB5E7271DB48571000F8E3B /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		1AB96F7A1E3F5B3000C22686 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		1ABA72541CE1ECA900FD663D /* BloodGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BloodGroups.plist; sourceTree = "<group>"; };
+		1ABA72551CE1ECA900FD663D /* DisabilityTypes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DisabilityTypes.plist; sourceTree = "<group>"; };
+		1AC6A1751DDAEB2C0002607F /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		1AC6A1761DDAEB2C0002607F /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		1ACC35941E965F8A00679E8B /* OTPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTPViewController.h; path = LoginController/OTPViewController.h; sourceTree = "<group>"; };
+		1ACC35951E965F8A00679E8B /* OTPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTPViewController.m; path = LoginController/OTPViewController.m; sourceTree = "<group>"; };
+		1AD6D9221E5AC1BB00912F40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1AD877771E10E47200FDFA1E /* MedicalContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicalContactsViewController.h; path = "MedicalContacts&Sharing/MedicalContactsViewController.h"; sourceTree = "<group>"; };
+		1AD877781E10E47200FDFA1E /* MedicalContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicalContactsViewController.m; path = "MedicalContacts&Sharing/MedicalContactsViewController.m"; sourceTree = "<group>"; };
+		1AD8777A1E10EF6F00FDFA1E /* MedicalContactTableViewCelliPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MedicalContactTableViewCelliPhone.xib; path = "MedicalContacts&Sharing/MedicalContactTableViewCelliPhone.xib"; sourceTree = "<group>"; };
+		1AD8777C1E10EF8700FDFA1E /* MedicalContactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MedicalContactTableViewCell.xib; path = "MedicalContacts&Sharing/MedicalContactTableViewCell.xib"; sourceTree = "<group>"; };
+		1AD8777E1E10F4E400FDFA1E /* MedicalContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicalContactTableViewCell.h; path = "MedicalContacts&Sharing/MedicalContactTableViewCell.h"; sourceTree = "<group>"; };
+		1AD8777F1E10F4E400FDFA1E /* MedicalContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicalContactTableViewCell.m; path = "MedicalContacts&Sharing/MedicalContactTableViewCell.m"; sourceTree = "<group>"; };
+		1AD877811E112F2600FDFA1E /* MedicalContactDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicalContactDetailViewController.h; path = "MedicalContacts&Sharing/MedicalContactDetailViewController.h"; sourceTree = "<group>"; };
+		1AD877821E112F2600FDFA1E /* MedicalContactDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicalContactDetailViewController.m; path = "MedicalContacts&Sharing/MedicalContactDetailViewController.m"; sourceTree = "<group>"; };
+		1AD944F71CE35C5700DC5A0F /* XLMediaZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMediaZoom.h; sourceTree = "<group>"; };
+		1AD944F81CE35C5700DC5A0F /* XLMediaZoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLMediaZoom.m; sourceTree = "<group>"; };
+		1AD944F91CE35C5700DC5A0F /* XLVideoZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLVideoZoom.h; sourceTree = "<group>"; };
+		1AD944FA1CE35C5700DC5A0F /* XLVideoZoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLVideoZoom.m; sourceTree = "<group>"; };
+		1ADEB5621BCB7B2F00EB8361 /* PHR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADEB5661BCB7B2F00EB8361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ADEB5671BCB7B2F00EB8361 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1ADEB5701BCB7B2F00EB8361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1ADEB5751BCB7B2F00EB8361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1ADEB57B1BCB7B2F00EB8361 /* PHRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADEB5801BCB7B2F00EB8361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ADEB5811BCB7B2F00EB8361 /* PHRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHRTests.m; sourceTree = "<group>"; };
+		1ADEB58C1BCB7B8E00EB8361 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
+		1ADEB58D1BCB7B8E00EB8361 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
+		1ADEB5951BCB7E3D00EB8361 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashViewController.h; path = SplashController/SplashViewController.h; sourceTree = "<group>"; };
+		1ADEB5961BCB7E3D00EB8361 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashViewController.m; path = SplashController/SplashViewController.m; sourceTree = "<group>"; };
+		1ADEB5981BCB7E7400EB8361 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginController.h; path = LoginController/LoginController.h; sourceTree = "<group>"; };
+		1ADEB5991BCB7E7400EB8361 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginController.m; path = LoginController/LoginController.m; sourceTree = "<group>"; };
+		1ADEB5A81BCB81A500EB8361 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "HelperClasses/NSData+Base64/NSData+Base64.h"; sourceTree = "<group>"; };
+		1ADEB5A91BCB81A500EB8361 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "HelperClasses/NSData+Base64/NSData+Base64.m"; sourceTree = "<group>"; };
+		1ADEB5AA1BCB81A500EB8361 /* NSData+Base64.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "NSData+Base64.podspec"; path = "HelperClasses/NSData+Base64/NSData+Base64.podspec"; sourceTree = "<group>"; };
+		1ADEB5AD1BCB81EC00EB8361 /* BarButton_Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BarButton_Block.h; path = "HelperClasses/BarButton Block/BarButton_Block.h"; sourceTree = "<group>"; };
+		1ADEB5AE1BCB81EC00EB8361 /* BarButton_Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BarButton_Block.m; path = "HelperClasses/BarButton Block/BarButton_Block.m"; sourceTree = "<group>"; };
+		1ADEB5EE1BCB834300EB8361 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = HelperClasses/AutoScrollView/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		1ADEB5EF1BCB834300EB8361 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = HelperClasses/AutoScrollView/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		1ADEB5F01BCB834300EB8361 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "HelperClasses/AutoScrollView/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		1ADEB5F11BCB834300EB8361 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "HelperClasses/AutoScrollView/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		1ADEB5F41BCB836600EB8361 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = HelperClasses/AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		1ADEB5F51BCB836600EB8361 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = HelperClasses/AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		1ADEB5F61BCB836600EB8361 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = HelperClasses/AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		1ADEB5F71BCB836600EB8361 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = HelperClasses/AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		1ADEB5F81BCB836600EB8361 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = HelperClasses/AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		1ADEB5F91BCB836600EB8361 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = HelperClasses/AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		1ADEB5FA1BCB836600EB8361 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = HelperClasses/AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		1ADEB5FB1BCB836600EB8361 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = HelperClasses/AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		1ADEB5FC1BCB836600EB8361 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = HelperClasses/AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		1ADEB5FD1BCB836600EB8361 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = HelperClasses/AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		1ADEB5FE1BCB836600EB8361 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = HelperClasses/AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		1ADEB5FF1BCB836600EB8361 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = HelperClasses/AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		1ADEB6001BCB836600EB8361 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = HelperClasses/AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		1ADEB6011BCB836600EB8361 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = HelperClasses/AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		1ADEB6021BCB836600EB8361 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = HelperClasses/AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		1ADEB6031BCB836600EB8361 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = HelperClasses/AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		1ADEB6041BCB836600EB8361 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = HelperClasses/AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		1ADEB6051BCB836600EB8361 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = HelperClasses/AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		1ADEB6061BCB836600EB8361 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = HelperClasses/AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		1ADEB6071BCB836600EB8361 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = HelperClasses/AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		1ADEB6081BCB836600EB8361 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = HelperClasses/AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		1ADEB6091BCB836600EB8361 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "HelperClasses/AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		1ADEB60A1BCB836600EB8361 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "HelperClasses/AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		1ADEB60B1BCB836600EB8361 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "HelperClasses/AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		1ADEB60C1BCB836600EB8361 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "HelperClasses/AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		1ADEB60D1BCB836600EB8361 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "HelperClasses/AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		1ADEB60E1BCB836600EB8361 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "HelperClasses/AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		1ADEB60F1BCB836600EB8361 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "HelperClasses/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		1ADEB6101BCB836600EB8361 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "HelperClasses/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		1ADEB6111BCB836600EB8361 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "HelperClasses/AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		1ADEB6121BCB836600EB8361 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "HelperClasses/AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		1ADEB6131BCB836600EB8361 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "HelperClasses/AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		1ADEB6141BCB836600EB8361 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "HelperClasses/AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		1ADEB6151BCB836600EB8361 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "HelperClasses/AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		1ADEB6161BCB836600EB8361 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "HelperClasses/AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		1ADEB6171BCB836600EB8361 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "HelperClasses/AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		1ADEB62D1BCB83D000EB8361 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = HelperClasses/SWRevealController/SWRevealViewController.h; sourceTree = "<group>"; };
+		1ADEB62E1BCB83D000EB8361 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = HelperClasses/SWRevealController/SWRevealViewController.m; sourceTree = "<group>"; };
+		1ADEB6301BCB83EA00EB8361 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = HelperClasses/Reachability/Reachability.h; sourceTree = "<group>"; };
+		1ADEB6311BCB83EA00EB8361 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = HelperClasses/Reachability/Reachability.m; sourceTree = "<group>"; };
+		1ADEB6331BCB854200EB8361 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		1AE26DD11E1A348300101753 /* HealthDataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HealthDataTableViewCell.h; path = DashboardController/HealthDataTableViewCell.h; sourceTree = "<group>"; };
+		1AE26DD21E1A348300101753 /* HealthDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HealthDataTableViewCell.m; path = DashboardController/HealthDataTableViewCell.m; sourceTree = "<group>"; };
+		1AE26DD31E1A348300101753 /* HealthDataTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HealthDataTableViewCell.xib; path = DashboardController/HealthDataTableViewCell.xib; sourceTree = "<group>"; };
+		1AE87C351E2CA0FF006F3451 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		1AE87C361E2CA0FF006F3451 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		1AEF3D5B1BFAEFA8003647B0 /* UserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileViewController.h; sourceTree = "<group>"; };
+		1AEF3D5C1BFAEFA8003647B0 /* UserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileViewController.m; sourceTree = "<group>"; };
+		1AF3A7EF1BFC738400925D1F /* AddAllergyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddAllergyViewController.h; path = AllergyController/AddAllergyViewController.h; sourceTree = "<group>"; };
+		1AF3A7F01BFC738400925D1F /* AddAllergyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddAllergyViewController.m; path = AllergyController/AddAllergyViewController.m; sourceTree = "<group>"; };
+		1AF3A7F11BFC738400925D1F /* AddAllergyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddAllergyViewController.xib; path = AllergyController/AddAllergyViewController.xib; sourceTree = "<group>"; };
+		1AF3A7F21BFC738400925D1F /* AllergyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllergyDetailViewController.h; path = AllergyController/AllergyDetailViewController.h; sourceTree = "<group>"; };
+		1AF3A7F31BFC738400925D1F /* AllergyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllergyDetailViewController.m; path = AllergyController/AllergyDetailViewController.m; sourceTree = "<group>"; };
+		1AF3A7F41BFC738400925D1F /* AllergyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllergyTableViewCell.h; path = AllergyController/AllergyTableViewCell.h; sourceTree = "<group>"; };
+		1AF3A7F51BFC738400925D1F /* AllergyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllergyTableViewCell.m; path = AllergyController/AllergyTableViewCell.m; sourceTree = "<group>"; };
+		1AF3A7F61BFC738400925D1F /* AllergyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllergyTableViewCell.xib; path = AllergyController/AllergyTableViewCell.xib; sourceTree = "<group>"; };
+		1AF3A7F71BFC738400925D1F /* AllergyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllergyViewController.h; path = AllergyController/AllergyViewController.h; sourceTree = "<group>"; };
+		1AF3A7F81BFC738400925D1F /* AllergyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllergyViewController.m; path = AllergyController/AllergyViewController.m; sourceTree = "<group>"; };
+		1AF3A7FF1BFC740300925D1F /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DashboardViewController.h; path = DashboardController/DashboardViewController.h; sourceTree = "<group>"; };
+		1AF3A8021BFC740E00925D1F /* HealthConditionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HealthConditionDetailViewController.h; path = HealthConditionController/HealthConditionDetailViewController.h; sourceTree = "<group>"; };
+		1AF3A8031BFC740E00925D1F /* HealthConditionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HealthConditionDetailViewController.m; path = HealthConditionController/HealthConditionDetailViewController.m; sourceTree = "<group>"; };
+		1AF3A8041BFC740E00925D1F /* HealthConditionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HealthConditionTableViewCell.h; path = HealthConditionController/HealthConditionTableViewCell.h; sourceTree = "<group>"; };
+		1AF3A8051BFC740E00925D1F /* HealthConditionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HealthConditionTableViewCell.m; path = HealthConditionController/HealthConditionTableViewCell.m; sourceTree = "<group>"; };
+		1AF3A8061BFC740E00925D1F /* HealthConditionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HealthConditionTableViewCell.xib; path = HealthConditionController/HealthConditionTableViewCell.xib; sourceTree = "<group>"; };
+		1AF3A8071BFC740E00925D1F /* HealthConditionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HealthConditionViewController.h; path = HealthConditionController/HealthConditionViewController.h; sourceTree = "<group>"; };
+		1AF3A8081BFC740E00925D1F /* HealthConditionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HealthConditionViewController.m; path = HealthConditionController/HealthConditionViewController.m; sourceTree = "<group>"; };
+		1AF3A80D1BFC741F00925D1F /* ImmunizationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImmunizationDetailViewController.h; path = ImmunizationController/ImmunizationDetailViewController.h; sourceTree = "<group>"; };
+		1AF3A80E1BFC741F00925D1F /* ImmunizationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImmunizationDetailViewController.m; path = ImmunizationController/ImmunizationDetailViewController.m; sourceTree = "<group>"; };
+		1AF3A80F1BFC741F00925D1F /* ImmunizationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImmunizationTableViewCell.h; path = ImmunizationController/ImmunizationTableViewCell.h; sourceTree = "<group>"; };
+		1AF3A8101BFC741F00925D1F /* ImmunizationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImmunizationTableViewCell.m; path = ImmunizationController/ImmunizationTableViewCell.m; sourceTree = "<group>"; };
+		1AF3A8111BFC741F00925D1F /* ImmunizationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImmunizationTableViewCell.xib; path = ImmunizationController/ImmunizationTableViewCell.xib; sourceTree = "<group>"; };
+		1AF3A8121BFC741F00925D1F /* ImmunizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImmunizationViewController.h; path = ImmunizationController/ImmunizationViewController.h; sourceTree = "<group>"; };
+		1AF3A8131BFC741F00925D1F /* ImmunizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImmunizationViewController.m; path = ImmunizationController/ImmunizationViewController.m; sourceTree = "<group>"; };
+		1AF3A8181BFC742E00925D1F /* MedicationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicationDetailViewController.h; path = MedicationController/MedicationDetailViewController.h; sourceTree = "<group>"; };
+		1AF3A8191BFC742E00925D1F /* MedicationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicationDetailViewController.m; path = MedicationController/MedicationDetailViewController.m; sourceTree = "<group>"; };
+		1AF3A81A1BFC742E00925D1F /* MedicationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicationTableViewCell.h; path = MedicationController/MedicationTableViewCell.h; sourceTree = "<group>"; };
+		1AF3A81B1BFC742E00925D1F /* MedicationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicationTableViewCell.m; path = MedicationController/MedicationTableViewCell.m; sourceTree = "<group>"; };
+		1AF3A81C1BFC742E00925D1F /* MedicationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MedicationTableViewCell.xib; path = MedicationController/MedicationTableViewCell.xib; sourceTree = "<group>"; };
+		1AF3A81D1BFC742E00925D1F /* MedicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicationViewController.h; path = MedicationController/MedicationViewController.h; sourceTree = "<group>"; };
+		1AF3A81E1BFC742E00925D1F /* MedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicationViewController.m; path = MedicationController/MedicationViewController.m; sourceTree = "<group>"; };
+		1AF3A8231BFC743D00925D1F /* PrescriptionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrescriptionDetailViewController.h; path = PrescriptionController/PrescriptionDetailViewController.h; sourceTree = "<group>"; };
+		1AF3A8241BFC743D00925D1F /* PrescriptionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrescriptionDetailViewController.m; path = PrescriptionController/PrescriptionDetailViewController.m; sourceTree = "<group>"; };
+		1AF3A8251BFC743D00925D1F /* PrescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrescriptionTableViewCell.h; path = PrescriptionController/PrescriptionTableViewCell.h; sourceTree = "<group>"; };
+		1AF3A8261BFC743D00925D1F /* PrescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrescriptionTableViewCell.m; path = PrescriptionController/PrescriptionTableViewCell.m; sourceTree = "<group>"; };
+		1AF3A8271BFC743D00925D1F /* PrescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PrescriptionTableViewCell.xib; path = PrescriptionController/PrescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		1AF3A8281BFC743D00925D1F /* PrescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrescriptionViewController.h; path = PrescriptionController/PrescriptionViewController.h; sourceTree = "<group>"; };
+		1AF3A8291BFC743D00925D1F /* PrescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrescriptionViewController.m; path = PrescriptionController/PrescriptionViewController.m; sourceTree = "<group>"; };
+		1AF3A82E1BFC744700925D1F /* ProceduresDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProceduresDetailViewController.h; path = ProceduresController/ProceduresDetailViewController.h; sourceTree = "<group>"; };
+		1AF3A82F1BFC744700925D1F /* ProceduresDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProceduresDetailViewController.m; path = ProceduresController/ProceduresDetailViewController.m; sourceTree = "<group>"; };
+		1AF3A8301BFC744700925D1F /* ProceduresTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProceduresTableViewCell.h; path = ProceduresController/ProceduresTableViewCell.h; sourceTree = "<group>"; };
+		1AF3A8311BFC744700925D1F /* ProceduresTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProceduresTableViewCell.m; path = ProceduresController/ProceduresTableViewCell.m; sourceTree = "<group>"; };
+		1AF3A8321BFC744700925D1F /* ProceduresTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProceduresTableViewCell.xib; path = ProceduresController/ProceduresTableViewCell.xib; sourceTree = "<group>"; };
+		1AF3A8331BFC744700925D1F /* ProceduresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProceduresViewController.h; path = ProceduresController/ProceduresViewController.h; sourceTree = "<group>"; };
+		1AF3A8341BFC744700925D1F /* ProceduresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProceduresViewController.m; path = ProceduresController/ProceduresViewController.m; sourceTree = "<group>"; };
+		1AF3A8391BFC745500925D1F /* LabsTestsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabsTestsTableViewCell.h; path = "Labs:TestsController/LabsTestsTableViewCell.h"; sourceTree = "<group>"; };
+		1AF3A83A1BFC745500925D1F /* LabsTestsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabsTestsTableViewCell.m; path = "Labs:TestsController/LabsTestsTableViewCell.m"; sourceTree = "<group>"; };
+		1AF3A83B1BFC745500925D1F /* LabsTestsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LabsTestsTableViewCell.xib; path = "Labs:TestsController/LabsTestsTableViewCell.xib"; sourceTree = "<group>"; };
+		1AF3A83C1BFC745500925D1F /* LabsTestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabsTestsViewController.h; path = "Labs:TestsController/LabsTestsViewController.h"; sourceTree = "<group>"; };
+		1AF3A83D1BFC745500925D1F /* LabsTestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabsTestsViewController.m; path = "Labs:TestsController/LabsTestsViewController.m"; sourceTree = "<group>"; };
+		1AF3A83E1BFC745500925D1F /* LabTestsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabTestsDetailViewController.h; path = "Labs:TestsController/LabTestsDetailViewController.h"; sourceTree = "<group>"; };
+		1AF3A83F1BFC745500925D1F /* LabTestsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabTestsDetailViewController.m; path = "Labs:TestsController/LabTestsDetailViewController.m"; sourceTree = "<group>"; };
+		1AF3A8441BFC74D400925D1F /* AddLabTestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddLabTestsViewController.h; path = "Labs:TestsController/AddLabTestsViewController.h"; sourceTree = "<group>"; };
+		1AF3A8451BFC74D400925D1F /* AddLabTestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddLabTestsViewController.m; path = "Labs:TestsController/AddLabTestsViewController.m"; sourceTree = "<group>"; };
+		1AF3A8461BFC74D400925D1F /* AddLabTestsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddLabTestsViewController.xib; path = "Labs:TestsController/AddLabTestsViewController.xib"; sourceTree = "<group>"; };
+		1AF3A8491BFC74F800925D1F /* AddProceduresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddProceduresViewController.h; path = ProceduresController/AddProceduresViewController.h; sourceTree = "<group>"; };
+		1AF3A84A1BFC74F800925D1F /* AddProceduresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddProceduresViewController.m; path = ProceduresController/AddProceduresViewController.m; sourceTree = "<group>"; };
+		1AF3A84B1BFC74F800925D1F /* AddProceduresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddProceduresViewController.xib; path = ProceduresController/AddProceduresViewController.xib; sourceTree = "<group>"; };
+		1AF3A84E1BFC751000925D1F /* AddMedicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMedicationViewController.h; sourceTree = "<group>"; };
+		1AF3A84F1BFC751000925D1F /* AddMedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMedicationViewController.m; sourceTree = "<group>"; };
+		1AF3A8501BFC751000925D1F /* AddMedicationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddMedicationViewController.xib; sourceTree = "<group>"; };
+		1AF3A8531BFC753100925D1F /* AddHealthConditionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddHealthConditionViewController.h; path = HealthConditionController/AddHealthConditionViewController.h; sourceTree = "<group>"; };
+		1AF3A8541BFC753100925D1F /* AddHealthConditionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddHealthConditionViewController.m; path = HealthConditionController/AddHealthConditionViewController.m; sourceTree = "<group>"; };
+		1AF3A8551BFC753100925D1F /* AddHealthConditionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddHealthConditionViewController.xib; path = HealthConditionController/AddHealthConditionViewController.xib; sourceTree = "<group>"; };
+		1AF3A8581BFC755000925D1F /* AddPrescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddPrescriptionViewController.h; path = PrescriptionController/AddPrescriptionViewController.h; sourceTree = "<group>"; };
+		1AF3A8591BFC755000925D1F /* AddPrescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddPrescriptionViewController.m; path = PrescriptionController/AddPrescriptionViewController.m; sourceTree = "<group>"; };
+		1AF3A85A1BFC755000925D1F /* AddPrescriptionViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddPrescriptionViewControlleriPad.xib; path = PrescriptionController/AddPrescriptionViewControlleriPad.xib; sourceTree = "<group>"; };
+		1AF3A85D1BFC756700925D1F /* AddImmunizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddImmunizationViewController.h; sourceTree = "<group>"; };
+		1AF3A85E1BFC756700925D1F /* AddImmunizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddImmunizationViewController.m; sourceTree = "<group>"; };
+		1AF3A85F1BFC756700925D1F /* AddImmunizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddImmunizationViewController.xib; sourceTree = "<group>"; };
+		1AF6659D1D06C03F00593541 /* States.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = States.plist; sourceTree = "<group>"; };
+		1AFA7DE81D3E1EB800EDBAD4 /* WeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeightViewController.h; path = DashboardController/WeightViewController.h; sourceTree = "<group>"; };
+		1AFA7DE91D3E1EB800EDBAD4 /* WeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeightViewController.m; path = DashboardController/WeightViewController.m; sourceTree = "<group>"; };
+		1AFA7DEB1D3E1FD200EDBAD4 /* WeightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeightTableViewCell.h; path = DashboardController/WeightTableViewCell.h; sourceTree = "<group>"; };
+		1AFA7DEC1D3E1FD200EDBAD4 /* WeightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeightTableViewCell.m; path = DashboardController/WeightTableViewCell.m; sourceTree = "<group>"; };
+		1AFA7DED1D3E1FD200EDBAD4 /* WeightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeightTableViewCell.xib; path = DashboardController/WeightTableViewCell.xib; sourceTree = "<group>"; };
+		1AFA7DF01D3E200900EDBAD4 /* WeightDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeightDetailViewController.h; path = DashboardController/WeightDetailViewController.h; sourceTree = "<group>"; };
+		1AFA7DF11D3E200900EDBAD4 /* WeightDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeightDetailViewController.m; path = DashboardController/WeightDetailViewController.m; sourceTree = "<group>"; };
+		1AFA7DF31D3E202F00EDBAD4 /* AddWeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddWeightViewController.h; path = DashboardController/AddWeightViewController.h; sourceTree = "<group>"; };
+		1AFA7DF41D3E202F00EDBAD4 /* AddWeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddWeightViewController.m; path = DashboardController/AddWeightViewController.m; sourceTree = "<group>"; };
+		1AFA7DF51D3E202F00EDBAD4 /* AddWeightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddWeightViewController.xib; path = DashboardController/AddWeightViewController.xib; sourceTree = "<group>"; };
+		4D5DB7BFDD6B28ADD3013F79 /* Pods-PHRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PHRTests/Pods-PHRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		54346BB249411CB5F6DB8820 /* Pods-PHRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PHRTests/Pods-PHRTests.release.xcconfig"; sourceTree = "<group>"; };
+		90AC3605A2E38A3E9CA97EE3 /* Pods-PHR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHR.release.xcconfig"; path = "Pods/Target Support Files/Pods-PHR/Pods-PHR.release.xcconfig"; sourceTree = "<group>"; };
+		ED463F0F204142AA28EFF96E /* Pods_PHR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PHR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F77C73BE4B70FD4B05C1A2DA /* Pods-PHR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PHR/Pods-PHR.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ADEB55F1BCB7B2F00EB8361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA961791E711AD5003FFB8A /* NotificationCenter.framework in Frameworks */,
+				1A0336081E70279000085F3F /* Contacts.framework in Frameworks */,
+				1A0336091E70279000085F3F /* ContactsUI.framework in Frameworks */,
+				1A9B380B1EBB1E6A00830A68 /* Charts.framework in Frameworks */,
+				1AB96F7B1E3F5B3000C22686 /* UserNotifications.framework in Frameworks */,
+				1A53E1931DB881710066DDAB /* HealthKit.framework in Frameworks */,
+				1A7A5CE31D21497600842156 /* Security.framework in Frameworks */,
+				1A4367FD1D129EE500221E5C /* LocalAuthentication.framework in Frameworks */,
+				98232A040D4A92932CC89791 /* Pods_PHR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADEB5781BCB7B2F00EB8361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485061CE703D35325941FFFF /* Pods_PHRTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A03C0E11BF995AD00848C16 /* SlideOutController */ = {
+			isa = PBXGroup;
+			children = (
+				1A03C0E21BF997E500848C16 /* SlideOutViewController.h */,
+				1A03C0E31BF997E500848C16 /* SlideOutViewController.m */,
+			);
+			name = SlideOutController;
+			sourceTree = "<group>";
+		};
+		1A03C0E81BF9E11900848C16 /* AboutUsController */ = {
+			isa = PBXGroup;
+			children = (
+				1A03C0E91BF9E13D00848C16 /* AboutUsViewController.h */,
+				1A03C0EA1BF9E13D00848C16 /* AboutUsViewController.m */,
+			);
+			name = AboutUsController;
+			sourceTree = "<group>";
+		};
+		1A03C0EC1BF9E15100848C16 /* AllergyController */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3A7F71BFC738400925D1F /* AllergyViewController.h */,
+				1AF3A7F81BFC738400925D1F /* AllergyViewController.m */,
+				1AF3A7F41BFC738400925D1F /* AllergyTableViewCell.h */,
+				1AF3A7F51BFC738400925D1F /* AllergyTableViewCell.m */,
+				1AF3A7F61BFC738400925D1F /* AllergyTableViewCell.xib */,
+				1A0BE7301D7D2DAA00DF5393 /* AllergyTableViewCelliPhone.xib */,
+				1AF3A7F21BFC738400925D1F /* AllergyDetailViewController.h */,
+				1AF3A7F31BFC738400925D1F /* AllergyDetailViewController.m */,
+				1AF3A7EF1BFC738400925D1F /* AddAllergyViewController.h */,
+				1AF3A7F01BFC738400925D1F /* AddAllergyViewController.m */,
+				1AF3A7F11BFC738400925D1F /* AddAllergyViewController.xib */,
+				1AB383691E56F80F00B44B8D /* AddAllergyViewControlleriPad.xib */,
+				1A7BCF081C884D17003BD1B8 /* AllergyNameTableViewCell.h */,
+				1A7BCF091C884D17003BD1B8 /* AllergyNameTableViewCell.m */,
+				1A7BCF0A1C884D17003BD1B8 /* AllergyNameTableViewCell.xib */,
+				1A69CABE1C8D817F00D8C47B /* AllergyTableViewController.h */,
+				1A69CABF1C8D817F00D8C47B /* AllergyTableViewController.m */,
+				1A69CAC01C8D817F00D8C47B /* AllergyTableViewController.xib */,
+			);
+			name = AllergyController;
+			sourceTree = "<group>";
+		};
+		1A03C0ED1BF9E15B00848C16 /* ImmunizationController */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3A8121BFC741F00925D1F /* ImmunizationViewController.h */,
+				1AF3A8131BFC741F00925D1F /* ImmunizationViewController.m */,
+				1AF3A80F1BFC741F00925D1F /* ImmunizationTableViewCell.h */,
+				1AF3A8101BFC741F00925D1F /* ImmunizationTableViewCell.m */,
+				1A0BE7371D7D8DFE00DF5393 /* ImmunizationTableViewCelliPhone.xib */,
+				1AF3A8111BFC741F00925D1F /* ImmunizationTableViewCell.xib */,
+				1AF3A80D1BFC741F00925D1F /* ImmunizationDetailViewController.h */,
+				1AF3A80E1BFC741F00925D1F /* ImmunizationDetailViewController.m */,
+				1AF3A85D1BFC756700925D1F /* AddImmunizationViewController.h */,
+				1AF3A85E1BFC756700925D1F /* AddImmunizationViewController.m */,
+				1AF3A85F1BFC756700925D1F /* AddImmunizationViewController.xib */,
+				1AB004331CABA56B002CDCAA /* ImmunzationNameTableViewController.h */,
+				1AB004341CABA56B002CDCAA /* ImmunzationNameTableViewController.m */,
+				1AB004351CABA56B002CDCAA /* ImmunzationNameTableViewController.xib */,
+				1AB004381CABA591002CDCAA /* ImmunzationNameTableViewCell.h */,
+				1AB004391CABA591002CDCAA /* ImmunzationNameTableViewCell.m */,
+				1AB0043A1CABA591002CDCAA /* ImmunzationNameTableViewCell.xib */,
+			);
+			name = ImmunizationController;
+			sourceTree = "<group>";
+		};
+		1A03C0EE1BF9E16D00848C16 /* PrescriptionController */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3A8281BFC743D00925D1F /* PrescriptionViewController.h */,
+				1AF3A8291BFC743D00925D1F /* PrescriptionViewController.m */,
+				1AF3A8251BFC743D00925D1F /* PrescriptionTableViewCell.h */,
+				1AF3A8261BFC743D00925D1F /* PrescriptionTableViewCell.m */,
+				1A6504D11D7EBE67009215A0 /* PrescriptionTableViewCelliPhone.xib */,
+				1AF3A8271BFC743D00925D1F /* PrescriptionTableViewCell.xib */,
+				1AF3A8231BFC743D00925D1F /* PrescriptionDetailViewController.h */,
+				1AF3A8241BFC743D00925D1F /* PrescriptionDetailViewController.m */,
+				1AF3A8581BFC755000925D1F /* AddPrescriptionViewController.h */,
+				1AF3A8591BFC755000925D1F /* AddPrescriptionViewController.m */,
+				1AF3A85A1BFC755000925D1F /* AddPrescriptionViewControlleriPad.xib */,
+				1AA327E41E5C14110041197B /* AddPrescriptionViewControlleriPhone.xib */,
+			);
+			name = PrescriptionController;
+			sourceTree = "<group>";
+		};
+		1A142F391C292E24008C7982 /* BloodPressure */ = {
+			isa = PBXGroup;
+			children = (
+				1A142F271C2920C3008C7982 /* BloodPresureViewController.h */,
+				1A142F281C2920C3008C7982 /* BloodPresureViewController.m */,
+				1A142F361C292E0F008C7982 /* BloodPresureDetailViewController.h */,
+				1A142F371C292E0F008C7982 /* BloodPresureDetailViewController.m */,
+				1A142F3C1C292EC4008C7982 /* AddBloodPresureViewController.h */,
+				1A142F3D1C292EC4008C7982 /* AddBloodPresureViewController.m */,
+				1A142F3E1C292EC4008C7982 /* AddBloodPresureViewController.xib */,
+				1A142F411C293FF5008C7982 /* BloodPresureTableViewCell.h */,
+				1A142F421C293FF5008C7982 /* BloodPresureTableViewCell.m */,
+				1A142F431C293FF5008C7982 /* BloodPresureTableViewCell.xib */,
+				1A6504D71D7EE3F8009215A0 /* BloodPressureTableViewCelliPhone.xib */,
+			);
+			name = BloodPressure;
+			sourceTree = "<group>";
+		};
+		1A142F3A1C292E36008C7982 /* Diabetes */ = {
+			isa = PBXGroup;
+			children = (
+				1A142F2C1C2927DF008C7982 /* DiabetesViewController.h */,
+				1A142F2D1C2927DF008C7982 /* DiabetesViewController.m */,
+				1A865D541C2A6240003ED70A /* DiabetesTableViewCell.h */,
+				1A865D551C2A6240003ED70A /* DiabetesTableViewCell.m */,
+				1A6504D51D7EE3B9009215A0 /* DiabetesTableViewCelliPhone.xib */,
+				1A865D561C2A6240003ED70A /* DiabetesTableViewCell.xib */,
+				1A865D591C2A693D003ED70A /* DiabetesDetailsViewController.h */,
+				1A865D5A1C2A693D003ED70A /* DiabetesDetailsViewController.m */,
+				1A865D5C1C2A7383003ED70A /* AddDiabetesViewController.h */,
+				1A865D5D1C2A7383003ED70A /* AddDiabetesViewController.m */,
+				1A865D5E1C2A7383003ED70A /* AddDiabetesViewController.xib */,
+			);
+			name = Diabetes;
+			sourceTree = "<group>";
+		};
+		1A142F3B1C292E4A008C7982 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				1A142F311C292815008C7982 /* ActivityViewController.h */,
+				1A142F321C292815008C7982 /* ActivityViewController.m */,
+				1A27D11D1C6DD9C7004AEB02 /* ActivityTableViewCell.h */,
+				1A27D11E1C6DD9C7004AEB02 /* ActivityTableViewCell.m */,
+				1A6504D91D7EE42C009215A0 /* ActivityTableViewCelliPhone.xib */,
+				1A27D11F1C6DD9C7004AEB02 /* ActivityTableViewCell.xib */,
+				1A865D611C2A779D003ED70A /* ActivityDetailsViewController.h */,
+				1A865D621C2A779D003ED70A /* ActivityDetailsViewController.m */,
+				1A865D641C2A7833003ED70A /* AddActivityViewController.h */,
+				1A865D651C2A7833003ED70A /* AddActivityViewController.m */,
+				1A865D661C2A7833003ED70A /* AddActivityViewController.xib */,
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
+		1A53E1911DB881700066DDAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AA961781E711AD5003FFB8A /* NotificationCenter.framework */,
+				1A0336061E70279000085F3F /* Contacts.framework */,
+				1A0336071E70279000085F3F /* ContactsUI.framework */,
+				1AB96F7A1E3F5B3000C22686 /* UserNotifications.framework */,
+				1A53E1921DB881710066DDAB /* HealthKit.framework */,
+				ED463F0F204142AA28EFF96E /* Pods_PHR.framework */,
+				1053228F2D8E0646536DE002 /* Pods_PHRTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A7918661D8FFD04004B21AE /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				1A7918631D8FFCFE004B21AE /* GSHealthKitManager.h */,
+				1A7918641D8FFCFE004B21AE /* GSHealthKitManager.m */,
+			);
+			name = HealthKit;
+			sourceTree = "<group>";
+		};
+		1AB8ADBC1CD32286004BD564 /* XL */ = {
+			isa = PBXGroup;
+			children = (
+				1AD944F71CE35C5700DC5A0F /* XLMediaZoom.h */,
+				1AD944F81CE35C5700DC5A0F /* XLMediaZoom.m */,
+				1AD944F91CE35C5700DC5A0F /* XLVideoZoom.h */,
+				1AD944FA1CE35C5700DC5A0F /* XLVideoZoom.m */,
+			);
+			name = XL;
+			sourceTree = "<group>";
+		};
+		1AD877741E10E40300FDFA1E /* MedicalContacts&Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				1AD877771E10E47200FDFA1E /* MedicalContactsViewController.h */,
+				1AD877781E10E47200FDFA1E /* MedicalContactsViewController.m */,
+				1AD8777E1E10F4E400FDFA1E /* MedicalContactTableViewCell.h */,
+				1AD8777F1E10F4E400FDFA1E /* MedicalContactTableViewCell.m */,
+				1AD8777A1E10EF6F00FDFA1E /* MedicalContactTableViewCelliPhone.xib */,
+				1AD8777C1E10EF8700FDFA1E /* MedicalContactTableViewCell.xib */,
+				1AD877811E112F2600FDFA1E /* MedicalContactDetailViewController.h */,
+				1AD877821E112F2600FDFA1E /* MedicalContactDetailViewController.m */,
+				1AB4CEE91E1263CC00910FFD /* AddMedicalContactViewController.h */,
+				1AB4CEEA1E1263CC00910FFD /* AddMedicalContactViewController.m */,
+				1AB4CEEB1E1263CC00910FFD /* AddMedicalContactViewControlleriPhone.xib */,
+				1AB383671E56DAE900B44B8D /* AddMedicalContactViewControlleriPad.xib */,
+				1A4EA5C51E15186B00586AFE /* SharingViewController.h */,
+				1A4EA5C61E15186B00586AFE /* SharingViewController.m */,
+			);
+			name = "MedicalContacts&Sharing";
+			sourceTree = "<group>";
+		};
+		1ADEB5591BCB7B2F00EB8361 = {
+			isa = PBXGroup;
+			children = (
+				1A9B380A1EBB1E6A00830A68 /* Charts.framework */,
+				1A54696D1D6B21D800DD0650 /* PHR-Bridging-Header.h */,
+				1A7A5CE21D21497600842156 /* Security.framework */,
+				1A4367FC1D129EE500221E5C /* LocalAuthentication.framework */,
+				1ADEB5641BCB7B2F00EB8361 /* PHR */,
+				1ADEB57E1BCB7B2F00EB8361 /* PHRTests */,
+				1ADEB5631BCB7B2F00EB8361 /* Products */,
+				1A53E1911DB881700066DDAB /* Frameworks */,
+				E4F645AD2F04F5A1ED923756 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		1ADEB5631BCB7B2F00EB8361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEB5621BCB7B2F00EB8361 /* PHR.app */,
+				1ADEB57B1BCB7B2F00EB8361 /* PHRTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ADEB5641BCB7B2F00EB8361 /* PHR */ = {
+			isa = PBXGroup;
+			children = (
+				1AD877741E10E40300FDFA1E /* MedicalContacts&Sharing */,
+				1A7918621D8FF81E004B21AE /* PHR.entitlements */,
+				1AF3A7B51BFC460800925D1F /* Labs/TestsController */,
+				1AF3A7B41BFC45F500925D1F /* ProceduresController */,
+				1AF3A7B31BFC45E100925D1F /* MedicationController */,
+				1AF3A7AF1BFC45B300925D1F /* HealthConditionController */,
+				1AEF3D5A1BFAEF87003647B0 /* UserProfileController */,
+				1A03C0EE1BF9E16D00848C16 /* PrescriptionController */,
+				1A03C0ED1BF9E15B00848C16 /* ImmunizationController */,
+				1A03C0EC1BF9E15100848C16 /* AllergyController */,
+				1A03C0E81BF9E11900848C16 /* AboutUsController */,
+				1A03C0E11BF995AD00848C16 /* SlideOutController */,
+				1ADEB5941BCB7DC200EB8361 /* DashboardController */,
+				1ADEB5931BCB7DB500EB8361 /* SplashController */,
+				1ADEB5921BCB7D8A00EB8361 /* LoginController */,
+				1ADEB5911BCB7D7800EB8361 /* HelperClasses */,
+				1ADEB58B1BCB7B5A00EB8361 /* AppDelegate */,
+				1ADEB56F1BCB7B2F00EB8361 /* Main.storyboard */,
+				1AA941181DA642C1004687AF /* Main-iPad.storyboard */,
+				1AC6A1751DDAEB2C0002607F /* iTunesArtwork */,
+				1AC6A1761DDAEB2C0002607F /* iTunesArtwork@2x */,
+				1ADEB5741BCB7B2F00EB8361 /* LaunchScreen.xib */,
+				1ADEB6331BCB854200EB8361 /* Constants.h */,
+				1AD6D9221E5AC1BB00912F40 /* Images.xcassets */,
+				1ADEB5651BCB7B2F00EB8361 /* Supporting Files */,
+			);
+			path = PHR;
+			sourceTree = "<group>";
+		};
+		1ADEB5651BCB7B2F00EB8361 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A1BA5D61D2E6B2500C7CF49 /* ActivityName.plist */,
+				1AF6659D1D06C03F00593541 /* States.plist */,
+				1A4177BE1CEC7A6800397484 /* relationship.plist */,
+				1ABA72541CE1ECA900FD663D /* BloodGroups.plist */,
+				1ABA72551CE1ECA900FD663D /* DisabilityTypes.plist */,
+				1ADEB5661BCB7B2F00EB8361 /* Info.plist */,
+				1ADEB5671BCB7B2F00EB8361 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1ADEB57E1BCB7B2F00EB8361 /* PHRTests */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEB5811BCB7B2F00EB8361 /* PHRTests.m */,
+				1ADEB57F1BCB7B2F00EB8361 /* Supporting Files */,
+			);
+			path = PHRTests;
+			sourceTree = "<group>";
+		};
+		1ADEB57F1BCB7B2F00EB8361 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEB5801BCB7B2F00EB8361 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1ADEB58B1BCB7B5A00EB8361 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEB58C1BCB7B8E00EB8361 /* AppDelegate.h */,
+				1ADEB58D1BCB7B8E00EB8361 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1ADEB5911BCB7D7800EB8361 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1AE87C321E2CA0D1006F3451 /* QRScanner */,
+				1A7918661D8FFD04004B21AE /* HealthKit */,
+				1A54696A1D6B20B600DD0650 /* DayAxisValueFormatter.h */,
+				1A54696B1D6B20B600DD0650 /* DayAxisValueFormatter.m */,
+				1AB8ADBC1CD32286004BD564 /* XL */,
+				1ADEB6291BCB837100EB8361 /* SWRealController */,
+				1ADEB59F1BCB7FFA00EB8361 /* BarButton Block */,
+				1ADEB59E1BCB7FF700EB8361 /* Reachability */,
+				1ADEB59D1BCB7FF400EB8361 /* NSData+Base64 */,
+				1ADEB59C1BCB7FF200EB8361 /* AFNetworking */,
+				1ADEB59B1BCB7FF000EB8361 /* AutoScrollView */,
+			);
+			name = HelperClasses;
+			sourceTree = "<group>";
+		};
+		1ADEB5921BCB7D8A00EB8361 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEB5981BCB7E7400EB8361 /* LoginController.h */,
+				1ADEB5991BCB7E7400EB8361 /* LoginController.m */,
+				1AA1E54D1E92682500EFA48B /* SignUpViewController.h */,
+				1AA1E54E1E92682500EFA48B /* SignUpViewController.m */,
+				1ACC35941E965F8A00679E8B /* OTPViewController.h */,
+				1ACC35951E965F8A00679E8B /* OTPViewController.m */,
+			);
+			name = LoginController;
+			sourceTree = "<group>";
+		};
+		1ADEB5931BCB7DB500EB8361 /* SplashController */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEB5951BCB7E3D00EB8361 /* SplashViewController.h */,
+				1ADEB5961BCB7E3D00EB8361 /* SplashViewController.m */,
+			);
+			name = SplashController;
+			sourceTree = "<group>";
+		};
+		1ADEB5941BCB7DC200EB8361 /* DashboardController */ = {
+			isa = PBXGroup;
+			children = (
+				1AFA7DE71D3E1E4400EDBAD4 /* Weight */,
+				1AF3A7FF1BFC740300925D1F /* DashboardViewController.h */,
+				1AB5E7271DB48571000F8E3B /* DashboardViewController.m */,
+				1A5121ED1C198AFB005B362E /* DashboardTableViewCell.h */,
+				1A5121EE1C198AFB005B362E /* DashboardTableViewCell.m */,
+				1A5121EF1C198AFB005B362E /* DashboardTableViewCell.xib */,
+				1AE26DD11E1A348300101753 /* HealthDataTableViewCell.h */,
+				1AE26DD21E1A348300101753 /* HealthDataTableViewCell.m */,
+				1AE26DD31E1A348300101753 /* HealthDataTableViewCell.xib */,
+				1A142F3B1C292E4A008C7982 /* Activities */,
+				1A142F3A1C292E36008C7982 /* Diabetes */,
+				1A142F391C292E24008C7982 /* BloodPressure */,
+			);
+			name = DashboardController;
+			sourceTree = "<group>";
+		};
+		1ADEB59B1BCB7FF000EB8361 /* AutoScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEB5EE1BCB834300EB8361 /* TPKeyboardAvoidingScrollView.h */,
+				1ADEB5EF1BCB834300EB8361 /* TPKeyboardAvoidingScrollView.m */,
+				1ADEB5F01BCB834300EB8361 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				1ADEB5F11BCB834300EB8361 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = AutoScrollView;
+			sourceTree = "<group>";
+		};
+		1ADEB59C1BCB7FF200EB8361 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEB5F41BCB836600EB8361 /* AFHTTPRequestOperation.h */,
+				1ADEB5F51BCB836600EB8361 /* AFHTTPRequestOperation.m */,
+				1ADEB5F61BCB836600EB8361 /* AFHTTPRequestOperationManager.h */,
+				1ADEB5F71BCB836600EB8361 /* AFHTTPRequestOperationManager.m */,
+				1ADEB5F81BCB836600EB8361 /* AFHTTPSessionManager.h */,
+				1ADEB5F91BCB836600EB8361 /* AFHTTPSessionManager.m */,
+				1ADEB5FA1BCB836600EB8361 /* AFNetworkActivityIndicatorManager.h */,
+				1ADEB5FB1BCB836600EB8361 /* AFNetworkActivityIndicatorManager.m */,
+				1ADEB5FC1BCB836600EB8361 /* AFNetworking.h */,
+				1ADEB5FD1BCB836600EB8361 /* AFNetworkReachabilityManager.h */,
+				1ADEB5FE1BCB836600EB8361 /* AFNetworkReachabilityManager.m */,
+				1ADEB5FF1BCB836600EB8361 /* AFSecurityPolicy.h */,
+				1ADEB6001BCB836600EB8361 /* AFSecurityPolicy.m */,
+				1ADEB6011BCB836600EB8361 /* AFURLConnectionOperation.h */,
+				1ADEB6021BCB836600EB8361 /* AFURLConnectionOperation.m */,
+				1ADEB6031BCB836600EB8361 /* AFURLRequestSerialization.h */,
+				1ADEB6041BCB836600EB8361 /* AFURLRequestSerialization.m */,
+				1ADEB6051BCB836600EB8361 /* AFURLResponseSerialization.h */,
+				1ADEB6061BCB836600EB8361 /* AFURLResponseSerialization.m */,
+				1ADEB6071BCB836600EB8361 /* AFURLSessionManager.h */,
+				1ADEB6081BCB836600EB8361 /* AFURLSessionManager.m */,
+				1ADEB6091BCB836600EB8361 /* UIActivityIndicatorView+AFNetworking.h */,
+				1ADEB60A1BCB836600EB8361 /* UIActivityIndicatorView+AFNetworking.m */,
+				1ADEB60B1BCB836600EB8361 /* UIAlertView+AFNetworking.h */,
+				1ADEB60C1BCB836600EB8361 /* UIAlertView+AFNetworking.m */,
+				1ADEB60D1BCB836600EB8361 /* UIButton+AFNetworking.h */,
+				1ADEB60E1BCB836600EB8361 /* UIButton+AFNetworking.m */,
+				1ADEB60F1BCB836600EB8361 /* UIImageView+AFNetworking.h */,
+				1ADEB6101BCB836600EB8361 /* UIImageView+AFNetworking.m */,
+				1ADEB6111BCB836600EB8361 /* UIKit+AFNetworking.h */,
+				1ADEB6121BCB836600EB8361 /* UIProgressView+AFNetworking.h */,
+				1ADEB6131BCB836600EB8361 /* UIProgressView+AFNetworking.m */,
+				1ADEB6141BCB836600EB8361 /* UIRefreshControl+AFNetworking.h */,
+				1ADEB6151BCB836600EB8361 /* UIRefreshControl+AFNetworking.m */,
+				1ADEB6161BCB836600EB8361 /* UIWebView+AFNetworking.h */,
+				1ADEB6171BCB836600EB8361 /* UIWebView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		1ADEB59D1BCB7FF400EB8361 /* NSData+Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEB5A81BCB81A500EB8361 /* NSData+Base64.h */,
+				1ADEB5A91BCB81A500EB8361 /* NSData+Base64.m */,
+				1ADEB5AA1BCB81A500EB8361 /* NSData+Base64.podspec */,
+			);
+			name = "NSData+Base64";
+			sourceTree = "<group>";
+		};
+		1ADEB59E1BCB7FF700EB8361 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEB6301BCB83EA00EB8361 /* Reachability.h */,
+				1ADEB6311BCB83EA00EB8361 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		1ADEB59F1BCB7FFA00EB8361 /* BarButton Block */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEB5AD1BCB81EC00EB8361 /* BarButton_Block.h */,
+				1ADEB5AE1BCB81EC00EB8361 /* BarButton_Block.m */,
+			);
+			name = "BarButton Block";
+			sourceTree = "<group>";
+		};
+		1ADEB6291BCB837100EB8361 /* SWRealController */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEB62D1BCB83D000EB8361 /* SWRevealViewController.h */,
+				1ADEB62E1BCB83D000EB8361 /* SWRevealViewController.m */,
+			);
+			name = SWRealController;
+			sourceTree = "<group>";
+		};
+		1AE87C321E2CA0D1006F3451 /* QRScanner */ = {
+			isa = PBXGroup;
+			children = (
+				1AE87C351E2CA0FF006F3451 /* XMLReader.h */,
+				1AE87C361E2CA0FF006F3451 /* XMLReader.m */,
+			);
+			name = QRScanner;
+			sourceTree = "<group>";
+		};
+		1AEF3D5A1BFAEF87003647B0 /* UserProfileController */ = {
+			isa = PBXGroup;
+			children = (
+				1AEF3D5B1BFAEFA8003647B0 /* UserProfileViewController.h */,
+				1AEF3D5C1BFAEFA8003647B0 /* UserProfileViewController.m */,
+				1A2717481C7F1D9E009D6CB6 /* EmergencyInforViewController.h */,
+				1A2717491C7F1D9E009D6CB6 /* EmergencyInforViewController.m */,
+				1A27174B1C7F1DC1009D6CB6 /* EmployeeInforViewController.h */,
+				1A27174C1C7F1DC1009D6CB6 /* EmployeeInforViewController.m */,
+				1A27174E1C7F1DD7009D6CB6 /* InsuranceInforViewController.h */,
+				1A27174F1C7F1DD7009D6CB6 /* InsuranceInforViewController.m */,
+				1A2717511C7F1DF5009D6CB6 /* PreferenceInforViewController.h */,
+				1A2717521C7F1DF5009D6CB6 /* PreferenceInforViewController.m */,
+			);
+			name = UserProfileController;
+			sourceTree = "<group>";
+		};
+		1AF3A7AF1BFC45B300925D1F /* HealthConditionController */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3A8071BFC740E00925D1F /* HealthConditionViewController.h */,
+				1AF3A8081BFC740E00925D1F /* HealthConditionViewController.m */,
+				1AF3A8041BFC740E00925D1F /* HealthConditionTableViewCell.h */,
+				1AF3A8051BFC740E00925D1F /* HealthConditionTableViewCell.m */,
+				1A0BE7351D7D72F200DF5393 /* HealthConditionTableViewCelliPhone.xib */,
+				1AF3A8061BFC740E00925D1F /* HealthConditionTableViewCell.xib */,
+				1AF3A8021BFC740E00925D1F /* HealthConditionDetailViewController.h */,
+				1AF3A8031BFC740E00925D1F /* HealthConditionDetailViewController.m */,
+				1AF3A8531BFC753100925D1F /* AddHealthConditionViewController.h */,
+				1AF3A8541BFC753100925D1F /* AddHealthConditionViewController.m */,
+				1AF3A8551BFC753100925D1F /* AddHealthConditionViewController.xib */,
+				1A8ACFAF1CA911440090A644 /* HealthConditionTableViewController.h */,
+				1A8ACFB01CA911440090A644 /* HealthConditionTableViewController.m */,
+				1A8ACFB11CA911440090A644 /* HealthConditionTableViewController.xib */,
+				1A8ACFB41CA913550090A644 /* HealthConditionNameTableViewCell.h */,
+				1A8ACFB51CA913550090A644 /* HealthConditionNameTableViewCell.m */,
+				1A8ACFB61CA913550090A644 /* HealthConditionNameTableViewCell.xib */,
+			);
+			name = HealthConditionController;
+			sourceTree = "<group>";
+		};
+		1AF3A7B31BFC45E100925D1F /* MedicationController */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3A81D1BFC742E00925D1F /* MedicationViewController.h */,
+				1AF3A81E1BFC742E00925D1F /* MedicationViewController.m */,
+				1AF3A81A1BFC742E00925D1F /* MedicationTableViewCell.h */,
+				1AF3A81B1BFC742E00925D1F /* MedicationTableViewCell.m */,
+				1A6504D31D7ECD31009215A0 /* MedicationTableViewCelliPhone.xib */,
+				1AF3A81C1BFC742E00925D1F /* MedicationTableViewCell.xib */,
+				1AF3A8181BFC742E00925D1F /* MedicationDetailViewController.h */,
+				1AF3A8191BFC742E00925D1F /* MedicationDetailViewController.m */,
+				1AF3A84E1BFC751000925D1F /* AddMedicationViewController.h */,
+				1AF3A84F1BFC751000925D1F /* AddMedicationViewController.m */,
+				1AF3A8501BFC751000925D1F /* AddMedicationViewController.xib */,
+				1A3FD5391CB621760098D343 /* MedicationTableViewController.h */,
+				1A3FD53A1CB621760098D343 /* MedicationTableViewController.m */,
+				1A3FD53B1CB621760098D343 /* MedicationTableViewController.xib */,
+				1A3FD53E1CB624BF0098D343 /* MedicationNameTableViewCell.h */,
+				1A3FD53F1CB624BF0098D343 /* MedicationNameTableViewCell.m */,
+				1A3FD5401CB624BF0098D343 /* MedicationNameTableViewCell.xib */,
+			);
+			name = MedicationController;
+			sourceTree = "<group>";
+		};
+		1AF3A7B41BFC45F500925D1F /* ProceduresController */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3A8331BFC744700925D1F /* ProceduresViewController.h */,
+				1AF3A8341BFC744700925D1F /* ProceduresViewController.m */,
+				1AF3A8301BFC744700925D1F /* ProceduresTableViewCell.h */,
+				1AF3A8311BFC744700925D1F /* ProceduresTableViewCell.m */,
+				1A6504CA1D7E7BEE009215A0 /* ProceduresTableViewCelliPhone.xib */,
+				1AF3A8321BFC744700925D1F /* ProceduresTableViewCell.xib */,
+				1AF3A82E1BFC744700925D1F /* ProceduresDetailViewController.h */,
+				1AF3A82F1BFC744700925D1F /* ProceduresDetailViewController.m */,
+				1AF3A8491BFC74F800925D1F /* AddProceduresViewController.h */,
+				1AF3A84A1BFC74F800925D1F /* AddProceduresViewController.m */,
+				1AF3A84B1BFC74F800925D1F /* AddProceduresViewController.xib */,
+				1A52963B1CBCF8A000BCB5E8 /* ProcedureTableViewController.h */,
+				1A52963C1CBCF8A000BCB5E8 /* ProcedureTableViewController.m */,
+				1A52963D1CBCF8A000BCB5E8 /* ProcedureTableViewController.xib */,
+				1A5296401CBCF8F200BCB5E8 /* ProcedureNameTableViewCell.h */,
+				1A5296411CBCF8F200BCB5E8 /* ProcedureNameTableViewCell.m */,
+				1A5296421CBCF8F200BCB5E8 /* ProcedureNameTableViewCell.xib */,
+			);
+			name = ProceduresController;
+			sourceTree = "<group>";
+		};
+		1AF3A7B51BFC460800925D1F /* Labs/TestsController */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3A83C1BFC745500925D1F /* LabsTestsViewController.h */,
+				1AF3A83D1BFC745500925D1F /* LabsTestsViewController.m */,
+				1AF3A8391BFC745500925D1F /* LabsTestsTableViewCell.h */,
+				1AF3A83A1BFC745500925D1F /* LabsTestsTableViewCell.m */,
+				1A6504CF1D7E9A09009215A0 /* LabsTestsTableViewCelliPhone.xib */,
+				1AF3A83B1BFC745500925D1F /* LabsTestsTableViewCell.xib */,
+				1AF3A83E1BFC745500925D1F /* LabTestsDetailViewController.h */,
+				1AF3A83F1BFC745500925D1F /* LabTestsDetailViewController.m */,
+				1AF3A8441BFC74D400925D1F /* AddLabTestsViewController.h */,
+				1AF3A8451BFC74D400925D1F /* AddLabTestsViewController.m */,
+				1AF3A8461BFC74D400925D1F /* AddLabTestsViewController.xib */,
+				1AB467E51CBE4A970058F04B /* LabTestTableViewController.h */,
+				1AB467E61CBE4A970058F04B /* LabTestTableViewController.m */,
+				1AB467E71CBE4A970058F04B /* LabTestTableViewController.xib */,
+				1AB467E01CBE4A6F0058F04B /* LabTestSearchTableViewCell.h */,
+				1AB467E11CBE4A6F0058F04B /* LabTestSearchTableViewCell.m */,
+				1AB467E21CBE4A6F0058F04B /* LabTestSearchTableViewCell.xib */,
+			);
+			name = Labs/TestsController;
+			sourceTree = "<group>";
+		};
+		1AFA7DE71D3E1E4400EDBAD4 /* Weight */ = {
+			isa = PBXGroup;
+			children = (
+				1AFA7DE81D3E1EB800EDBAD4 /* WeightViewController.h */,
+				1AFA7DE91D3E1EB800EDBAD4 /* WeightViewController.m */,
+				1AFA7DEB1D3E1FD200EDBAD4 /* WeightTableViewCell.h */,
+				1AFA7DEC1D3E1FD200EDBAD4 /* WeightTableViewCell.m */,
+				1A6504DB1D7EE448009215A0 /* WeightTableViewCelliPhone.xib */,
+				1AFA7DED1D3E1FD200EDBAD4 /* WeightTableViewCell.xib */,
+				1AFA7DF01D3E200900EDBAD4 /* WeightDetailViewController.h */,
+				1AFA7DF11D3E200900EDBAD4 /* WeightDetailViewController.m */,
+				1AFA7DF31D3E202F00EDBAD4 /* AddWeightViewController.h */,
+				1AFA7DF41D3E202F00EDBAD4 /* AddWeightViewController.m */,
+				1AFA7DF51D3E202F00EDBAD4 /* AddWeightViewController.xib */,
+			);
+			name = Weight;
+			sourceTree = "<group>";
+		};
+		E4F645AD2F04F5A1ED923756 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F77C73BE4B70FD4B05C1A2DA /* Pods-PHR.debug.xcconfig */,
+				90AC3605A2E38A3E9CA97EE3 /* Pods-PHR.release.xcconfig */,
+				4D5DB7BFDD6B28ADD3013F79 /* Pods-PHRTests.debug.xcconfig */,
+				54346BB249411CB5F6DB8820 /* Pods-PHRTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ADEB5611BCB7B2F00EB8361 /* PHR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADEB5851BCB7B2F00EB8361 /* Build configuration list for PBXNativeTarget "PHR" */;
+			buildPhases = (
+				B421390B53880155819F40A9 /* [CP] Check Pods Manifest.lock */,
+				1ADEB55E1BCB7B2F00EB8361 /* Sources */,
+				1ADEB55F1BCB7B2F00EB8361 /* Frameworks */,
+				1ADEB5601BCB7B2F00EB8361 /* Resources */,
+				1A41B35B1D6B0FC100424E49 /* Embed Frameworks */,
+				9B7273AC2478838AB455D678 /* [CP] Embed Pods Frameworks */,
+				CF10C929653DC8D7A5BB34BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PHR;
+			productName = PHR;
+			productReference = 1ADEB5621BCB7B2F00EB8361 /* PHR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1ADEB57A1BCB7B2F00EB8361 /* PHRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADEB5881BCB7B2F00EB8361 /* Build configuration list for PBXNativeTarget "PHRTests" */;
+			buildPhases = (
+				F8CB1FC3D1336A665395291B /* [CP] Check Pods Manifest.lock */,
+				1ADEB5771BCB7B2F00EB8361 /* Sources */,
+				1ADEB5781BCB7B2F00EB8361 /* Frameworks */,
+				1ADEB5791BCB7B2F00EB8361 /* Resources */,
+				82385E985C93531F8A7C4E1D /* [CP] Embed Pods Frameworks */,
+				7BEA4A1E07631321DA6BB794 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ADEB57D1BCB7B2F00EB8361 /* PBXTargetDependency */,
+			);
+			name = PHRTests;
+			productName = PHRTests;
+			productReference = 1ADEB57B1BCB7B2F00EB8361 /* PHRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ADEB55A1BCB7B2F00EB8361 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "CDAC HIED";
+				TargetAttributes = {
+					1ADEB5611BCB7B2F00EB8361 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = DW7B45LBY8;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					1ADEB57A1BCB7B2F00EB8361 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = DW7B45LBY8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1ADEB5611BCB7B2F00EB8361;
+					};
+				};
+			};
+			buildConfigurationList = 1ADEB55D1BCB7B2F00EB8361 /* Build configuration list for PBXProject "PHR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1ADEB5591BCB7B2F00EB8361;
+			productRefGroup = 1ADEB5631BCB7B2F00EB8361 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ADEB5611BCB7B2F00EB8361 /* PHR */,
+				1ADEB57A1BCB7B2F00EB8361 /* PHRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ADEB5601BCB7B2F00EB8361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB0043C1CABA591002CDCAA /* ImmunzationNameTableViewCell.xib in Resources */,
+				1AB467E91CBE4A970058F04B /* LabTestTableViewController.xib in Resources */,
+				1A142F401C292EC4008C7982 /* AddBloodPresureViewController.xib in Resources */,
+				1ADEB5AC1BCB81A500EB8361 /* NSData+Base64.podspec in Resources */,
+				1A6504CB1D7E7BEE009215A0 /* ProceduresTableViewCelliPhone.xib in Resources */,
+				1A27D1211C6DD9C7004AEB02 /* ActivityTableViewCell.xib in Resources */,
+				1A6504D61D7EE3B9009215A0 /* DiabetesTableViewCelliPhone.xib in Resources */,
+				1A5121F11C198AFB005B362E /* DashboardTableViewCell.xib in Resources */,
+				1AB3836A1E56F80F00B44B8D /* AddAllergyViewControlleriPad.xib in Resources */,
+				1AF3A8521BFC751000925D1F /* AddMedicationViewController.xib in Resources */,
+				1A1BA5D71D2E6B2500C7CF49 /* ActivityName.plist in Resources */,
+				1A6504DA1D7EE42C009215A0 /* ActivityTableViewCelliPhone.xib in Resources */,
+				1AF3A7FA1BFC738400925D1F /* AddAllergyViewController.xib in Resources */,
+				1AD8777D1E10EF8700FDFA1E /* MedicalContactTableViewCell.xib in Resources */,
+				1AF3A8371BFC744700925D1F /* ProceduresTableViewCell.xib in Resources */,
+				1AC6A1781DDAEB2C0002607F /* iTunesArtwork@2x in Resources */,
+				1A4177BF1CEC7A6800397484 /* relationship.plist in Resources */,
+				1AF3A8211BFC742E00925D1F /* MedicationTableViewCell.xib in Resources */,
+				1AB004371CABA56B002CDCAA /* ImmunzationNameTableViewController.xib in Resources */,
+				1A52963F1CBCF8A000BCB5E8 /* ProcedureTableViewController.xib in Resources */,
+				1A8ACFB81CA913550090A644 /* HealthConditionNameTableViewCell.xib in Resources */,
+				1AD8777B1E10EF6F00FDFA1E /* MedicalContactTableViewCelliPhone.xib in Resources */,
+				1ADEB5711BCB7B2F00EB8361 /* Main.storyboard in Resources */,
+				1AF3A8611BFC756700925D1F /* AddImmunizationViewController.xib in Resources */,
+				1AC6A1771DDAEB2C0002607F /* iTunesArtwork in Resources */,
+				1A6504D01D7E9A09009215A0 /* LabsTestsTableViewCelliPhone.xib in Resources */,
+				1AF3A7FD1BFC738400925D1F /* AllergyTableViewCell.xib in Resources */,
+				1ADEB5761BCB7B2F00EB8361 /* LaunchScreen.xib in Resources */,
+				1AF3A8161BFC741F00925D1F /* ImmunizationTableViewCell.xib in Resources */,
+				1AA327E51E5C14110041197B /* AddPrescriptionViewControlleriPhone.xib in Resources */,
+				1A6504D41D7ECD31009215A0 /* MedicationTableViewCelliPhone.xib in Resources */,
+				1AFA7DF71D3E202F00EDBAD4 /* AddWeightViewController.xib in Resources */,
+				1AB383681E56DAE900B44B8D /* AddMedicalContactViewControlleriPad.xib in Resources */,
+				1AB467E41CBE4A6F0058F04B /* LabTestSearchTableViewCell.xib in Resources */,
+				1AF3A84D1BFC74F800925D1F /* AddProceduresViewController.xib in Resources */,
+				1A0BE7381D7D8DFE00DF5393 /* ImmunizationTableViewCelliPhone.xib in Resources */,
+				1AFA7DEF1D3E1FD200EDBAD4 /* WeightTableViewCell.xib in Resources */,
+				1AB4CEED1E1263CC00910FFD /* AddMedicalContactViewControlleriPhone.xib in Resources */,
+				1ABA72561CE1ECA900FD663D /* BloodGroups.plist in Resources */,
+				1A865D581C2A6240003ED70A /* DiabetesTableViewCell.xib in Resources */,
+				1A0BE7361D7D72F200DF5393 /* HealthConditionTableViewCelliPhone.xib in Resources */,
+				1A0BE7311D7D2DAA00DF5393 /* AllergyTableViewCelliPhone.xib in Resources */,
+				1A865D601C2A7383003ED70A /* AddDiabetesViewController.xib in Resources */,
+				1AF3A8571BFC753100925D1F /* AddHealthConditionViewController.xib in Resources */,
+				1A3FD53D1CB621760098D343 /* MedicationTableViewController.xib in Resources */,
+				1A3FD5421CB624BF0098D343 /* MedicationNameTableViewCell.xib in Resources */,
+				1AF3A85C1BFC755000925D1F /* AddPrescriptionViewControlleriPad.xib in Resources */,
+				1AD6D9231E5AC1BB00912F40 /* Images.xcassets in Resources */,
+				1A142F451C293FF5008C7982 /* BloodPresureTableViewCell.xib in Resources */,
+				1AE26DD51E1A348300101753 /* HealthDataTableViewCell.xib in Resources */,
+				1ABA72571CE1ECA900FD663D /* DisabilityTypes.plist in Resources */,
+				1A8ACFB31CA911440090A644 /* HealthConditionTableViewController.xib in Resources */,
+				1A6504D21D7EBE67009215A0 /* PrescriptionTableViewCelliPhone.xib in Resources */,
+				1A7BCF0C1C884D17003BD1B8 /* AllergyNameTableViewCell.xib in Resources */,
+				1A6504DC1D7EE448009215A0 /* WeightTableViewCelliPhone.xib in Resources */,
+				1AF3A80B1BFC740E00925D1F /* HealthConditionTableViewCell.xib in Resources */,
+				1AF6659E1D06C03F00593541 /* States.plist in Resources */,
+				1A5296441CBCF8F200BCB5E8 /* ProcedureNameTableViewCell.xib in Resources */,
+				1AF3A82C1BFC743D00925D1F /* PrescriptionTableViewCell.xib in Resources */,
+				1AF3A8481BFC74D400925D1F /* AddLabTestsViewController.xib in Resources */,
+				1AA9411A1DA642C1004687AF /* Main-iPad.storyboard in Resources */,
+				1A6504D81D7EE3F8009215A0 /* BloodPressureTableViewCelliPhone.xib in Resources */,
+				1A865D681C2A7833003ED70A /* AddActivityViewController.xib in Resources */,
+				1A69CAC21C8D817F00D8C47B /* AllergyTableViewController.xib in Resources */,
+				1AF3A8411BFC745500925D1F /* LabsTestsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADEB5791BCB7B2F00EB8361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BEA4A1E07631321DA6BB794 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PHRTests/Pods-PHRTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82385E985C93531F8A7C4E1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PHRTests/Pods-PHRTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B7273AC2478838AB455D678 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PHR/Pods-PHR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B421390B53880155819F40A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF10C929653DC8D7A5BB34BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PHR/Pods-PHR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8CB1FC3D1336A665395291B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ADEB55E1BCB7B2F00EB8361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADEB61D1BCB836600EB8361 /* AFSecurityPolicy.m in Sources */,
+				1AEF3D5D1BFAEFA8003647B0 /* UserProfileViewController.m in Sources */,
+				1A7918651D8FFCFE004B21AE /* GSHealthKitManager.m in Sources */,
+				1AF3A8351BFC744700925D1F /* ProceduresDetailViewController.m in Sources */,
+				1ADEB6181BCB836600EB8361 /* AFHTTPRequestOperation.m in Sources */,
+				1AF3A8421BFC745500925D1F /* LabsTestsViewController.m in Sources */,
+				1AF3A8511BFC751000925D1F /* AddMedicationViewController.m in Sources */,
+				1AF3A7FB1BFC738400925D1F /* AllergyDetailViewController.m in Sources */,
+				1A27174A1C7F1D9E009D6CB6 /* EmergencyInforViewController.m in Sources */,
+				1A142F341C292815008C7982 /* ActivityViewController.m in Sources */,
+				1ADEB6271BCB836600EB8361 /* UIRefreshControl+AFNetworking.m in Sources */,
+				1AF3A8151BFC741F00925D1F /* ImmunizationTableViewCell.m in Sources */,
+				1A8ACFB21CA911440090A644 /* HealthConditionTableViewController.m in Sources */,
+				1A142F3F1C292EC4008C7982 /* AddBloodPresureViewController.m in Sources */,
+				1AF3A84C1BFC74F800925D1F /* AddProceduresViewController.m in Sources */,
+				1A54696C1D6B20B600DD0650 /* DayAxisValueFormatter.m in Sources */,
+				1A03C0E41BF997E500848C16 /* SlideOutViewController.m in Sources */,
+				1AB4CEEC1E1263CC00910FFD /* AddMedicalContactViewController.m in Sources */,
+				1ADEB6241BCB836600EB8361 /* UIButton+AFNetworking.m in Sources */,
+				1A865D5B1C2A693D003ED70A /* DiabetesDetailsViewController.m in Sources */,
+				1ADEB6261BCB836600EB8361 /* UIProgressView+AFNetworking.m in Sources */,
+				1AF3A8601BFC756700925D1F /* AddImmunizationViewController.m in Sources */,
+				1ADEB61C1BCB836600EB8361 /* AFNetworkReachabilityManager.m in Sources */,
+				1AF3A8561BFC753100925D1F /* AddHealthConditionViewController.m in Sources */,
+				1AD944FC1CE35C5700DC5A0F /* XLVideoZoom.m in Sources */,
+				1AF3A8141BFC741F00925D1F /* ImmunizationDetailViewController.m in Sources */,
+				1AF3A8381BFC744700925D1F /* ProceduresViewController.m in Sources */,
+				1AB0043B1CABA591002CDCAA /* ImmunzationNameTableViewCell.m in Sources */,
+				1AF3A7F91BFC738400925D1F /* AddAllergyViewController.m in Sources */,
+				1AF3A8091BFC740E00925D1F /* HealthConditionDetailViewController.m in Sources */,
+				1A142F441C293FF5008C7982 /* BloodPresureTableViewCell.m in Sources */,
+				1ADEB5F31BCB834300EB8361 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				1AF3A82D1BFC743D00925D1F /* PrescriptionViewController.m in Sources */,
+				1AF3A82B1BFC743D00925D1F /* PrescriptionTableViewCell.m in Sources */,
+				1AF3A7FE1BFC738400925D1F /* AllergyViewController.m in Sources */,
+				1A7BCF0B1C884D17003BD1B8 /* AllergyNameTableViewCell.m in Sources */,
+				1A865D5F1C2A7383003ED70A /* AddDiabetesViewController.m in Sources */,
+				1AD877801E10F4E400FDFA1E /* MedicalContactTableViewCell.m in Sources */,
+				1AF3A7FC1BFC738400925D1F /* AllergyTableViewCell.m in Sources */,
+				1ADEB6231BCB836600EB8361 /* UIAlertView+AFNetworking.m in Sources */,
+				1AF3A8361BFC744700925D1F /* ProceduresTableViewCell.m in Sources */,
+				1ADEB61E1BCB836600EB8361 /* AFURLConnectionOperation.m in Sources */,
+				1ADEB6191BCB836600EB8361 /* AFHTTPRequestOperationManager.m in Sources */,
+				1AB467E81CBE4A970058F04B /* LabTestTableViewController.m in Sources */,
+				1A5121F01C198AFB005B362E /* DashboardTableViewCell.m in Sources */,
+				1A2717531C7F1DF5009D6CB6 /* PreferenceInforViewController.m in Sources */,
+				1AF3A8201BFC742E00925D1F /* MedicationTableViewCell.m in Sources */,
+				1A865D631C2A779D003ED70A /* ActivityDetailsViewController.m in Sources */,
+				1AF3A80C1BFC740E00925D1F /* HealthConditionViewController.m in Sources */,
+				1A2717501C7F1DD7009D6CB6 /* InsuranceInforViewController.m in Sources */,
+				1A8ACFB71CA913550090A644 /* HealthConditionNameTableViewCell.m in Sources */,
+				1ADEB5F21BCB834300EB8361 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				1A865D671C2A7833003ED70A /* AddActivityViewController.m in Sources */,
+				1AE87C371E2CA0FF006F3451 /* XMLReader.m in Sources */,
+				1ADEB6251BCB836600EB8361 /* UIImageView+AFNetworking.m in Sources */,
+				1ADEB61F1BCB836600EB8361 /* AFURLRequestSerialization.m in Sources */,
+				1ACC35961E965F8A00679E8B /* OTPViewController.m in Sources */,
+				1AF3A81F1BFC742E00925D1F /* MedicationDetailViewController.m in Sources */,
+				1AF3A8471BFC74D400925D1F /* AddLabTestsViewController.m in Sources */,
+				1AB004361CABA56B002CDCAA /* ImmunzationNameTableViewController.m in Sources */,
+				1AD877791E10E47200FDFA1E /* MedicalContactsViewController.m in Sources */,
+				1A69CAC11C8D817F00D8C47B /* AllergyTableViewController.m in Sources */,
+				1A865D571C2A6240003ED70A /* DiabetesTableViewCell.m in Sources */,
+				1A5296431CBCF8F200BCB5E8 /* ProcedureNameTableViewCell.m in Sources */,
+				1ADEB62F1BCB83D000EB8361 /* SWRevealViewController.m in Sources */,
+				1AB467E31CBE4A6F0058F04B /* LabTestSearchTableViewCell.m in Sources */,
+				1A142F381C292E0F008C7982 /* BloodPresureDetailViewController.m in Sources */,
+				1AFA7DEA1D3E1EB800EDBAD4 /* WeightViewController.m in Sources */,
+				1ADEB6221BCB836600EB8361 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				1ADEB5681BCB7B2F00EB8361 /* main.m in Sources */,
+				1A4EA5C71E15186B00586AFE /* SharingViewController.m in Sources */,
+				1AF3A8401BFC745500925D1F /* LabsTestsTableViewCell.m in Sources */,
+				1ADEB6211BCB836600EB8361 /* AFURLSessionManager.m in Sources */,
+				1ADEB61A1BCB836600EB8361 /* AFHTTPSessionManager.m in Sources */,
+				1AD877831E112F2600FDFA1E /* MedicalContactDetailViewController.m in Sources */,
+				1AF3A85B1BFC755000925D1F /* AddPrescriptionViewController.m in Sources */,
+				1AD944FB1CE35C5700DC5A0F /* XLMediaZoom.m in Sources */,
+				1A3FD5411CB624BF0098D343 /* MedicationNameTableViewCell.m in Sources */,
+				1A52963E1CBCF8A000BCB5E8 /* ProcedureTableViewController.m in Sources */,
+				1AF3A8431BFC745500925D1F /* LabTestsDetailViewController.m in Sources */,
+				1AF3A8171BFC741F00925D1F /* ImmunizationViewController.m in Sources */,
+				1AE26DD41E1A348300101753 /* HealthDataTableViewCell.m in Sources */,
+				1A3FD53C1CB621760098D343 /* MedicationTableViewController.m in Sources */,
+				1A142F2F1C2927DF008C7982 /* DiabetesViewController.m in Sources */,
+				1A03C0EB1BF9E13D00848C16 /* AboutUsViewController.m in Sources */,
+				1ADEB5AF1BCB81EC00EB8361 /* BarButton_Block.m in Sources */,
+				1ADEB59A1BCB7E7400EB8361 /* LoginController.m in Sources */,
+				1AF3A82A1BFC743D00925D1F /* PrescriptionDetailViewController.m in Sources */,
+				1ADEB6201BCB836600EB8361 /* AFURLResponseSerialization.m in Sources */,
+				1ADEB61B1BCB836600EB8361 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				1ADEB5AB1BCB81A500EB8361 /* NSData+Base64.m in Sources */,
+				1AFA7DF21D3E200900EDBAD4 /* WeightDetailViewController.m in Sources */,
+				1ADEB6281BCB836600EB8361 /* UIWebView+AFNetworking.m in Sources */,
+				1A142F2A1C2920C3008C7982 /* BloodPresureViewController.m in Sources */,
+				1AFA7DEE1D3E1FD200EDBAD4 /* WeightTableViewCell.m in Sources */,
+				1ADEB58E1BCB7B8E00EB8361 /* AppDelegate.m in Sources */,
+				1ADEB6321BCB83EA00EB8361 /* Reachability.m in Sources */,
+				1A27D1201C6DD9C7004AEB02 /* ActivityTableViewCell.m in Sources */,
+				1AF3A8221BFC742E00925D1F /* MedicationViewController.m in Sources */,
+				1AB5E7281DB48571000F8E3B /* DashboardViewController.m in Sources */,
+				1AF3A80A1BFC740E00925D1F /* HealthConditionTableViewCell.m in Sources */,
+				1A27174D1C7F1DC1009D6CB6 /* EmployeeInforViewController.m in Sources */,
+				1ADEB5971BCB7E3D00EB8361 /* SplashViewController.m in Sources */,
+				1AA1E54F1E92682500EFA48B /* SignUpViewController.m in Sources */,
+				1AFA7DF61D3E202F00EDBAD4 /* AddWeightViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADEB5771BCB7B2F00EB8361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADEB5821BCB7B2F00EB8361 /* PHRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1ADEB57D1BCB7B2F00EB8361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ADEB5611BCB7B2F00EB8361 /* PHR */;
+			targetProxy = 1ADEB57C1BCB7B2F00EB8361 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AA941181DA642C1004687AF /* Main-iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AA941191DA642C1004687AF /* Base */,
+			);
+			name = "Main-iPad.storyboard";
+			sourceTree = "<group>";
+		};
+		1ADEB56F1BCB7B2F00EB8361 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ADEB5701BCB7B2F00EB8361 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1ADEB5741BCB7B2F00EB8361 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ADEB5751BCB7B2F00EB8361 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1ADEB5831BCB7B2F00EB8361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1ADEB5841BCB7B2F00EB8361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1ADEB5861BCB7B2F00EB8361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F77C73BE4B70FD4B05C1A2DA /* Pods-PHR.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PHR/PHR.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: National Health Portal (T4NE26N84M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DW7B45LBY8;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PHR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdac.myhealthrecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PHR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/cdachied/Downloads/Charts-3.0-2.0";
+			};
+			name = Debug;
+		};
+		1ADEB5871BCB7B2F00EB8361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90AC3605A2E38A3E9CA97EE3 /* Pods-PHR.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PHR/PHR.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: National Health Portal (T4NE26N84M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DW7B45LBY8;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PHR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdac.myhealthrecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PHR-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/cdachied/Downloads/Charts-3.0-2.0";
+			};
+			name = Release;
+		};
+		1ADEB5891BCB7B2F00EB8361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D5DB7BFDD6B28ADD3013F79 /* Pods-PHRTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DW7B45LBY8;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PHRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PHR.app/PHR";
+			};
+			name = Debug;
+		};
+		1ADEB58A1BCB7B2F00EB8361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54346BB249411CB5F6DB8820 /* Pods-PHRTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DW7B45LBY8;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = PHRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PHR.app/PHR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ADEB55D1BCB7B2F00EB8361 /* Build configuration list for PBXProject "PHR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADEB5831BCB7B2F00EB8361 /* Debug */,
+				1ADEB5841BCB7B2F00EB8361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADEB5851BCB7B2F00EB8361 /* Build configuration list for PBXNativeTarget "PHR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADEB5861BCB7B2F00EB8361 /* Debug */,
+				1ADEB5871BCB7B2F00EB8361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADEB5881BCB7B2F00EB8361 /* Build configuration list for PBXNativeTarget "PHRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADEB5891BCB7B2F00EB8361 /* Debug */,
+				1ADEB58A1BCB7B2F00EB8361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1ADEB55A1BCB7B2F00EB8361 /* Project object */;
+}

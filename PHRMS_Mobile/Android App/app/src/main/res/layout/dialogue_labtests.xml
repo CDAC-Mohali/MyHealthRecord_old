@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lvline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardview_default_elevation"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtlabtestname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:text="@string/labtestNamedisp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/txtlabtestname_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".65"
+                    android:ellipsize="end"
+                    android:text="@string/dataNA"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtlabtestResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:text="@string/labtestResultdisp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+                <TextView
+                    android:id="@+id/txtlabtestResult_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".65"
+                    android:ellipsize="end"
+                    android:text="@string/dataNA"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtlabtestUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:text="@string/labtestUnitdisp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/txtlabtestUnit_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".65"
+                    android:ellipsize="end"
+                    android:text="@string/dataNA"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtlabtestNotes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:text="@string/labtestNotesdisp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/txtlabtestNotes_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".65"
+                    android:ellipsize="end"
+                    android:text="@string/dataNA"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtlabtestAttachment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:text="@string/labtestAttachmentsdisp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <!--Changes for image loader-->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/imageheight"
+                    android:layout_weight=".65">
+
+                    <ProgressBar
+                        android:id="@+id/ProgressBarLabTestImage"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:theme="@style/Widget.AppCompat.ProgressBar"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imglabtestAttachments_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/imageheight"
+                        android:contentDescription="@string/LabTesttitle"
+                        android:elevation="@dimen/padding_large"
+                        android:scaleType="fitCenter"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

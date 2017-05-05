@@ -1,0 +1,67 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+
+@model  IPagedList<PHRMSAdmin.Models.AdminUsersModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="normalheader transition animated fadeIn small-header" style="text-align:center">
+    <div class="hpanel hgreen">
+        <div class="panel-body">
+         
+            <h3 class="font-light m-b-xs" id="tipHeader">
+                <i class="fa icon-dashboard text-danger"></i> Users List
+            </h3>
+            <div id="hbreadcrumb" class="pull-right">
+            </div>
+            <h7 id="healthTipCtrl" style="color:#B76215;"></h7>
+        </div>
+    </div>
+</div>
+<div id="page-wrapper">
+    <div id="page-inner">
+       
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Advanced Tables -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span class="pull-right">
+                            <button class="btn btn-primary" onclick="location.href = '@Request.ApplicationPath.TrimEnd('/')/AdminUsers/AddAdminUser'">
+                                Add New User
+                            </button>
+                        </span>
+                        <div class="clearfix">
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        @using (Ajax.BeginForm("Index", "User", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "ManageGrid" }, new { @class = "form-inline value_search" }))
+                        {
+
+                            <div class="search_div">
+                                <label>User</label>
+                                @*<input type="hidden" name="Page" value="@Model.PageNumber" />*@
+                                <input type="text" name="Keyword" class="form-control" value="" />
+                                <button class="btn btn-orange" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        }
+
+                        @Html.Partial("_AdminUserGrid", Model)
+
+                    </div>
+
+
+                </div>
+                <!--End Advanced Tables -->
+            </div>
+        </div>
+        <!-- /. ROW  --><!-- /. ROW  --><!-- /. ROW  --><!-- /. ROW  -->
+    </div>
+    <footer><p></p></footer>
+</div>

@@ -1,0 +1,16 @@
+﻿
+
+
+<div id="DivScrcodeOTP" style="display:none;">
+
+    <div class="form-group col-lg-12">
+        <label>Enter verification code received on your registered Mobile No:</label>
+        <span class="text-danger"> *</span>
+        @Html.TextBox("OTP", ViewBag.OTP != null ? (string)ViewBag.OTP : "", new { @class = "form-control", @placeholder = "One Time Password" })
+    </div>
+    <div class="col-lg-12">
+        <input type="submit" id="OTPVerify" class="btn btn-success" value="Next" />
+        <a class="btn btn-default" href="@Url.Action("LoginOTP")">Cancel</a>
+    </div>
+
+</div>

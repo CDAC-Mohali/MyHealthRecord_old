@@ -1,0 +1,133 @@
+﻿@{
+    ViewBag.Title = "UpdateTask";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@model PHRMSAdmin.Models.AdminUsersModel
+
+<div class="normalheader transition animated fadeIn small-header" style="text-align:center">
+    <div class="hpanel hgreen">
+        <div class="panel-body">
+
+            <h3 class="font-light m-b-xs" id="tipHeader">
+                <i class="fa icon-dashboard text-danger"></i> Update User Details
+            </h3>
+            <div id="hbreadcrumb" class="pull-right">
+            </div>
+            <h7 id="healthTipCtrl" style="color:#B76215;"></h7>
+        </div>
+    </div>
+</div>
+
+<div id="page-wrapper">
+
+    <div id="page-inner">
+
+
+        <!-- /. ROW  -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel">
+                    @using (Html.BeginForm("UpdateAdminUser", "AdminUsers"))
+                    {
+
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.UserName, "Login Name")<span style="color:red">*</span>
+                                        @Html.TextBoxFor(x => x.UserName, new { @class = "form-control", @placeholder = "Enter User" })
+                                        @Html.ValidationMessageFor(x => x.UserName, "", new { @class = "text-danger" })
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.FirstName, "First Name")<span style="color:red">*</span>
+                                        @Html.TextBoxFor(x => x.FirstName, new { @class = "form-control", @placeholder = "Enter User" })
+                                        @Html.ValidationMessageFor(x => x.FirstName, "", new { @class = "text-danger" })
+                                        <input type="hidden" value="@Model.AdminUserId" name="AdminUserId" />
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.LastName, "Last Name")<span style="color:red">*</span>
+                                        @Html.TextBoxFor(x => x.LastName, new { @class = "form-control", @placeholder = "Enter User" })
+                                        @Html.ValidationMessageFor(x => x.LastName, "", new { @class = "text-danger" })
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.EmailAddress, "Email Address")<span style="color:red">*</span>
+                                        @Html.TextBoxFor(x => x.EmailAddress, new { @class = "form-control", @placeholder = "Enter User" })
+                                        @Html.ValidationMessageFor(x => x.EmailAddress, "", new { @class = "text-danger" })
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.PhoneNumber, "Phone Number")
+                                        @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "form-control", @placeholder = "Enter Phone" })
+                                        @Html.ValidationMessageFor(x => x.PhoneNumber, "", new { @class = "text-danger" })
+
+                                    </div>
+                                </div>
+                            </div>
+                            @if (ViewBag.RoleList != null)
+                            {
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.RoleId, "Role")<span style="color:red">*</span>
+
+                                            @Html.DropDownListFor(model => model.RoleId, (List<SelectListItem>)ViewBag.RoleList, new { @Name = "RoleId", @class = "form-control valid" })
+
+
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.MedicalCollegeId, "Hospital")<span style="color:red">*</span>
+                                            @Html.DropDownList("MedicalCollegeId", (List<SelectListItem>)ViewBag.HospitalList, new { @class = "form-control valid" })
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.Active, "Active")<span style="color:red">*</span>
+                                            @Html.EditorFor(x => x.Active, new { @class = "form-control", @placeholder = "Enter text" })
+                                            @Html.ValidationMessageFor(model => model.Active)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                            <!-- /.col-lg-12 -->
+
+                        </div>
+
+                    <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <button type="submit" class="btn btn-orange" id="btnSubmit">Update</button>
+                            <a href="@Request.ApplicationPath.TrimEnd('/')/AdminUsers/Index" class="btn btn-primary">Back To List</a>
+                        </div>
+                    }
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+
+    </div>
+    <footer><p></p></footer>
+
+</div>
+

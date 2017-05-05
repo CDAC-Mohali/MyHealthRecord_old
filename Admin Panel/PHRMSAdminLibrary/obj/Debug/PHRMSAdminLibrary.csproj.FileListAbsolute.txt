@@ -1,0 +1,10 @@
+D:\PHRMSAdmin\PHRMSAdminLibrary\bin\Debug\PHRMSAdminLibrary.dll.config
+D:\PHRMSAdmin\PHRMSAdminLibrary\bin\Debug\PHRMSAdminLibrary.dll
+D:\PHRMSAdmin\PHRMSAdminLibrary\bin\Debug\PHRMSAdminLibrary.pdb
+D:\PHRMSAdmin\PHRMSAdminLibrary\bin\Debug\EntityFramework.dll
+D:\PHRMSAdmin\PHRMSAdminLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\PHRMSAdmin\PHRMSAdminLibrary\bin\Debug\EntityFramework.xml
+D:\PHRMSAdmin\PHRMSAdminLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\PHRMSAdmin\PHRMSAdminLibrary\obj\Debug\PHRMSAdminLibrary.dll
+D:\PHRMSAdmin\PHRMSAdminLibrary\obj\Debug\PHRMSAdminLibrary.pdb
+D:\PHRMSAdmin\PHRMSAdminLibrary\obj\Debug\PHRMSAdminLibrary.csprojResolveAssemblyReference.cache

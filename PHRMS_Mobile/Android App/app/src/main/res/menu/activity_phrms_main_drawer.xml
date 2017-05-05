@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_subheader_dashboard"
+        android:title="Dashboard Activities">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_dashboard"
+                    android:icon="@drawable/dashboard"
+                    android:title="@string/mDashboard" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/navigation_subheader_modules"
+        android:title="PHR Modules">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_allergies"
+                    android:icon="@drawable/allergy"
+                    android:title="@string/mAllergies" />
+                <item
+                    android:id="@+id/nav_problems"
+                    android:icon="@drawable/healthcondition"
+                    android:title="@string/mProblems" />
+                <item
+                    android:id="@+id/nav_Immunization"
+                    android:icon="@drawable/immunization"
+                    android:title="@string/mImmunization" />
+                <item
+                    android:id="@+id/nav_procedures"
+                    android:icon="@drawable/procedures"
+                    android:title="@string/mProcedures" />
+                <item
+                    android:id="@+id/nav_labtests"
+                    android:icon="@drawable/labstests"
+                    android:title="@string/mLabTest" />
+                <item
+                    android:id="@+id/nav_prescription"
+                    android:icon="@drawable/prescription"
+                    android:title="@string/mPrescription" />
+                <item
+                    android:id="@+id/nav_medication"
+                    android:icon="@drawable/medication"
+                    android:title="@string/mMedication" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/navigation_subheader_wellness"
+        android:title="Wellness">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_activities"
+                    android:icon="@drawable/activity"
+                    android:title="@string/mActivities" />
+                <item
+                    android:id="@+id/nav_bloodpressure"
+                    android:icon="@drawable/bp"
+                    android:title="@string/mBP" />
+                <item
+                    android:id="@+id/nav_bloodglucose"
+                    android:icon="@drawable/bg"
+                    android:title="@string/mBG" />
+                <item
+                    android:id="@+id/nav_weight"
+                    android:icon="@drawable/bmi"
+                    android:title="@string/mBMI" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/navigation_subheader_profile"
+        android:title="User Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/userprofile"
+                    android:title="@string/mPI" />
+                <item
+                    android:id="@+id/nav_emergencyinfo"
+                    android:icon="@drawable/emergencycontact"
+                    android:title="@string/mEI" />
+                <item
+                    android:id="@+id/nav_empinfo"
+                    android:icon="@drawable/employer"
+                    android:title="@string/mEMPI" />
+                <item
+                    android:id="@+id/nav_insuranceinfo"
+                    android:icon="@drawable/insurance"
+                    android:title="@string/mII" />
+                <item
+                    android:id="@+id/nav_prefinfo"
+                    android:icon="@drawable/special"
+                    android:title="@string/mPRFI" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/navigation_subheader_teleconsultation"
+        android:title="Medical Contact and Sharing">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_addmedicalcontact"
+                    android:icon="@drawable/doctor_enter_sm"
+                    android:title="@string/mMedical" />
+                <item
+                    android:id="@+id/nav_reportsharing"
+                    android:icon="@drawable/share"
+                    android:title="@string/mSharing" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/navigation_subheader_aboutlogout"
+        android:title="About us and Logout">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/about"
+                    android:title="@string/mAboutus" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_power_settings_new_black_24dp"
+                    android:title="@string/action_logout" />
+            </group>
+        </menu>
+    </item>
+
+    <!--<group android:checkableBehavior="all">-->
+    <!--<item-->
+    <!--android:id="@+id/nav_about"-->
+    <!--android:checkableBehavior="single"-->
+    <!--android:icon="@drawable/about"-->
+    <!--android:title="@string/mAboutus" />-->
+    <!--</group>-->
+
+    <!--<group android:checkableBehavior="all">-->
+    <!--<item-->
+    <!--android:id="@+id/nav_logout"-->
+    <!--android:checkableBehavior="single"-->
+    <!--android:icon="@android:drawable/ic_lock_power_off"-->
+    <!--android:title="@string/action_logout" />-->
+    <!--</group>-->
+
+</menu>

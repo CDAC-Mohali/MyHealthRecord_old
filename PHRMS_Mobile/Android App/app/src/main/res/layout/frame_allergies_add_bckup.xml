@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".modules.addfragments.PHRMS_Allergies_Fragment_Add">
+
+    <!-- Toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar_layout_allfragments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--guides.codepath.com/android/using-the-app-toolbar-->
+        <!--custom toolbar android-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_addallergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/IBSave_Allergy"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:background="?android:selectableItemBackground"-->
+                <!--android:clickable="true"-->
+                <!--android:foregroundGravity="right"-->
+                <!--android:padding="@dimen/padding_large"-->
+                <!--android:src="@drawable/ic_done_white_36dp"-->
+                <!--android:tint="@color/white" />-->
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="35dp">
+
+        <LinearLayout
+            android:id="@+id/lvallergySearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_large">
+
+            <TextView
+                android:id="@+id/txtAllergySearchtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_large"
+                android:text="@string/SearchTitle"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_edallergyname_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".9">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edautoallergyname_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:completionThreshold="1"
+                        android:ellipsize="end"
+                        android:hint="@string/AllergySearch"
+                        android:inputType="text"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="normal" />
+                </android.support.design.widget.TextInputLayout>
+
+                <ProgressBar
+                    android:id="@+id/ProgressBarAllergyType"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/svallergydata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/padding_large"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtallergyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/AllergyName"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txtallergyNameValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:text="Value"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtallergystill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:text="@string/AllergyStill"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgrpallergystill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:orientation="horizontal"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textStyle="normal"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/rdallergystillYes"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".50"
+                            android:checked="true"
+                            android:text="Yes"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="normal" />
+
+                        <RadioButton
+                            android:id="@+id/rdallergystillNo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".50"
+                            android:checked="false"
+                            android:text="No"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="normal" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtallergyfrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:text="@string/AllergyFrom"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal" />
+
+
+                    <SeekBar
+                        android:id="@+id/seekbarallergyfrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtallergySeverity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:text="@string/AllergySeverity"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal" />
+
+
+                    <SeekBar
+                        android:id="@+id/seekbarallergySeverity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_allergynotes_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edallergynotes_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:hint="@string/AllergyNotes"
+                            android:inputType="textMultiLine"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "UpdateTask";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@model PHRMSAdmin.Models.MedicalCollegesViewModel
+
+<div class="normalheader transition animated fadeIn small-header" style="text-align:center">
+    <div class="hpanel hgreen">
+        <div class="panel-body">
+
+            <h3 class="font-light m-b-xs" id="tipHeader">
+                <i class="fa icon-dashboard text-danger"></i> Update Hospital Details
+            </h3>
+            <div id="hbreadcrumb" class="pull-right">
+            </div>
+            <h7 id="healthTipCtrl" style="color:#B76215;"></h7>
+        </div>
+    </div>
+</div>
+
+<div id="page-wrapper">
+
+    <div id="page-inner">
+
+
+        <!-- /. ROW  -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel">
+                    @using (Html.BeginForm("UpdateMedicalCollges", "MedicalColleges"))
+                    {
+
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        @Html.HiddenFor(s=>s.MedicalCollegeId)
+                                        @Html.LabelFor(model => model.MedicalCollegeName, "Hospital")<span style="color:red">*</span>
+                                        @Html.TextBoxFor(x => x.MedicalCollegeName, new { @class = "form-control", @placeholder = "Enter Login Name" })
+                                        @Html.ValidationMessageFor(x => x.MedicalCollegeName, "", new { @class = "text-danger" })
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.State)<span style="color:red">*</span>
+                                        @Html.TextBoxFor(x => x.State, new { @class = "form-control", @placeholder = "Enter Password" })
+                                        @Html.ValidationMessageFor(x => x.State, "", new { @class = "text-danger" })
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <button type="submit" class="btn btn-orange" id="btnSubmit">Update</button>
+                            <a href="@Request.ApplicationPath.TrimEnd('/')/MedicalColleges/Index" class="btn btn-primary">Back To List</a>
+                        </div>
+                    }
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+
+    </div>
+    <footer><p></p></footer>
+
+</div>
+

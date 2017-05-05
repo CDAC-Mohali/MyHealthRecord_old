@@ -1,0 +1,59 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">100dp</dimen>
+
+    <dimen name="nav_header_height_navbar">155dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="status_bar">24dp</dimen>
+    <dimen name="subtitle">56dp</dimen>
+    <dimen name="content_areas">56dp</dimen>
+    <dimen name="list_items">56dp</dimen>
+
+    <dimen name="padding_small">3dp</dimen>
+    <dimen name="padding_medium">6dp</dimen>
+    <dimen name="padding_large">8dp</dimen>
+    <dimen name="small_text">10sp</dimen>
+    <dimen name="normal_text">12sp</dimen>
+    <dimen name="tab_text">16sp</dimen>
+    <dimen name="footer_text">12sp</dimen>
+    <dimen name="tabsub_text">14sp</dimen>
+    <dimen name="addbtnsize">30dp</dimen>
+    <integer name="up_down_btn">32</integer>
+    <dimen name="toolbar_padding">0dp</dimen>
+    <dimen name="card_padding">8dp</dimen>
+    <dimen name="card_padding_corner">4dp</dimen>
+
+    <dimen name="toolbar_elevation">16dp</dimen>
+
+    <dimen name="textsizehead">14sp</dimen>
+
+    <dimen name="drawer_header_profile">70dp</dimen>
+    <dimen name="standard_margin">16dp</dimen>
+
+    <!-- Hint and input font: Roboto Regular 16sp -->
+    <dimen name="spinner_hinttext">16sp</dimen>
+
+    <!--Label font: Roboto Regular 12sp-->
+    <dimen name="spinner_labeltext">12sp</dimen>
+
+    <!--Tile height: 72dp-->
+    <dimen name="spinner_tileheight">72dp</dimen>
+
+    <!-- Text top and bottom padding: 16dp -->
+    <dimen name="spinner_texttoppadding">16dp</dimen>
+    <dimen name="spinner_textbottompadding">16dp</dimen>
+
+    <!-- Text field divider padding: 8dp -->
+    <dimen name="spinner_dividerpadding">8dp</dimen>
+    <!-- Text field divider padding: 25dp -->
+    <dimen name="imageview_padding">25dp</dimen>
+
+    <dimen name="chartheight">400dp</dimen>
+    <dimen name="imageheight">100dp</dimen>
+    <dimen name="mintextsize">10sp</dimen>
+</resources>

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHRMSAdmin", "PHRMSAdmin\PHRMSAdmin.csproj", "{12FD1F0D-BC81-4E18-AB08-619D0D0D037E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHRMSAdminLibrary", "PHRMSAdminLibrary\PHRMSAdminLibrary.csproj", "{220156B4-A0E0-4F7B-826D-091B8093A31A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12FD1F0D-BC81-4E18-AB08-619D0D0D037E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12FD1F0D-BC81-4E18-AB08-619D0D0D037E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12FD1F0D-BC81-4E18-AB08-619D0D0D037E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12FD1F0D-BC81-4E18-AB08-619D0D0D037E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{220156B4-A0E0-4F7B-826D-091B8093A31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220156B4-A0E0-4F7B-826D-091B8093A31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220156B4-A0E0-4F7B-826D-091B8093A31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220156B4-A0E0-4F7B-826D-091B8093A31A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PHRMSAdmin\\PHRMSAdmin.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = PHRMSAdmin\\
+		SccProjectUniqueName2 = PHRMSAdminLibrary\\PHRMSAdminLibrary.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = PHRMSAdminLibrary\\
+	EndGlobalSection
+EndGlobal

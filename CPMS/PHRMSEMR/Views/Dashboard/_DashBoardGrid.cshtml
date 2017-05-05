@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "_DashBoardGrid";
+}
+@model IPagedList<EMRViewModels.Appointment_FeesViewModel>
+<div id="ManageGrid">
+    <div class="table-responsive project-list">
+        <table id="aTable" class="table table-striped">
+            <thead style="background-color: #4f6f8f; color: white;">
+                <tr>
+                   
+                    <th width="20%">Name</th>
+                    <th width="20%">Mobile</th>
+                    <th width="20%">Email</th>
+                    <th width="30%">Appointment Date</th>
+                    <th width="10%">Time</th>
+                </tr>
+            </thead>
+            <tbody id="AppointmentList">
+                @{ int counter = 1;}
+                @foreach (var Item in Model)
+            {
+                    <tr>
+                      
+                        <td>@Item.Name</td>
+                        <td>@Item.Mobile</td>
+                        <td>@Item.Email</td>
+                        <td>@Item.Date.ToString("dd/MM/yyyy")</td>
+                        <td>@Item.Hours : @((Item.Mins == 0) ?( "00"):( @Item.Mins.ToString()))  @Item.meridiem</td>
+                    </tr>
+                counter++;
+            }
+            </tbody>
+        </table>
+        <ul class="pagination"></ul>
+    </div>
+    @if (Model.Count > 0)
+    {
+    <div class="panel-footer">
+        @Html.Partial("_GridPaging", Model)
+
+    </div>
+    }
+</div>

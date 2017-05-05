@@ -1,0 +1,317 @@
+﻿@using PHRMS.Web
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyHealthRecord   @ViewBag.Title</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- Primary vendor style -->
+    <link href="~/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/vendor/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
+    <link href="~/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="~/icons/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    @*<link href="~/vendor/summernote/dist/summernote.css" rel="stylesheet" />
+        <link href="~/vendor/summernote/dist/summernote-bs3.css" rel="stylesheet" />*@
+    <style>
+        /*.blink {
+            color: #FFF !important;
+            background: #62CB31 !important;
+        }*/
+    </style>
+    <!-- Add local styles, mostly for plugins css file -->
+    @if (IsSectionDefined("Styles"))
+    {@RenderSection("Styles", required: false)}
+
+
+    <script src="~/js/jquery-2.0.3.min.js"></script>
+    <!-- Primary HOMER style -->
+    <link href="~/content/style.css" rel="stylesheet" />
+</head>
+<body class="@Html.PageClass()">
+
+    <!-- Simple splash screen-->
+    <div class="splash"> <div class="color-line"></div><div class="splash-title"><h1>MyHealthRecord</h1><p>Loading </p><img src="~/Images/loading-bars.svg" width="64" height="64" /> </div> </div>
+    <!--[if lt IE 7]>
+    <p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Header -->
+    <div id="header">
+        @Html.Partial("_Header")
+    </div>
+
+    <!-- Navigation -->
+    <aside id="menu">
+        @Html.Partial("_Navigation")
+    </aside>
+
+    <!-- Main view  -->
+    <div id="wrapper">
+        @RenderBody()
+
+        <!-- Right Sidebar -->
+        @Html.Partial("_Right_Sidebar")
+        <!-- Health History Modal -->
+        @Html.Partial("_HealthHistoryModal")
+        <!-- Sharing History Modal -->
+        @Html.Partial("_ShareHealthHistory")
+        <!-- Footer -->
+        @Html.Partial("_Footer")
+    </div>
+
+    <!-- Section for main scripts render -->
+
+    <script src="~/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/vendor/metismenu/dist/metismenu.min.js"></script>
+    <script src="~/vendor/icheck/icheck.min.js"></script>
+    <script src="~/vendor/peity/jquery.peity.min.js"></script>
+    <script src="~/vendor/sparkline/index.js"></script>
+    <script src="~/scripts/homer.js"></script>
+    @*<script src="~/js/jquery-ui-1.10.3.custom.min.js"></script>*@
+    @*<script src="~/vendor/summernote/dist/summernote.js"></script>*@
+    <script>
+      
+        function CheckHtmlTag(Object) {
+          
+            var reg = /<(.|\n)*?>/g;
+
+           if (reg.test($(Object).val()) == true) {
+
+                var ErrorText = 'do not allow HTMLTAGS';
+
+               
+                swal({
+                    title: "Oops!",
+                    text: "do not allow HTMLTAGS!",
+                    type: "error"
+                });
+
+            }
+        }
+        var DigiPath = "";
+        var ServiceURL = "";//Use For Upload Image
+        var BasePath = "";
+        var DigiKey = "";
+        var DigiURL = "";
+        var ROOT = "@Url.Content("~/")";
+        (function () {
+            document.getElementById("sidebar").onclick = function () {
+                $.ajax({
+                    url: ROOT + "Common/GetProfilePercentage",
+                    type: "POST",
+                    data: {},
+                    success: function (result) {
+                     //   alert("s");
+                        document.getElementById("setProgress").style.width = result + "%";
+                        document.getElementById("setValue").innerHTML = result + "% Completed";
+                        if (result >80) {
+                            //   document.getElementById("setValue").innerHTML = result + "% Completed";
+                            $("#setProgress").css("background-color", "#62cb31").css("border-right", " 4px solid #58b62c");
+                        }
+                        else {
+
+                            // document.getElementById("setValue").innerHTML = result + "% Completed";
+                            $("#setProgress").css("background-color", "red").css("border-right", " 4px solid red");
+                        }
+                    }
+
+                });
+                $.ajax({
+                    url: ROOT + "Common/GetUserActivityExportableList",
+                    type: "POST",
+                    data: {},
+                    success: function (result) {
+                        console.log(result);
+                        if (result) {
+                            $("#recentActivities").empty();
+                            for (var i = 0; i < result.length; i++) {
+                                var operation = result[i].Operation;
+                                var module = result[i].Module;
+                                var iclass = "fa fa-close";
+                                var iStyle = "color:#34495E;";
+                                var uname = result[i].UserName;
+                                var url = '';
+                                switch (operation) {
+                                    case 1: operation = 'Added';
+                                        break;
+                                    case 2: operation = 'Updated';
+                                        break;
+                                    case 3: operation = 'Archived';
+                                        break;
+                                    default: console.log("reached in default " + operation);
+                                }
+                                switch (module) {
+                                    case 1: module = result[i].ActivityName;
+                                        iclass = "fa fa-pagelines";
+                                        url = 'Allergies';
+                                        iStyle = "color:#62CB31;";
+                                        break;
+                                    case 2: module = result[i].ActivityName;
+                                        iclass = "fa fa-eyedropper";
+                                        url = 'Immunization';
+                                        iStyle = "color:#E67E22;";
+                                        break;
+                                    case 3: module = result[i].ActivityName;
+                                        iclass = "fa fa-flask";
+                                        url = 'Lab';
+                                        iStyle = "color:#9b59b6;";
+                                        break;
+                                    case 4: module = result[i].ActivityName;
+                                        iclass = "fa fa-medkit";
+                                        url = 'Medication';
+                                        iStyle = "color:brown;";
+                                        break;
+                                    case 5: module = result[i].ActivityName;
+                                        iclass = "fa pe-7s-scissors";
+                                        url = 'Procedures';
+                                        iStyle = "color:#34495E;";
+                                        break;
+                                    case 6: module = result[i].ActivityName;
+                                        iclass = "fa fa-stethoscope";
+                                        url = 'HealthCondition';
+                                        iStyle = "color:#ffb606;";
+                                        break;
+                                    case 7: module = 'Activity';
+                                        iclass = "fa fa-heart";
+                                        url = 'Wellness/activity';
+                                        iStyle = "color:#3498db;";
+                                        break;
+                                    case 8: module = 'Blood Pressure';
+                                        iclass = "fa fa-tint";
+                                        url = 'Wellness/bloodpressure'
+                                        iStyle = "color:red;";
+                                        break;
+                                    case 9: module = 'Blood Glucose';
+                                        iclass = "fa fa-heart";
+                                        url = 'Wellness/glucose';
+                                        iStyle = "color:#3498db;";
+                                        break;
+                                    case 10: module = 'Sleep';
+
+                                        break;
+                                    case 11: module = 'Weight';
+                                        iclass = "fa fa-child";
+                                        url = 'Wellness/weight';
+                                        iStyle = "color:#3498db;";
+                                        break;
+                                    case 12: module = 'Profile Picture';
+                                        url = 'Profile/ChangePicture';
+                                        break;
+                                    case 13: module = 'Prescription';
+                                        iclass = "fa pe-7s-note2";
+                                        url = 'Eprescription';
+                                        iStyle = "color:#62cb31;";
+                                        break;
+                                    case 14: module = 'Temperature';
+
+                                        break;
+                                    default: iclass = 'fa fa-cloud-download';
+                                        iStyle = "color:#34495E;";
+                                        break;
+
+                                }
+
+                                if (module == 15) {
+                                    child = ' <div class="social-talk">                  <div class="media social-profile clearfix">                         <a class="pull-left"><i class = "' + iclass + '"></i></a>            <div class="media-body"><a href = "@Url.Content("~/")OpenEMR"><span class="font-bold">' + uname + ' </span><small class="text-muted">' + result[i].strTimeStamp + '</small><div class="social-content small">  Open EMR data extracted successfully.</div></a></div></div></div>';
+
+                                }
+                                else {
+                                    @*var child = ' <div class="social-talk"> <div class="media social-profile clearfix"> <a  class="pull-left"  >        <i class = "' + iclass + '"  style="' + iStyle + '"></i>     </a> <div class="media-body"><a href = "@Url.Content("~/")' + url + '"><span class="font-bold">' + uname + ' </span><small class="text-muted">' + result[i].strTimeStamp + '</small><div class="social-content small">  ' + module + ' ' + operation + ' successfully.</div></a></div></div></div>';*@
+                                    var child = ' <div class="social-talk"> <div class="media social-profile clearfix"> <a  class="pull-left"  >        <i class = "' + iclass + '"  style="' + iStyle + '"></i>     </a> <div class="media-body"><a href = "@Url.Content("~/")' + url + '"><span class="font-bold">' + module + ' </span><small class="text-muted">' + result[i].strTimeStamp + '</small><div class="social-content small"> - ' + operation + ' by ' + uname + '.</div></a></div></div></div>';
+                                }
+                                $("#recentActivities").append(child);
+
+                                href = "@Url.Content("~/")Wellness/activity"
+                            }
+                            $("#recentActivities").append("<a class='btn btn-block btn-default btn-xs' href='" + ROOT + "Account/ActivitySummary'>Show More Results</a>");
+
+                        }
+
+                    }
+
+                });
+            };
+        })();
+
+        $(function () {
+            //$('li.dropdown.mega-dropdown a').on('click', function (event) {
+            //    $(this).parent().toggleClass('open');
+            //    $(".note-editor").css("width", "500px");
+            //    $(".note-editor").css("height", "200px");
+            //    $(".note-editor").css("margin", "0 auto");
+            //    $(".note-editor").css("overflow", "auto");
+            //});
+
+            //$("#btnFbSubmit").on('click', function (event) {
+            //    $.ajax({
+            //        type: "Post",
+            //        contentType: "application/json; charset=utf-8",
+            //        url: ROOT + "Dashboard/SendFeedback",
+            //        data: JSON.stringify({ strFeedback: $(".FbSubject").val(), strSubject: $(".note-editable").html() }),
+            //        dataType: "json",
+            //        success: function (data) {
+            //            if (data == 1) {
+            //                swal({
+            //                    title: "Thanks!",
+            //                    text: "For providing your valuable feedback."
+            //                });
+            //                $(".note-editable").html("");
+            //                $(".FbSubject").val("");
+            //            }
+            //            else
+            //                swal({
+            //                    title: "Oops!",
+            //                    text: "Can't register your feedback. Please try again.",
+            //                    type: "error"
+            //                });
+            //        },
+            //        error: function (result) {
+            //            swal({
+            //                title: "Oops!",
+            //                text: "Can't register your feedback. Please try again.",
+            //                type: "error"
+            //            });
+            //        }
+            //    });
+            //});
+
+            //alert($("a", ".mega-dropdown").attr("class"));
+            blink(".mega-dropdown span:first", 1000000, 500);
+        });
+
+        //$('body').on('click', function (e) {
+        //    if (!$('li.dropdown.mega-dropdown').is(e.target)
+        //        && $('li.dropdown.mega-dropdown').has(e.target).length === 0
+        //        && $('.open').has(e.target).length === 0
+        //    ) {
+        //        $('li.dropdown.mega-dropdown').removeClass('open');
+        //    }
+        //});
+
+        function blink(elem, times, speed) {
+            if (times > 0 || times < 0) {
+                if ($(elem).hasClass("blink")) {
+                    $(elem).hide();
+                    $(elem).removeClass("blink");
+                }
+                else {
+                    $(elem).show();
+                    $(elem).addClass("blink");
+                }
+            }
+
+            clearTimeout(function () { blink(elem, times, speed); });
+
+            if (times > 0 || times < 0) {
+                setTimeout(function () { blink(elem, times, speed); }, speed);
+                times -= .5;
+            }
+        }
+    </script>
+    <!-- Handler for local scripts -->
+    @RenderSection("scripts", required: false)
+</body>
+</html>

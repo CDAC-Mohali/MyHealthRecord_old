@@ -1,0 +1,260 @@
+﻿@model PHRMS.ViewModels.EmergencyViewModel
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-horizontal" role="form" id="EmergencyInfo" style="@(Model.UserId.Equals(Guid.Empty)?"display:none;":"")">
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Primary_Emergency_Contact, new { @class = "col-lg-2 control-label" })
+                @*<label class="control-label col-sm-2" style="display: inline-block;" for="Name">Name:</label>*@
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spName" style="text-align: left">James Anderson</span>*@
+                    <p class="form-control-static">@Html.DisplayFor(m => m.Primary_Emergency_Contact)</p>
+                </div>
+                @Html.LabelFor(m => m.strPC_Relationship, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static">@Html.DisplayFor(m => m.strPC_Relationship)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.PC_AddressLine1, new { @class = "col-lg-2 control-label" })
+                @*<label class="control-label col-lg-2" for="Email">Email Address:</label>*@
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.PC_AddressLine1)</p>
+                </div>
+                @Html.LabelFor(m => m.PC_AddressLine2, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.PC_AddressLine2)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.PC_City_Vill_Town, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.PC_City_Vill_Town)</p>
+                </div>
+                @Html.LabelFor(m => m.PC_District, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.PC_District)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.strPC_State, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.strPC_State)</p>
+                </div>
+                @Html.LabelFor(m => m.PC_Pin, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.PC_Pin)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.PC_Phone1, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.PC_Phone1)</p>
+                </div>
+                @Html.LabelFor(m => m.PC_Phone2, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.PC_Phone2)</p>
+                </div>
+            </div>
+            @*<div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Secondary_Emergency_Contact, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.Secondary_Emergency_Contact)</p>
+                </div>
+                @Html.LabelFor(m => m.SC_Relationship, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.SC_Relationship)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.SC_AddressLine1, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.SC_AddressLine1)</p>
+                </div>
+                @Html.LabelFor(m => m.SC_AddressLine2, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.SC_AddressLine2)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.SC_City_Vill_Town, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.SC_City_Vill_Town)</p>
+                </div>
+                @Html.LabelFor(m => m.SC_District, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.SC_District)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.strSC_State, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.strSC_State)</p>
+                </div>
+                @Html.LabelFor(m => m.SC_Pin, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.SC_Pin)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.SC_Phone1, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.SC_Phone1)</p>
+                </div>
+                @Html.LabelFor(m => m.SC_Phone2, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.SC_Phone2)</p>
+                </div>
+            </div>*@
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <button type="button" class="btn btn-outline btn-primary edit">Edit</button>
+                </div>
+            </div>
+        </div>
+        @using (Html.BeginForm("SaveEmergencyInformation", "Profile", FormMethod.Post, new { @id = "frmEmergencyInfo", @class = "form-horizontal", @style = (Model.UserId.Equals(Guid.Empty) ? "" : "display:none;") }))
+        {
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Primary_Emergency_Contact, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.Primary_Emergency_Contact, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.Primary_Emergency_Contact)
+                </div>
+                @Html.LabelFor(m => m.PC_Relationship, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.DropDownListFor(x => x.PC_Relationship, (IEnumerable<SelectListItem>)ViewBag.RelationshipList, new { @class = "form-control" })
+                </div>
+                @*<div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.PC_Relationship, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.PC_Relationship)
+                </div>*@
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.PC_AddressLine1, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.PC_AddressLine1, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                </div>
+                @Html.LabelFor(m => m.PC_AddressLine2, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.PC_AddressLine2, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.PC_City_Vill_Town, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.PC_City_Vill_Town, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.PC_City_Vill_Town)
+                </div>
+                @Html.LabelFor(m => m.PC_District, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.PC_District, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.PC_District)
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.PC_State, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4" >
+                    @Html.DropDownListFor(x => x.PC_State, (IEnumerable<SelectListItem>)ViewBag.StatesList, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.PC_State)
+                </div>
+                @Html.LabelFor(m => m.PC_Pin, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.PC_Pin, new { @class = "form-control", @maxlength = "6", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.PC_Pin)
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.PC_Phone1, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.PC_Phone1, new { @class = "form-control", @maxlength = 11, @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.PC_Phone1)
+                </div>
+                @Html.LabelFor(m => m.PC_Phone2, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.PC_Phone2, new { @class = "form-control", @maxlength = 11, @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.PC_Phone2)
+                </div>
+            </div>
+            @*<div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Secondary_Emergency_Contact, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.Secondary_Emergency_Contact, new { @class = "form-control" })
+                </div>
+                @Html.LabelFor(m => m.SC_Relationship, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.SC_Relationship, new { @class = "form-control" })
+                </div>
+            </div>
+                <div class="hr-line-dashed-Custom"></div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.SC_AddressLine1, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(m => m.SC_AddressLine1, new { @class = "form-control" })
+                    </div>
+                    @Html.LabelFor(m => m.SC_AddressLine2, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(m => m.SC_AddressLine2, new { @class = "form-control tdatepicker" })
+                    </div>
+                </div>
+                        <div class="hr-line-dashed-Custom"></div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.SC_City_Vill_Town, new { @class = "col-sm-2 control-label" })
+                            <div class="col-sm-4">
+                                @Html.TextBoxFor(m => m.SC_City_Vill_Town, new { @class = "form-control tdatepicker" })
+                            </div>
+                            @Html.LabelFor(m => m.SC_District, new { @class = "col-sm-2 control-label" })
+                            <div class="col-sm-4">
+                                @Html.TextBoxFor(m => m.SC_District, new { @class = "form-control tdatepicker" })
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed-Custom"></div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.SC_State, new { @class = "col-sm-2 control-label" })
+                            <div class="col-sm-4">
+                                @Html.DropDownListFor(x => x.SC_State, (IEnumerable<SelectListItem>)ViewBag.StatesList, new { @class = "form-control" })
+                            </div>
+                            @Html.LabelFor(m => m.SC_Pin, new { @class = "col-sm-2 control-label" })
+                            <div class="col-sm-4">
+                                @Html.TextBoxFor(m => m.SC_Pin, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed-Custom"></div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.SC_Phone1, new { @class = "col-sm-2 control-label" })
+                            <div class="col-sm-4">
+                                @Html.TextBoxFor(m => m.SC_Phone1, new { @class = "form-control" })
+                            </div>
+                            @Html.LabelFor(m => m.SC_Phone2, new { @class = "col-sm-2 control-label" })
+                            <div class="col-sm-4">
+                                @Html.TextBoxFor(m => m.SC_Phone2, new { @class = "form-control" })
+                            </div>
+                        </div>*@
+                        <div class="hr-line-dashed-Custom"></div>
+                        <div class="form-group">
+                            <div class="col-sm-8 col-sm-offset-2">
+                             <input type="submit" value="Save" class="btn btn-primary">
+                              @*<button type="button" id="btnSubmit" class="btn btn-primary">Save</button>*@
+                                    <button type="button" id="btnCancel" class="btn btn-default cancel">Cancel</button>
+                                </div>
+                            </div>
+            }
+        </div>
+    </div>

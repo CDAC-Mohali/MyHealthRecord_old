@@ -1,0 +1,1257 @@
+﻿2016-12-15 10:01:14.122 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 10:01:14.362 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 10:01:14.601 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:01:14.601 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:01:14.683 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:01:14.683 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 10:01:14.948 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:01:14.948 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:01:14.997 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"fc6eaf79-2fdf-4bf9-a02d-7736687aafea"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:01:14.997 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"fc6eaf79-2fdf-4bf9-a02d-7736687aafea"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:01:14.998 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:01:14.998 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:01:15.106 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:01:15.106 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:01:15.109 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:01:15.109 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:01:22.314 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 45  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:01:22.315 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:01:22.317 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:01:22.318 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.Demo"
+2016-12-15 10:01:22.616 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.Demo" with arguments ([""]) - ModelState is Invalid'
+2016-12-15 10:01:40.816 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.AccountController.Demo", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 10:01:40.835 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 10:01:40.837 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response.
+2016-12-15 10:01:40.837 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 10:01:40.867 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.AccountController.Demo" in 1.8547ms
+2016-12-15 10:01:41.181 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 1.8875ms 200 text/plain; charset=utf-8
+2016-12-15 10:01:42.951 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:01:42.951 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:01:42.952 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:01:42.952 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:01:43.086 +05:30 Information: [Microsoft.Extensions.DependencyInjection.DataProtectionServices] User profile is available. Using '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2016-12-15 10:01:43.151 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 2.8156ms
+2016-12-15 10:01:43.151 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 2.8156ms
+2016-12-15 10:01:43.407 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 2.8797ms 200 text/html; charset=utf-8
+2016-12-15 10:01:43.419 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /vendor/bootstrap/dist/css/bootstrap.min.css  QueryString: 
+2016-12-15 10:01:43.423 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /content/landing.css  QueryString: 
+2016-12-15 10:01:43.426 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/vendor/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\vendor\bootstrap\dist\css\bootstrap.min.css"'
+2016-12-15 10:01:43.426 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/content/landing.css"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\content\landing.css"'
+2016-12-15 10:01:43.450 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /phr_css/bower_components/jquery/dist/jquery.min.js  QueryString: 
+2016-12-15 10:01:43.450 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/phr_css/bower_components/jquery/dist/jquery.min.js"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\phr_css\bower_components\jquery\dist\jquery.min.js"'
+2016-12-15 10:01:43.529 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2  QueryString: 
+2016-12-15 10:01:43.529 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/pic4.jpg  QueryString: 
+2016-12-15 10:01:43.529 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/digital_india_logo.png  QueryString: 
+2016-12-15 10:01:43.529 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/pic4.jpg"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\pic4.jpg"'
+2016-12-15 10:01:43.529 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\vendor\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"'
+2016-12-15 10:01:43.529 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/digital_india_logo.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\digital_india_logo.png"'
+2016-12-15 10:01:43.835 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0422ms 200 text/css
+2016-12-15 10:01:43.838 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/nationalemblemindia.png  QueryString: 
+2016-12-15 10:01:43.839 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/nationalemblemindia.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\nationalemblemindia.png"'
+2016-12-15 10:01:44.116 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0594ms 200 application/font-woff2
+2016-12-15 10:01:44.116 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/pic33.jpg  QueryString: 
+2016-12-15 10:01:44.116 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/pic33.jpg"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\pic33.jpg"'
+2016-12-15 10:01:44.684 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0562ms 200 image/jpeg
+2016-12-15 10:01:44.684 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/022.png  QueryString: 
+2016-12-15 10:01:44.684 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/022.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\022.png"'
+2016-12-15 10:01:44.966 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0281ms 200 image/png
+2016-12-15 10:01:44.967 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/homepage.png  QueryString: 
+2016-12-15 10:01:44.967 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/homepage.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\homepage.png"'
+2016-12-15 10:01:45.240 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0282ms 200 image/png
+2016-12-15 10:01:45.240 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/033.png  QueryString: 
+2016-12-15 10:01:45.240 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/033.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\033.png"'
+2016-12-15 10:01:45.482 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 3.0875ms 200 text/html; charset=utf-8
+2016-12-15 10:01:45.496 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.025ms 200 image/png
+2016-12-15 10:01:45.508 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/MobileOS_iOS11.png  QueryString: 
+2016-12-15 10:01:45.508 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/MobileOS_iOS11.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\MobileOS_iOS11.png"'
+2016-12-15 10:01:45.513 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/MobileOS_Android11.png  QueryString: 
+2016-12-15 10:01:45.513 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/MobileOS_Android11.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\MobileOS_Android11.png"'
+2016-12-15 10:01:45.769 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.025ms 200 image/png
+2016-12-15 10:01:45.769 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/05.png  QueryString: 
+2016-12-15 10:01:45.769 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/05.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\05.png"'
+2016-12-15 10:01:45.782 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0266ms 200 image/png
+2016-12-15 10:01:45.783 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/044.png  QueryString: 
+2016-12-15 10:01:45.783 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/044.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\044.png"'
+2016-12-15 10:01:46.030 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0266ms 200 image/png
+2016-12-15 10:01:46.030 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/whitetranscdac.png  QueryString: 
+2016-12-15 10:01:46.030 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/whitetranscdac.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\whitetranscdac.png"'
+2016-12-15 10:01:46.043 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0265ms 200 image/png
+2016-12-15 10:01:46.312 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0281ms 200 image/png
+2016-12-15 10:01:47.348 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3812ms 200 image/png
+2016-12-15 10:01:47.348 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/pic22.jpg  QueryString: 
+2016-12-15 10:01:47.348 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/pic22.jpg"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\pic22.jpg"'
+2016-12-15 10:01:47.359 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3906ms 200 application/javascript
+2016-12-15 10:01:47.359 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/MyHealthRecord.png  QueryString: 
+2016-12-15 10:01:47.359 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/MyHealthRecord.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\MyHealthRecord.png"'
+2016-12-15 10:01:47.378 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3954ms 200 text/css
+2016-12-15 10:01:47.378 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /phr_css/bower_components/bootstrap/dist/js/bootstrap.min.js  QueryString: 
+2016-12-15 10:01:47.378 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/phr_css/bower_components/bootstrap/dist/js/bootstrap.min.js"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\phr_css\bower_components\bootstrap\dist\js\bootstrap.min.js"'
+2016-12-15 10:01:47.500 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/GetUserCount  QueryString: 
+2016-12-15 10:01:47.500 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/GetUserCount" does not match a supported file type
+2016-12-15 10:01:47.500 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:01:47.500 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.GetUserCount"
+2016-12-15 10:01:47.501 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.GetUserCount" with arguments (null) - ModelState is Valid'
+2016-12-15 10:01:47.631 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0281ms 200 image/png
+2016-12-15 10:01:47.678 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0344ms 200 image/jpeg
+2016-12-15 10:01:47.743 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0375ms 200 application/javascript
+2016-12-15 10:01:49.354 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.5828ms 200 image/jpeg
+2016-12-15 10:01:49.354 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.5516ms 200 image/png
+2016-12-15 10:01:49.355 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/pic1.jpg  QueryString: 
+2016-12-15 10:01:49.355 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /images/011.png  QueryString: 
+2016-12-15 10:01:49.368 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/pic1.jpg"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\pic1.jpg"'
+2016-12-15 10:01:49.368 +05:30 Information:2 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/011.png"'. Physical path: '"E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\wwwroot\images\011.png"'
+2016-12-15 10:01:49.640 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0281ms 200 image/jpeg
+2016-12-15 10:01:49.661 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0281ms 200 image/png
+2016-12-15 10:01:51.246 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.GetUserCount", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 10:01:51.247 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 10:01:51.249 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-12-15 10:01:51.249 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 10:01:51.293 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.GetUserCount" in 0.3796ms
+2016-12-15 10:01:51.563 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.4062ms 200 application/json; charset=utf-8
+2016-12-15 10:01:52.203 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:01:52.204 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:01:52.204 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:01:52.204 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"fc6eaf79-2fdf-4bf9-a02d-7736687aafea"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:01:52.204 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:01:52.206 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:01:52.206 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:01:52.206 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:01:52.206 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:01:52.209 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.0015ms
+2016-12-15 10:01:52.458 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.025ms 200 text/html; charset=utf-8
+2016-12-15 10:02:05.590 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 43  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:02:05.590 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:02:05.606 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:02:05.606 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.Demo"
+2016-12-15 10:02:05.621 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.Demo" with arguments (["file_upload_server"]) - ModelState is Valid'
+2016-12-15 10:02:56.209 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 10:02:56.290 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 10:02:56.634 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:02:56.634 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:02:56.673 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 10:02:56.673 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:02:56.883 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:02:56.884 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:02:56.949 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"2f7f66b6-73bb-45df-9811-51a9f6263e0a"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:02:56.949 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"2f7f66b6-73bb-45df-9811-51a9f6263e0a"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:02:56.950 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:02:56.950 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:02:57.100 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:02:57.100 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:02:57.103 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:02:57.103 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:02:59.870 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:02:59.870 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:02:59.871 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:02:59.871 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:02:59.912 +05:30 Information: [Microsoft.Extensions.DependencyInjection.DataProtectionServices] User profile is available. Using '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2016-12-15 10:02:59.991 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.3031ms
+2016-12-15 10:02:59.991 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.3031ms
+2016-12-15 10:03:00.299 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3656ms 200 text/html; charset=utf-8
+2016-12-15 10:03:00.997 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/GetUserCount  QueryString: 
+2016-12-15 10:03:00.998 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/GetUserCount" does not match a supported file type
+2016-12-15 10:03:00.998 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:03:00.998 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.GetUserCount"
+2016-12-15 10:03:00.999 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.GetUserCount" with arguments (null) - ModelState is Valid'
+2016-12-15 10:03:02.309 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.5672ms 200 text/html; charset=utf-8
+2016-12-15 10:03:03.638 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.GetUserCount", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 10:03:03.651 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 10:03:03.653 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-12-15 10:03:03.654 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 10:03:03.711 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.GetUserCount" in 0.2718ms
+2016-12-15 10:03:03.798 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 65  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:03:03.799 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:03:03.799 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:03:03.799 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.Demo"
+2016-12-15 10:03:03.836 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.Demo" with arguments (["file_upload_server", ""]) - ModelState is Valid'
+2016-12-15 10:03:17.875 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 1.6875ms 200 application/json; charset=utf-8
+2016-12-15 10:03:17.877 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:03:17.877 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:03:17.877 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:03:17.878 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"2f7f66b6-73bb-45df-9811-51a9f6263e0a"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:03:17.878 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:03:17.878 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:03:17.878 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:03:17.878 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:03:17.878 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:03:17.879 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0ms
+2016-12-15 10:03:17.880 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.AccountController.Demo", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 10:03:17.882 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 10:03:17.882 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response.
+2016-12-15 10:03:17.882 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 10:03:17.887 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.AccountController.Demo" in 1.4094ms
+2016-12-15 10:03:18.134 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0265ms 200 text/html; charset=utf-8
+2016-12-15 10:03:18.140 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 1.4344ms 200 text/plain; charset=utf-8
+2016-12-15 10:03:20.509 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 69  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:03:20.509 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:03:20.509 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:03:20.509 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.Demo"
+2016-12-15 10:03:20.894 +05:30 Error: [Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A field previously marked invalid should not be marked valid.
+   at Microsoft.AspNet.Mvc.ModelBinding.ModelStateDictionary.MarkFieldValid(String key)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.DefaultObjectValidator.Validate(IModelValidatorProvider validatorProvider, ModelStateDictionary modelState, ValidationStateDictionary validationState, String prefix, Object model)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindModelAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<PopulateArgumentsAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindActionArgumentsCoreAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllActionFiltersAsync>d__52.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeExceptionFilterAsync>d__51.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2016-12-15 10:03:21.548 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.1031ms 500 text/html; charset=utf-8
+2016-12-15 10:03:34.033 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 69  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:03:34.033 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:03:34.033 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:03:34.033 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.Demo"
+2016-12-15 10:03:34.170 +05:30 Error: [Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A field previously marked invalid should not be marked valid.
+   at Microsoft.AspNet.Mvc.ModelBinding.ModelStateDictionary.MarkFieldValid(String key)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.DefaultObjectValidator.Validate(IModelValidatorProvider validatorProvider, ModelStateDictionary modelState, ValidationStateDictionary validationState, String prefix, Object model)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindModelAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<PopulateArgumentsAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindActionArgumentsCoreAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllActionFiltersAsync>d__52.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeExceptionFilterAsync>d__51.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2016-12-15 10:03:34.433 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0406ms 500 text/html; charset=utf-8
+2016-12-15 10:03:37.436 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 69  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:03:37.436 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:03:37.436 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:03:37.436 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.Demo"
+2016-12-15 10:03:37.655 +05:30 Error: [Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A field previously marked invalid should not be marked valid.
+   at Microsoft.AspNet.Mvc.ModelBinding.ModelStateDictionary.MarkFieldValid(String key)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.DefaultObjectValidator.Validate(IModelValidatorProvider validatorProvider, ModelStateDictionary modelState, ValidationStateDictionary validationState, String prefix, Object model)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindModelAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<PopulateArgumentsAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindActionArgumentsCoreAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllActionFiltersAsync>d__52.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeExceptionFilterAsync>d__51.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2016-12-15 10:03:37.904 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0469ms 500 text/html; charset=utf-8
+2016-12-15 10:04:21.853 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 73  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:04:21.853 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:04:21.853 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:04:21.853 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.Demo"
+2016-12-15 10:04:21.991 +05:30 Error: [Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A field previously marked invalid should not be marked valid.
+   at Microsoft.AspNet.Mvc.ModelBinding.ModelStateDictionary.MarkFieldValid(String key)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.DefaultObjectValidator.Validate(IModelValidatorProvider validatorProvider, ModelStateDictionary modelState, ValidationStateDictionary validationState, String prefix, Object model)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindModelAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<PopulateArgumentsAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindActionArgumentsCoreAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllActionFiltersAsync>d__52.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeExceptionFilterAsync>d__51.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2016-12-15 10:04:22.254 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0391ms 500 text/html; charset=utf-8
+2016-12-15 10:04:33.304 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 71  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:04:33.304 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:04:33.304 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:04:33.304 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.Demo"
+2016-12-15 10:04:33.304 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.Demo" with arguments (["file_upload_server", ""]) - ModelState is Valid'
+2016-12-15 10:04:59.937 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 10:05:00.025 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 10:05:00.233 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:05:00.233 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:05:00.233 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 71  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:05:00.281 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:05:00.281 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:05:00.281 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 10:05:00.447 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:05:00.447 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:05:00.447 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:05:00.520 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"f80932c2-236a-4ed0-908b-0645d4b48191"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:05:00.520 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"f80932c2-236a-4ed0-908b-0645d4b48191"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:05:00.521 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:05:00.520 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.Demo"
+2016-12-15 10:05:00.521 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:05:00.624 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:05:00.624 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:05:00.628 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:05:00.628 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:05:00.642 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.Demo" with arguments (["", ""]) - ModelState is Valid'
+2016-12-15 10:05:05.662 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.AccountController.Demo", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 10:05:05.694 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 10:05:05.695 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response.
+2016-12-15 10:05:05.695 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 10:05:05.719 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.AccountController.Demo" in 0.5187ms
+2016-12-15 10:05:06.012 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.5781ms 200 text/plain; charset=utf-8
+2016-12-15 10:05:08.163 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:05:08.163 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:05:08.164 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:05:08.164 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:05:08.201 +05:30 Information: [Microsoft.Extensions.DependencyInjection.DataProtectionServices] User profile is available. Using '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2016-12-15 10:05:08.262 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.7734ms
+2016-12-15 10:05:08.262 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.7734ms
+2016-12-15 10:05:08.534 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.8297ms 200 text/html; charset=utf-8
+2016-12-15 10:05:09.128 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/GetUserCount  QueryString: 
+2016-12-15 10:05:09.129 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/GetUserCount" does not match a supported file type
+2016-12-15 10:05:09.129 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:05:09.129 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.GetUserCount"
+2016-12-15 10:05:09.131 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.GetUserCount" with arguments (null) - ModelState is Valid'
+2016-12-15 10:05:10.486 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 1.025ms 200 text/html; charset=utf-8
+2016-12-15 10:05:12.089 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.GetUserCount", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 10:05:12.090 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 10:05:12.092 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-12-15 10:05:12.092 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 10:05:12.153 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.GetUserCount" in 0.3031ms
+2016-12-15 10:05:12.418 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3296ms 200 application/json; charset=utf-8
+2016-12-15 10:05:12.653 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 73  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:05:12.654 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:05:12.654 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:05:12.654 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.Demo"
+2016-12-15 10:05:12.654 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.Demo" with arguments (["", ""]) - ModelState is Valid'
+2016-12-15 10:18:01.907 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 10:18:01.982 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 10:18:02.167 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:18:02.167 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:18:02.207 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:18:02.207 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 10:18:02.398 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:18:02.398 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:18:02.441 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"a0064305-7271-490b-b2b9-6ef2479f73cb"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:18:02.441 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"a0064305-7271-490b-b2b9-6ef2479f73cb"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:18:02.442 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:18:02.442 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:18:02.541 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:18:02.541 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:18:02.544 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:18:02.544 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:18:05.122 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:18:05.122 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:18:05.123 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:18:05.123 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:18:05.161 +05:30 Information: [Microsoft.Extensions.DependencyInjection.DataProtectionServices] User profile is available. Using '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2016-12-15 10:18:05.237 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.2781ms
+2016-12-15 10:18:05.237 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.2781ms
+2016-12-15 10:18:05.579 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3407ms 200 text/html; charset=utf-8
+2016-12-15 10:18:06.206 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/GetUserCount  QueryString: 
+2016-12-15 10:18:06.207 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/GetUserCount" does not match a supported file type
+2016-12-15 10:18:06.207 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:18:06.207 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.GetUserCount"
+2016-12-15 10:18:06.208 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.GetUserCount" with arguments (null) - ModelState is Valid'
+2016-12-15 10:18:07.527 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.536ms 200 text/html; charset=utf-8
+2016-12-15 10:18:08.905 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.GetUserCount", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 10:18:08.917 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 10:18:08.919 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-12-15 10:18:08.919 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 10:18:08.984 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.GetUserCount" in 0.2781ms
+2016-12-15 10:18:09.292 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3093ms 200 application/json; charset=utf-8
+2016-12-15 10:18:09.591 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 81  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:18:09.591 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:18:09.591 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:18:09.591 +05:30 Debug:3 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] No actions matched the current request
+2016-12-15 10:18:09.591 +05:30 Debug: [Microsoft.AspNet.Builder.RouterMiddleware] Request did not match any routes.
+2016-12-15 10:18:09.901 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0313ms 404 
+2016-12-15 10:18:24.168 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 81  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/UploadDigiLockerDocument  QueryString: 
+2016-12-15 10:18:24.168 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:18:24.168 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:18:24.168 +05:30 Debug:3 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] No actions matched the current request
+2016-12-15 10:18:24.168 +05:30 Debug: [Microsoft.AspNet.Builder.RouterMiddleware] Request did not match any routes.
+2016-12-15 10:18:24.477 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0313ms 404 
+2016-12-15 10:18:33.407 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 83  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/UploadDigiLockerDocument  QueryString: 
+2016-12-15 10:18:33.407 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:18:33.407 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:18:33.407 +05:30 Debug:3 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] No actions matched the current request
+2016-12-15 10:18:33.407 +05:30 Debug: [Microsoft.AspNet.Builder.RouterMiddleware] Request did not match any routes.
+2016-12-15 10:18:33.910 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.05ms 404 
+2016-12-15 10:18:39.303 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 83  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:18:39.303 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:18:39.303 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:18:39.303 +05:30 Debug:3 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] No actions matched the current request
+2016-12-15 10:18:39.303 +05:30 Debug: [Microsoft.AspNet.Builder.RouterMiddleware] Request did not match any routes.
+2016-12-15 10:18:39.653 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0344ms 404 
+2016-12-15 10:18:52.346 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:18:52.346 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:18:52.346 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:18:52.346 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"a0064305-7271-490b-b2b9-6ef2479f73cb"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:18:52.346 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:18:52.346 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:18:52.346 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:18:52.347 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:18:52.347 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:18:52.348 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0ms
+2016-12-15 10:18:52.706 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.036ms 200 text/html; charset=utf-8
+2016-12-15 10:19:10.568 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 10:19:10.644 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 10:19:10.819 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:19:10.819 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:19:10.859 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:19:10.858 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 10:19:11.033 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:19:11.033 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:19:11.079 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"0b3786cd-4f72-4545-bef9-4c823fe6dd90"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:19:11.079 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"0b3786cd-4f72-4545-bef9-4c823fe6dd90"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:19:11.080 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:19:11.080 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:19:11.178 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:19:11.178 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:19:11.181 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:19:11.181 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:19:12.764 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 83  Scheme: http  Host: localhost:55016  PathBase:   Path: /api/Account/demo  QueryString: 
+2016-12-15 10:19:12.764 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:19:12.764 +05:30 Debug: [Microsoft.AspNet.Mvc.Routing.InnerAttributeRoute] Request successfully matched the route with name 'null' and template '"api/Account/demo"'.
+2016-12-15 10:19:12.765 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.demo"
+2016-12-15 10:19:13.011 +05:30 Error: [Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A field previously marked invalid should not be marked valid.
+   at Microsoft.AspNet.Mvc.ModelBinding.ModelStateDictionary.MarkFieldValid(String key)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.DefaultObjectValidator.Validate(IModelValidatorProvider validatorProvider, ModelStateDictionary modelState, ValidationStateDictionary validationState, String prefix, Object model)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindModelAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<PopulateArgumentsAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindActionArgumentsCoreAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllActionFiltersAsync>d__52.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeExceptionFilterAsync>d__51.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Routing.InnerAttributeRoute.<RouteAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2016-12-15 10:19:13.483 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0719ms 500 text/html; charset=utf-8
+2016-12-15 10:19:14.019 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:19:14.019 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:19:14.020 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:19:14.020 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:19:14.059 +05:30 Information: [Microsoft.Extensions.DependencyInjection.DataProtectionServices] User profile is available. Using '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2016-12-15 10:19:14.124 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.3047ms
+2016-12-15 10:19:14.124 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.3047ms
+2016-12-15 10:19:14.495 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3672ms 200 text/html; charset=utf-8
+2016-12-15 10:19:14.886 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/GetUserCount  QueryString: 
+2016-12-15 10:19:14.886 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/GetUserCount" does not match a supported file type
+2016-12-15 10:19:14.886 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:19:14.886 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.GetUserCount"
+2016-12-15 10:19:14.887 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.GetUserCount" with arguments (null) - ModelState is Valid'
+2016-12-15 10:19:17.198 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.6375ms 200 text/html; charset=utf-8
+2016-12-15 10:19:18.601 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.GetUserCount", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 10:19:18.614 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 10:19:18.616 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-12-15 10:19:18.617 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 10:19:18.639 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.GetUserCount" in 0.375ms
+2016-12-15 10:19:19.019 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.4125ms 200 application/json; charset=utf-8
+2016-12-15 10:19:35.079 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:19:35.079 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:19:35.079 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:19:35.079 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"0b3786cd-4f72-4545-bef9-4c823fe6dd90"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:19:35.079 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:19:35.079 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:19:35.080 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:19:35.080 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:19:35.080 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:19:35.081 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0ms
+2016-12-15 10:19:35.448 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0375ms 200 text/html; charset=utf-8
+2016-12-15 10:19:48.573 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 10:19:48.619 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 10:19:48.894 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:19:48.894 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:19:48.894 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 83  Scheme: http  Host: localhost:55016  PathBase:   Path: /api/Account/demo  QueryString: 
+2016-12-15 10:19:48.936 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 10:19:48.936 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:19:48.936 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:19:49.108 +05:30 Debug: [Microsoft.AspNet.Mvc.Routing.InnerAttributeRoute] Request successfully matched the route with name 'null' and template '"api/Account/demo"'.
+2016-12-15 10:19:49.109 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:19:49.109 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:19:49.153 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"27c8433b-09bb-4c61-a62e-dadd6fe285a8"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:19:49.154 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"27c8433b-09bb-4c61-a62e-dadd6fe285a8"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:19:49.153 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.demo"
+2016-12-15 10:19:49.154 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:19:49.154 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:19:49.254 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:19:49.254 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:19:49.258 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:19:49.258 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:19:49.488 +05:30 Error: [Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A field previously marked invalid should not be marked valid.
+   at Microsoft.AspNet.Mvc.ModelBinding.ModelStateDictionary.MarkFieldValid(String key)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.DefaultObjectValidator.Validate(IModelValidatorProvider validatorProvider, ModelStateDictionary modelState, ValidationStateDictionary validationState, String prefix, Object model)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindModelAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<PopulateArgumentsAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindActionArgumentsCoreAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllActionFiltersAsync>d__52.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeExceptionFilterAsync>d__51.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Routing.InnerAttributeRoute.<RouteAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2016-12-15 10:19:49.940 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.1031ms 500 text/html; charset=utf-8
+2016-12-15 10:19:52.112 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:19:52.112 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:19:52.113 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:19:52.113 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:19:52.151 +05:30 Information: [Microsoft.Extensions.DependencyInjection.DataProtectionServices] User profile is available. Using '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2016-12-15 10:19:52.219 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.3062ms
+2016-12-15 10:19:52.219 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.3062ms
+2016-12-15 10:19:52.585 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3687ms 200 text/html; charset=utf-8
+2016-12-15 10:19:52.716 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/GetUserCount  QueryString: 
+2016-12-15 10:19:52.716 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/GetUserCount" does not match a supported file type
+2016-12-15 10:19:52.717 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:19:52.717 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.GetUserCount"
+2016-12-15 10:19:52.718 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.GetUserCount" with arguments (null) - ModelState is Valid'
+2016-12-15 10:19:54.714 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.5828ms 200 text/html; charset=utf-8
+2016-12-15 10:19:55.150 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 83  Scheme: http  Host: localhost:55016  PathBase:   Path: /api/Account/demo  QueryString: 
+2016-12-15 10:19:55.150 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:19:55.150 +05:30 Debug: [Microsoft.AspNet.Mvc.Routing.InnerAttributeRoute] Request successfully matched the route with name 'null' and template '"api/Account/demo"'.
+2016-12-15 10:19:55.150 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.demo"
+2016-12-15 10:19:55.287 +05:30 Error: [Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A field previously marked invalid should not be marked valid.
+   at Microsoft.AspNet.Mvc.ModelBinding.ModelStateDictionary.MarkFieldValid(String key)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.DefaultObjectValidator.Validate(IModelValidatorProvider validatorProvider, ModelStateDictionary modelState, ValidationStateDictionary validationState, String prefix, Object model)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindModelAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<PopulateArgumentsAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindActionArgumentsCoreAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllActionFiltersAsync>d__52.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeExceptionFilterAsync>d__51.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Routing.InnerAttributeRoute.<RouteAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2016-12-15 10:19:56.245 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.1094ms 500 text/html; charset=utf-8
+2016-12-15 10:19:58.546 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.GetUserCount", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 10:19:58.563 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 10:19:58.565 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-12-15 10:19:58.565 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 10:19:58.591 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.GetUserCount" in 0.5875ms
+2016-12-15 10:19:59.130 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.6422ms 200 application/json; charset=utf-8
+2016-12-15 10:20:11.202 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:20:11.202 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:20:11.202 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:20:11.202 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"27c8433b-09bb-4c61-a62e-dadd6fe285a8"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:20:11.202 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:20:11.203 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:20:11.203 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:20:11.203 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:20:11.203 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:20:11.204 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0ms
+2016-12-15 10:20:11.596 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.039ms 200 text/html; charset=utf-8
+2016-12-15 10:20:29.535 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 10:20:29.593 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 10:20:29.833 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:20:29.833 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:20:29.873 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 10:20:29.873 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:20:30.046 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:20:30.046 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:20:30.091 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"63787ef4-3690-41f1-8aea-a0bbdee56c01"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:20:30.091 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"63787ef4-3690-41f1-8aea-a0bbdee56c01"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:20:30.091 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:20:30.092 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:20:30.188 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:20:30.188 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:20:30.191 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:20:30.191 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:20:32.746 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:20:32.746 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 10:20:32.747 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:20:32.747 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 10:20:32.786 +05:30 Information: [Microsoft.Extensions.DependencyInjection.DataProtectionServices] User profile is available. Using '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2016-12-15 10:20:32.864 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.2766ms
+2016-12-15 10:20:32.865 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.2782ms
+2016-12-15 10:20:32.991 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 83  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 10:20:32.991 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:20:32.992 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:20:32.992 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.demo"
+2016-12-15 10:20:33.234 +05:30 Error: [Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A field previously marked invalid should not be marked valid.
+   at Microsoft.AspNet.Mvc.ModelBinding.ModelStateDictionary.MarkFieldValid(String key)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.DefaultObjectValidator.Validate(IModelValidatorProvider validatorProvider, ModelStateDictionary modelState, ValidationStateDictionary validationState, String prefix, Object model)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindModelAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<PopulateArgumentsAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindActionArgumentsCoreAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllActionFiltersAsync>d__52.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeExceptionFilterAsync>d__51.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2016-12-15 10:20:33.290 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3453ms 200 text/html; charset=utf-8
+2016-12-15 10:20:35.586 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.2593ms 500 text/html; charset=utf-8
+2016-12-15 10:20:35.593 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.575ms 200 text/html; charset=utf-8
+2016-12-15 10:20:35.606 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/GetUserCount  QueryString: 
+2016-12-15 10:20:35.606 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/GetUserCount" does not match a supported file type
+2016-12-15 10:20:35.606 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:20:35.606 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.GetUserCount"
+2016-12-15 10:20:35.607 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.GetUserCount" with arguments (null) - ModelState is Valid'
+2016-12-15 10:20:38.848 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.GetUserCount", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 10:20:38.862 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 10:20:38.864 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-12-15 10:20:38.864 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 10:20:38.885 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.GetUserCount" in 0.3281ms
+2016-12-15 10:20:39.307 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3703ms 200 application/json; charset=utf-8
+2016-12-15 10:20:50.200 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 83  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/UploadDigiLockerDocument  QueryString: 
+2016-12-15 10:20:50.200 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:20:50.200 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:20:50.200 +05:30 Debug:3 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] No actions matched the current request
+2016-12-15 10:20:50.200 +05:30 Debug: [Microsoft.AspNet.Builder.RouterMiddleware] Request did not match any routes.
+2016-12-15 10:20:50.597 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.039ms 404 
+2016-12-15 10:21:06.170 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 10:21:06.229 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 10:21:06.428 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:21:06.428 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 83  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/UploadDigiLockerDocument  QueryString: 
+2016-12-15 10:21:06.428 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 10:21:06.469 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 10:21:06.469 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 10:21:06.469 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 10:21:06.623 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:21:06.623 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:21:06.623 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 10:21:06.678 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.UploadDigiLockerDocument"
+2016-12-15 10:21:06.678 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"4e2fcec0-8ebf-4f03-a0fb-a6c5f09cdd7f"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:21:06.678 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:21:06.678 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"4e2fcec0-8ebf-4f03-a0fb-a6c5f09cdd7f"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 10:21:06.679 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 10:21:06.786 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:21:06.786 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 10:21:06.790 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:21:06.790 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 10:21:06.926 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.UploadDigiLockerDocument" with arguments (["PHRMS.Web.Controllers.DigiLocker"]) - ModelState is Valid'
+2016-12-15 11:03:40.064 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 107  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/UploadDigiLockerDocument  QueryString: 
+2016-12-15 11:03:40.091 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 11:03:40.091 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:03:40.091 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.UploadDigiLockerDocument"
+2016-12-15 11:03:40.122 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.UploadDigiLockerDocument" with arguments (["PHRMS.Web.Controllers.DigiLocker"]) - ModelState is Valid'
+2016-12-15 11:30:15.923 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 11:30:16.011 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 11:30:16.173 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:30:16.173 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:30:16.315 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 11:30:16.314 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 11:30:16.652 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:30:16.652 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:30:16.684 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"679e61a0-c10e-4997-a242-238f8c084eca"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:30:16.684 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"679e61a0-c10e-4997-a242-238f8c084eca"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:30:16.685 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:30:16.685 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:30:16.913 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:30:16.913 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:30:16.916 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:30:16.916 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:30:20.030 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 11:30:20.030 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 11:30:20.036 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 11:30:20.036 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 11:30:20.083 +05:30 Information: [Microsoft.Extensions.DependencyInjection.DataProtectionServices] User profile is available. Using '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2016-12-15 11:30:20.165 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.3484ms
+2016-12-15 11:30:20.166 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.3484ms
+2016-12-15 11:30:20.581 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.4422ms 200 text/html; charset=utf-8
+2016-12-15 11:30:21.341 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 192  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/UploadDigiLockerDocument  QueryString: 
+2016-12-15 11:30:21.341 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 11:30:21.341 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:30:21.341 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.UploadDigiLockerDocument"
+2016-12-15 11:30:21.613 +05:30 Error: [Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A field previously marked invalid should not be marked valid.
+   at Microsoft.AspNet.Mvc.ModelBinding.ModelStateDictionary.MarkFieldValid(String key)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.DefaultObjectValidator.Validate(IModelValidatorProvider validatorProvider, ModelStateDictionary modelState, ValidationStateDictionary validationState, String prefix, Object model)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindModelAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<PopulateArgumentsAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindActionArgumentsCoreAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllActionFiltersAsync>d__52.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeExceptionFilterAsync>d__51.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2016-12-15 11:30:22.115 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0782ms 500 text/html; charset=utf-8
+2016-12-15 11:30:22.530 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.636ms 200 text/html; charset=utf-8
+2016-12-15 11:30:22.537 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/GetUserCount  QueryString: 
+2016-12-15 11:30:22.537 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/GetUserCount" does not match a supported file type
+2016-12-15 11:30:22.537 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:30:22.537 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.GetUserCount"
+2016-12-15 11:30:22.538 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.GetUserCount" with arguments (null) - ModelState is Valid'
+2016-12-15 11:30:25.471 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.GetUserCount", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 11:30:25.503 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 11:30:25.507 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-12-15 11:30:25.508 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 11:30:25.547 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.GetUserCount" in 0.3ms
+2016-12-15 11:30:25.858 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3313ms 200 application/json; charset=utf-8
+2016-12-15 11:30:30.671 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:30:30.671 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 11:30:30.671 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:30:30.672 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"679e61a0-c10e-4997-a242-238f8c084eca"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:30:30.672 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:30:30.673 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:30:30.673 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:30:30.674 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 11:30:30.674 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 11:30:30.676 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.0016ms
+2016-12-15 11:30:31.002 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0329ms 200 text/html; charset=utf-8
+2016-12-15 11:45:13.552 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 215  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/UploadDigiLockerDocument  QueryString: 
+2016-12-15 11:45:13.553 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 11:45:13.554 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:45:13.555 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.UploadDigiLockerDocument"
+2016-12-15 11:45:13.771 +05:30 Error: [Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: A field previously marked invalid should not be marked valid.
+   at Microsoft.AspNet.Mvc.ModelBinding.ModelStateDictionary.MarkFieldValid(String key)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNet.Mvc.ModelBinding.Validation.DefaultObjectValidator.Validate(IModelValidatorProvider validatorProvider, ModelStateDictionary modelState, ValidationStateDictionary validationState, String prefix, Object model)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindModelAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<PopulateArgumentsAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerActionArgumentBinder.<BindActionArgumentsCoreAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllActionFiltersAsync>d__52.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeExceptionFilterAsync>d__51.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2016-12-15 11:45:15.982 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.2422ms 500 text/html; charset=utf-8
+2016-12-15 11:47:10.278 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 11:47:10.372 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 11:47:10.585 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:47:10.585 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:47:10.626 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 11:47:10.626 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 11:47:10.796 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:47:10.796 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:47:10.864 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"3c133a6b-e470-428f-95a4-e1973ae40638"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:47:10.864 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"3c133a6b-e470-428f-95a4-e1973ae40638"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:47:10.865 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:47:10.865 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:47:10.964 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:47:10.964 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:47:10.967 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:47:10.967 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:47:13.605 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 11:47:13.605 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 11:47:13.606 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 11:47:13.606 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 11:47:13.643 +05:30 Information: [Microsoft.Extensions.DependencyInjection.DataProtectionServices] User profile is available. Using '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2016-12-15 11:47:13.725 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.2859ms
+2016-12-15 11:47:13.725 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.2859ms
+2016-12-15 11:47:14.116 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3532ms 200 text/html; charset=utf-8
+2016-12-15 11:47:15.890 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.5297ms 200 text/html; charset=utf-8
+2016-12-15 11:47:15.913 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/GetUserCount  QueryString: 
+2016-12-15 11:47:15.913 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/GetUserCount" does not match a supported file type
+2016-12-15 11:47:15.913 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:47:15.913 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.GetUserCount"
+2016-12-15 11:47:15.914 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.GetUserCount" with arguments (null) - ModelState is Valid'
+2016-12-15 11:47:18.684 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.GetUserCount", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 11:47:18.696 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 11:47:18.698 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-12-15 11:47:18.698 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 11:47:18.789 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.GetUserCount" in 0.2875ms
+2016-12-15 11:47:19.101 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3188ms 200 application/json; charset=utf-8
+2016-12-15 11:47:21.667 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 205  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 11:47:21.668 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 11:47:21.668 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:47:21.668 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.demo"
+2016-12-15 11:47:21.731 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.demo" with arguments ([""]) - ModelState is Invalid'
+2016-12-15 11:48:16.436 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 11:48:16.489 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 11:48:16.852 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 205  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 11:48:16.851 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:48:16.852 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:48:16.892 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 11:48:16.892 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 11:48:16.892 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 11:48:17.076 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:48:17.076 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:48:17.076 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:48:17.126 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.demo"
+2016-12-15 11:48:17.126 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"cf6ceb1a-efca-4091-9a07-12c5ab128a9b"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:48:17.126 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:48:17.126 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"cf6ceb1a-efca-4091-9a07-12c5ab128a9b"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:48:17.126 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:48:17.233 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:48:17.233 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:48:17.237 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:48:17.237 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:48:17.399 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.demo" with arguments ([""]) - ModelState is Unvalidated'
+2016-12-15 11:48:40.360 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 207  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 11:48:40.368 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 11:48:40.368 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:48:40.368 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.demo"
+2016-12-15 11:48:40.531 +05:30 Error: [Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PHRMS.Web.Controllers.AccountController.demo(DigiLocker DigiLocker) in E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\Controllers\AccountController.cs:line 55
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionExecutor.ExecuteAsync(MethodInfo actionMethodInfo, Object instance, Object[] orderedActionArguments)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker.<InvokeActionAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeActionFilterAsync>d__53.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.Template.TemplateRoute.<RouteAsync>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2016-12-15 11:48:40.540 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.demo" with arguments (["PHRMS.Web.Controllers.DigiLocker"]) - ModelState is Valid'
+2016-12-15 11:50:24.285 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 11:50:24.365 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 11:50:24.472 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:50:24.472 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 209  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 11:50:24.472 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:50:24.519 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 11:50:24.519 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 11:50:24.519 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 11:50:24.693 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:50:24.693 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:50:24.693 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:50:24.741 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"1bf3c980-48a8-4026-9600-3935427db843"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:50:24.741 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"1bf3c980-48a8-4026-9600-3935427db843"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:50:24.741 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.demo"
+2016-12-15 11:50:24.741 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:50:24.741 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:50:24.845 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:50:24.845 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:50:24.851 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:50:24.851 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:50:24.997 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.demo" with arguments ([""]) - ModelState is Unvalidated'
+2016-12-15 11:54:50.685 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 11:54:50.729 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 11:54:50.970 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:54:50.970 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 207  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 11:54:50.970 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:54:51.015 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 11:54:51.015 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 11:54:51.016 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 11:54:51.210 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:54:51.210 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:54:51.210 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:54:51.258 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.demo"
+2016-12-15 11:54:51.258 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"a46dfdf3-6793-4e3a-aeab-0326823a1234"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:54:51.258 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:54:51.259 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"a46dfdf3-6793-4e3a-aeab-0326823a1234"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:54:51.259 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:54:51.360 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:54:51.361 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:54:51.366 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:54:51.366 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:54:51.491 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.demo" with arguments (["PHRMS.Web.Controllers.DigiLocker"]) - ModelState is Valid'
+2016-12-15 11:55:23.956 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 11:55:24.015 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 11:55:24.267 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:55:24.267 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:55:24.319 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 11:55:24.319 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 11:55:24.499 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:55:24.499 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:55:24.602 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"eb2dd1ba-f6fc-4cd5-8a97-d056784aeb19"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:55:24.602 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"eb2dd1ba-f6fc-4cd5-8a97-d056784aeb19"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:55:24.603 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:55:24.603 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:55:24.703 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:55:24.704 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:55:24.706 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:55:24.706 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:55:27.261 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 11:55:27.261 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 11:55:27.262 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 11:55:27.262 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 11:55:27.304 +05:30 Information: [Microsoft.Extensions.DependencyInjection.DataProtectionServices] User profile is available. Using '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2016-12-15 11:55:27.382 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.2781ms
+2016-12-15 11:55:27.382 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.2781ms
+2016-12-15 11:55:27.792 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3531ms 200 text/html; charset=utf-8
+2016-12-15 11:55:29.426 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.5172ms 200 text/html; charset=utf-8
+2016-12-15 11:55:29.449 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/GetUserCount  QueryString: 
+2016-12-15 11:55:29.449 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/GetUserCount" does not match a supported file type
+2016-12-15 11:55:29.450 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:55:29.450 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.GetUserCount"
+2016-12-15 11:55:29.451 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.GetUserCount" with arguments (null) - ModelState is Valid'
+2016-12-15 11:55:32.033 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.GetUserCount", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 11:55:32.046 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 11:55:32.048 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-12-15 11:55:32.048 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 11:55:32.100 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.GetUserCount" in 0.2656ms
+2016-12-15 11:55:32.381 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.2937ms 200 application/json; charset=utf-8
+2016-12-15 11:55:32.709 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 207  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 11:55:32.709 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 11:55:32.710 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:55:32.710 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.demo"
+2016-12-15 11:55:32.794 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.demo" with arguments (["PHRMS.Web.Controllers.DigiLocker"]) - ModelState is Valid'
+2016-12-15 11:55:36.692 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 11:55:36.692 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 11:55:36.692 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 11:55:36.692 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"eb2dd1ba-f6fc-4cd5-8a97-d056784aeb19"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 11:55:36.692 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 11:55:36.693 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 11:55:36.693 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 11:55:36.693 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 11:55:36.693 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 11:55:36.694 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0ms
+2016-12-15 11:55:37.983 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.1281ms 200 text/html; charset=utf-8
+2016-12-15 12:29:26.235 +05:30 Debug:4 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting starting
+2016-12-15 12:29:26.295 +05:30 Debug:5 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Hosting started
+2016-12-15 12:29:26.415 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: DEBUG  ContentType: text/html  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 12:29:26.415 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 12:29:26.455 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "DEBUG" requests are not supported
+2016-12-15 12:29:26.455 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 12:29:26.610 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 12:29:26.610 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 12:29:26.664 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"16f48aa3-e86a-4309-9f72-9bb354945be0"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 12:29:26.664 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"16f48aa3-e86a-4309-9f72-9bb354945be0"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 12:29:26.665 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 12:29:26.665 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 12:29:26.767 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 12:29:26.767 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 12:29:26.770 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 12:29:26.770 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 12:29:29.437 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 12:29:29.437 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 12:29:29.438 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 12:29:29.438 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 12:29:29.477 +05:30 Information: [Microsoft.Extensions.DependencyInjection.DataProtectionServices] User profile is available. Using '"C:\Users\cdach\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2016-12-15 12:29:29.556 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.2891ms
+2016-12-15 12:29:29.556 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0.2891ms
+2016-12-15 12:29:29.885 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3469ms 200 text/html; charset=utf-8
+2016-12-15 12:29:29.910 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType: application/json; charset=utf-8  ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /Home/GetUserCount  QueryString: 
+2016-12-15 12:29:29.911 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/Home/GetUserCount" does not match a supported file type
+2016-12-15 12:29:29.911 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 12:29:29.911 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.GetUserCount"
+2016-12-15 12:29:29.913 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.GetUserCount" with arguments (null) - ModelState is Valid'
+2016-12-15 12:29:31.847 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.5438ms 200 text/html; charset=utf-8
+2016-12-15 12:29:32.783 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.GetUserCount", returned result "Microsoft.AspNet.Mvc.ObjectResult".'
+2016-12-15 12:29:32.792 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] No information found on request to perform content negotiation.
+2016-12-15 12:29:32.793 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Selected output formatter '"Microsoft.AspNet.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2016-12-15 12:29:32.793 +05:30 Information:1 [Microsoft.AspNet.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value "Microsoft.AspNet.Mvc.ActionContext".
+2016-12-15 12:29:32.853 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.GetUserCount" in 0.2938ms
+2016-12-15 12:29:33.205 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.3282ms 200 application/json; charset=utf-8
+2016-12-15 12:30:04.106 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:55016  PathBase:   Path: /  QueryString: 
+2016-12-15 12:30:04.106 +05:30 Debug:4 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] The request path "/" does not match a supported file type
+2016-12-15 12:30:04.107 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 12:30:04.108 +05:30 Debug: [Microsoft.AspNet.Mvc.Infrastructure.DefaultActionSelector] Action '"PHRMS.Web.Controllers.HomeController.Index"' with id '"16f48aa3-e86a-4309-9f72-9bb354945be0"' did not match the constraint '"Microsoft.AspNet.Mvc.ActionConstraints.HttpMethodConstraint"'
+2016-12-15 12:30:04.108 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.HomeController.Index"
+2016-12-15 12:30:04.108 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+2016-12-15 12:30:04.108 +05:30 Debug:2 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executed action method "PHRMS.Web.Controllers.HomeController.Index", returned result "Microsoft.AspNet.Mvc.ViewResult".'
+2016-12-15 12:30:04.108 +05:30 Debug: [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] The view '"Index"' was found.
+2016-12-15 12:30:04.108 +05:30 Information:1 [Microsoft.AspNet.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2016-12-15 12:30:04.109 +05:30 Information:2 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executed action "PHRMS.Web.Controllers.HomeController.Index" in 0ms
+2016-12-15 12:30:04.395 +05:30 Information:2 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Request finished in 0.0297ms 200 text/html; charset=utf-8
+2016-12-15 12:31:41.672 +05:30 Information:1 [Microsoft.AspNet.Hosting.Internal.HostingEngine] Protocol: HTTP/1.1  Method: POST  ContentType: application/json  ContentLength: 209  Scheme: http  Host: localhost:55016  PathBase:   Path: /Account/demo  QueryString: 
+2016-12-15 12:31:41.672 +05:30 Debug:1 [Microsoft.AspNet.StaticFiles.StaticFileMiddleware] "POST" requests are not supported
+2016-12-15 12:31:41.673 +05:30 Debug: [Microsoft.AspNet.Routing.Template.TemplateRoute] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}"'.
+2016-12-15 12:31:41.673 +05:30 Debug:1 [Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler] Executing action "PHRMS.Web.Controllers.AccountController.demo"
+2016-12-15 12:31:41.749 +05:30 Information:1 [Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker] Executing action method "PHRMS.Web.Controllers.AccountController.demo" with arguments (["PHRMS.Web.Controllers.DigiLocker"]) - ModelState is Valid'

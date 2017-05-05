@@ -1,0 +1,479 @@
+﻿@{
+    Layout = "_Layout";
+    ViewBag.Title = "Dashboard";
+}
+@using Microsoft.AspNet.Http
+<div class="normalheader transition animated fadeIn" style="text-align:center">
+    <div class="hpanel hgreen">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+            <h5 class="font-light m-b-xs text-success" id="tipHeader">
+                <i class="fa fa-heart-o text-danger"></i> Health Tip
+            </h5>
+            <div id="hbreadcrumb" class="pull-right m-t-lg">
+            </div>
+            <h7 id="healthTipCtrl" style="color:#B76215;"></h7>
+        </div>
+    </div>
+</div>
+<div class="content animate-panel">
+
+    @* Widget Starts Here
+        ...............ROW 1................ *@
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="hpanel">
+                        <div class="panel-body text-center h-200" data-pin-hover="true">
+                            <i class="ionicons ion-android-walk fa-4x " style="color:cornflowerblue"></i>
+
+                            <h1 class="m-xs" id="ActivitiesDistance">0 KM</h1>
+
+                            <h3 class="font-bold no-margins text-success" size="10px">
+                                Activities 
+                            </h3>
+                          
+                         
+                            <small>
+                                <span class="pull-centre" id="LastActivityType">You have no record yet. Please add activity</span>
+                            </small>
+                            <div></div>
+                            <small>
+                                <span class="pull-centre" id="LastActivityDistance"></span>
+                            </small>
+                            <small>
+                                <span class="pull-centre" id="LastActivityCollectionDate"></span>
+                            </small>
+                        </div>
+                        <div class="panel-footer">
+                            <a style="color:#62CB31;" href="@Url.Content("~/")Wellness/activity">View More Details</a>
+                            @*<a href="@Url.Content("~/")Wellness/activity " align ="right"><span class="glyphicon glyphicon-plus text-success "></span></a>*@
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hpanel stats">
+                        <div class="panel-body h-200">
+                            <div class="stats-title pull-left">
+                                <h4>Allergies</h4>
+                            </div>
+                            <br/>
+                          
+                            <div class="stats-icon pull-right text-success">
+                                <i class="fa fa-pagelines fa-5x"></i>
+                            </div>
+                            <div class="m-t-xl">
+                                <h1 class="text-success" id="allergies"></h1>
+
+                                <span class="font-bold no-margins" id="AllergyFirst">
+                                    You have No Allergies. Please add Allergies.
+                                </span>
+                                <br />
+                                <small>
+                                    <span class="pull-left" id="SeverityFirst"></span>
+                                </small>
+                               
+                                <span class="font-bold no-margins" id="AllergySecond">
+
+                                </span>
+                                
+                                <small>
+                                    <br /><span class="pull-left" id="SeveritySecond"></span>
+                                </small>
+                                <small>
+                                    <span class="pull-left" id="LastAllergyAddedOn"></span>
+                                </small>
+                                
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a style="color:#62CB31;" href="@Url.Content("~/")Allergies">View More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="hpanel">
+                        <div class="panel-body text-center h-200">
+                            <i class="ion-arrow-graph-up-right fa-3x " style="color:chocolate"></i>
+
+                            <h1 class="m-xs" id="GlucoseLatest">0 mg/dl</h1>
+
+                            <h3 class="font-bold no-margins text-success">
+                                Blood Glucose
+                            </h3>
+                            @*<small>Latest Glucose</small>*@
+                         
+                            <small>
+                                <span class="pull-centre" id="LastGlucoseCollectionDate">You have no record yet. Please add blood Pressure record.</span>
+                            </small>
+                        </div>
+                        <div class="panel-footer">
+                            <a style="color:#62CB31;" href="@Url.Content("~/")Wellness/glucose">View More Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hpanel">
+                        <div class="panel-body text-center h-200">
+                           
+                            <i class="fa fa-heart fa-4x text-danger"></i>
+
+                            <h2 class="m-xs" id="BPLatest">0/0 mmHg</h2>
+
+                            <h3 class="font-bold no-margins text-success">
+                                Blood Pressure
+                            </h3>
+                           @* <small>Latest Blood Pressure</small>*@
+                            <br />
+                            <small>
+                                <span class="pull-centre" id="LastBpCollectionDate">You have no record yet. Please add blood Pressure record.</span>
+                            </small>
+                        </div>
+                        <div class="panel-footer">
+                            <a style="color:#62CB31;" href="@Url.Content("~/")Wellness/bloodpressure">View More Details</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Blood Pressure
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="bp-chart-container">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- /.panel-body -->
+        </div>
+
+    </div>
+
+    @* ..............ROW 2................ *@
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Activities
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-8">
+                            <div id="donut_single" style="height: 425px;"></div>
+                        </div>
+                        <div class="col-md-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="hpanel stats">
+                        <div class="panel-body h-200">
+                            <div class="stats-title pull-left">
+                                <h4>Procedures</h4>
+                            </div>
+                            <div class="stats-icon pull-right text-success">
+                                <i class="fa pe-7s-scissors fa-5x" style="color:dodgerblue"></i>
+                            </div>
+                            <div class="m-t-xl">
+                                <h1 class="text-success" id="procedures"></h1>
+                                <span class="font-bold no-margins" id="ProcedureFirst">
+                                    You have No Procedures. Please add Procedures.
+                                </span>
+                                <br />
+                                <small>
+                                    <span class="pull-left" id="ProcedureStartedOnFirst"></span>
+                                </small>
+                                <br />
+                                <span class="font-bold no-margins" id="ProcedureSecond">
+
+                                </span>
+                                <br />
+                                <small>
+                                    <span class="pull-left" id="ProcedureStartedOnSecond"></span>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a style="color:#62CB31;" href="@Url.Content("~/")Procedures">View More Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hpanel stats">
+                        <div class="panel-body h-200">
+                            <div class="stats-title pull-left">
+                                <h4>Immunization</h4>
+                            </div>
+                            <div class="stats-icon pull-right text-success" style="color:midnightblue;">
+                                <i class="fa fa-eyedropper fa-5x"></i>
+                            </div>
+                            <div class="m-t-xl">
+                                <h1 class="text-success" id="immunization"></h1>
+                                <span class="font-bold no-margins" id="ImmunizationFirst">
+                                    You have No Immunizations. Please add Immunizations.
+                                </span>
+                                <br />
+                                <small>
+                                    <span class="pull-left" id="ImmunizationTakenOnFirst"></span>
+                                </small>
+                                <br />
+                                <span class="font-bold no-margins" id="ImmunizationSecond">
+
+                                </span>
+                                <br />
+                                <small>
+                                    <span class="pull-left" id="ImmunizationTakenOnSecond"></span>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a style="color:#62CB31;" href="@Url.Content("~/")Immunization">View More Details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+
+
+                <div class="col-lg-6">
+                    <div class="hpanel stats">
+                        <div class="panel-body h-200">
+                            <div class="stats-title pull-left">
+                                <h4>Lab Test</h4>
+                            </div>
+                            <div class="stats-icon pull-right text-warning">
+                                <i class="fa fa-flask fa-5x"></i>
+                            </div>
+                            <div class="m-t-xl">
+                                <h1 class="text-success" id="labs"></h1>
+                                <span class="font-bold no-margins" id="TestFirst">
+                                    You have No Lab Tests. Please add Lab Tests.
+                                </span>
+                                <br />
+                                <small>
+                                    <span class="pull-left" id="TestPerformedFirst"></span>
+                                </small>
+                                <br />
+                                <span class="font-bold no-margins" id="TestSecond">
+
+                                </span>
+                                <br />
+                                <small>
+                                    <span class="pull-left" id="TestPerformedSecond"></span>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a style="color:#62CB31;" href="@Url.Content("~/")Lab">View More Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hpanel stats">
+                        <div class="panel-body h-200">
+                            <div class="stats-title pull-left">
+                                <h4>Medications</h4>
+                            </div>
+                            <div class="stats-icon pull-right text-success">
+                                <i class="fa fa-medkit fa-5x" style="color:darkred"></i>
+                            </div>
+                            <div class="m-t-xl">
+                                <h1 class="text-success" id="medications"></h1>
+                                <span class="font-bold no-margins" id="MedicationFirst">
+                                    You have No Medications. Please add Medications.
+                                </span>
+                                <br />
+                                <small>
+                                    <span class="pull-left" id="MedicationStartedOnFirst"></span>
+                                </small>
+                                <br />
+                                <span class="font-bold no-margins" id="MedicationSecond">
+
+                                </span>
+                                <br />
+                                <small>
+                                    <span class="pull-left" id="MedicationStartedOnSecond"></span>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a style="color:#62CB31;" href="@Url.Content("~/")Medication">View More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    @* Graphs Start Here *@
+    <div class="row">
+
+
+        <div class="col-lg-6">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Body Mass Index
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="row">
+                        @*<div class="col-md-2">
+                        </div>*@
+
+                        <div class="col-md-12">
+                            <div class="activity-chart-container">
+                                <svg class="activity-chart"></svg>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            @*<div class="panel-footer text-success">
+                Above details are related to your Activities Data
+                </div>*@
+
+
+
+
+            <!-- /.panel-body -->
+        </div>
+
+
+        <div class="col-lg-6">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Blood Glucose
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="glucose-chart-container">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- /.panel -->
+
+    </div>
+
+
+
+
+</div>
+
+<div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header text-center">
+                <h4 class="modal-title">Welcome!</h4>
+                <small class="font-bold">Personal Health Record Management System (Alpha Version)</small>
+            </div>
+            <div class="modal-body">
+                <p>
+                    We are constantly striving to improve the user experience. Your feedback about various aspects of MyHealthRecord would be highly valued and appreciated.
+                    <br /><br />
+                    Thanking you in anticipation.
+                    <br /><br />
+                    Team-MyHealthRecord<br />
+                    HIED, C-DAC Mohali
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+@if (string.IsNullOrEmpty(Context.Session.GetString("Count")))
+{
+    <script>
+        //$(document).ready(function () {
+        //    $('#welcomeModal').modal('show');
+        //})
+    </script>
+    Context.Session.SetString("Count", "1");
+}
+<style>
+    .bp-chart {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+        .bp-chart .table {
+            margin-bottom: 0;
+        }
+</style>
+<link href="~/vendor/sweetalert/lib/sweet-alert.css" rel="stylesheet" />
+@section Scripts {
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+
+
+    @* Fusion Charts *@
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/fusioncharts.js"></script>
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.carbon.js"></script>
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.zune.js"></script>
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.ocean.js"></script>
+    <script src="~/vendor/fusioncharts-n-xt-developer/js/themes/fusioncharts.theme.fint.js"></script>
+    @*<script src="~/vendor/fusioncharts-suite-xt/js/fusioncharts.js"></script>*@
+    @*<script src="~/vendor/fusioncharts-suite-xt/js/fusioncharts.gantt.js"></script>*@
+    @*<script src="~/vendor/fusioncharts-suite-xt/js/themes/fusioncharts.theme.carbon.js"></script>*@
+    @*<script src="~/vendor/fusioncharts-suite-xt/js/themes/fusioncharts.theme.fint.js"></script>
+        <script src="~/vendor/fusioncharts-suite-xt/js/themes/fusioncharts.theme.ocean.js"></script>
+         <script src="~/vendor/fusioncharts-suite-xt/js/themes/fusioncharts.theme.zune.js"></script>*@
+    <script src="~/vendor/fusioncharts-jquery-plugin-master/fusioncharts-jquery-plugin-master/src/fusioncharts-jquery-plugin.js"></script>
+    <script src="~/vendor/sweetalert/lib/sweet-alert.min.js"></script>
+    <script src="~/js/jquery.dashboard.js"></script>
+
+}

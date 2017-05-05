@@ -1,0 +1,75 @@
+/*************************************
+ * generic styling for ALS elements
+ ************************************/
+
+.als-container {
+	position: relative;
+	width: 100%;
+	margin: 0px;
+	z-index: 0;
+	/*background-color:Aqua;*/
+}
+
+.als-viewport {
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+	/*background-color:Black;*/
+}
+
+.als-wrapper 
+{
+	position: relative;
+	list-style: none;
+	/*background-color:Blue;*/
+
+   
+}
+
+.als-item {
+	position: relative;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+	/*background-color:Fuchsia;*/
+}
+
+.als-prev, .als-next {
+	position: absolute;
+	cursor: pointer;
+	clear: both;
+	/*background-color:Red;*/
+}
+/*************************************
+ * specific styling for #demo4
+ ************************************/
+
+#demo4 {
+	margin: 40px auto;
+	/*background-color:Gray;*/
+}
+
+#demo4 .als-item {
+	
+	padding:0px 25px 2px 0px;
+	min-height: 120px;
+	min-width: 100px;
+	text-align: center;
+	/*background-color:Lime;*/
+}
+
+#demo4 .als-prev, #demo4 .als-next {
+	top: 40px;
+	/*background-color:Navy;*/
+}
+
+#demo4 .als-prev {
+	left: 285px;
+	/*background-color:Olive;*/
+}
+
+#demo4 .als-next {
+	right: 250px;
+	/*background-color:Orange;*/
+}

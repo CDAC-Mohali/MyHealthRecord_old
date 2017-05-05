@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "_UserGrid";
+}
+@using PagedList.Mvc;
+@using PagedList;
+
+@model  IPagedList<PHRMSAdmin.Models.AdminUsersModel>
+<div id="ManageGrid">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr style="background-color: #cacaca;">
+
+                    <th>Login Name</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Address</th>
+                    <th>Active</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FirstName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmailAddress)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Active)
+                        </td>
+                        <td>
+                            <a href="@Request.ApplicationPath.TrimEnd('/')/AdminUsers/GetAdminUser/@item.AdminUserId" class="text-primary">
+                                <i class="fa fa-eye"></i>
+
+                            </a> &nbsp;
+                            <a href="@Request.ApplicationPath.TrimEnd('/')/AdminUsers/UpdateAdminUser/@item.AdminUserId" class="text-primary">
+                                <i class="fa fa-edit "></i>
+                            </a>
+                            &nbsp;
+                            <a href="#" class="text-danger" data-toggle="modal" onclick="SetMessageDialog('Delete User','@Request.ApplicationPath.TrimEnd('/')/AdminUsers/DeleteAdminUser',@item.AdminUserId,'Do You want To delete ?')"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="panel-footer">
+        @Html.Partial("_GridPaging", Model)
+
+    </div>
+    @Html.Partial("_MessageDialog", Model.PageNumber)
+</div>

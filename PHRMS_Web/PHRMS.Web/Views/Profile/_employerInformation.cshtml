@@ -1,0 +1,152 @@
+﻿@model PHRMS.ViewModels.EmployerViewModel
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-horizontal" role="form" id="EmployerInfo" style="@(Model.UserId.Equals(Guid.Empty)?"display:none;":"")">
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.EmployerName, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.EmployerName)</p>
+                </div>
+                @Html.LabelFor(m => m.EmployerPhone, new { @class = "col-lg-2 control-label" })
+                @*<label class="control-label col-lg-2" for="Email">Email Address:</label>*@
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.EmployerPhone)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.EmpAddressLine1, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static">@Html.DisplayFor(m => m.EmpAddressLine1)</p>
+                </div>
+                @Html.LabelFor(m => m.EmpAddressLine2, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static">@Html.DisplayFor(m => m.EmpAddressLine2)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @* Newly added fields *@
+                @Html.LabelFor(m => m.EmpCity_Vill_Town, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static">@Html.DisplayFor(m => m.EmpCity_Vill_Town)</p>
+                </div>
+
+                @Html.LabelFor(m => m.EmpDistrict, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static">@Html.DisplayFor(m => m.EmpDistrict)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.strState, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.strState)</p>
+                </div>
+                @Html.LabelFor(m => m.EmpPin, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.EmpPin)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.EmployerOccupation, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.EmployerOccupation)</p>
+                </div>
+                @Html.LabelFor(m => m.CUG, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.CUG)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <button type="button" class="btn btn-outline btn-primary edit">Edit</button>
+                </div>
+            </div>
+        </div>
+        @using (Html.BeginForm("SaveEmployerInformation", "Profile", FormMethod.Post, new { @id = "frmEmployerInfo", @class = "form-horizontal", @style = (Model.UserId.Equals(Guid.Empty) ? "" : "display:none;"), enctype = "multipart/form-data" }))
+        {
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.EmployerName, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.EmployerName, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.EmployerName)
+                </div>
+                @Html.LabelFor(m => m.EmployerPhone, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    <div class="input-group">
+                        <span class="input-group-addon">+91</span>
+                        @Html.TextBoxFor(m => m.EmployerPhone, new { @class = "form-control", @maxlength = 11, @onchange = "CheckHtmlTag(this)" })
+                    </div>
+                    @Html.ValidationMessageFor(m => m.EmployerPhone)
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.EmpAddressLine1, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.EmpAddressLine1, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                </div>
+                @Html.LabelFor(m => m.EmpAddressLine2, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.EmpAddressLine2, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @* Newly added fields *@
+                @Html.LabelFor(m => m.EmpCity_Vill_Town, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.EmpCity_Vill_Town, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.EmpCity_Vill_Town)
+                </div>
+
+                @Html.LabelFor(m => m.EmpDistrict, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.EmpDistrict, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.EmpDistrict)
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.EmpState, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.DropDownListFor(x => x.EmpState, (IEnumerable<SelectListItem>)ViewBag.StatesList, new { @class = "form-control" })<SelectListItem>
+                    @Html.ValidationMessageFor(m => m.EmpState)
+                </div>
+                @Html.LabelFor(m => m.EmpPin, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.EmpPin, new { @class = "form-control autosuggest", @maxlength = "6", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.EmpPin)
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.EmployerOccupation, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.EmployerOccupation, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                </div>
+                @Html.LabelFor(m => m.CUG, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.CUG, new { @class = "form-control", @maxlength = 5, @onchange = "CheckHtmlTag(this)" })
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <button type="submit" id="btnSubmit" class="btn btn-primary">Save</button>
+                    <button type="button" id="btnCancel" class="btn btn-default cancel">Cancel</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>

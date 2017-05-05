@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/tools"
+    android:id="@+id/lv_activitiescard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_padding"
+    android:background="@color/cardviewcolor"
+    app:cardCornerRadius="@dimen/card_padding_corner">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:id="@+id/listUsersTypeActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvfontWellnessActivityUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fa_user"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/defaulttextcolor" />
+
+
+            <TextView
+                android:id="@+id/tvfontWellnessActivityDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fa_user_md"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/text_info" />
+
+            <TextView
+                android:id="@+id/tvfontWellnessActivityios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fa_apple"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/ios" />
+
+            <TextView
+                android:id="@+id/tvfontWellnessActivityandroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fa_android"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/android" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtactcreatedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="18/03/2013 04:07:29 PM"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="normal"
+            autofit:minTextSize="@dimen/minTextSize" />
+
+        <LinearLayout
+            android:id="@+id/lvactpath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtactcreatedDate"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/txtactwellnessActivityName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight=".70"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="Activity Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="normal"
+                    autofit:minTextSize="8sp" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".30"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtactwellnessActivityDistance_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/padding_medium"
+                            android:layout_toLeftOf="@+id/txtactwellnessActivityDistance"
+                            android:text="Value"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal"
+                            autofit:minTextSize="8sp" />
+
+                        <TextView
+                            android:id="@+id/txtactwellnessActivityDistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text=" KM"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal"
+                            autofit:minTextSize="8sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/padding_small"
+                android:background="@color/grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lvactValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lvactpath"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_large"
+            android:weightSum="1">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/txtactwellnessActivityPathArea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".30"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Path/Area :"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="normal"
+                autofit:minTextSize="8sp" />
+
+            <TextView
+                android:id="@+id/txtactwellnessActivityPathArea_Value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".70"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="normal"
+                autofit:minTextSize="8sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+
+
+
+

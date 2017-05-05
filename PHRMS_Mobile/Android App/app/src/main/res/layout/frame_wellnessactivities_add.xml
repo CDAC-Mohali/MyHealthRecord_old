@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".modules.addfragments.PHRMS_WellnessActivities_Fragment_Add">
+
+    <!-- Toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--guides.codepath.com/android/using-the-app-toolbar-->
+        <!--custom toolbar android-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_addWellnessActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/IBSave_WellnessActivity"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:background="?android:selectableItemBackground"-->
+            <!--android:clickable="true"-->
+            <!--android:padding="@dimen/padding_large"-->
+            <!--android:src="@drawable/ic_done_white_36dp"-->
+            <!--android:tint="@color/white" />-->
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:focusableInTouchMode="true">
+
+        <ProgressBar
+            android:id="@+id/ProgressBarAddWellnessActivity"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:theme="@style/Widget.AppCompat.ProgressBar"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/svWellnessActivityAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtWellnessActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:text="@string/ActivityName"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal" />
+
+                    <Spinner
+                        android:id="@+id/sp_WellnessActivity_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:spinnerMode="dialog"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtWellnessActivityPath"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:text="@string/ActivityPath"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_WellnessActivityPath_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edWellnessActivityPath_Value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtWellnessActivityDist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:text="@string/ActivityDist"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_WellnessActivityDist_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edWellnessActivityDist_Value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:inputType="numberDecimal" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtWellnessActivityTTH"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:text="@string/ActivityTTH"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/txtheader_WellnessActivityTTH"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:gravity="center"
+                            android:text="HH"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".2"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/txtheader_WellnessActivityTTM"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:gravity="center"
+                            android:text="MM"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <NumberPicker
+                            android:id="@+id/nP_WellnessActivityTTH_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:clickable="true"
+                            android:showDividers="beginning|end"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".2"
+                            android:gravity="center" />
+
+                        <NumberPicker
+                            android:id="@+id/nP_WellnessActivityTTM_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:clickable="true"
+                            android:showDividers="beginning|end"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtWellnessActivityTTHErrorMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Please Specify Valid Total Time"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/solid_red"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtWellnessActivityDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:text="@string/ActivityDate"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_WellnessActivityDate_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edWellnessActivityDate_Value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:focusable="false"
+                            android:inputType="date" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtWellnessActivityN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:text="@string/ActivityN"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal" />
+
+
+                    <EditText
+                        android:id="@+id/edWellnessActivityN_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:hint="@string/ActivityNHint"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

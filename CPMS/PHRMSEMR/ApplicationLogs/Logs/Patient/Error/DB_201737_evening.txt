@@ -1,0 +1,9 @@
+
+ERROR OCCURRED
+
+DATE & TIME: 03-07-2017 14:34:02
+SOURCE: PHRMSEMR
+METHOD: System.Web.Mvc.JsonResult CheckPatientByDoc(EMRViewModels.DocPatientDetailsViewModel)
+ERROR: Object reference not set to an instance of an object.
+STACKTRACE:    at PHRMSEMR.Controllers.PatientController.CheckPatientByDoc(DocPatientDetailsViewModel oDocPatientDetailsViewModel) in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\PatientController.cs:line 74
+

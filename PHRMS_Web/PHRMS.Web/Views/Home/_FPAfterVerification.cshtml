@@ -1,0 +1,17 @@
+﻿@using (Html.BeginForm("ResetPassword", "Home", FormMethod.Post, new { @Id = "frmResetPwd", @Class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group col-lg-12">
+        <label>New Password:</label>
+        <span class="text-danger"> *</span>
+        <input type="password" name="Password" class="form-control" autocomplete="off" />
+    </div>
+    @*<div class="form-group col-lg-12">
+        <label>Confirm Password:</label>
+        <span class="text-danger"> *</span>
+        <input type="password" name="ConfirmPassword" class="form-control" />
+    </div>*@
+    <div class="form-group col-lg-12">
+        <input type="submit" class="btn btn-success" value="Save" />
+    </div>
+}

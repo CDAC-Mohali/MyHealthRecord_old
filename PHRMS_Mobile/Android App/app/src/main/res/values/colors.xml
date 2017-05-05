@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--   <color name="colorPrimary">#3F51B5</color>
+      <color name="colorPrimaryDark">#303F9F</color>
+      <color name="colorAccent">#FF4081</color> -->
+
+    <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <color name="statusBarColor">#125688</color>
+    <color name="navigationBarColor">#125688</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#EEEEEE</color>
+    <!-- used for slider like controls or textview edges -->
+    <color name="colorAccent">#88bce2</color>
+
+    <color name="screen_background_black">#ff000000</color>
+    <color name="translucent_background">#10000000</color>
+    <color name="transparent_background">#00000000</color>
+    <color name="translucent_white_background">#50ffffff</color>
+    <color name="loginColorAccent">#88bce2</color>
+    <color name="button_color">#FF6F00</color>
+    <color name="button_color_selected">#FF8F00</color>
+    <color name="button_color_focus">#ffa000</color>
+
+    <color name="bck_color">#50689A</color><!-- 0571A3 -->
+    <color name="solid_red">#ff0000</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="solid_green">#f0f0</color>
+    <color name="solid_yellow">#ffffff00</color>
+    <color name="btn_txtcolor">#ffffff</color>
+    <color name="light_red">#FEE2E2</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="light_blue">#E1EFF7</color>
+    <color name="teal_light">#00A0B1</color>
+    <color name="teal_dark">#008299</color>
+    <color name="grey">#CCCCCC</color>
+    <color name="defaulttextcolor">#6a6c6f</color>
+    <color name="cardviewcolor">#FEFEFE</color>
+    <color name="primary_pressed">#FF8F00</color>
+    <color name="list_orange">#D4A017</color>
+    <color name="text_info">#3498db</color>
+    <color name="text_success">#62cb31</color>
+    <color name="button_success">#5cb85c</color>
+    <color name="button_success_click">#449d44</color>
+    <color name="button_blue">#337ab7</color>
+    <color name="defaulttextcolorios">#858585</color>
+    <color name="fabyellow">#fac355</color>
+
+    <!--floating color-->
+    <color name="fabcolorblue">#5689ef</color>
+    <color name="fabcolorRedShade">#f26262</color>
+
+    <color name="ios">#007cc4</color>
+    <color name="android">#97c024</color>
+
+    <color name="grey_aboutus">#686868</color>
+    <color name="grey_aboutus_light">#979797</color>
+
+
+</resources>

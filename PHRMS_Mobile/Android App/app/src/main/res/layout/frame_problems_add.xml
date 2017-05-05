@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".modules.addfragments.PHRMS_Problems_Fragment_Add">
+
+    <!-- Toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--guides.codepath.com/android/using-the-app-toolbar-->
+        <!--custom toolbar android-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_addProblems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/IBSave_Problems"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:background="?android:selectableItemBackground"-->
+            <!--android:clickable="true"-->
+            <!--android:padding="@dimen/padding_large"-->
+            <!--android:src="@drawable/ic_done_white_36dp"-->
+            <!--android:tint="@color/white" />-->
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:focusableInTouchMode="true">
+
+        <ProgressBar
+            android:id="@+id/ProgressBarAddProblems"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:theme="@style/Widget.AppCompat.ProgressBar"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/svProblemsAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_large">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtProblemsName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/ProblemsName"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+
+                        <TextView
+                            android:id="@+id/txtProblemsNameValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:clickable="true"
+                            android:drawableRight="@drawable/find_replace"
+                            android:drawableTint="@color/colorPrimary"
+                            android:gravity="center_vertical"
+                            android:text="@string/ProblemsSearch"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@drawable/textview_selector" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/txtProblemsDD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/ProblemsDD"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_ProblemsDD_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintEnabled="false">
+
+                            <EditText
+                                android:id="@+id/edProblemsDD_Value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                                android:hint="@string/ProblemsDD"
+                                android:inputType="date"
+                                android:focusable="false"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/txtProblemsDBY"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/ProblemsDB"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_ProblemsDB_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintEnabled="false">
+
+                            <EditText
+                                android:id="@+id/edProblemsDB_Value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                                android:hint="@string/ProblemsDB"
+                                android:inputType="text" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtProblemsnotes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/ProblemsNotes"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+
+                        <EditText
+                            android:id="@+id/edProblemsnotes_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:hint="@string/ProblemsNotesHint"
+                            android:inputType="textMultiLine"
+                            android:lines="3"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtProblemsstill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:text="@string/ProblemsStill"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+                        <RadioGroup
+                            android:id="@+id/rdgrpProblemsstill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="normal"
+                            android:weightSum="1">
+
+                            <RadioButton
+                                android:id="@+id/rdProblemsstillYes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".50"
+                                android:checked="true"
+                                android:text="Yes"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textStyle="normal" />
+
+                            <RadioButton
+                                android:id="@+id/rdProblemsstillNo"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".50"
+                                android:checked="false"
+                                android:text="No"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textStyle="normal" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

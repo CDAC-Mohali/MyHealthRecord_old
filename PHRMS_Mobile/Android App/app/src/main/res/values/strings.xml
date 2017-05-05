@@ -1,0 +1,762 @@
+<resources>
+    <string name="app_name">MyHealthRecord</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="cdacproducts">A product of C-DAC</string>
+    <string name="fundedby">Funded by Ministry of Electronics &amp; Information Technology,\n Government of India.</string>
+    <string name="cdacrights"> All rights reserved | © 2017</string>
+
+
+    <string name="patientscreen">User\'s Screen</string>
+    <string name="doctorscreen">Doctor\'s Screen</string>
+    <string name="logout">Logout</string>
+    <string name="aboutus">About us</string>
+    <string name="profile">Profile</string>
+    <string name="network">Network settings</string>
+    <string name="tabs_1_tab_1">Profile</string>
+    <string name="tabs_1_tab_2">Data</string>
+    <string name="pick_image_intent_text">Select Image</string>
+
+    <!-- Live Image Links-->
+    <string name="ImagePath">ApplicationIMAGEUrl</string>
+    <string name="ImagePathProfile">ApplicationUrl</string>
+
+    <!-- Live Webservice-->
+    <string name="urlLogin">ApplicationUrl</string>
+
+    <string name="urlEMRDATA">ViewURL</string>
+    <string name="urlShareReport">ShowReportURL</string>
+
+
+    <string name="ImagePathProcedures">ImgProceduresURL</string>
+    <string name="ImagePathLabTests">ImgLabReportsURL</string>
+    <string name="ImagePathPrescription">ImgePrescriptionURL</string>
+    <string name="ImagePathMedication">ImgMedidocsURL</string>
+
+
+    <string name="AccountLogin">accountURL</string>
+    <!-- Dashboard -->
+    <string name="LoadDashboardData">WellnessDashboardDataURL</string>
+    <string name="LoadDashboardDataAsc">WellnessDashboardDataAscURL</string>
+
+    <string name="LoadAllergyData">AllergyDataURL</string>
+    <string name="GetAllergyTypes">AllergyTypesURL</string>
+    <string name="GetAllergySeverity">AllergySeverityURL</string>
+    <string name="GetAllergyDuration">AllergyDurationURL</string>
+    <string name="AddAllergyData">AddAllergyURL</string>
+
+    <string name="LoadProblemsData">HealthConditionDataURL</string>
+    <string name="GetProblemsTypes">HealthConditionTypesURL</string>
+    <string name="AddProblemsData">AddHealthProblemURL</string>
+
+    <string name="LoadImmunizationData">ImmunizationDataURL</string>
+    <string name="GetImmunizationTypes">ImmunizationTypesURL</string>
+    <string name="AddImmunizationData">AddImmunizationURL</string>
+
+    <string name="LoadProceduresData">ProcedureDataURL</string>
+    <string name="GetProceduresTypes">ProcedureTypesURL</string>
+    <string name="AddProceduresData">AddProcedureURL</string>
+
+    <string name="LoadLabData">LabDataURL</string>
+    <string name="GetLabTypes">LabTestTypesURL</string>
+    <string name="AddLabData">AddLabTestURL</string>
+
+    <string name="LoadPrescriptionData">PrescriptionDataURL</string>
+    <string name="GetPrescriptionTypes">PrescriptionTypesURL</string>
+    <string name="AddPrescriptionData">AddPrescriptionURL</string>
+
+    <string name="LoadMedicationData">MedicationDataURL</string>
+    <string name="GetMedicationTypes">MedicationTypesURL</string>
+    <string name="GetMedicationRoute">MedicationRouteURL</string>
+    <string name="GetMedicationDosageValue">DosageValueURL</string>
+    <string name="GetMedicationDosageUnit">DosageUnitURL</string>
+    <string name="GetMedicationFrequencyList">FrequencyListURL</string>
+    <string name="AddMedicationData">AddMedicationURL</string>
+
+    <string name="LoadActivitiesData">activitiesdataURL</string>
+    <string name="GetActivitiesTypes">ActivitiesTypesURL</string>
+    <string name="AddActivitiesData">AddActivityDataURL</string>
+
+    <string name="LoadBPData">BPDataURL</string>
+    <string name="AddBPData">AddBPDataURL</string>
+
+    <string name="LoadBoodGlucoseData">BloodGlucoseDataURL</string>
+    <string name="AddBloodGlucoseData">AddBloodGlucoseDataURL</string>
+
+    <string name="LoadWeightData">WeightDataURL</string>
+    <string name="AddWeightData">AddWeightDataURL</string>
+    <string name="LoadWeightDataAsc">WeightDataAscURL</string>
+
+    <string name="LoadPersonalInfo">PersonalInfoURL</string>
+    <string name="UpdatePersonalInfo">UpdatePersonalInfoURL</string>
+    <string name="ImageUserProfile">UserProfileImageURL</string>
+    <string name="UpdateImageUserProfile">UpdateUserImageURL</string>
+
+    <string name="LoadEmergencyInfo">EmergencyInformationURL</string>
+    <string name="UpdateEmergencyInfo">UpdateEmergencyInformationURL</string>
+    <string name="LoadEmployerInfo">EmployerInformationURL</string>
+    <string name="UpdateEmployerInfo">UpdateEmployerInformationURL</string>
+    <string name="LoadInsuranceInfo">InsuranceInformationURL</string>
+    <string name="UpdateInsuranceInfo">UpdateInsuranceInformationURL</string>
+    <string name="LoadPreferencesInfo">PreferencesURL</string>
+    <string name="UpdatePreferencesInfo">UpdatePreferencesInformationURL</string>
+    <string name="UpdateUserProfileImage">UpdateUserImageURL</string>
+
+    <!-- Teleconsultation Module-->
+    <!-- Contacts Module -->
+    <!-- Only get limited data to show in List -->
+    <string name="GetMedicalContactsList">ContactGridListURL</string>
+
+    <!-- Get Medical Contact Details -->
+    <string name="GetMedicalContactDetailByID">ContactbyidURL</string>
+
+    <!-- Get Medical Speciality List -->
+    <string name="GetMedicalContactSpecialityList">ContactTypesListURL</string>
+
+    <!-- Save Medical Contact -->
+    <string name="AddMedicalContact">SaveContactsURL</string>
+
+    <!-- Sharing Module-->
+    <!-- Get Medical Contact List Sharing -->
+    <string name="GetReportSharingDoctorsList">GetDoctorsListURL</string>
+
+    <!-- Send Medical Contact for Sharing -->
+    <string name="ShareHealthReport">SendHealthReportURL</string>
+
+    <!-- FCM Device Registeration URL -->
+    <string name="DeviceRegisterURL">registerDeviceURL</string>
+
+    <!-- FCM Device UnRegisteration URL -->
+    <string name="DeviceUnRegisterURL">unregisterDeviceURL</string>
+
+    <!-- Registeration Modue-->
+    <string name="RegUserProfile">registeruserURL</string>
+    <string name="RegUserProfileVerifyOTP">verifyURL</string>
+    <string name="RegUserOTPResend">resendotpURL</string>
+
+    <!-- End Teleconsultation Module-->
+
+    <!-- Apllication URL END -->
+
+    <string name="aboutcontent">MyHealthRecord About</string>
+    <string name="configure">Configure</string>
+    <string name="aboutweb">© 2017</string>
+    <string name="aboutemail">email: support_phrms@cdac.in</string>
+    <string name="aboutcontact">A Product of C-DAC Mohali</string>
+    <string name="appversion">Version 1.0.0</string>
+
+    <string name="AddUserRegisterationtitle">MyHealthRecord</string>
+    <string name="UserRegisterationtitle">Registeration</string>
+    <string name="UserRegisterationsubheading">Create your MyHealthRecord Profile.</string>
+
+    <string name="Dashtitle">Dashboard</string>
+    <string name="Dashsubheading">Shows Graphical representation for your data.</string>
+    <string name="shealth">SHealth Data</string>
+
+    <string name="Profiletitle">Personal Information</string>
+    <string name="Profilesubheading">Includes your essential information related to demographics details.</string>
+
+    <string name="ProfileEmrtitle">Emergency Information</string>
+    <string name="ProfileEmrsubheading">Includes your emergency details.</string>
+
+    <string name="ProfileEmptitle">Employer Information</string>
+    <string name="ProfileEmpsubheading">Includes your employer details.</string>
+
+    <string name="ProfileInsrtitle">Insurance Information</string>
+    <string name="ProfileInsrsubheading">Includes your insurance details.</string>
+
+    <string name="ProfilePreftitle">Preferred Hospital</string>
+    <string name="ProfilePrefsubheading">Includes your preferred hospital details.</string>
+
+
+    <string name="AddAllergiestitle">Add Allergy</string>
+    <string name="Allergiestitle">Allergies</string>
+    <string name="Allergiessubheading">To \'Add \' and Review information about your allergies.</string>
+
+
+    <string name="AllergyName">Allergy Name</string>
+    <string name="AllergySearch">Search Allergy By Name</string>
+    <string name="SearchTitle">Enter a search term to find the most common results for Allergy.</string>
+    <string name="AllergyStill">Do you still have this allergy?</string>
+    <string name="AllergyFrom">Since(months)</string>
+    <string name="AllergySeverity">Severity</string>
+    <string name="AllergyNotes">Notes</string>
+    <string name="AllergyNotesHint">Write your comments here.</string>
+
+    <string name="AllergyNamedisp">Allergy Name: </string>
+    <string name="AllergyStilldisp">Do you still have this allergy?</string>
+    <string name="AllergyFromdisp">Since(months): </string>
+    <string name="AllergySeveritydisp">Severity: </string>
+    <string name="AllergyNotesdisp">Notes: </string>
+
+    <string name="AddProblemstitle">Add Problem</string>
+    <string name="Problemstitle">Problems</string>
+    <string name="Problemssubheading">To \'Add \' and Review information about your Problems.</string>
+
+
+    <string name="ProblemsNamedisp">Problem Name: </string>
+    <string name="ProblemsDDdisp">Diagnosis Date: </string>
+    <string name="ProblemsDBdisp">Diagnosed By: </string>
+    <string name="ProblemsNotesdisp">Notes: </string>
+    <string name="ProblemsStilldisp">Do you still have this Problem?</string>
+
+    <string name="ProblemsName">Problem Name</string>
+    <string name="ProblemsSearch">Search Problem By Name</string>
+    <string name="ProblemsSearchTitle">Enter a search term to find the most common results for Problems.</string>
+    <string name="ProblemsDD">Diagnosis Date</string>
+    <string name="ProblemsDB">Diagnosed By</string>
+    <string name="ProblemsNotes">Notes</string>
+    <string name="ProblemsStill">Do you still have this Problem?</string>
+    <string name="ProblemsNotesHint">Write your notes here.</string>
+    <string name="errddreq">Diagnosis Date(dd/MM/yyyy) required</string>
+    <string name="errdd">Diagnosis Date must be in (dd/MM/yyyy)</string>
+    <string name="errdby">Diagnosed By Required</string>
+
+    <string name="AddImmunizationtitle">Add Immunization</string>
+    <string name="Immunizationtitle">Immunizations</string>
+    <string name="Immunizationsubheading">To \'Add \' and Review information about your Immunizations.</string>
+
+
+    <string name="ImmunizationName">Immunization Name</string>
+    <string name="ImmunizationSearch">Search Immunization By Name</string>
+    <string name="ImmunizationSearchTitle">Enter a search term to find the most common results for Immunization.</string>
+    <string name="ImmunizationTakenon">Taken On</string>
+    <string name="ImmunizationComments">Comments</string>
+    <string name="ImmunizationCommentsHint">Any reaction to the vaccination</string>
+
+    <string name="errTakenonreq">Taken on(dd/MM/yyyy) required</string>
+    <string name="errTakenon">Taken on must be in (dd/MM/yyyy)</string>
+
+    <string name="immunizationNamedisp">Immunization: </string>
+    <string name="immunizationTakenondisp">Taken On: </string>
+    <string name="immunizationCommentsdisp">Comments: </string>
+
+    <string name="AddProcedurestitle">Add Procedure</string>
+    <string name="Procedurestitle">Procedures</string>
+    <string name="Proceduressubheading">To \'Add \' and Review information about your procedures.</string>
+
+
+    <string name="procedureNamedisp">Procedure Name: </string>
+    <string name="procedureDOPdisp">Date of Procedure: </string>
+    <string name="procedureDBdisp">Diagnosed by Doctor/Hospital: </string>
+    <string name="procedureNotesdisp">Notes: </string>
+    <string name="procedureDSdisp">Discharge Summary (If Any): </string>
+
+    <string name="ProceduresName">Procedure Name</string>
+    <string name="ProceduresSearch">Search Procedure By Name</string>
+    <string name="ProceduresSearchTitle">Enter a search term to find the most common results for Procedure.</string>
+    <string name="ProcedureDOP">Date of Procedure</string>
+    <string name="ProcedureDB">Diagnosed by Doctor/Hospital</string>
+    <string name="ProcedureNotes">Notes</string>
+    <string name="ProcedureNotesHint">Preceptions</string>
+    <string name="ProcedureDS">Discharge Summary (If Any)</string>
+
+    <string name="errProcedureDOPreq">Date of Procedure(dd/MM/yyyy) required</string>
+    <string name="errProcedureDOP">Date of Procedure must be in (dd/MM/yyyy)</string>
+
+    <string name="errProcedureDB">Diagnosed by Doctor/Hospital</string>
+
+    <string name="AddLabTeststitle">Add Lab Test</string>
+    <string name="LabTesttitle">Lab Tests</string>
+    <string name="LabTestsubheading">To \'Add \' and Review information about your Lab Tests.</string>
+
+
+    <string name="labtestNamedisp">Test Name: </string>
+    <string name="labtestResultdisp">Result: </string>
+    <string name="labtestUnitdisp">Unit: </string>
+    <string name="labtestNotesdisp">Notes: </string>
+    <string name="labtestAttachmentsdisp">Attachments: </string>
+
+    <string name="LabTestsName">Test Name</string>
+    <string name="LabTestsSearch">Search Lab Test By Name</string>
+    <string name="LabTestsSearchTitle">Enter a search term to find the most common results for Test.</string>
+    <string name="LabTestsTPO">Test Performed on</string>
+    <string name="LabTestsTPOHint">Test Performed on</string>
+    <string name="LabTestsResult">Result/Unit</string>
+    <string name="LabTestsResultUnit">Result/Unit:</string>
+    <string name="LabTestsResultHint">Result</string>
+    <string name="LabTestsUnitHint">Unit</string>
+    <string name="LabTestsNotes">Notes</string>
+    <string name="LabTestsNotesHint">Write your commments here.</string>
+    <string name="LabTestsAttachments">Attachments</string>
+
+    <string name="errLabTestsTPOreq">Date for Test Performed on(dd/MM/yyyy) required</string>
+    <string name="errLabTestsTPO">Date for Test Performed on must be in (dd/MM/yyyy)</string>
+
+    <string name="errLabTestsNumeric">Only Numeric Allowed in this field</string>
+    <string name="errLabTestsAlphaNumeric">Only AlphaNumeric Allowed in this field</string>
+
+    <string name="AddPrescriptiontitle">Add Prescription</string>
+    <string name="Prescriptiontitle">Prescriptions</string>
+    <string name="Prescriptionsubheading">To \'Add \' and Review information about your Prescriptions.</string>
+
+
+    <string name="PrescriptionDocNamedisp">Doctor\'s Name: </string>
+    <string name="PrescriptionHCNamedisp">Hospital/Clinic\'s Name: </string>
+    <string name="PrescriptionAddressdisp">Address: </string>
+    <string name="PrescriptionPhonedisp">Phone: </string>
+    <string name="PrescriptionDdisp">Prescription Details: </string>
+    <string name="PrescriptionDatedisp">Prescription Date: </string>
+    <string name="PrescriptionRemarksdisp">Remarks: </string>
+    <string name="PrescriptionAttachmentsdisp">Attachments: </string>
+    <string name="PrescriptionEMRLinkdisp">Click here</string>
+    <string name="PrescriptionEMRAttachmentsdisp">Prescription Attachment: </string>
+    <string name="PrescriptionShareLinkdisp">Click here</string>
+    <string name="PrescriptionShareAttachmentsdisp">Doctor Opinion Attachment: </string>
+
+    <string name="PrescriptionDocName">Doctor\'s Name</string>
+    <string name="PrescriptionHCName">Hospital/Clinic\'s Name</string>
+    <string name="PrescriptionAddress">Address</string>
+    <string name="PrescriptionPhone">Phone</string>
+    <string name="PrescriptionD">Prescription Details</string>
+    <string name="PrescriptionDate">Prescription Date</string>
+    <string name="PrescriptionRemarks">Remarks</string>
+    <string name="PrescriptionAttachments">Attachments</string>
+
+    <string name="errPrescriptionDocNamereq">Doctor Name required</string>
+    <string name="errPrescriptionHCNamereq">Hospital/Clinic\'s Name required</string>
+    <string name="errPrescriptionRemarksreq">Remarks are required</string>
+
+    <string name="errPrescriptionDatereq">Prescription Date(dd/MM/yyyy) required</string>
+    <string name="errPrescriptionDateformat">Prescription Date must be in (dd/MM/yyyy)</string>
+
+    <string name="errPrescriptionphone">Phone Number Required</string>
+    <string name="errPrescriptionphoneint">Phone Number Must be Integer</string>
+    <string name="errPrescriptionphonelenght">Phone Number can be upto 12 Digit Integer</string>
+
+    <string name="Medicationtitle">Medication</string>
+    <string name="Medicationsubheading">To \'Add \' and Review information about your Medication.</string>
+
+
+    <string name="MedicationNamedisp">Medicine Name: </string>
+    <string name="MedicationAreyoudisp">Are you taking this medication now?</string>
+    <string name="MedicationDateFPdisp">Date First Prescribed: </string>
+    <string name="MedicationRoutedisp">Route: </string>
+    <string name="MedicationStrengthdisp">Strength(in mg/ml): </string>
+    <string name="MedicationDTdisp">Dosage Taken: </string>
+    <string name="MedicationFTdisp">Frequency Taken: </string>
+    <string name="MedicationLIdisp">Label Instructions: </string>
+    <string name="MedicationNdisp">Notes: </string>
+    <string name="MedicationAttachmentsdisp">Attachments: </string>
+
+    <string name="MedicationName">Medicine Name</string>
+    <string name="MedicationAreyou">Are you taking this medication now?</string>
+    <string name="MedicationDateFP">Date First Prescribed</string>
+    <string name="MedicationDateFPEdit">Select Date</string>
+    <string name="MedicationRoute">Route</string>
+    <string name="MedicationStrength">Strength(in mg/ml)</string>
+    <string name="MedicationDT">Dosage Taken</string>
+    <string name="MedicationFT">Frequency Taken</string>
+    <string name="MedicationLI">Label Instructions</string>
+    <string name="MedicationLIEdit">Write your label instructions here</string>
+    <string name="MedicationN">Notes</string>
+    <string name="MedicationNEdit">Write your notes here</string>
+    <string name="MedicationAttachments">Attachments</string>
+
+    <string name="AddMedicationtitle">Add Medication</string>
+    <string name="MedicationSearch">Search Medication By Name</string>
+    <string name="MedicationSearchTitle">Enter a search term to find the most common results for Medication.</string>
+
+    <string name="errMedicationDatereq">Medication Date First Prescribed(dd/MM/yyyy) required</string>
+    <string name="errMedicationDateformat">Medication Date First Prescribed must be in (dd/MM/yyyy)</string>
+
+    <string name="errMedicationStrengthformat">Medication strength must be Numeric</string>
+    <string name="MedicationStrengthEditText">in mg/ml</string>
+
+    <string name="Activitiestitle">Activities</string>
+    <string name="Activitiessubheading">To \'Add \' and Review information about your Activities.</string>
+
+
+    <string name="MedicalContactstitle">Medical Contacts</string>
+    <string name="MedicalContactssubheading">To \'Add \' and Review information about your Medical Contacts.</string>
+
+    <string name="ReportSharingtitle">Share Report</string>
+    <string name="ReportSharingsubheading">Select Report Options, which you want to share.</string>
+
+
+    <string name="ActivityNamedisp">Activity: </string>
+    <string name="ActivityPathdisp">Name of Path/Area: </string>
+    <string name="ActivityDistdisp">Distance (KM): </string>
+    <string name="ActivityTTdisp">Total Time(Hours): </string>
+    <string name="ActivityTTMdisp">Total Time(in Mins): </string>
+    <string name="ActivityDatedisp">Date: </string>
+    <string name="ActivityNdisp">Comments/Notes: </string>
+
+    <string name="ActivityName">Activity</string>
+    <string name="ActivityPath">Name of Path/Area</string>
+    <string name="ActivityDist">Distance (KM)</string>
+    <string name="ActivityTTH">Total Time(Hours)</string>
+    <string name="ActivityTTM">Total Time(in Mins)</string>
+    <string name="ActivityDate">Date</string>
+    <string name="ActivityN">Comments/Notes</string>
+    <string name="ActivityNHint">Write you comments here.</string>
+    <string name="AddActivitytitle">Add Activity Result</string>
+
+    <string name="errActivityPathreq">Activity Path required</string>
+    <string name="errActivityDistreq">Activity Distance required</string>
+    <string name="errActivityDistformat">Activity Distance must be Numeric</string>
+    <string name="errActivityDistValid">Please Specify a valid Distance</string>
+    <string name="errActivityTTHreq">Activity Hour required</string>
+    <string name="errActivityTTHformat">Activity Hour must be Numeric</string>
+    <string name="errActivityTTMreq">Activity Min required</string>
+    <string name="errActivityTTMformat">Activity Mins must be Numeric</string>
+    <string name="errActivityDatereq">Activity Date(dd/MM/yyyy) required</string>
+    <string name="errActivityDateformat">Activity Date must be in (dd/MM/yyyy)</string>
+
+    <string name="BloodPressuretitle">Blood Pressure</string>
+    <string name="BloodPressuresubheading">To \'Add \' and Review information about your Blood Pressure.</string>
+
+    <string name="BPResultdisp">Result: </string>
+    <string name="BPSYSdisp">Systolic</string>
+    <string name="BPDIAdisp">Diastolic</string>
+    <string name="BPPulsedisp">Pulse</string>
+    <string name="BPDatedisp">Collection Date: </string>
+    <string name="BPNdisp">Comments/Notes: </string>
+
+    <string name="AddBPtitle">Add Blood Pressure Result</string>
+    <string name="BPResult">Result</string>
+    <string name="BPSYS">Systolic\n(in mmHg)</string>
+    <string name="BPDIA">Diastolic\n(in mmHg)</string>
+    <string name="BPPulse">Pulse\n(bpm)</string>
+    <string name="BPDate">Collection Date</string>
+    <string name="BPN">Comments/Notes</string>
+
+    <string name="errBPSYSreq">Systolic value required</string>
+    <string name="errBPSYSRange">Systolic value must be less than 260</string>
+    <string name="errBPSYSformat">Systolic value must be in numeric</string>
+
+    <string name="errBPDIAreq">Diastolic value required</string>
+    <string name="errBPDIARange">Diastolic value must be less than 260</string>
+    <string name="errBPDIAformat">Diastolic value must be in numeric</string>
+
+    <string name="errBPPulsereq">Pulse value required</string>
+    <string name="errBPPulseRange">Pulse value must be less than 200</string>
+    <string name="errBPPulseformat">Pulse value must be in numeric</string>
+
+    <string name="errBPDatereq">Date(dd/MM/yyyy) required</string>
+    <string name="errBPDateformat">Date must be in (dd/MM/yyyy)</string>
+
+    <string name="BloodGlucosetitle">Blood Glucose</string>
+    <string name="BloodGlucosesubheading">To \'Add\' and Review information about your Blood Glucose.</string>
+
+    <string name="BGResultdisp">Result: </string>
+    <string name="BGVTdisp">Value Type: </string>
+    <string name="BGDdisp">Collection Date: </string>
+    <string name="BGNdisp">Comments/Notes: </string>
+
+    <string name="BGResult">Result</string>
+    <string name="BGVT">Value Type</string>
+    <string name="BGD">Collection Date</string>
+    <string name="BGN">Comments/Notes</string>
+    <string name="AddBGtitle">Add Blood Glucose Result</string>
+
+    <string name="errBGResultreq">Result value required</string>
+    <string name="errBGResultRange">Result value must be less than 450</string>
+    <string name="errBGResultformat">Systolic value must be in numeric</string>
+
+    <string name="errBGDatereq">Date(dd/MM/yyyy) required</string>
+    <string name="errBGDateformat">Date must be in (dd/MM/yyyy)</string>
+
+    <string name="Weighttitle">BMI</string>
+    <string name="Weightsubheading">To \'Add \' and Review information about your Weight,Height and BMI.</string>
+
+    <string name="WeightWdisp">Weight (Kg): </string>
+    <string name="WeightHdisp">Height (CM): </string>
+    <string name="WeightBMIdisp">BMI: </string>
+    <string name="WeightDatedisp">Date: </string>
+    <string name="WeightNdisp">Comments/Notes: </string>
+
+    <string name="AddWeighttitle">Add BMI Details</string>
+    <string name="WeightW">Weight (Kg)</string>
+    <string name="WeightH">Height (CM)</string>
+    <string name="WeightBMI">BMI</string>
+    <string name="WeightDate">Date</string>
+    <string name="WeightN">Comments/Notes</string>
+
+    <string name="errWeightWreq">Weight is required</string>
+    <string name="errWeightWRange">Weight value must be less than 600</string>
+    <string name="errWeightWformat">Weight value must be in numeric</string>
+
+    <string name="errWeightHreq">Height is required</string>
+    <string name="errWeightHRange">Height value must be less than 300</string>
+    <string name="errWeightHformat">Height value must be in numeric</string>
+
+    <string name="errWeightDatereq">Date(dd/MM/yyyy) required</string>
+    <string name="errWeightDateformat">Date must be in (dd/MM/yyyy)</string>
+
+    <string name="AddMedicalContactstitle">Add Medical Contact</string>
+    <string name="MedicalContactsNamedisp">Contact Name: </string>
+    <string name="MedicalContactsTypedisp">Contact Type: </string>
+    <string name="MedicalContactsClinicNamedisp">Clinic Name: </string>
+    <string name="MedicalContactsAddress1disp">Address1: </string>
+    <string name="MedicalContactsAddress2disp">Address2: </string>
+    <string name="MedicalContactsCityVillagedisp">City/Village: </string>
+    <string name="MedicalContactsDistrictdisp">District: </string>
+    <string name="MedicalContactsStatedisp">State: </string>
+    <string name="MedicalContactsPINdisp">PIN: </string>
+    <string name="MedicalContactsMobiledisp">Mobile: </string>
+    <string name="MedicalContactsEmailAddressdisp">Email: </string>
+
+
+    <string name="MedicalContactsName">Contact Name</string>
+    <string name="errMedicalContactsName">Contact name required</string>
+
+    <string name="MedicalContactsType">Speciality</string>
+
+    <string name="MedicalContactsClinicName">Clinic Name</string>
+    <string name="errMedicalContactsClinicName">Clinic name required</string>
+
+    <string name="MedicalContactsAddress1">Address1</string>
+    <string name="MedicalContactsAddress2">Address2</string>
+    <string name="MedicalContactsCityVillage">City/Village</string>
+    <string name="MedicalContactsDistrict">District</string>
+    <string name="MedicalContactsState">State</string>
+    <string name="MedicalContactsPIN">PIN</string>
+    <string name="errMedicalContactsPinint">PIN Must be Integer</string>
+    <string name="errMedicalContactsPinlenght">PIN Number Must be 6 Digit Integer</string>
+
+    <string name="MedicalContactsMobile">Mobile</string>
+    <string name="errMedicalContactsMobileRequired">Mobile number required</string>
+    <string name="errMedicalContactsMobileint">Mobile Number Must be Integer</string>
+    <string name="errMedicalContactsMobilelenght">Mobile Number Must be 10 Digit Integer</string>
+
+    <string name="MedicalContactsEmailAddress">EmailAddress</string>
+    <string name="errMedicalContactsEmailAddressRequired">Email Address required</string>
+    <string name="errMedicalContactsEmailAddressfromat">Invalid Email Address</string>
+
+
+    <string name="errReportSharingQuery">Query is required</string>
+
+    <string name="dataNA">Not Available</string>
+
+    <string name="dataNAAllergies">No Data Available For Allergies List</string>
+    <string name="dataNAProblems">No Data Available For Problems List</string>
+    <string name="dataNAImmunization">No Data Available For Immunization List</string>
+    <string name="dataNAProcedures">No Data Available For Procedures List</string>
+    <string name="dataNALabTests">No Data Available For Lab Test List</string>
+    <string name="dataNAPrescription">No Data Available For Prescription List</string>
+    <string name="dataNAMedication">No Data Available For Medication List</string>
+    <string name="dataNAActivities">No Data Available For Activities List</string>
+    <string name="dataNABP">No Data Available For Blood Pressure List</string>
+    <string name="dataNABG">No Data Available For Blood Glucose List</string>
+    <string name="dataNABMI">No Data Available For BMI List</string>
+    <string name="dataNAMedicalContacts">No Data Available For Medical Contact List</string>
+    <string name="dataNAReportSharing">No Data Available For Reports</string>
+
+    <string name="mDashboard">Dashboard</string>
+    <string name="mAllergies">Allergies</string>
+    <string name="mProblems">Problems</string>
+    <string name="mImmunization">Immunizations</string>
+    <string name="mProcedures">Procedures</string>
+    <string name="mLabTest">Lab Tests</string>
+    <string name="mPrescription">Prescriptions</string>
+    <string name="mMedication">Medication</string>
+    <string name="mActivities">Activities</string>
+    <string name="mBP">Blood Pressure</string>
+    <string name="mBG">Blood Glucose</string>
+    <string name="mBMI">BMI</string>
+    <string name="mPI">Personal Information</string>
+    <string name="mEI">Emergency Information</string>
+    <string name="mEMPI">Employer Information</string>
+    <string name="mII">Insurance Information</string>
+    <string name="mPRFI">Preferred Hospital</string>
+    <string name="mAboutus">About us</string>
+
+    <string name="mMedical">Medical Contact</string>
+    <string name="mSharing">Sharing</string>
+
+    <string name="phrms">MyHealthRecord</string>
+    <string name="save">Save</string>
+    <string name="firstname">First Name</string>
+    <string name="errfirstname">First Name Required</string>
+
+    <string name="lastname">Last Name</string>
+    <string name="errlastname">Last Name Required</string>
+
+    <string name="mobileno">Mobile Number</string>
+    <string name="errmobileno">Enter valid mobile number</string>
+
+    <string name="aadhar">Aadhaar Number</string>
+    <string name="erraadhar">Aadhaar Required</string>
+    <string name="erraadharint">Aadhaar Must be Numeric</string>
+    <string name="erraadharlenght">Aadhaar Must be 12 Digit Numeric</string>
+
+    <string name="district">District</string>
+    <string name="errdistrict">District Required</string>
+
+    <string name="addr1">Address Line 1</string>
+    <string name="erraddr1">Address Line 1 Required</string>
+
+    <string name="addr2">Address Line 2</string>
+    <string name="erraddr2">Address Line 2 Required</string>
+
+    <string name="city">City/Village/Town</string>
+    <string name="errcity">City/Village/Town Required</string>
+
+    <string name="vacc_done_on">Vaccination done on </string>
+    <string name="format">Format : dd/MM/yyyy</string>
+    <string name="reason_delay">Reason for delay (if any)</string>
+    <string name="cancel">Cancel</string>
+    <string name="email">Email</string>
+    <string name="erremail">Please Specify valid Email ID</string>
+    <string name="phone">Phone Number</string>
+    <string name="errphone">Phone Number Required</string>
+    <string name="errphoneint">Phone Number Must be Integer</string>
+    <string name="errphonelenght">Phone Number Must be 10 Digit Integer</string>
+
+    <string name="bg">Blood Group</string>
+    <string name="errbg">Blood Group Required</string>
+
+    <string name="sex">Gender</string>
+    <string name="errsex">Gender Required</string>
+
+    <string name="pin">Pin</string>
+    <string name="errpin">Pin Required</string>
+    <string name="errpinint">Pin Number Must be Integer</string>
+    <string name="errpinlenght">Pin Number Must be 6 Digit Integer</string>
+
+    <string name="aredifable">Are you differently abled?</string>
+    <string name="aredifableType">Type?</string>
+
+    <string name="emrName">Name</string>
+    <string name="erremrName">Name Required</string>
+
+    <string name="emrRel">Relationship</string>
+
+    <string name="emrPrimaryPhone">Primary Phone</string>
+    <string name="erremrPrimaryPhone">Primary Phone Required</string>
+
+    <string name="emrsecondaryPhone">Secondary Phone</string>
+    <string name="erremrsecondaryPhone">Secondary Phone Required</string>
+
+    <string name="empName">Employer</string>
+    <string name="errempName">Employer Required</string>
+
+    <string name="empDesignation">Designation</string>
+    <string name="errempDesignation">Designation Required</string>
+
+    <string name="empCUGCode">CUG Code</string>
+    <string name="errempCUGCode">CUG Code upto 6 Characters</string>
+
+    <string name="insrProvider">Insurance Provider</string>
+    <string name="errinsrProvider">Insurance Provider Empty</string>
+
+    <string name="insrpolicyNumber">Policy Number</string>
+    <string name="errinsrpolicyNumber">Policy Number Empty</string>
+    <string name="errinsrpolicyNumberIntegerOnly">Policy Number Must be Integer</string>
+    <string name="errinsrpolicyNumberlength">Policy Number Must 11 Digit Integer</string>
+
+    <string name="insrPolicyName">Policy Name</string>
+    <string name="errinsrPolicyName">Policy Name Empty</string>
+
+    <string name="insrValidTill">Valid Till</string>
+    <string name="errinsrValidTillreq">Valid Till Date Required</string>
+    <string name="errinsrValidTill">Please specify Valid Till Date(dd/MM/yyyy)</string>
+
+    <string name="prefHospType">Preferred Hospital Type</string>
+    <string name="errprefHospType">Preferred Hospital Type Required</string>
+
+    <string name="prefHosp">Preferred Hospital Name</string>
+    <string name="errprefHosp">Preferred Hospital Name Required</string>
+
+    <string name="prefHospAddress">Preferred Hospital Address</string>
+
+
+    <string name="prefSpclNeeds">Special Requirements</string>
+
+
+    <string name="password">Password</string>
+    <string name="login">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="dob">Date of birth (dd/MM/yyyy)</string>
+    <string name="errdobreq">Date of birth (dd/MM/yyyy) required</string>
+    <string name="errdob">Date of birth must be in (dd/MM/yyyy)</string>
+
+    <string name="state">State/UT</string>
+    <string name="country">Country</string>
+    <string name="contact">Contact No.</string>
+    <string name="submit">Submit</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="title_activity_main">MyHealthRecord  notification</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on MyHealthRecord  notification server.</string>
+    <string name="gcm_registered">From MyHealthRecord  notification server: device successfully registered!</string>
+    <string name="gcm_unregistered">From MyHealthRecord  notification server: device successfully unregistered!</string>
+    <string name="gcm_message">From MyHealthRecord  notification server: you got message!</string>
+    <string name="gcm_error">From MyHealthRecord  notification server: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From MyHealthRecord  notification server: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From MyHealthRecord  notification server: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register your device on MyHealthRecord  Server.</string>
+    <string name="server_registered">Device added successfully on MyHealthRecord  Server.</string>
+    <string name="server_unregistered">Device removed successfully from MyHealthRecord  Server.</string>
+    <string name="server_register_error">Could not register device on MyHealthRecord  Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device from MyHealthRecord  Server after (%1$s) attempts.</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+
+
+    <string name="title_activity_phrms__login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email or Mobile No.</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_emailmobile">This email address/mobile no. is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Contacts permissions are needed for providing email completions.</string>
+
+    <!-- Barcode Perimssion String -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="barcode_header">Click &quot;Read QR&quot; to read a Aadhaar</string>
+    <string name="read_barcode">Read Aadhaar</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Aadhaar read successfully</string>
+    <string name="barcode_failure">No Aadhaar data captured</string>
+    <string name="barcode_error">"Error reading Aadhaar: %1$s"</string>
+
+    <string name="aadhaar_beforeScan">Do you want to fill MyHealthRecord User Personal Information from your Aadhaar Card Infromation ?</string>
+
+    <string name="aadhaar_beforeScanuserprofile">Do you want to fill MyHealthRecord Registeration details from your Aadhaar Card Infromation ?</string>
+
+    <string name="aadhaar_matched">MyHealthRecord Name and Aadhaar ID Matched, Do you want to proceed with this scanned Aadhaar Details</string>
+
+    <string name="aadhaar_matchedName">MyHealthRecord Name matched but Aadhaar ID isn\'t matched with UID, Do you still want to proceed with this Aadhaar Details ?</string>
+
+    <string name="aadhaar_matchedUID">MyHealthRecord Aadhaar ID matched but Name isn\'t matched with Aadhaar Name, Do you still want to proceed with this Aadhaar Details ?</string>
+
+    <string name="aadhaar_nothingmatched">MyHealthRecord Name and Aadhaar ID isn\'t matched with scanned Aadhaar Name and UID, Do you still want to proceed with this Aadhaar Details ?</string>
+
+    <string name="aadhaar_nothingexistuserprofile">Your MyHealthRecord Registeration details are fetched from Aadhaar, Do you want to proceed with this Aadhaar Details ?</string>
+
+    <string name="sync_Shealth">Do you want to SYNC your Shealth Data with MyHealthRecord Activies ?</string>
+
+    <string name="error_invalid_emailuserprofile">Email ID is invalid</string>
+    <string name="error_email_field_requireduserprofile">Email ID is required</string>
+
+    <string name="phoneuserprofile">Mobile Number</string>
+    <string name="errphoneuserprofile">Mobile Number Required</string>
+    <string name="errphoneintuserprofile">Mobile Number Must be Integer</string>
+    <string name="errphonelenghtuserprofile">Mobile Number Must be 10 Digit Integer</string>
+
+    <string name="error_pwdfield_requireduserprofile">Password is required</string>
+
+    <string name="error_cnfpwdfield_requireduserprofile">Confirm Password is required</string>
+    <string name="error_cnfpwdnotmatchfield_requireduserprofile">Confirm Password doesnt match with password</string>
+</resources>

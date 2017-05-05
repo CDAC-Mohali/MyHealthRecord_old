@@ -1,0 +1,334 @@
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 11:38:18
+SOURCE: System.Web
+METHOD: Void BeforeCookieCollectionChange()
+ERROR: Server cannot modify cookies after HTTP headers have been sent.
+STACKTRACE:    at System.Web.HttpResponse.BeforeCookieCollectionChange()
+   at System.Web.HttpCookieCollection.Add(HttpCookie cookie)
+   at System.Web.Security.FormsAuthentication.SignOut()
+   at PHRMSEMR.Controllers.AccountController.LogOff() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 1413
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 12:20:20
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\8fed7948-08d2-450a-b26e-acc1ca4e13bc.png'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 12:24:06
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\f167cbcb-11cc-49e5-820a-02f6d8e945a6.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 12:28:18
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\1e4184d6-88f7-4bdd-9d40-11fd1ec4fda6.png'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 12:28:30
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\c763bfa2-fbc0-4c70-9e77-06af0e27c7f1.png'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 12:29:24
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\53c09330-36e4-4753-92d4-75159f17e7c4.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 14:15:22
+SOURCE: System.Web
+METHOD: Void BeforeCookieCollectionChange()
+ERROR: Server cannot modify cookies after HTTP headers have been sent.
+STACKTRACE:    at System.Web.HttpResponse.BeforeCookieCollectionChange()
+   at System.Web.HttpCookieCollection.Add(HttpCookie cookie)
+   at System.Web.Security.FormsAuthentication.SignOut()
+   at PHRMSEMR.Controllers.AccountController.LogOff() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 1413
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 16:10:53
+SOURCE: System.Web
+METHOD: Void BeforeCookieCollectionChange()
+ERROR: Server cannot modify cookies after HTTP headers have been sent.
+STACKTRACE:    at System.Web.HttpResponse.BeforeCookieCollectionChange()
+   at System.Web.HttpCookieCollection.Add(HttpCookie cookie)
+   at System.Web.Security.FormsAuthentication.SignOut()
+   at PHRMSEMR.Controllers.AccountController.LogOff() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 1413
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 16:39:41
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\21af7a69-40cc-4ea0-ad6a-57b7c54dcb85.png'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 16:39:42
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\273873ef-d1ba-4a3c-a747-dfa7962e9983.png'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:33:32
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\28cbaf3d-d0e6-48f0-a7e8-1982ed0a7175.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:34:39
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\9aab7e3b-5cf9-4aa1-8a52-b7f7015538cf.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:34:42
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\b77264cf-2cb6-4056-acd9-e1e743f4cb38.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:35:44
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\41daf07d-41cb-4b84-806b-cf9c0747ebf6.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:35:47
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\83120aa7-0429-4091-8261-20d89bc63884.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:35:56
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\7d904c08-675c-4ac6-9705-0f265dc668b2.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:40:17
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\599f6b45-8d6a-4c6b-8ec4-c207bd9dfd16.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:40:21
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\698d979c-820e-4cdf-ac24-9e8b65cd994b.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:40:27
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\4bb48988-15d2-412c-8563-28d791f9869c.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:40:32
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\bead5576-2299-4c1f-8256-81cc4eea3d20.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:40:37
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\f49cfbdb-fe7d-430c-bcba-8a2fdfcaba85.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:53:29
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\3caa8430-8dff-45f8-9c82-3e5c8aa5a0b7.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:54:09
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\96b84556-698a-46cb-99dc-63020ccb9b48.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:54:10
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\3e2fdef1-ea6a-447c-a482-eadfa8976be4.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:54:25
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\9ac398ed-aee1-48be-8fcf-293144bb10ba.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:54:26
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\b657876e-2f50-41a0-98b2-94216faa923e.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:54:36
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\b343e395-ec4d-4efb-8d01-23bbd6f1f920.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+
+ERROR OCCURRED
+
+DATE & TIME: 03-01-2017 17:56:05
+SOURCE: mscorlib
+METHOD: Void WinIOError(Int32, System.String)
+ERROR: Could not find a part of the path 'D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Images\LicenseCopy\393ee821-5e49-4076-992b-f95d00b74bdc.jpg'.
+STACKTRACE:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path)
+   at PHRMSEMR.Controllers.AccountController.<UploadFile>d__50.MoveNext() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 533
+

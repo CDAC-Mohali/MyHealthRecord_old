@@ -1,0 +1,418 @@
+﻿
+@using Microsoft.AspNet.Http
+
+@model PHRMS.ViewModels.SuperReportShareViewModel
+
+<style type="text/css" media="print">
+    .no-print {
+        display: none;
+    }
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyHealthRecord  @ViewBag.Title</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- Primary vendor style -->
+    <link href="~/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/vendor/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
+    <link href="~/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="~/icons/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="~/vendor/sweetalert/lib/sweet-alert.css" rel="stylesheet" />
+    @*<link href="~/vendor/summernote/dist/summernote.css" rel="stylesheet" />
+        <link href="~/vendor/summernote/dist/summernote-bs3.css" rel="stylesheet" />*@
+    <style>
+        /*.blink {
+            color: #FFF !important;
+            background: #62CB31 !important;
+        }*/
+    </style>
+    <!-- Add local styles, mostly for plugins css file -->
+    @*@if (IsSectionDefined("Styles"))
+        {@RenderSection("Styles", required: false)}*@
+
+    <script src="~/js/jquery-2.0.3.min.js"></script>
+
+    <!-- Primary HOMER style -->
+    <link href="~/content/style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <button onclick="myFunction()" class="btn btn-default no-print">Print this page</button>
+    <div class="normalheader transition animated fadeIn">
+        <div class="hpanel">
+            <div class="panel-body">
+
+
+                <h1 class="font-light m-b-xs text-center">
+                    <img src="/images/digital_india_logo.png" class="img-responsive m-b pull-left" alt="logo" height="76" width="76" />
+
+                    <img src="/images/cdac_logo.png" class="img-responsive m-b pull-right" alt="logo" height="76" width="76" />
+              
+                        @*@Model.PersonalViewModel.FirstName @Model.PersonalViewModel.LastName*@
+                </h1>
+                <h2 class="font-light m-b-xs text-center">
+                    MyHealthRecord
+                </h2>
+                <small>@*Includes your essential information including demographics, emergency details and insurance details.*@</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="content animate-panel">
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="hpanel">
+
+
+                    <div class="panel-body">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            @if (Model.PersonalViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse"  href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Personal Information
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body" id="divPanelPersonalInfo">
+
+                                            @Html.Partial("_personalInformation", Model.PersonalViewModel)
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @if (Model.EmergencyViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading collapsed" role="tab" id="headingTwo" data-toggle="collapse"  href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="cursor:pointer">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Emergency Information
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_emergencyInformation", Model.EmergencyViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @if (Model.EmployerViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading collapsed" role="tab" id="headingThree" style="cursor:pointer" data-toggle="collapse"  href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Employer Information
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_employerInformation", Model.EmployerViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @if (Model.InsuranceViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading collapsed" role="tab" id="headingFour" style="cursor:pointer" data-toggle="collapse"  href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Insurance Information
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_insuranceInformation", Model.InsuranceViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @if (Model.LegalViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading collapsed" role="tab" id="headingFour" style="cursor:pointer" data-toggle="collapse"  href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Legal Information
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_legalInformation", Model.LegalViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @if (Model.PreferencesViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading collapsed" role="tab" id="headingSix" style="cursor:pointer" data-toggle="collapse"  href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Preferences and Special Needs
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_prefrences", Model.PreferencesViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @if (Model.AllergyViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSeven" data-toggle="collapse"  href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven" style="cursor:pointer">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Allergy Information
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSeven" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSeven">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_alleryInformation", Model.AllergyViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                            @if (Model.HealthConditionViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingEight" data-toggle="collapse"  href="#collapseEight" aria-expanded="true" aria-controls="collapseEight" style="cursor:pointer">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Problem
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingEight">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_HealthConditions", Model.HealthConditionViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+
+                            @if (Model.ImmunizationViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingNine" data-toggle="collapse"  href="#collapseNine" aria-expanded="true" aria-controls="collapseNine" style="cursor:pointer">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Immunization
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseNine" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingNine">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_Immunization", Model.ImmunizationViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+
+                            @if (Model.MedicationViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTen" data-toggle="collapse"  href="#collapseTen" aria-expanded="true" aria-controls="collapseTen" style="cursor:pointer">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Medication
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTen" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTen">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_Medication", Model.MedicationViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @if (Model.ProceduresViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingEleven" data-toggle="collapse"  href="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven" style="cursor:pointer">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Procedures
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseEleven" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingEleven">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_Procedures", Model.ProceduresViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                            @if (Model.LabTestViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTweleve" data-toggle="collapse"  href="#collapseTweleve" aria-expanded="true" aria-controls="collapseTweleve" style="cursor:pointer">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Lab Test
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTweleve" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTweleve">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_LabTest", Model.LabTestViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+
+                            @if (Model.ActivitiesViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThirteen" data-toggle="collapse"  href="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen" style="cursor:pointer">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Wellness - Activities
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThirteen" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThirteen">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_Activities", Model.ActivitiesViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+
+                            @if (Model.BloodPressureAndPulseViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFourteen" data-toggle="collapse"  href="#collapseFourteen" aria-expanded="true" aria-controls="collapseFourteen" style="cursor:pointer">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Wellness - Blood Pressure
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFourteen" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFourteen">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_WellnessBP", Model.BloodPressureAndPulseViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+
+
+                            @if (Model.BloodGlucoseViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFifteen" data-toggle="collapse"  href="#collapseFifteen" aria-expanded="true" aria-controls="collapseFifteen" style="cursor:pointer">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Wellness - Blood Glucose
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFifteen" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFifteen">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_WellnessBG", Model.BloodGlucoseViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @if (Model.WeightViewModel != null)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSixteen" data-toggle="collapse"  href="#collapseSixteen" aria-expanded="true" aria-controls="collapseSixteen" style="cursor:pointer">
+                                        <h4 class="panel-title">
+                                            <a>
+                                                Wellness - BMI
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSixteen" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSixteen">
+                                        <div class="panel-body">
+
+                                            @Html.Partial("_WellnessWeight", Model.WeightViewModel)
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="~/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    @*<script src="~/js/jquery.autocomplete.js"></script>*@
+    <script src="~/vendor/sweetalert/lib/sweet-alert.min.js"></script>
+</body>
+</html>
+<script>
+     function myFunction() {
+
+        window.print();
+    }
+
+</script>

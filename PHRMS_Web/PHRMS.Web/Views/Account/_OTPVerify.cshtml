@@ -1,0 +1,23 @@
+﻿@model PHRMS.ViewModels.RegistrationViewModel
+@using (Html.BeginForm("Verify", "Account", FormMethod.Post, new { id = "VerifyOTPForm" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group col-lg-12">
+        @{string strMobile = "";}
+        @{strMobile = Model.MobileNo; }
+        @{strMobile = "XXXXXX" + @strMobile.Substring(6);}
+        <label>Enter verification code received on registered Email-Id and mobile @strMobile</label>
+        <span class="text-danger"> *</span>
+        <input type="text" class="form-control" placeholder="OTP" name="OTP" />
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <input type="hidden" name="Email" value="@Model.Email" />
+        <input type="hidden" name="MobileNo" value="@Model.MobileNo" />
+    </div>
+    <div class="col-lg-12">
+        @*@Html.ActionLink("Resend OTP", "", new { @Style = "color: #999999", @Id = "resendOTP" })*@
+        <a href="javascript:void(0)" id="resendOTP" style="color:#51CC49;"><u>Resend Verification Code</u></a>
+    </div>
+    <div class="text-center col-lg-12">
+        <input type="button" class="btn btn-success" value="Register" />
+    </div>
+            }

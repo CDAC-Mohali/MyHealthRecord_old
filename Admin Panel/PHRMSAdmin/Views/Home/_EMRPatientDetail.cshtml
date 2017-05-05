@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "_EMRPatientDetail";
+    Layout = null;
+}
+@model  PHRMSAdmin.Models.PatientCustomModel
+<div class="col-lg-12">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="hpanel">
+                <div class="panel-body text-center h-200" data-pin-hover="true">
+                    <i class="fa fa-user fa-4x "></i>
+
+                    <h1 class="m-xs" id="ActivitiesDistance">@Model.Count </h1>
+
+                    <h3 class="font-bold no-margins text-success">
+                        Patients
+                    </h3>
+                    <small>Total Patient Registered</small>
+                </div>
+                @*<div class="panel-footer">
+                    <a style="color:#62CB31;" href="@Url.Content("~/")Patient/Index">View Users List</a>
+                </div>*@
+            </div>
+        </div>
+
+
+        <div class="col-lg-8">
+
+
+            <div class="panel panel-success">
+
+                <div class="panel-heading">
+
+                    Patient Activity
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Current Day
+                        </div>
+                        <div class="col-md-6">
+                            @Model.Day
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Week
+                        </div>
+                        <div class="col-md-6">
+                            @Model.Week
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Month
+                        </div>
+                        <div class="col-md-6">
+                            @Model.Month
+                        </div>
+
+                    </div>
+
+
+                </div>
+                @*<div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Year
+                        </div>
+                        <div class="col-md-6">
+                            @Model.Year
+                        </div>
+
+                    </div>
+
+
+                </div>*@
+            </div>
+            <!-- /.panel-body -->
+        </div>
+
+
+
+
+
+    </div>
+
+</div>

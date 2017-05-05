@@ -1,0 +1,277 @@
+﻿@model PHRMS.ViewModels.PersonalViewModel
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-horizontal" role="form" id="PersonalInfo" style="@(Model.UserId.Equals(Guid.Empty)?"display:none;":"")">
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.FirstName, new { @class = "col-lg-2 control-label" })
+                @*<label class="control-label col-sm-2" style="display: inline-block;" for="Name">Name:</label>*@
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-10" id="spName" style="text-align: left">James Anderson</span>*@
+                    <p class="form-control-static first-name">@Html.DisplayFor(m => m.FirstName)</p>
+                </div>
+                @Html.LabelFor(m => m.LastName, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-10" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static last-name">@Html.DisplayFor(m => m.LastName)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email, new { @class = "col-lg-2 control-label" })
+                @*<label class="control-label col-lg-2" for="Email">Email Address:</label>*@
+                <div class="col-lg-4">
+                    @*<span class="control-label col-sm-10" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.Email)</p>
+                </div>
+                @Html.LabelFor(m => m.Uhid, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.Uhid)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.DOB, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.strDOBwAge)</p>
+                </div>
+                @Html.LabelFor(m => m.Gender, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.strGender)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.BloodType, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.strBloodType)</p>
+                </div>
+
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.AddressLine1, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.AddressLine1)</p>
+                </div>
+                @Html.LabelFor(m => m.AddressLine2, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.AddressLine2)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.City_Vill_Town, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.City_Vill_Town)</p>
+                </div>
+                @Html.LabelFor(m => m.District, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.District)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.strState, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.strState)</p>
+                </div>
+                @Html.LabelFor(m => m.Pin, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.Pin)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @*@Html.LabelFor(m => m.Work_Phone, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-4">
+                        <p class="form-control-static"> @Html.DisplayFor(m => m.Work_Phone)</p>
+                    </div>*@
+                @Html.LabelFor(m => m.Home_Phone, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.Home_Phone)</p>
+                </div>
+                @Html.LabelFor(m => m.Cell_Phone, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.Cell_Phone)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @*@Html.LabelFor(m => m.Ethinicity, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-4">
+                        <p class="form-control-static"> @Html.DisplayFor(m => m.Ethinicity)</p>
+                    </div>*@
+                @Html.LabelFor(m => m.DiffAbled, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-4">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.strDiffAbled)</p>
+                    @if (Model.DiffAbled && !string.IsNullOrEmpty(Model.DyCertPath))
+                    {
+                        <a class="btn btn-primary btn-xs" href="@Url.Content("~")@Model.DyCertPath" download><i class="fa fa-download"></i></a>
+                    }
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <button type="button" class="btn btn-outline btn-primary edit">Edit</button>
+                </div>
+            </div>
+        </div>
+        @using (Html.BeginForm("SavePersonalInformation", "Profile", FormMethod.Post, new { @id = "frmPersonalInfo", @class = "form-horizontal", @style = (Model.UserId.Equals(Guid.Empty) ? "" : "display:none;"), enctype = "multipart/form-data" }))
+        {
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.FirstName, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.FirstName)
+                </div>
+                @Html.LabelFor(m => m.LastName, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.LastName)
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @readonly = true, @onchange = "CheckHtmlTag(this)" }) 
+                </div>
+                @Html.LabelFor(m => m.Uhid, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.Uhid, new { @class = "form-control", maxlength = 12, @onchange = "CheckHtmlTag(this)" }) 
+                    @Html.ValidationMessageFor(m => m.Uhid)
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.DOB, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.strDOB, new { @class = "form-control tdatepicker" , @onchange = "CheckHtmlTag(this)" }) 
+                </div>
+                @Html.LabelFor(m => m.Gender, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @*<select name="Gender" class="form-control" id="Gender">
+                            <option selected="selected" value="U">Do Not Specify</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>*@
+                    @Html.DropDownListFor(x => x.Gender, (IEnumerable<SelectListItem>)ViewBag.GendersList, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.BloodType, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.DropDownListFor(x => x.BloodType, (IEnumerable<SelectListItem>)ViewBag.BloodGroupsList, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.AddressLine1, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.AddressLine1, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                </div>
+                @Html.LabelFor(m => m.AddressLine2, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.AddressLine2, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.City_Vill_Town, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.City_Vill_Town, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.City_Vill_Town)
+                </div>
+                @Html.LabelFor(m => m.District, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.District, new { @class = "form-control", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.District)
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.State, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.DropDownListFor(x => x.State, (IEnumerable<SelectListItem>)ViewBag.StatesList, new { @class = "form-control" })
+                </div>
+                @Html.LabelFor(m => m.Pin, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.Pin, new { @class = "form-control autosuggest", @maxlength = "6", @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.Pin)
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @*@Html.LabelFor(m => m.Work_Phone, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(m => m.Work_Phone, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Work_Phone)
+                    </div>*@
+                @Html.LabelFor(m => m.Home_Phone, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.Home_Phone, new { @class = "form-control", @maxlength = 11, @onchange = "CheckHtmlTag(this)" })
+                    @Html.ValidationMessageFor(m => m.Home_Phone)
+                </div>
+                @Html.LabelFor(m => m.Cell_Phone, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.Cell_Phone, new { @class = "form-control", @readonly = true, @onchange = "CheckHtmlTag(this)" })
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @*@Html.LabelFor(m => m.Ethinicity, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(m => m.Ethinicity, new { @class = "form-control" })
+                    </div>*@
+                @Html.LabelFor(m => m.DiffAbled, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-4">
+                    <div class="radio radio-info radio-inline">
+                        @Html.RadioButtonFor(x => x.DiffAbled, true)
+                        <label>Yes</label>
+                    </div>
+                    <div class="radio radio-inline">
+                        @Html.RadioButtonFor(x => x.DiffAbled, false)
+                        <label>
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div id="divDiffAbledType" class="col-lg-10 col-sm-offset-2" style="@(Model.DiffAbled ? "" : "display:none;")">
+                    <label class="control-label col-lg-1">Type:</label>
+                    <div class="col-lg-4">
+                        @Html.DropDownListFor(x => x.DiffAbledType, (IEnumerable<SelectListItem>)ViewBag.DisablitiesList, new { @class = "form-control" })
+                    </div>
+                    <label class="control-label col-lg-2">Upload Certificate:</label>
+                    <div class="col-lg-4">
+                        @if (!string.IsNullOrEmpty(Model.DyCertPath))
+                        {
+                            <a class="btn btn-primary btn-xs" href="@Url.Content("~")@Model.DyCertPath" download><i class="fa fa-download"></i></a>
+                            <button class="btn btn-primary btn-xs" id="btnReupload" type="button"><i class="fa fa-edit"></i></button>
+                            <input type="file" class="form-control Static" id="txtFileName" name="upload" onchange="fileupdate()" style="display:none;">
+                        }
+                        else
+                        {
+                            <a class="btn btn-primary btn-xs" href="@Url.Content("~")@Model.DyCertPath" download style="display:none;"><i class="fa fa-download"></i></a>
+                            <button class="btn btn-primary btn-xs" id="btnReupload" type="button" style="display:none;"><i class="fa fa-edit"></i></button>
+                            <input type="file" class="form-control Static" id="txtFileName" name="upload" onchange="fileupdate()">
+                            @*<span class="input-group-btn">
+                                    <button class="btn btn-success " type="button"><i class="fa fa-upload"></i> <span class="bold">Upload</span></button>
+                                </span>*@
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <button type="submit" id="btnSubmit" class="btn btn-primary">Save</button>
+                    <button type="button" id="btnCancel" class="btn btn-default cancel">Cancel</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
