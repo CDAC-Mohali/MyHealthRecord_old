@@ -1,0 +1,56 @@
+
+ERROR OCCURRED
+
+DATE & TIME: 02-23-2017 12:00:34
+SOURCE: System.Web
+METHOD: Void BeforeCookieCollectionChange()
+ERROR: Server cannot modify cookies after HTTP headers have been sent.
+STACKTRACE:    at System.Web.HttpResponse.BeforeCookieCollectionChange()
+   at System.Web.HttpCookieCollection.Add(HttpCookie cookie)
+   at System.Web.Security.FormsAuthentication.SignOut()
+   at PHRMSEMR.Controllers.AccountController.LogOff() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 1384
+
+ERROR OCCURRED
+
+DATE & TIME: 02-23-2017 12:29:35
+SOURCE: System.Web
+METHOD: Void BeforeCookieCollectionChange()
+ERROR: Server cannot modify cookies after HTTP headers have been sent.
+STACKTRACE:    at System.Web.HttpResponse.BeforeCookieCollectionChange()
+   at System.Web.HttpCookieCollection.Add(HttpCookie cookie)
+   at System.Web.Security.FormsAuthentication.SignOut()
+   at PHRMSEMR.Controllers.AccountController.LogOff() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 1384
+
+ERROR OCCURRED
+
+DATE & TIME: 02-23-2017 14:11:54
+SOURCE: System.Web
+METHOD: Void BeforeCookieCollectionChange()
+ERROR: Server cannot modify cookies after HTTP headers have been sent.
+STACKTRACE:    at System.Web.HttpResponse.BeforeCookieCollectionChange()
+   at System.Web.HttpCookieCollection.Add(HttpCookie cookie)
+   at System.Web.Security.FormsAuthentication.SignOut()
+   at PHRMSEMR.Controllers.AccountController.LogOff() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 1384
+
+ERROR OCCURRED
+
+DATE & TIME: 02-23-2017 17:09:13
+SOURCE: System.Web
+METHOD: Void BeforeCookieCollectionChange()
+ERROR: Server cannot modify cookies after HTTP headers have been sent.
+STACKTRACE:    at System.Web.HttpResponse.BeforeCookieCollectionChange()
+   at System.Web.HttpCookieCollection.Add(HttpCookie cookie)
+   at System.Web.Security.FormsAuthentication.SignOut()
+   at PHRMSEMR.Controllers.AccountController.LogOff() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 1384
+
+ERROR OCCURRED
+
+DATE & TIME: 02-23-2017 17:11:59
+SOURCE: System.Web
+METHOD: Void BeforeCookieCollectionChange()
+ERROR: Server cannot modify cookies after HTTP headers have been sent.
+STACKTRACE:    at System.Web.HttpResponse.BeforeCookieCollectionChange()
+   at System.Web.HttpCookieCollection.Add(HttpCookie cookie)
+   at System.Web.Security.FormsAuthentication.SignOut()
+   at PHRMSEMR.Controllers.AccountController.LogOff() in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\AccountController.cs:line 1384
+

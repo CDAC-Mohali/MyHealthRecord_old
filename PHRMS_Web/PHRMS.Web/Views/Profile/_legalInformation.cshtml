@@ -1,0 +1,215 @@
+﻿@model PHRMS.ViewModels.LegalViewModel
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-horizontal" role="form" id="LegalInfo" style="@(Model.UserId.Equals(Guid.Empty)?"display:none;":"")">
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Power_Attorney, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-10">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.strPower_Attorney)</p>
+                </div>
+            </div>
+            <div style="@(Model.Power_Attorney?"":"display:none;")">
+                <div class="hr-line-dashed-Custom"></div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.strPA_DateInit, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-4">
+                        <p class="form-control-static">@Html.DisplayFor(m => m.strPA_DateInit)</p>
+                    </div>
+                    @Html.LabelFor(m => m.PA_ContactPerson, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-4">
+                        <p class="form-control-static"> @Html.DisplayFor(m => m.PA_ContactPerson)</p>
+                    </div>
+                </div>
+                <div class="hr-line-dashed-Custom"></div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.PA_PhoneNo, "Contact Person's Phone Number", new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-4">
+                        <p class="form-control-static"> @Html.DisplayFor(m => m.PA_PhoneNo)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Care_Directive, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-10">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.strCare_Directive)</p>
+                </div>
+            </div>
+            <div style="@(Model.Care_Directive?"":"display:none;")">
+                <div class="hr-line-dashed-Custom"></div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.strCD_DateInit, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-4">
+                        <p class="form-control-static"> @Html.DisplayFor(m => m.strCD_DateInit)</p>
+                    </div>
+                    @Html.LabelFor(m => m.CD_ContactPerson, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-4">
+                        <p class="form-control-static"> @Html.DisplayFor(m => m.CD_ContactPerson)</p>
+                    </div>
+                </div>
+                <div class="hr-line-dashed-Custom"></div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.CD_PhoneNo, "Contact Person's Phone Number", new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-4">
+                        <p class="form-control-static"> @Html.DisplayFor(m => m.CD_PhoneNo)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Living_Will, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-10">
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.strLiving_Will)</p>
+                </div>
+            </div>
+            <div style="@(Model.Living_Will?"":"display:none;")">
+                <div class="hr-line-dashed-Custom"></div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.strLW_DateInit, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-4">
+                        <p class="form-control-static"> @Html.DisplayFor(m => m.strLW_DateInit)</p>
+                    </div>
+                    @Html.LabelFor(m => m.LW_ContactPerson, new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-4">
+                        <p class="form-control-static"> @Html.DisplayFor(m => m.LW_ContactPerson)</p>
+                    </div>
+                </div>
+                <div class="hr-line-dashed-Custom"></div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.LW_PhoneNo, "Contact Person's Phone Number", new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-4">
+                        <p class="form-control-static"> @Html.DisplayFor(m => m.LW_PhoneNo)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <button type="button" class="btn btn-outline btn-primary edit">Edit</button>
+                </div>
+            </div>
+        </div>
+        @using (Html.BeginForm("SaveLegalInformation", "Profile", FormMethod.Post, new { @id = "frmLegalInfo", @class = "form-horizontal", @style = (Model.UserId.Equals(Guid.Empty) ? "" : "display:none;") }))
+        {
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Power_Attorney, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-10">
+                    <div class="radio radio-info radio-inline">
+                        @Html.RadioButtonFor(x => x.Power_Attorney, true)
+                        <label>Yes</label>
+                    </div>
+                    <div class="radio radio-inline">
+                        @Html.RadioButtonFor(x => x.Power_Attorney, false)
+                        <label>
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="rdPA" style="@(Model.Power_Attorney?"":"display:none;")">
+                <div class="hr-line-dashed-Custom"></div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.strPA_DateInit, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(m => m.strPA_DateInit, new { @class = "form-control tdatepicker" })
+                    </div>
+                    @Html.LabelFor(m => m.PA_ContactPerson, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(m => m.PA_ContactPerson, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="hr-line-dashed-Custom"></div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.PA_PhoneNo, "Contact Person's Phone Number", new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(m => m.PA_PhoneNo, new { @class = "form-control", @maxlength = 11 })
+                        @Html.ValidationMessageFor(m => m.PA_PhoneNo)
+                    </div>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Care_Directive, new { @class = "col-sm-2 control-label" })
+                <div class="col-sm-10">
+                    <div class="radio radio-info radio-inline">
+                        @Html.RadioButtonFor(x => x.Care_Directive, true)
+                        <label>Yes</label>
+                    </div>
+                    <div class="radio radio-inline">
+                        @Html.RadioButtonFor(x => x.Care_Directive, false)
+                        <label>
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="rdCD" style="@(Model.Care_Directive?"":"display:none;")">
+                <div class="hr-line-dashed-Custom"></div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.strCD_DateInit, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(m => m.strCD_DateInit, new { @class = "form-control tdatepicker" })
+                    </div>
+                    @Html.LabelFor(m => m.CD_ContactPerson, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(m => m.CD_ContactPerson, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="hr-line-dashed-Custom"></div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.CD_PhoneNo, "Contact Person's Phone Number", new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(m => m.CD_PhoneNo, new { @class = "form-control", @maxlength = 11 })
+                        @Html.ValidationMessageFor(m => m.CD_PhoneNo)
+                    </div>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Living_Will, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-10">
+                        <div class="radio radio-info radio-inline">
+                            @Html.RadioButtonFor(x => x.Living_Will, true)
+                            <label>Yes</label>
+                        </div>
+                        <div class="radio radio-inline">
+                            @Html.RadioButtonFor(x => x.Living_Will, false)
+                            <label>
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="rdLW" style="@(Model.Living_Will?"":"display:none;")">
+                    <div class="hr-line-dashed-Custom"></div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.strLW_DateInit, new { @class = "col-sm-2 control-label" })
+                        <div class="col-sm-4">
+                            @Html.TextBoxFor(m => m.strLW_DateInit, new { @class = "form-control tdatepicker" })
+                        </div>
+                        @Html.LabelFor(m => m.LW_ContactPerson, new { @class = "col-sm-2 control-label" })
+                        <div class="col-sm-4">
+                            @Html.TextBoxFor(m => m.LW_ContactPerson, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed-Custom"></div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.LW_PhoneNo, "Contact Person's Phone Number", new { @class = "col-sm-2 control-label" })
+                        <div class="col-sm-4">
+                            @Html.TextBoxFor(m => m.LW_PhoneNo, new { @class = "form-control", @maxlength = 11 })
+                            @Html.ValidationMessageFor(m => m.LW_PhoneNo)
+                        </div>
+                    </div>
+                </div>
+                    <div class="hr-line-dashed-Custom"></div>
+                    <div class="form-group">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <button type="submit" id="btnSubmit" class="btn btn-primary">Save</button>
+                            <button type="button" id="btnCancel" class="btn btn-default cancel">Cancel</button>
+                        </div>
+                    </div>
+        }
+    </div>
+</div>

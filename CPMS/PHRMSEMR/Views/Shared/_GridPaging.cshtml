@@ -1,0 +1,47 @@
+﻿@using PagedList.Mvc;
+@using PagedList; 
+@model PagedList.IPagedList<System.Object>
+<div class="row GridPaging">
+    <div class="col-sm-6">
+        Showing @Model.FirstItemOnPage to @Model.LastItemOnPage  of @Model.TotalItemCount  entries
+    </div>
+
+    <div class="col-sm-6">
+        @Html.PagedListPager(
+                 Model, page => Url.Action(Request.ApplicationPath.TrimEnd('/').ToString()+"/" + ViewContext.RouteData.Values["action"].ToString(),
+                     new { page }
+           )
+
+                    ,
+                  PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(
+                     new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "ManageGrid", OnBegin = "return Paging(this);" }
+                     )
+           )
+    </div>
+    
+</div>
+<div class="clearfix"></div>
+
+
+<style>
+    .pagination-container .pagination {
+        margin: 0px;
+        float: right;
+    }
+</style>
+
+<script>
+
+    function Paging(Object) {
+        var options = {
+            url: Object.url,
+            type: "post",
+            data: $("form").first().serialize()
+        };
+        $.ajax(options).done(function (data) {
+            var taget = "#ManageGrid";
+            $(taget).replaceWith(data);
+        });
+        return false;
+    }
+</script>

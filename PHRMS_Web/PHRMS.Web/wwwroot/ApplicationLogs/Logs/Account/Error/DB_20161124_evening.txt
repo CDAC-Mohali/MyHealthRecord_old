@@ -1,0 +1,28 @@
+
+
+ERROR OCCURRED
+
+DATE & TIME: 11-24-2016 17:19:25
+
+SOURCE: System
+
+METHOD: Boolean IsMatch(System.String)
+ERROR: Value cannot be null.
+Parameter name: input
+STACKTRACE:    at System.Text.RegularExpressions.Regex.IsMatch(String input)
+   at PHRMS.Web.Controllers.AccountController.DoesEmailOrMobileExist(String UserName) in E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\Controllers\AccountController.cs:line 652
+
+
+
+ERROR OCCURRED
+
+DATE & TIME: 11-24-2016 17:19:35
+
+SOURCE: System
+
+METHOD: Boolean IsMatch(System.String)
+ERROR: Value cannot be null.
+Parameter name: input
+STACKTRACE:    at System.Text.RegularExpressions.Regex.IsMatch(String input)
+   at PHRMS.Web.Controllers.AccountController.DoesEmailOrMobileExist(String UserName) in E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\Controllers\AccountController.cs:line 652
+

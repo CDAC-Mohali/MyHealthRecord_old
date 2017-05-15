@@ -1,0 +1,38 @@
+﻿@model List<EMRViewModels.BloodGlucoseViewModel>
+<div class="gj-grid-wrapper">
+    <table id="grid" class="footable table table-bordered table-hover gj-grid-table">
+        <thead>
+            <tr>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 200px;text-align: left;">
+                    <div style="float: left">Result</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 200px; text-align: left;">
+                    <div style="float: left">Value Type</div>
+                </th>
+
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+                    <div style="float: left">Date</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+                    <div style="float: left">Comments</div>
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Item in Model)
+            {
+                <tr class="">
+                    <td style="text-align: left;"><div data-role="display">@Item.Result</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.ValueType</div></td>
+
+                    <td style="text-align: left;"><div data-role="display">@Item.strCollectionDate</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.Comments</div></td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+</div>

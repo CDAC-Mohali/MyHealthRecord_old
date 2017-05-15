@@ -1,0 +1,155 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<EMRViewModels.Events>
+<link href="~/Scripts/fullcalendar-3.1.0/fullcalendar-3.1.0/fullcalendar.css" rel="stylesheet" />
+<script src="~/Scripts/moment.js"></script>
+<script src="~/Scripts/fullcalendar-3.1.0/fullcalendar-3.1.0/fullcalendar.js"></script>
+<style>
+    .fc-title {
+        font-size: 56px;
+    }
+
+    .fc-content {
+        text-align: center;
+    }
+</style>
+<script>
+    function LoadDataForAppointments(date) {
+
+        //   alert(date);
+        $.ajax({
+            type: "Post",
+            contentType: "application/json; charset=utf-8",
+            url: "/Dashboard/LoadDataForAppointments",
+            data: '{"date":' + '"' + date + '"}',
+            dataType: "json",
+            success: function (data) {
+                $("li").each(function (index, element) {
+                    alert(index); alert(element);
+                    $("#AppointmentList").append('<tr>' +
+                            ' <td>' + element.Name + '</td>' +
+                             ' <td>' + element.Mobile + '</td>' +
+                               ' <td>' + element.Hours + ":" + element.Mins + " " + element.meridiem + '</td>' +
+                         '</tr>');
+                    console.log(index + ": " + $(this).text());
+                });
+
+
+            },
+            error: function (result) {
+
+            }
+
+        });
+    }
+    $(document).ready(function () {
+
+        // page is now ready, initialize the calendar...
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next',
+                center: 'title',
+                // right: 'month,agendaWeek,agendaDay'
+            },
+            eventRender: function (event, element) {
+                element.attr('href', 'javascript:void(0);');
+                element.click(function () {
+                    //$("#startTime").html(moment(event.start).format('MMM Do h:mm A'));
+                    //$("#endTime").html(moment(event.end).format('MMM Do h:mm A'));
+                    //$("#eventInfo").html(event.description);
+                    //$("#eventLink").attr('href', event.url);
+                    LoadDataForAppointments(event.start.format('DD/MM/YYYY'));
+                    $("#myModal").modal('show');
+                });
+            },
+            defaultDate: new Date(),
+            defaultView: 'month',
+            editable: true,
+            events: [
+    @foreach (var Item in Model)
+        {
+           <text> {
+        title: '@Item.text',
+        url: 'http://google.com/',
+        start: '@Item.start_date',
+        end: '@Item.start_date',
+        description: 'Good',
+
+    },
+    </text>
+        }
+            ]
+        });
+    });
+</script>
+
+@{
+    var Docname = ((EMRViewModels.CustomPrincipalSerializeModel)Session["DocSessionData"]).DoctorName;
+}
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Appointments</h4>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive project-list">
+                    <table id="aTable" class="table table-striped">
+                        <thead style="background-color: #4f6f8f; color: white;">
+                            <tr>
+                                <th width="20%">Name</th>
+
+                                <th width="20%">Phone</th>
+
+                                <th width="10%">Appointment Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="AppointmentList">
+
+                         
+                        </tbody>
+                    </table>
+                    <ul class="pagination"></ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="content animate-panel">
+    <div class="row">
+        <div class="col-lg-12 text-center m-t-md">
+            <h2>Welcome Dr. @Docname.ToUpper()</h2>
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel">
+                <div class="panel-heading">
+                    <div class="panel-body list" style="width:96%;">
+                        <div class="col-lg-12 text-center m-t-md center">
+
+                            <div id='calendar' style="margin-left:15%; width:70%" class="text-center center"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

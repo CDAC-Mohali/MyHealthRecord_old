@@ -1,0 +1,140 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Personal Health Record Management System">
+    <meta name="author" content="cdac">
+
+
+    <title>MyHealhRecord</title>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/phr_css/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    @*<link href="~/phr_css/jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet" />*@
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Custom Fonts -->
+    <link href="~/phr_css/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="phr_css\bower_components\jquery\dist\html5shiv.js"></script>
+        <script src="phr_css\bower_components\jquery\dist\respond.min.js"></script>
+    <![endif]-->
+
+    <link href="~/phr_css/phrstyle.css" rel="stylesheet" />
+
+
+    <style type="text/css">
+        body {
+            padding-top: 50px;
+            padding-bottom: 0px;
+        }
+    </style>
+
+    <script src="~/js/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <script src="~/js/login.js" type="text/jscript"></script>
+    <script src="~/js/jquery.als-1.2.min.js" type="text/javascript"></script>
+    <script src="@Url.Content("~/js/jquery.validate.js")"></script>
+    <script src="@Url.Content("~/js/jquery.validate.unobtrusive.js")"></script>
+    <script src="@Url.Content("~/phr_css/jquery-ui-1.11.4/jquery-ui.min.js")"></script>
+    <script src="" async defer></script>
+    <style>
+        .field-validation-error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .input-validation-error {
+            background-color: pink !important;
+        }
+
+        .ui-widget-overlay {
+            background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x !important;
+            opacity: 50 !important;
+            filter: Alpha(Opacity=30) !important;
+        }
+    </style>
+    <!-- CSS for my specific scrolling content -->
+    <script src="~/js/md5.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbartab" aria-expanded="false" aria-controls="navbartab">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Default.aspx">PERSONAL HEALTH RECORD MANAGEMENT SYSTEM</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse" id="navbartab">
+
+
+                <ul class="nav navbar-nav navbar-right" style="font-family: Tahoma; font-size: 10px; color: #000000;">
+                    <li><a href="#">EXPLORE PHRS</a></li>
+                    <li><a href="#">APPS &amp; DEVICES</a></li>
+                    <li><a href="#">HELP</a></li>
+                    <li><a href="#">GET IN TOUCH</a></li>
+
+                    <!--<li >
+                            <div class="input-group custom-search-form" style="padding-top: 8px;">
+                               <input class="form-control" placeholder="Search..." type="text" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" style="background-color:#2491a6;colo:#ffffff;border:0px;">
+                                       <img src="Images/search.png" style="width:20px;height:20px"/>
+                                    </button>
+                                </span>
+                            </div>
+
+                        </li>-->
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 5px; margin-bottom: 5px;">
+            <div class="col-md-4 text-left footer_text">
+                &copy; 2017 MyHealthRecord. All Rights Reserved
+            </div>
+            <div class="col-md-4 text-center footer_text">
+                &copy; Content Owned, Updated and Maintained by MyHealthRecord
+            </div>
+            @*<div class="col-md-4 text-right footer_text">
+                &copy; D&amp;D by C-DAC Mohali
+            </div>*@
+        </div>
+    </div>
+
+
+
+    <!-- Scripts for app scroller -->
+    @*<script src="~/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>*@
+    <script src="~/js/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="~/js/jquery.kinetic.min.js" type="text/javascript"></script>
+
+    @*<script src="~/phr_css/bower_components/jquery/dist/jquery.min.js"></script>*@
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/phr_css/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

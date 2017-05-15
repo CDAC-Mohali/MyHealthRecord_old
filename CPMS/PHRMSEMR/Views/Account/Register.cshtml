@@ -1,0 +1,326 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>PHRMS | Doctor Registeration Form</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="~/vendor/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="~/vendor/metisMenu/dist/metisMenu.css">
+    <link rel="stylesheet" href="~/vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="~/vendor/tags/jquery.tagsinput.min.css">
+    <link rel="stylesheet" href="~/vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="~/vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css">
+    <link rel="stylesheet" href="~/vendor/bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="~/vendor/toastr/build/toastr.min.css">
+    <link rel="stylesheet" href="~/vendor/bootstrap-tour/build/css/bootstrap-tour.min.css">
+    <link rel="stylesheet" href="~/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+    <!-- App styles -->
+    <link href="~/content/landing.css" rel="stylesheet" /
+    <link href="~/content/style_new.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="~/fonts/pe-icon-7-stroke/css/helper.css">
+    <link rel="stylesheet" href="~/styles/style.css">
+
+</head>
+<style type="text/css">
+    .phrmsrimg {
+        margin-top: -70px;
+        margin-left: 45px;
+    }
+
+    .bgsignup_phrms {
+        background-color: #337AB7;
+        color: #FFF;
+    }
+
+    .headerhght {
+        height: 60px;
+    }
+
+    .hdrshadow {
+        box-shadow: 0 1px 5px #ccc;
+    }
+
+    .hdrbgclr {
+        background-color: #fff;
+    }
+
+    .hdrnavcustom {
+        background-color: #fff;
+        margin-top: -20px;
+        margin-right: -43px;
+        float: right;
+    }
+</style>
+
+
+<body class="blank">
+    <!-- Simple splash screen-->
+    <div class="splash"> <div class="color-line"></div><div class="splash-title"><h1>PHRMS - Doctor Registration</h1><p>Loading Registration Module ... Logging Data ...</p><div class="spinner"> <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div> </div> </div> </div>
+    <!--[if lt IE 7]>
+    <p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="no-padding headerhght">
+        <nav class="navbar navbar-default navbar-fixed-top hdrshadow">
+            <div class="container-fluid no-padding hdrbgclr">
+                <div class="col-md-12 col-sm-12 headerhght">
+                    <div class="col-md-6 col-sm-6 zeropadmbl">
+                        <img src="~/images/nationalemblemindia.png" class="img-responsive lionimg" width="42">
+
+                        <a href="~/Account/Login">
+                            <img src="~/images/MyHealthRecordEMR.png" class="img-responsive phrmsrimg" />
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 righthalf">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="navbar-header hdrnavcustom">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav"></ul>
+                                <ul class="nav navbar-nav navbar-right tabcntr btnsintab" style="display: flex">
+                                    <li class="lirghtup lipad">
+                                        <img src="~/images/digital_india_logo.png" class="img-responsive hdrmobile dgindiafullimg" width="102">
+                                    </li>
+                                    <li class="">
+                                        <a href="~/Account/Login">
+                                            <button class="btn btn-success btn-xs">Doctor Sign In</button>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="~/Account/Register">
+                                            <button class="btn btn-primary btn-xs">Sign Up</button>
+                                        </a>
+                                    </li>
+
+                                    <!--<select class="css-select" name="language" id="language" style="height: 18px; margin-top: 25px; font-size: 13px;">
+                                        <option value="english">English</option>
+                                        <option value="hindi">हिन्दी</option>
+                                    </select>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="back-link">
+        <a href="@Url.Action("Login", "Account")" class="btn btn-primary">Back to Login</a>
+    </div>
+    <div class="register-container">
+        <div class="row">
+            <div class="col-md-12">
+                @switch ((int)ViewBag.Status)
+                {
+                    case 0:
+                        @*@Html.Partial("_RegStep1", Model)*@
+                        @Html.Partial("_RegStep1")
+                        break;
+                    case 1:
+                        @Html.Partial("_RegStep2")
+                        break;
+                    @*case 2:
+                        @Html.Partial("_RegStep3")
+                        break;*@
+                    case 3:
+                        @Html.Partial("_RegisterComplete")
+                        break;
+                    default:
+                        @Html.Partial("_RegStep1")
+                        break;
+                }
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Vendor scripts -->
+<script src="~/Scripts/jquery-2.0.3.min.js"></script>
+<script src="~/vendor/jquery-ui/jquery-ui.min.js"></script>
+@*<script src="~/vendor/slimScroll/jquery.slimscroll.min.js"></script>*@
+<script src="~/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="~/Vendor/moment/moment.js"></script>
+@*<script src="~/vendor/metisMenu/dist/metisMenu.min.js"></script>*@
+@*<script src="~/vendor/iCheck/icheck.min.js"></script>
+<script src="~/vendor/sparkline/index.js"></script>*@
+<script src="~/vendor/toastr/build/toastr.min.js"></script>
+<script src="~/vendor/tags/jquery.tagsinput.min.js"></script>
+@*<script src="~/vendor/jquery-validation/jquery.validate.min.js"></script>*@
+@*<script src="~/vendor/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>*@
+<script src="~/vendor/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="~/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")"></script>
+<script>
+    $('#tags').tagsInput({ width: 'auto', 'delimiter': [',', ';'] });
+    $('#dob').datepicker({
+        format: 'dd/mm/yyyy',
+        autoclose: true
+    });
+</script>
+<script>
+    toastr.options = {
+        "debug": false,
+        "positionClass": "toast-bottom-right",
+        "onclick": null,
+        "fadeIn": 300,
+        "fadeOut": 1000,
+        "timeOut": 5000,
+        "extendedTimeOut": 1000
+    }
+</script>
+<script>var act = '~/Register/AddDoc'; </script>
+<script>
+    $(document).ready(function () {
+
+
+        $('#DivOtherspec').hide();
+
+        $('#Speciality').change(function () {
+            var Speciality = $('#Speciality').val();
+            if (Speciality == "1051") {
+                $('#DivOtherspec').show();
+            } else {
+                $('#DivOtherspec').hide();
+            }
+        });
+        $("#resendOTP").click(function () {
+            $.ajax({
+                type: "Post",
+                contentType: "application/json; charset=utf-8",
+                url: "/Account/ResendVerificationCode",
+                dataType: "json",
+                success: function (data) {
+                    //var res = $.parseJSON(data);
+                    //alert(res[0]);
+                    //alert(res[0].res);
+                    //alert(data["res"]);
+                    if (data === true) {
+                        toastr.success('Have fun storming the castle!', 'Miracle Max Says')
+
+                        //toastr.success('Newly generated verification code has been sent on your mobile!');
+                        //$('input[name="OTP"]').rules('add', {
+                        //    validOTP: data["code"]
+                        //});
+                    }
+                    else {
+
+                        toastr.error('I do not think that word means what you think it means.', 'Inconceivable!')
+                    }
+                },
+                error: function (result) {
+                    toastr.error('I do not think that word means what you think it means.', 'Inconceivable!')
+                }
+            });
+        });
+        //$("#loginForm").validate({
+        //    ignore: [],
+        //    rules: {
+        //        name: "required",
+        //        date_of_birth: "required",
+        //        sex: "required",
+        //        phone_number: {
+        //            required: true,
+        //            digits: true,
+        //            minlength: 10,
+        //            maxlength: 10
+        //        },
+        //        email: {
+        //            email: true
+        //        },
+        //        password: {
+        //            required: true,
+        //            minlength: 8
+        //        },
+        //        Conf_password: {
+        //            required: true,
+        //            equalTo: "#password"
+        //        },
+        //        qualification_set: {
+        //            required: true,
+        //           // minlength: 5
+        //        },
+        //        Speciality: {
+        //            required: true,
+        //        }
+        //        ,
+               
+        //        HospitalName: {
+        //            required: true,
+        //        }
+        //    },
+        //    messages: {
+        //        name: "Please Enter Your Name",
+        //        dob: "Please Enter Your DoB",
+        //        sex: "Please Enter Sex",
+        //        phone_number: {
+        //            required: "Please Enter Your Phone Number",
+        //            digits: "Invalid Phone Number",
+        //            minlength: "Enter Valid Phone Number",
+        //            maxlength: "Enter Valid Phone"
+        //        },
+        //        email: {
+        //            email: "Invalid Email"
+        //        },
+        //        password: {
+        //            required: "Please Enter Your Password",
+        //            minlength: "Please Enter Min. of 8 Characters"
+        //        },
+        //        cpassword: {
+        //            required: "Please Confirm Your Password",
+        //            equalTo: "Password Mismatch"
+        //        },
+        //        certifications: {
+        //            required: "Please Enter qualifications",
+        //            minlength: "Please Enter qualifications"
+        //        }
+        //    },
+        //    errorPlacement: function (error, element) {
+        //        $(element)
+        //                .closest("form")
+        //                .find("label[for='" + element.attr("id") + "']")
+        //                .append(error);
+        //    },
+        //    errorElement: "span"
+        //});
+
+
+        $("#phone_number").keydown(function (e) {
+            checkPhoneNumber(e);
+        });
+    });
+
+    function checkPhoneNumber(e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+            // Allow: Ctrl+A, Command+A
+            (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+            // Allow: home, end, left, right, down, up
+            (e.keyCode >= 35 && e.keyCode <= 40)) {
+            // let it happen, don't do anything
+            return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    }
+</script>
+<!-- App scripts -->
+<script src="~/scripts/register.js"></script>
+<script src="~/scripts/homer.js"></script>
+@*<script>startRegTour();</script>*@

@@ -1,0 +1,45 @@
+﻿@model List<EMRViewModels.BloodPressureAndPulseViewModel>
+<div class="gj-grid-wrapper">
+    <table id="grid" class="footable table table-bordered table-hover gj-grid-table">
+        <thead>
+            <tr>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 200px;text-align: left;">
+                    <div style="float: left">Result Systolic</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 200px; text-align: left;">
+                    <div style="float: left">Result Diastolic</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+
+                    <div style="float: left">Result Pulse</div>
+                </th>
+                @*<th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+                        <div style="float: left">Total Time</div>
+                    </th>*@
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+                    <div style="float: left">Date</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+                    <div style="float: left">Comments</div>
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Item in Model)
+            {
+                <tr class="">
+                    <td style="text-align: left;"><div data-role="display">@Item.ResSystolic</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.ResDiastolic</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.ResPulse</div></td>
+                    @*<td style="text-align: left;"><div data-role="display">@Item.ti</div></td>*@
+                    <td style="text-align: left;"><div data-role="display">@Item.strCollectionDate</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.Comments</div></td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+</div>

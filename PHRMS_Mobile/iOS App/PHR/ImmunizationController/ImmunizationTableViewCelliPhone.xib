@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImmunizationCellIdentifier" id="9NZ-ra-4Ea" customClass="ImmunizationTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9NZ-ra-4Ea" id="eBB-iD-awL">
+                <frame key="frameInset" width="400" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Immunization Name" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7p-Rh-pnL">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="52" id="62M-iB-iSa">
+                                <variation key="heightClass=regular-widthClass=compact" constant="35"/>
+                            </constraint>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFu-WU-fDU">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="490" id="VdS-Ol-o1X">
+                                <variation key="heightClass=regular-widthClass=compact" constant="301"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="30" id="qB7-8A-klP">
+                                <variation key="heightClass=regular-widthClass=compact" constant="25"/>
+                            </constraint>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date/Time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4g-dw-yKO">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="172" id="F0Z-wq-Wwk">
+                                <variation key="heightClass=regular-widthClass=compact" constant="65"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="21" id="n0b-0c-cFI">
+                                <variation key="heightClass=regular-widthClass=compact" constant="25"/>
+                            </constraint>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                        <color key="textColor" red="0.08457327899" green="0.55869359770000004" blue="0.77833017670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-enter" translatesAutoresizingMaskIntoConstraints="NO" id="SDr-td-hB5">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="GK9-Ys-fac"/>
+                            <constraint firstAttribute="height" constant="20" id="fSf-Yc-H0s"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SDr-td-hB5" firstAttribute="leading" secondItem="d7p-Rh-pnL" secondAttribute="trailing" constant="18" id="3rW-oW-g2u"/>
+                    <constraint firstItem="d7p-Rh-pnL" firstAttribute="leading" secondItem="eBB-iD-awL" secondAttribute="leading" constant="30" id="Bvf-0U-jGQ">
+                        <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                    </constraint>
+                    <constraint firstAttribute="trailing" secondItem="z4g-dw-yKO" secondAttribute="trailing" constant="7" id="FCo-Bt-gV9"/>
+                    <constraint firstItem="d7p-Rh-pnL" firstAttribute="top" secondItem="eBB-iD-awL" secondAttribute="top" constant="5" id="Fwf-V6-9KG"/>
+                    <constraint firstItem="SDr-td-hB5" firstAttribute="trailing" secondItem="eBB-iD-awL" secondAttribute="trailingMargin" id="H8J-4S-AiJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="z4g-dw-yKO" secondAttribute="trailing" constant="21" id="Pb5-I8-6fi">
+                        <variation key="heightClass=regular-widthClass=compact" constant="-1"/>
+                    </constraint>
+                    <constraint firstItem="z4g-dw-yKO" firstAttribute="top" secondItem="d7p-Rh-pnL" secondAttribute="bottom" constant="3" id="ecQ-2c-9x8"/>
+                    <constraint firstItem="z4g-dw-yKO" firstAttribute="leading" secondItem="d7p-Rh-pnL" secondAttribute="trailing" constant="47" id="keU-zK-cmj">
+                        <variation key="heightClass=regular-widthClass=compact" constant="-84"/>
+                    </constraint>
+                    <constraint firstAttribute="centerY" secondItem="z4g-dw-yKO" secondAttribute="centerY" id="m2d-d5-lgH">
+                        <variation key="heightClass=regular-widthClass=compact" constant="-21"/>
+                    </constraint>
+                    <constraint firstItem="VFu-WU-fDU" firstAttribute="top" secondItem="d7p-Rh-pnL" secondAttribute="bottom" constant="3" id="nk7-hg-oHi"/>
+                    <constraint firstItem="SDr-td-hB5" firstAttribute="top" secondItem="eBB-iD-awL" secondAttribute="topMargin" id="rVq-Fy-bBW"/>
+                    <constraint firstItem="VFu-WU-fDU" firstAttribute="leading" secondItem="eBB-iD-awL" secondAttribute="leading" constant="30" id="vYp-es-keq">
+                        <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                    </constraint>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="FCo-Bt-gV9"/>
+                        <exclude reference="ecQ-2c-9x8"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="constraints">
+                        <include reference="FCo-Bt-gV9"/>
+                        <exclude reference="Pb5-I8-6fi"/>
+                        <include reference="ecQ-2c-9x8"/>
+                        <exclude reference="keU-zK-cmj"/>
+                        <exclude reference="m2d-d5-lgH"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentLabel" destination="VFu-WU-fDU" id="CdP-jI-7Ue"/>
+                <outlet property="dateTimeLabel" destination="z4g-dw-yKO" id="Cdo-S7-mEK"/>
+                <outlet property="immunizationNameLabel" destination="d7p-Rh-pnL" id="KuG-cB-ZJ2"/>
+                <outlet property="userImage" destination="SDr-td-hB5" id="NWx-Yf-mvU"/>
+            </connections>
+            <point key="canvasLocation" x="73" y="329"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user-enter" width="25" height="22"/>
+    </resources>
+</document>

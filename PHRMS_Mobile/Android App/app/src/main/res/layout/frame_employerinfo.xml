@@ -1,0 +1,406 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- http://stackoverflow.com/questions/17903105/android-how-to-add-swipe-gesture-on-linearlayout-without-ondown-true -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/viewemployerHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivemp"
+                        android:layout_width="@dimen/imageview_padding"
+                        android:layout_height="@dimen/imageview_padding"
+                        android:src="@drawable/employer"
+                        android:tint="@color/white" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:text="@string/ProfileEmptitle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/ProfileEmpsubheading"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"
+                    tools:minTextSize="8sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_large" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardviewcolor"
+            android:focusableInTouchMode="true">
+
+            <ProgressBar
+                android:id="@+id/ProgressBarEMPRInfo"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:theme="@style/Widget.AppCompat.ProgressBar"
+                android:visibility="gone" />
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/employer_swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    tools:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <LinearLayout
+                        android:id="@+id/lv_employer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/padding_medium">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_empfn_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5">
+
+                                <EditText
+                                    android:id="@+id/edempfn_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/empName"
+                                    android:inputType="text"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textStyle="normal" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_empprimaryphne_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5">
+
+                                <EditText
+                                    android:id="@+id/edempprimaryphne_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/phone"
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textStyle="normal" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_empAdrline1_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5">
+
+
+                                <EditText
+                                    android:id="@+id/edempAdrline1_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/addr1"
+                                    android:inputType="textPostalAddress"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textStyle="normal" />
+
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_empAdrline2_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5">
+
+                                <EditText
+                                    android:id="@+id/edempAdrline2_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/addr2"
+                                    android:inputType="textPostalAddress"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textStyle="normal" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_empcity_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".50">
+
+                                <EditText
+                                    android:id="@+id/edempcity_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/city"
+                                    android:inputType="text"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textStyle="normal" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_empdistrict_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".50">
+
+                                <EditText
+                                    android:id="@+id/edempdistrict_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/district"
+                                    android:inputType="text"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textStyle="normal" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".50"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/txtempstate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/state"
+                                    android:textSize="@dimen/spinner_labeltext" />
+
+                                <Spinner
+                                    android:id="@+id/spempstate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:spinnerMode="dialog"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".50"
+                                android:orientation="vertical">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/input_emppin_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:id="@+id/edemppin_value"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/pin"
+                                        android:inputType="number"
+                                        android:maxLength="6"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                        android:textStyle="normal" />
+                                </android.support.design.widget.TextInputLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_empdesg_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5">
+
+                                <EditText
+                                    android:id="@+id/edempdesg_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/empDesignation"
+                                    android:inputType="text"
+                                    android:maxLength="25"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textStyle="normal" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_empCUGcode_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5">
+
+                                <EditText
+                                    android:id="@+id/edempCUGcode_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/empCUGCode"
+                                    android:inputType="text"
+                                    android:maxLength="6"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textStyle="normal" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_fab_employer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab_Save_employer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_margin="@dimen/fab_margin"
+                                android:clickable="true"
+                                android:src="@drawable/ic_done_white_36dp"
+                                android:tint="@color/colorPrimary"
+                                app:backgroundTint="@color/cardviewcolor"
+                                app:fabSize="normal" />
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/fab_Cancel_employer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_margin="@dimen/fab_margin"
+                                android:clickable="true"
+                                android:src="@drawable/ic_close_white_36dp"
+                                android:tint="@color/colorPrimary"
+                                app:backgroundTint="@color/cardviewcolor"
+                                app:fabSize="normal" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </android.support.v4.widget.NestedScrollView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_Edit_employer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_edit"
+        android:tint="@color/white"
+        app:backgroundTint="@color/fabcolorRedShade"
+        app:fabSize="normal"
+        app:layout_anchor="@id/viewemployerHeader"
+        app:layout_anchorGravity="bottom|right|end"
+        app:rippleColor="@color/grey" />
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+

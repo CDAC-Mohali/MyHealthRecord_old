@@ -1,0 +1,259 @@
+﻿
+@{
+    ViewBag.Title = "_PatientDeatil";
+}
+@model EMRViewModels.SuperPatientDetails
+     <div id="phrDetaildiv">
+         @if (Session["DocSessionData"] != null && ((EMRViewModels.CustomPrincipalSerializeModel)Session["DocSessionData"]).IsDetailActive != true)
+         {
+             <div class="container-fluid">
+                 <div id="hbreadcrumb" class="pull-right">
+
+                     <button class="btn btn-info" type="button" onclick="GenerateOTP('1')" id="otpButton">Generate OTP</button>
+                     <div style="display: none;" id="otpForm">
+                         @using (Ajax.BeginForm("CheckOTP", "Prescription", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "phrDetaildiv", OnSuccess = "OnSuccessMessage()" ,OnBegin="OnBeginMessage()"}))
+                         {                                                  <div class="col-md-6">
+                                                 <input type="hidden" value="1" name="Type" />
+                                                 <input class="form-control" placeholder="Enter OTP Here" type="password" id="otp" name="OTP">
+                                             </div>
+                                                 <div class="col-md-3">
+                                                     <button class="btn btn-primary" type="submit">Confirm OTP</button>
+                                                 </div>
+                                                 <div class="col-md-3">
+                                                     <h5><u> <a href="#" class="text-info" onclick="GenerateOTP('1')" id="otpButton">Re-Send OTP</a></u></h5> 
+                                                     @*<button class="btn btn-info" type="button" onclick="GenerateOTP('1')" id="otpButton">Re-Send OTP</button>*@
+                                                 </div>
+                         }
+
+                     </div>
+
+                     <div style="padding-bottom: 8%;"></div>
+                 </div>
+             </div>
+         }
+         else
+         {
+            <div class="form-horizontal">
+                <div class="container-fluid" id="divMain">
+
+                    <div class="panel-group" id="accordion">
+
+
+                        @if (Model.AllergyViewModel != null && Model.AllergyViewModel.Count > 0)
+                        {
+                    <div class="panel panel-default">
+                        <div style="border-bottom: 1.5px solid #62cb31;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapseSeven" data-parent="#accordion">
+                            <h4 class="panel-title">
+                                <a>
+                                    Allergy Information
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                            <div class="panel-body">
+
+                                @Html.Partial("_alleryInformation", Model.AllergyViewModel)
+
+                            </div>
+                        </div>
+                    </div>
+                        }
+
+                        @if (Model.HealthConditionViewModel != null && Model.HealthConditionViewModel.Count > 0)
+                        {
+                    <div class="panel panel-default">
+                        <div style="border-bottom: 1.5px solid #ffb606;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapseEight" data-parent="#accordion">
+                            <h4 class="panel-title">
+                                <a>
+                                    Problem
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                            <div class="panel-body">
+
+                                @Html.Partial("_HealthConditions", Model.HealthConditionViewModel)
+
+                            </div>
+                        </div>
+                    </div>
+                        }
+
+
+                        @if (Model.ImmunizationViewModel != null && Model.ImmunizationViewModel.Count > 0)
+                        {
+                    <div class="panel panel-default">
+                        <div style="border-bottom: 1.5px solid #e74c3c;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapseNine" data-parent="#accordion">
+                            <h4 class="panel-title">
+                                <a>
+                                    Immunization
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                            <div class="panel-body">
+
+                                @Html.Partial("_Immunization", Model.ImmunizationViewModel)
+
+                            </div>
+                        </div>
+                    </div>
+                        }
+
+
+                        @if (Model.MedicationViewModel != null && Model.MedicationViewModel.Count > 0)
+                        {
+                    <div class="panel panel-default">
+                        <div style="border-bottom: 1.5px solid #e67e22  ;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapseTen" data-parent="#accordion">
+                            <h4 class="panel-title">
+                                <a>
+                                    Medication
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                            <div class="panel-body">
+
+                                @Html.Partial("_Medication", Model.MedicationViewModel)
+
+                            </div>
+                        </div>
+                    </div>
+                        }
+                        @if (Model.ProceduresViewModel != null && Model.ProceduresViewModel.Count > 0)
+                        {
+                    <div class="panel panel-default">
+                        <div style="border-bottom: 1.5px solid #3498db;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapseEleven" data-parent="#accordion">
+                            <h4 class="panel-title">
+                                <a>
+                                    Procedures
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                            <div class="panel-body">
+
+                                @Html.Partial("_Procedures", Model.ProceduresViewModel)
+
+                            </div>
+                        </div>
+                    </div>
+                        }
+
+                        @if (Model.LabTestViewModel != null && Model.LabTestViewModel.Count > 0)
+                        {
+                    <div class="panel panel-default">
+                        <div style="border-bottom: 1.5px solid #9b59b6;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapseTweleve" data-parent="#accordion">
+                            <h4 class="panel-title">
+                                <a>
+                                    Lab Test
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTweleve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTweleve">
+                            <div class="panel-body">
+
+                                @Html.Partial("_LabTest", Model.LabTestViewModel)
+
+                            </div>
+                        </div>
+                    </div>
+                        }
+
+
+                        @if (Model.ActivitiesViewModel != null)
+                        {
+                    <div class="panel panel-default">
+                        <div style="border-bottom: 1.5px solid #62cb31;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapseThirteen" data-parent="#accordion">
+                            <h4 class="panel-title">
+                                <a>
+                                    Activities
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+                            <div class="panel-body">
+
+                                @Html.Partial("_Activities", Model.ActivitiesViewModel)
+
+                            </div>
+                        </div>
+                    </div>
+                        }
+
+
+                        @if (Model.BloodPressureAndPulseViewModel != null)
+                        {
+                    <div class="panel panel-default">
+                        <div style="border-bottom: 1.5px solid #e67e22  ;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapseFourteen" data-parent="#accordion">
+                            <h4 class="panel-title">
+                                <a>
+                                    Blood Pressure
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
+                            <div class="panel-body">
+
+                                @Html.Partial("_WellnessBP", Model.BloodPressureAndPulseViewModel)
+
+                            </div>
+                        </div>
+                    </div>
+                        }
+
+
+
+                        @if (Model.BloodGlucoseViewModel != null)
+                        {
+                    <div class="panel panel-default">
+                        <div style="border-bottom: 1.5px solid #e74c3c;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapseFifteen" data-parent="#accordion">
+                            <h4 class="panel-title">
+                                <a>
+                                    Blood Glucose
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
+                            <div class="panel-body">
+
+                                @Html.Partial("_WellnessBG", Model.BloodGlucoseViewModel)
+
+                            </div>
+                        </div>
+                    </div>
+                        }
+                        @if (Model.WeightViewModel != null)
+                        {
+                    <div class="panel panel-default">
+                        <div style="border-bottom: 1.5px solid #e67e22  ;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapseSixteen" data-parent="#accordion">
+                            <h4 class="panel-title">
+                                <a>
+                                    Weight
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
+                            <div class="panel-body">
+
+                                @Html.Partial("_WellnessWeight", Model.WeightViewModel)
+
+                            </div>
+                        </div>
+                    </div>
+                        }
+                    </div>
+
+
+
+                </div>
+            </div>
+
+         }
+
+
+        </div>
+    
+
+
+

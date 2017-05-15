@@ -1,0 +1,271 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Login";
+}
+@model PHRMSAdmin.Models.AdminUsersModel
+<style type="text/css">
+    .phrmsrimg {
+        margin-top: -60px;
+        margin-left: 45px;
+    }
+
+    .bgsignup_phrms {
+        background-color: #337AB7;
+        color: #FFF;
+    }
+
+    .headerhght {
+        height: 60px;
+    }
+
+    .hdrshadow {
+        box-shadow: 0 1px 5px #ccc;
+    }
+
+    .hdrbgclr {
+        background-color: #fff;
+    }
+
+    .hdrnavcustom {
+        background-color: #fff;
+        margin-top: -20px;
+        margin-right: -43px;
+        float: right;
+    }
+</style>
+<link href="~/content/landing.css" rel="stylesheet" />
+<link href="~/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/content/style_new.css" rel="stylesheet" />
+<div class="no-padding headerhght">
+    <nav class="navbar navbar-default navbar-fixed-top hdrshadow">
+        <div class="container-fluid no-padding hdrbgclr">
+            <div class="col-md-12 col-sm-12 headerhght">
+                <div class="col-md-6 col-sm-6 zeropadmbl">
+                    <img src="~/images/nationalemblemindia.png" class="img-responsive lionimg" width="42">
+                    <a href="~/Home/Index">
+                        <img src="~/images/PHRMS.png" class="img-responsive phrmsrimg" width="450" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-6 righthalf">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="navbar-header hdrnavcustom">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav"></ul>
+                            <ul class="nav navbar-nav navbar-right tabcntr btnsintab" style="display: flex">
+                                <li class="lirghtup lipad">
+                                    <img src="~/images/digital_india_logo.png" class="img-responsive hdrmobile dgindiafullimg" width="102">
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        <button class="btn btn-success btn-xs">MyHealthRecord</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<br />
+<div class="container-fluid no-padding loginpage">
+    <div class="section">
+        <div class="center-block">
+            <div class="col-md-12">
+                <div class="baseline">
+                    <div class="row">
+                        <div class="col-md-4" style="padding:10px;margin: auto;">
+                            &nbsp;
+                        </div>
+                        <br>
+                        <div class="col-md-6 col-sm-10 mblcntr">
+                            <h2 class="bluetxt login-header">PHRMS - Administrator </h2>
+                            <div class="login-width70 shadow gray">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="black top10 bot5"><strong>Sign In to your account</strong></p>
+                                    </div>
+
+                                </div>
+                                @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { id = "frmLogin" }))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    @Html.ValidationSummary(true, "Login was unsuccessful. Please try again.", new { @class = "text-danger" })
+                                    <div style="clear: both;"></div>
+                                    <p></p>
+                                    <div class="row gap">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="col-md-3 col-sm-3 left20"><strong>Username</strong></div>
+                                            <div class="col-md-9 col-sm-9 right5">
+                                                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control flat", @id = "UserName", @placeholder = "User Name", @autocomplete = "off", @autocorrect = "off", @tabindex = "1" })
+                                                @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row gap">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="col-md-3 col-sm-3 left20"><strong>Password</strong></div>
+                                            <div class="col-md-9 col-sm-9 right5">
+                                                @Html.PasswordFor(m => m.Password, new { @class = "form-control flat", @id = "Password", @placeholder = "Type your password", @autocomplete = "off", @autocorrect = "off", @tabindex = "2", @autocapitalize = "off" })
+                                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+
+                                                <input type="hidden" name="ReturnUrl" value="@ViewBag.ReturnUrl" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row gap">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="col-md-3 col-sm-3"></div>
+                                            <div class="col-md-9 col-sm-9 ">
+                                                <input type="submit" id="submit" class="btn btn-success btn-xs" value="Sign In" tabindex="4" original-title="">
+                                                @*    <input type="submit" id="submit" class="btn btn-success btn-xs" value="Sign In" tabindex="4" original-title="" onclick="javascript:return Postsubmit();">*@
+
+                                                <div style="padding-top:5px;">
+                                                    <a class="txtwarning font12" href="@Url.Action("ForgotPassword")">
+                                                        Forgot password
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btmgap"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br /><br /><br />
+<div class="col-md-12 col-sm-12 col-xs-12 bgsignup_phrms">
+    <div class="col-md-9 col-sm-10 col-xs-10 bgsignup_phrms">
+        &nbsp;
+    </div>
+    <div class="col-md-3 col-sm-2 col-xs-2 bgsignup_phrms">
+        @*<img src="~/images/zeroone.jpg" class="img-responsive" alt="zeroone">*@
+    </div>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 bgfooter">
+    <div class="container">
+
+        <div class="col-md-6 col-sm-6 ftrgap">
+            <div class="row">
+                <div class="titlefooter"><strong></strong></div>
+                <ul class="ftrlists">
+                    <li>&nbsp;<a class="whitetext" href="http://cdac.in/index.aspx?id=about" target="_blank">About</a> | </li>
+                    <li>&nbsp;<a class="whitetext" href="~/Account/FAQS" target="_blank">FAQs</a> | </li>
+                    <li>&nbsp;<a class="whitetext" href="~/Account/ContactUs" target="_blank">Contact Us</a></li>
+                </ul>  <div class="securityfoot">
+                    <ul class="ftrlists">
+                        <li>Content Owned, Updated and Maintained by PHRMS</li>
+                    </ul>
+                    <ul class="ftrlists">
+                        <li>&nbsp;D&amp;D by C-DAC Mohali</li>
+                    </ul>
+                </div>
+
+                @*<div class="securityfoot">
+                    <ul class="ftrlists">
+                        <li><p>Total Number of visitors: @ApplicationInstance.Application["Totaluser"]</p></li>
+                    </ul>
+                    <ul class="ftrlists">
+                        <li></li>
+                    </ul>
+                </div>*@
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 ftrgap">
+            <div class="row">
+                <div class="col-sm-10">
+                    <p style="color: #CCC; text-align: right; margin-top: 15px;">
+                        Centre For Development of Advanced Computing
+                        <br />
+                        A Scientific Society of the Ministry of Commmunications &amp; Information Technology, Government of India.<br />
+                        Copyright 2015 PHRMS. All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <p style="vertical-align: middle; margin-top: 25px;">
+                        <img src="~/images/whitetranscdac.png" class="img-responsive pull-right" width="100">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .titlefooter {
+        color: #D9D8D8;
+        font-size: 17px;
+        margin-bottom: 14px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    /* Validation */
+    .form-control.error {
+        border-color: #e74c3c !important;
+    }
+
+    label.error,
+    label span.error {
+        color: #e74c3c;
+        margin: 5px 0 0 0;
+        font-weight: 400;
+    }
+
+    label span.error {
+        margin-left: 5px;
+    }
+
+    label.error:before {
+        content: "\f071";
+        font-family: 'FontAwesome';
+        margin: 0 4px;
+    }
+
+    /*Validation Custom*/
+
+    .input-validation-error {
+        border-color: #e74c3c !important;
+    }
+
+    span.field-validation-error {
+        margin-left: 5px;
+        color: #e74c3c;
+        margin: 5px 0 0 0;
+        font-weight: 400;
+    }
+
+        span.field-validation-error:before {
+            content: "\f071";
+            font-family: 'FontAwesome';
+            margin: 0 4px;
+        }
+</style>
+<link href="~/Content/font-awesome.css" rel="stylesheet" />
+
+<script src="~/vendor/jquery/dist/jquery.min.js"></script>
+<script src="~/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="@Url.Content("~/js/jquery.validate.js")"></script>
+<script src="@Url.Content("~/js/jquery.validate.unobtrusive.js")"></script>
+<script src="~/js/jquery.login.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script>
+    function Postsubmit() {
+        var result = confirm("Are your sure. Do you want to submit?");
+        if (result) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>

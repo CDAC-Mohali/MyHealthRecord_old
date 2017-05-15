@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "_AllergyGraph";
+    Layout = null;
+}
+
+
+@model  List<PHRMSAdmin.Models.HealthConditionModel>
+<script>
+
+    $(document).ready(function () {
+        $("#Problems").insertFusionCharts({
+            type: "pie2d",
+            width: "425",
+            height: "425",
+            dataFormat: "json",
+            dataSource: {
+                chart: {
+                    caption: "Problems",
+
+                    startingangle: "120",
+                    showlabels: "0",
+                    showlegend: "1",
+                    enablemultislicing: "0",
+                    slicingdistance: "15",
+                    showpercentvalues: "1",
+                    showpercentintooltip: "0",
+                    plottooltext: "Problem : Total $label Count : $datavalue",
+                    theme: "fint"
+                },
+                data: [
+                    @foreach (var Item in Model)
+                    {
+                            <text>
+                            {</text>
+                             <text>   label: '@Item.HealthCondition.Replace(System.Environment.NewLine, "")',
+                                value: '@Item.ConditionType.ToString()'</text>
+                         <text>
+                            },
+                            </text>
+                        }
+                ]
+            }
+        });
+    });
+
+
+</script>
+
+
+
+
+<div class="col-lg-6">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Most Common Problems
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-8">
+                    <div id="Problems" style="height: 425px;"></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

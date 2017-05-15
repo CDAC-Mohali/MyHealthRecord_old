@@ -1,0 +1,35 @@
+From Send(Email): Failure sending mail. 4/13/2016 4:53:41 PM
+From sendSingleSMS: Object reference not set to an instance of an object. 4/18/2016 3:48:02 PM
+From Send(Email): Value cannot be null.
+Parameter name: to 4/18/2016 3:48:02 PM
+From sendSingleSMS: Object reference not set to an instance of an object. 4/18/2016 4:16:11 PM
+From Send(Email): Value cannot be null.
+Parameter name: to 4/18/2016 4:16:11 PM
+From sendSingleSMS: Object reference not set to an instance of an object. 4/18/2016 4:31:34 PM
+From Send(Email): Value cannot be null.
+Parameter name: to 4/18/2016 4:31:34 PM
+From sendSingleSMS: Object reference not set to an instance of an object. 4/18/2016 4:47:47 PM
+From sendSingleSMS: Object reference not set to an instance of an object. 4/18/2016 4:48:39 PM
+From sendSingleSMS: Object reference not set to an instance of an object. 4/19/2016 5:03:03 PM
+From Send(Email): The parameter 'to' cannot be an empty string.
+Parameter name: to 4/19/2016 5:03:03 PM
+From sendSingleSMS: Object reference not set to an instance of an object. 4/19/2016 5:10:24 PM
+From sendSingleSMS: The underlying connection was closed: The connection was closed unexpectedly. 4/26/2016 5:16:54 PM
+From Send(Email): Could not find a part of the path 'E:\WokingDirectory\PHRMS\PHRMS.Web\wwwroot\Images\Feedback\ed09dbc2-e50c-4455-863b-dc8139a1c00f.jpg'. 4/27/2016 10:41:07 AM
+From Send(Email): The parameter 'to' cannot be an empty string.
+Parameter name: to 4/29/2016 4:18:12 PM
+flag-s sendSingleSMS: True 6/10/2016 4:16:59 PM
+flag-s SendEmail: True 6/10/2016 4:16:59 PM
+flag-s sendSingleSMS: True 6/10/2016 4:19:11 PM
+flag-s SendEmail: True 6/10/2016 4:19:11 PM
+From Send(Email): Failure sending mail. 6/10/2016 4:19:30 PM
+flag-s sendSingleSMS: True 6/10/2016 4:22:01 PM
+flag-s SendEmail: True 6/10/2016 4:22:01 PM
+flag-s sendSingleSMS: True 6/10/2016 4:23:55 PM
+flag-s SendEmail: True 6/10/2016 4:23:55 PM
+From sendSingleSMS: The underlying connection was closed: A connection that was expected to be kept alive was closed by the server. 6/10/2016 4:24:18 PM
+flag-s sendSingleSMS: True 7/1/2016 10:17:34 AM
+flag-s SendEmail: True 7/1/2016 10:17:34 AM
+From sendSingleSMS: The operation has timed out 10/5/2016 10:36:44 AM
+flag-s sendSingleSMS: False 10/5/2016 10:36:44 AM
+flag-s SendEmail: False 10/5/2016 10:36:44 AM

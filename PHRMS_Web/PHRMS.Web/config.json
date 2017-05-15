@@ -1,0 +1,12 @@
+﻿{
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "" //apply your connectionstring.
+      }
+  },
+  "EntityFramework": {
+    "PHRMSDbContext": {
+      "ConnectionString": "Data:DefaultConnection:ConnectionString"
+    }
+  }
+}

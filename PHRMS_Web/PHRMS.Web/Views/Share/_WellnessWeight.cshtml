@@ -1,0 +1,38 @@
+﻿@model List<PHRMS.ViewModels.WeightViewModel>
+<div class="gj-grid-wrapper">
+    <table id="grid" class="footable table table-bordered table-hover gj-grid-table">
+        <thead>
+            <tr>
+                <th class="" style="width: 20%;text-align: left;">
+                    <div style="float: left">Weight (in Kg)</div>
+                </th>
+                <th class="" style="width: 20%; text-align: left;">
+                    <div style="float: left">Height (in cm)</div>
+                </th>
+
+                <th class="" style="width: 20%; text-align: left;">
+                    <div style="float: left">Date</div>
+                </th>
+                <th class="" style="width: 40%; text-align: left;">
+                    <div style="float: left">Comments</div>
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Item in Model)
+            {
+                <tr class="">
+                    <td style="text-align: left;"><div data-role="display">@Item.Result</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.Goal</div></td>
+
+                    <td style="text-align: left;"><div data-role="display">@Item.strCollectionDate</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.Comments</div></td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+</div>

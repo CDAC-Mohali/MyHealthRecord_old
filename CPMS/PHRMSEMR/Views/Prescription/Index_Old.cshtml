@@ -1,0 +1,458 @@
+﻿@using EMRViewModels
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form class="form-horizontal">
+    <div class="normalheader transition animated fadeIn small-header">
+        <div class="hpanel">
+            <div class="panel-body">
+                <a class="small-header-action" href="">
+                    <div class="clip-header">
+                        <i class="fa fa-arrow-down"></i>
+                    </div>
+                </a>
+                <div class="col-md-6">
+                    <div style="padding-top: 1%;">
+                        <h2 class="font-light m-b-xs">
+                            Patient:
+                        </h2>
+                        <small></small>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="hbreadcrumb" class="pull-right">
+                        <ol class="hbreadcrumb breadcrumb">
+                            <button class="btn btn-info" type="button" onclick="GenerateOTP()" id="otpButton">Generate OTP</button>
+                            <div style="display: none;" id="otpForm">
+                                <div class="col-md-6">
+                                    <input class="form-control" placeholder="Enter OTP Here" type="password" id="otp" name="otp">
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-primary" type="button" onclick="CheckOTP()">Confirm OTP</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-info" type="button" onclick="GenerateOTP()" id="otpButton">Re-Send OTP</button>
+                                </div>
+                            </div>
+                        </ol>
+                        <div style="padding-right: 8%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+<div class="form-horizontal">
+    <div class="container-fluid" id="divMain">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div style="border-bottom: 1.5px solid #9b59b6;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapse1" data-parent="#accordion">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            History
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <label>Personal History: </label>
+                                <textarea class="form-control" id="phistory" name="personal_history"></textarea><br>
+                                @*<a href="javascript: enableEditP();"><span class="glyphicon glyphicon-pencil"></span> Edit Now</a>*@
+                            </div>
+                            <div class="col-md-6">
+                                <label>Family History: </label>
+                                <textarea class="form-control" id="fhistory" name="family_history"></textarea><br>
+                                @*<a href="javascript: enableEditF();"><span class="glyphicon glyphicon-pencil"></span> Edit Now</a>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div style="border-bottom: 1.5px solid #3498db;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapse2" data-parent="#accordion">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            e-Prescription
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Physical Examination/Complaints</label>
+                            <div class="col-sm-10"><textarea class="form-control" id="fhistory" name="physical_examination" placeholder="Physical Examination/Complaints Notes"></textarea></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Vitals:</label>
+                            <div class="col-sm-10">
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" placeholder="Systolic" name="systolic">
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" placeholder="DiaStolic" name="diasystolic">
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" placeholder="Pulse" name="pulse">
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" placeholder="Weight" name="weight">
+                                </div>
+                                <div style="padding: 3%;"></div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" placeholder="Respiratory Rate" name="respiratory_rate">
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" placeholder="Temperature" name="temperature">
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" placeholder="SpO2" name="spo2">
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" placeholder="Glucose" name="glucose">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Problem Diagnosis: <span style="color: red;">*</span></label>
+                            <div class="col-sm-10">
+                                <textarea placeholder="Please Enter Problem Diagnosis Here" class="form-control" name="problem_diagnosis"></textarea>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Other Advice:</label>
+                            <div class="col-sm-10">
+                                <textarea placeholder="Diet, Life-Style, Referral, Follow-Up" class="form-control" name="other_advice"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div style="border-bottom: 1.5px solid #e67e22  ;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapse6" data-parent="#accordion">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                            Advice
+                        </a>
+                    </h4>
+                </div>
+
+                <div id="collapse6" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#Imm">Immunization</a></li>
+                            <li class=""><a data-toggle="tab" href="#Lab">Lab/Tests</a></li>
+                            <li class=""><a data-toggle="tab" href="#Pro">Procedures</a></li>
+                        </ul>
+                        <div class="tab-content ">
+                            <div id="Imm" class="tab-pane active">
+                                <div class="panel-body">
+
+                                    <div class="text-center" id="list">
+                                        <div class="container-fluid">
+                                            <div class="col-lg-8"><div class="easy-autocomplete" style=""><input id="searchImm" name="XImmName" style="width: 700px;" placeholder="Search Immunization" class="form-control" autocomplete="off"><div class="easy-autocomplete-container" id="eac-container-searchImm"><ul></ul></div></div></div>
+                                            <div class="col-lg-4">
+                                                <button id="fsubmit" class="btn btn-primary pull-right" type="button" onclick="addImm(this.form)">
+                                                    <span class="glyphicon glyphicon-plus"></span> Add Immunization
+                                                </button>
+                                            </div>
+                                            <div style="display: none;" class="col-lg-6"><input id="keyImm" name="ImmVal" disabled="" class="form-control"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="Lab" class="tab-pane">
+                                <div class="panel-body">
+                                    <form id="LabForm">
+                                        <div class="container-fluid">
+                                            <div class="col-lg-8"><div class="easy-autocomplete"><input id="searchLab" name="XLabName" placeholder="Search Investigation" class="form-control" autocomplete="off" style="width:700px;"><div class="easy-autocomplete-container" id="eac-container-searchLab"><ul></ul></div></div></div>
+                                            <div class="col-lg-4">
+                                                <button id="fsubmit" class="btn btn-primary pull-right" type="button" onclick="addLabs(this.form)">
+                                                    <span class="glyphicon glyphicon-plus"></span> Add Lab Tests
+                                                </button>
+                                            </div>
+                                            <div style="display: none;" class="col-lg-6"><input id="keyLab" name="LabVal" disabled="" class="form-control"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div id="Pro" class="tab-pane">
+                                <div class="panel-body">
+                                    <form id="ProcForm">
+                                        <div class="container-fluid">
+                                            <div class="col-lg-8"><div class="easy-autocomplete"><input id="searchProc" name="XProcName" placeholder="Search Procedure" class="form-control" autocomplete="off" style="width:700px;"><div class="easy-autocomplete-container" id="eac-container-searchProc"><ul></ul></div></div></div>
+                                            <div class="col-lg-4">
+                                                <button id="fsubmit" class="btn btn-primary pull-right" type="button" onclick="addProc(this.form)">
+                                                    <span class="glyphicon glyphicon-plus"></span> Add Procedure
+                                                </button>
+                                            </div>
+                                            <div style="display: none;" class="col-lg-6"><input id="keyProc" name="ProcVal" disabled="" class="form-control"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <br>
+                            <div class="container-fluid table-responsive">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:10%"> S. No.</th>
+                                            <th style="width:60%"> Name </th>
+                                            <th> Type </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="recordTable"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div style="border-bottom: 1.5px solid #62cb31;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapse3" data-parent="#accordion">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            Clinical Details
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="container-fluid">
+                            <div class="hpanel">
+                                <div class="">
+                                    <ul class="nav nav-tabs">
+                                        <li class=""><a data-toggle="tab" href="#All">Allergy</a></li>
+                                    </ul>
+                                    <div class="tab-content ">
+                                        <div id="All" class="tab-pane active">
+                                            <div class="panel-body">
+                                                <form>
+                                                    <div class="container-fluid">
+                                                        <div id="list">
+                                                            <div class="container-fluid text-center">
+                                                                <div class="container">
+                                                                    <div class="col-lg-8"><div class="easy-autocomplete"><input id="searchAll" name="XAllName" style="width:700px;" placeholder="Search Allergy" class="form-control" autocomplete="off"><div class="easy-autocomplete-container" id="eac-container-searchAll"><ul></ul></div></div></div>
+                                                                    <div style="display: none;" class="col-lg-6"><input id="keyAll" name="AllergyType" disabled="" class="form-control"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="hr-line-dashed"></div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group">
+                                                            <label class="col-sm-4 control-label">Do You Still Have the Allergy?:<span class="text-danger"> *</span></label>
+                                                            <div class="col-sm-4">
+                                                                Yes <input type="radio" value="true" name="Still_Have">
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                No <input type="radio" value="false" name="Still_Have">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="hr-line-dashed"></div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="col-sm-4 control-label">From:<span class="text-danger"> *</span></label>
+                                                            <div class="col-sm-8">
+                                                                <select id="from" name="DurationId" class="form-control">
+
+                                                                    <option value="1">Less than three months</option>
+                                                                    <option value="2">Three to six months</option>
+                                                                    <option value="3">Six to twelve months</option>
+                                                                    <option value="4">More than twelve months</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="col-sm-4 control-label">Severity:<span class="text-danger"> *</span></label>
+                                                            <div class="col-sm-8">
+                                                                <select id="severity" name="Severity" class="form-control"><option value="1">symptom mild</option><option value="2">symptom moderate</option><option value="3">symptom severe</option><option value="4">symptom trivial</option><option value="5">symptom very severe</option></select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <br>
+                                                    <div class="hr-line-dashed"></div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group">
+                                                            <label class="col-sm-2 control-label">Notes:</label>
+                                                            <div class="col-sm-10">
+                                                                <textarea placeholder="Write your comments here." name="Comments" class="form-control">-</textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container-fluid">
+                                                        <div class="">
+
+                                                            <button id="fsubmit" class="btn btn-primary pull-right" type="button" onclick="addAll(this.form)">
+                                                                <span class="glyphicon glyphicon-plus"></span> Add Allergy
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="container-fluid table-responsive">
+                                            <table class="table table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width:10%"> S. No.</th>
+                                                        <th style="width:40%"> Name </th>
+                                                        <th> Duration </th>
+                                                        <th style="width:20%"> Severity </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="clinicTable"></tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div style="border-bottom: 1.5px solid #ffb606;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapse4" data-parent="#accordion">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                            Medication
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <div class="text-center">
+                            <form>
+                                <div class="container">
+                                    <div class="col-lg-8">
+                                        <input id="search" name="XMedName" style="width:700px;" placeholder="Search Medicine" class="form-control">
+                                        <input id="key" name="XMedID" disabled="" class="form-control" style="display:none;">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <button class="btn btn-primary" type="button" onclick="addMed(this.form)">
+                                            <span class="glyphicon glyphicon-plus"></span>Add Medicine
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="list">
+                            <!--<select size="8" class="form-control" style="width: 100%; display: inline-block;" id="med-list" name="MedID" >
+
+                            </select>-->
+
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <div style="padding-top: 2%;"></div>
+                                <div class="table-responsive">
+                                    <table class="tbMed table table-bordered table-striped table-hover">
+                                        <thead>
+
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Frequency</th>
+                                                <th>Strength</th>
+                                                <th>Dose</th>
+                                                <th>Unit</th>
+                                                <th>Route</th>
+                                                <th>End Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="med-box"></tbody>
+                                    </table>
+                                </div>
+                                <div style="padding-top: 15px;" class="col-lg-12">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div style="border-bottom: 1.5px solid #e74c3c;" class="panel-heading change-cursor" data-toggle="collapse" data-target="#collapse5" data-parent="#accordion">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                            Fees and Appointment
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Next Appointment:</label>
+                            <div class="col-sm-2">
+                                <input type="date" class="form-control" id="adate" name="Date">
+                            </div>
+                            <div class="col-sm-2">
+                                <select class="form-control" name="Hours">
+                                    <option value="12">12</option>
+                                    <option value="11">11</option>
+                                    <option value="10">10</option>
+                                    <option value="9">9</option>
+                                    <option value="8">8</option>
+                                    <option value="7">7</option>
+                                    <option value="6">6</option>
+                                    <option value="5">5</option>
+                                    <option value="4">4</option>
+                                    <option value="3">3</option>
+                                    <option value="2">2</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                                <select class="form-control" name="Mins">
+                                    <option value="00">00</option>
+                                    <option value="15">15</option>
+                                    <option value="30">30</option>
+                                    <option value="45">45</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                                <select class="form-control" name="meridiem">
+                                    <option value="am">A.M.</option>
+                                    <option value="pm">P.M.</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Consultation Fees:</label>
+                            <div class="col-sm-2">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Rs.</span>
+                                    <input type="text" class="form-control" value="0" name="NetFee">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div>
+                <button class="btn btn-Primary hidden-print" type="button"><i class="glyphicon glyphicon-print"></i> Preview</button>
+            </div>
+        </div>
+    </div>
+    @Html.Partial("_PreviewPrescription")
+</div>
+<script src="~/Scripts/jquery.prescription.js"></script>

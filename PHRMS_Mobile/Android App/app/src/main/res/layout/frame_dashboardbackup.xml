@@ -1,0 +1,357 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/lvdashboard"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/viewDashHeader"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="@dimen/activity_horizontal_margin"-->
+    <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+    <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/lvType"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtfontdashboard"-->
+    <!--android:layout_width="@dimen/imageview_padding"-->
+    <!--android:layout_height="@dimen/imageview_padding"-->
+    <!--android:text="@string/fa_dashboard"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--android:textColor="@color/white" />-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:text="@string/Dashtitle"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Title"-->
+    <!--android:textColor="@color/white" />-->
+    <!--</LinearLayout>-->
+
+    <!--<me.grantland.widget.AutofitTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/padding_medium"-->
+    <!--android:ellipsize="end"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="@string/Dashsubheading"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textStyle="normal"-->
+    <!--tools:minTextSize="8sp" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/padding_large" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/data_dashboard_swipe_refresh"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fillViewport="true"-->
+    <!--tools:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fillViewport="true"-->
+    <!--tools:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtdashboard"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="@dimen/activity_horizontal_margin"-->
+    <!--android:text="No Data Available for Dashboard"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--android:visibility="gone" />-->
+
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/ProgressBarDashboardGraphs"-->
+    <!--style="?android:attr/progressBarStyleLarge"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:theme="@style/Widget.AppCompat.ProgressBar" />-->
+
+
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/lvChartActivity"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
+    <!--android:text="@string/Activitiestitle"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--android:textColor="@color/common_plus_signin_btn_text_light_focused" />-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/chartheight"-->
+    <!--android:layout_margin="@dimen/card_padding"-->
+    <!--android:background="@color/cardviewcolor"-->
+    <!--android:elevation="@dimen/padding_medium"-->
+    <!--app:cardCornerRadius="@dimen/card_padding_corner">-->
+
+    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<ProgressBar&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/ProgressBarActivity"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="?android:attr/progressBarStyleLarge"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:theme="@style/Widget.AppCompat.ProgressBar" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+    <!--<com.github.mikephil.charting.charts.PieChart-->
+    <!--android:id="@+id/avchart_bar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbarAlwaysDrawHorizontalTrack="true" />-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+    <!--</android.support.v7.widget.CardView>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/lvChartBP"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
+    <!--android:text="@string/BloodPressuretitle"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--android:textColor="@color/common_plus_signin_btn_text_light_focused" />-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/chartheight"-->
+    <!--android:layout_margin="@dimen/card_padding"-->
+    <!--android:background="@color/cardviewcolor"-->
+    <!--android:elevation="@dimen/padding_medium"-->
+    <!--app:cardCornerRadius="@dimen/card_padding_corner">-->
+
+    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:paddingBottom="@dimen/activity_horizontal_margin">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<ProgressBar&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/ProgressBarBP"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="?android:attr/progressBarStyleLarge"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:theme="@style/Widget.AppCompat.ProgressBar" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+    <!--<com.github.mikephil.charting.charts.CombinedChart-->
+    <!--android:id="@+id/bpchart_bar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbarAlwaysDrawHorizontalTrack="true" />-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+    <!--</android.support.v7.widget.CardView>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/lvChartBG"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
+    <!--android:text="@string/BloodGlucosetitle"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--android:textColor="@color/common_plus_signin_btn_text_light_focused" />-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/chartheight"-->
+    <!--android:layout_margin="@dimen/card_padding"-->
+    <!--android:background="@color/cardviewcolor"-->
+    <!--android:elevation="@dimen/padding_medium"-->
+    <!--app:cardCornerRadius="@dimen/card_padding_corner">-->
+
+
+    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:paddingBottom="@dimen/activity_horizontal_margin">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<ProgressBar&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/ProgressBarBG"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="?android:attr/progressBarStyleLarge"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:theme="@style/Widget.AppCompat.ProgressBar" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+
+    <!--<com.github.mikephil.charting.charts.CombinedChart-->
+    <!--android:id="@+id/bgchart_bar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbarAlwaysDrawHorizontalTrack="true" />-->
+
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+    <!--</android.support.v7.widget.CardView>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/lvChartBMI"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
+    <!--android:text="@string/Weighttitle"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--android:textColor="@color/common_plus_signin_btn_text_light_focused" />-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/chartheight"-->
+    <!--android:layout_margin="@dimen/card_padding"-->
+    <!--android:background="@color/cardviewcolor"-->
+    <!--android:elevation="@dimen/padding_medium"-->
+    <!--app:cardCornerRadius="@dimen/card_padding_corner">-->
+
+
+    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:paddingBottom="@dimen/activity_horizontal_margin">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<ProgressBar&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/ProgressBarBMI"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="?android:attr/progressBarStyleLarge"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:theme="@style/Widget.AppCompat.ProgressBar" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+
+    <!--<com.github.mikephil.charting.charts.CombinedChart-->
+    <!--android:id="@+id/bmichart_bar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbarAlwaysDrawHorizontalTrack="true" />-->
+
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+    <!--</android.support.v7.widget.CardView>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab_Dash_Refresh"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/fab_margin"-->
+    <!--android:clickable="true"-->
+    <!--android:src="@drawable/ic_autorenew_white_36dp"-->
+    <!--android:tint="@color/colorPrimary"-->
+    <!--app:backgroundTint="@color/cardviewcolor"-->
+    <!--app:fabSize="normal"-->
+    <!--app:layout_anchor="@id/viewDashHeader"-->
+    <!--app:layout_anchorGravity="bottom|right|end" />-->
+
+</android.support.design.widget.CoordinatorLayout>
+
+

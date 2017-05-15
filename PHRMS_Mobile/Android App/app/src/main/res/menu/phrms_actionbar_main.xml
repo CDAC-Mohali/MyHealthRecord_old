@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <!--
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />  will create dropdown menu-->
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/share_header"
+        android:orderInCategory="99"
+        android:title="Share"
+        app:backgroundTint="@color/white"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        app:showAsAction="always"
+        fab:backgroundTint="@color/cardviewcolor" /> <!-- Will be displayed as icon-->
+</menu>

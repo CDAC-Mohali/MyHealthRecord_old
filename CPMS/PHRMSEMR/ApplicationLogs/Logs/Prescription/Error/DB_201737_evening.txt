@@ -1,0 +1,13 @@
+
+ERROR OCCURRED
+
+DATE & TIME: 03-07-2017 14:56:22
+SOURCE: EntityFramework
+METHOD: Int32 SaveChanges()
+ERROR: An error occurred while updating the entries. See the inner exception for details.
+STACKTRACE:    at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at EMRLib.DAL.EMRRepository.SaveEMRComplete(EMRComplete oComplete) in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\EMRLib\DAL\PrescrptionRepository.cs:line 410
+   at PHRMSEMR.Controllers.PrescriptionController.SaveEMRComplete(EMRComplete oEMRComplete) in D:\PHRMSEMR\PHRMSEMR\PHRMSEMR\PHRMSEMR\Controllers\PrescriptionController.cs:line 151
+

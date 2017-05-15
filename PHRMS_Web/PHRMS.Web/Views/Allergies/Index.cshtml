@@ -1,0 +1,272 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Allergies";
+}
+@model List<PHRMS.ViewModels.AllergyMasterViewModel>
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel hblue">
+        <div class="panel-body">
+            <div id="hbreadcrumb" class="pull-right">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="@Url.Action("Dashboard", "Account")">Dashboard</a></li>
+                    <li>
+                        <span>Allergies</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                Allergies
+            </h2>
+            <div>
+                <small>
+                    This page makes it easy for you to enter and review information about your allergies. To add an allergy to your record, click 'Add Allergy' and follow the onscreen instructions.
+                    When you are done, the new information will be added to your health record.
+                    <br /><br />
+                    <span class="fa fa-user fa-lg"></span> - Entered by User &nbsp;&nbsp;<span class="fa fa-user-md fa-lg text-info"></span> - Entered by Doctor
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content animate-panel">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel hgreen">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                        <a class="closebox"><i class="fa fa-times"></i></a>
+                    </div>
+                    Please add your allergy details here.
+                </div>
+                <div class="panel-body float-e-margins">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="input-group">
+                                <input type="text" id="search" class="form-control" placeholder="Search Allergy Name">
+                                <span class="input-group-btn">
+                                    <button type="button" id="btnSearch" class="btn btn-info">Go!</button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="pull-right">
+                                <button data-toggle="modal" data-target="#myModal" class="btn btn-info btn-outline " type="button">
+
+                                    <i class="fa fa-share"></i> Download <span class="caret"></span>
+                                </button>
+                            </div>
+                            <span class="pull-right">&nbsp;&nbsp;</span>
+                            <button type="button" id="btnAddPlayer" class="btn btn-outline btn-warning2 pull-right">Add Allergy</button>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="table-responsive">
+                        @Html.AntiForgeryToken()
+                        <table id="grid" class="footable table table-bordered table-hover" data-source="@Url.Action("GetAllergiesGridList")"></table>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="allergyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="color-line"></div>
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Add Allergy</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="frmSelAllergy">
+                                        <span>Enter a search term to find the most common results.</span>
+                                        <input type="text" id="txtMasterSrch" class="form-control input-sm" placeholder="Search Allergy" style="width:40%">
+                                        <div class="btn-group">
+                                            <a class="btn btn-default prev" disabled><i class="fa fa-chevron-left"></i></a>
+                                            <a class="btn btn-default active">A</a>
+                                            <a class="btn btn-default">B</a>
+                                            <a class="btn btn-default">C</a>
+                                            <a class="btn btn-default">D</a>
+                                            <a class="btn btn-default">E</a>
+                                            <a class="btn btn-default">F</a>
+                                            <a class="btn btn-default">G</a>
+                                            <a class="btn btn-default">H</a>
+                                            <a class="btn btn-default">I</a>
+                                            <a class="btn btn-default">J</a>
+                                            <a class="btn btn-default">K</a>
+                                            <a class="btn btn-default">L</a>
+                                            <a class="btn btn-default">M</a>
+                                            <a class="btn btn-default hd">N</a>
+                                            <a class="btn btn-default hd">O</a>
+                                            <a class="btn btn-default hd">P</a>
+                                            <a class="btn btn-default hd">Q</a>
+                                            <a class="btn btn-default hd">R</a>
+                                            <a class="btn btn-default hd">S</a>
+                                            <a class="btn btn-default hd">T</a>
+                                            <a class="btn btn-default hd">U</a>
+                                            <a class="btn btn-default hd">V</a>
+                                            <a class="btn btn-default hd">W</a>
+                                            <a class="btn btn-default hd">X</a>
+                                            <a class="btn btn-default hd">Y</a>
+                                            <a class="btn btn-default hd">Z</a>
+                                            <a class="btn btn-default next"><i class="fa fa-chevron-right"></i></a>
+                                        </div>
+                                        <select size="12" style="width:100%" id="drpAllergyTypes" required="required"></select>
+                                    </form>
+                                    <form id="frmSaveAllergy" class="form-horizontal" style="display:none;">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" id="playerId" />
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Allergy Name:</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control Static" id="txtAllergyName" datacolumn="AllergyName" disabled="disabled" required="required">
+                                                <input type="text" class="Static" style="display:none;" datacolumn="AllergyType" value="0">
+                                                <input type="text" class="Static" style="display:none;" datacolumn="Id" value="@Guid.Empty">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Do you still have this allergy?</label>
+                                            <div class="col-sm-8">
+                                                <input type="radio" id="rdoStillHaveYes" value="Yes" name="StillHaveAllergy" checked="checked">
+                                                <label for="rdoStillHaveYes"> Yes </label>
+                                                <input type="radio" id="rdoStillHaveNo" value="No" name="StillHaveAllergy">
+                                                <label for="rdoStillHaveNo"> No </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Since (months):</label>
+                                            <div class="col-sm-8">
+                                            
+                                                <div class="demo-output">
+
+                                                    <input class="single-slider" type="hidden" value="2" id="drpDurationId" name="DurationId" datacolumn="DurationId" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @*<div class="form-group">
+                                                <label class="col-sm-4 control-label">Allergy Started On:<span class="text-danger"> *</span></label>
+                                                <div class="col-sm-8 date">
+                                                    <div class="input-group date">
+                                                        <input type="text" class="form-control datepicker" placeholder="Allergy Started On" datacolumn="strStartDate" name="AllergyStartDate"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>*@
+                                        @*<div class="form-group hdDivED">
+                                                <label class="col-sm-4 control-label">Allergy Ended On:<span class="text-danger"> *</span></label>
+                                                <div class="col-sm-8  date">
+                                                    <div class="input-group date">
+                                                        <input type="text" class="form-control datepicker" placeholder="Allergy Ended On" datacolumn="strEndDate" name="AllergyEndDate">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>*@
+                                        @*<div class="form-group">
+                                                <label class="col-sm-4 control-label">Reaction Description:</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" placeholder="Reaction Description" datacolumn="reactDes">
+                                                </div>
+                                            </div>*@
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Severity:</label>
+                                            <div class="col-sm-8">
+                                                <div class="demo-output">
+
+                                                    <input class="single-slider" type="hidden" value="2"  id="drpSeverity" name="Severity" datacolumn="Severity"/>
+                                                </div>
+                                                @*<div>
+                                                        <select class="form-control m-b" name="Severity" datacolumn="Severity" id="drpSeverity"></select>
+                                                    </div>*@
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Notes:</label>
+                                            <div class="col-sm-8">
+                                                <textarea id="txtNotes" placeholder="Write your comments here." class="form-control" datacolumn="Comments" onkeyup="CheckHtmlTag(this)"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form id="frmShowAllergy" class="form-horizontal" style="display:none;">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Allergy Name:</label>
+                                            <div class="col-sm-8">
+                                                <p class="form-control-static" datacolumn="AllergyName">-</p>
+                                            </div>
+                                        </div>
+                                        @*<div class="form-group">
+                                                <label class="col-sm-4 control-label">Allergy Started On:</label>
+                                                <div class="col-sm-8">
+                                                    <p class="form-control-static" datacolumn="strStartDate">-</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Allergy Ended On:</label>
+                                                <div class="col-sm-8">
+                                                    <p class="form-control-static" datacolumn="strEndDate">-</p>
+                                                </div>
+                                            </div>*@
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Do you still have this allergy?</label>
+                                            <div class="col-sm-8">
+                                                <p class="form-control-static" datacolumn="strStill_Have">-</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Since (months):</label>
+                                            <div class="col-sm-8">
+                                                <p class="form-control-static" datacolumn="strDuration">-</p>
+                                            </div>
+                                        </div>
+                                        @*<div class="form-group">
+                                                <label class="col-sm-4 control-label">Reaction Description:</label>
+                                                <div class="col-sm-8">
+                                                    <p class="form-control-static" datacolumn="reactDes">-</p>
+                                                </div>
+                                            </div>*@
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Severity:</label>
+                                            <div class="col-sm-8">
+                                                <p class="form-control-static" datacolumn="strSeverity">-</p>
+                                                @*<div class="demo-output">
+
+                                                    <input class="single-slider" type="hidden" value="2" name="ValidUpto" id="ValidUpto" />
+                                                </div>*@
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Notes:</label>
+                                            <div class="col-sm-8">
+                                                <p class="form-control-static" datacolumn="Comments">-</p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" id="btnSave" class="btn btn-primary">Next</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .custom-blue {
+        color: blue;
+    }
+</style>
+
+<link href="~/vendor/sweetalert/lib/sweet-alert.css" rel="stylesheet" />
+<link href="~/Content/grid-0.4.3.min.css" rel="stylesheet" type="text/css">
+<link href="~/Vendor/bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
+<script src="~/Scripts/grid-0.4.3.min.js" type="text/javascript"></script>
+<script src="~/Vendor/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="~/vendor/sweetalert/lib/sweet-alert.min.js"></script>
+<script src="@Url.Content("~/js/jquery.validate.js")"></script>
+<script src="@Url.Content("~/js/jquery.validate.unobtrusive.js")"></script>
+<script src="~/js/jquery.allergies.js" type="text/javascript"></script>
+

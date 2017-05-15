@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/appicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_medium"
+                android:src="@drawable/ic_product" />
+
+
+            <TextView
+                android:id="@+id/txtapp_name"
+                style="?android:textAppearanceLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/phrms"
+                android:textColor="@color/grey_aboutus"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtversion"
+                style="?android:textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/appversion"
+                android:textColor="@color/grey_aboutus" />
+
+            <TextView
+                android:id="@+id/txtemail"
+                style="?android:textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/aboutemail"
+                android:textColor="@color/grey_aboutus" />
+
+            <TextView
+                android:id="@+id/txtfundedby"
+                style="?android:textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/fundedby"
+                android:textColor="@color/grey_aboutus"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txtcdacproduct"
+                style="?android:textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/cdacproducts"
+                android:textColor="@color/grey_aboutus"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/txtcdacrights"
+                style="?android:textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/cdacrights"
+                android:textColor="@color/grey_aboutus" />
+
+
+            <TextView
+                android:id="@+id/txtaboutus"
+                style="?android:textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/aboutcontent"
+                android:textColor="@color/grey_aboutus"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,320 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    // ViewBag.Title = "Home Page";
+    Layout = null;
+}
+
+
+@model PHRMS.ViewModels.LoginModel
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Personal Health Record Management System">
+    <meta name="author" content="cdac">
+
+    <title>Personal Health Record Management System</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="~/phr_css/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link href="~/phr_css/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="phr_css\bower_components\jquery\dist\html5shiv.js"></script>
+        <script src="phr_css\bower_components\jquery\dist\respond.min.js"></script>
+    <![endif]-->
+
+
+
+    <link href="~/phr_css/phrstyle.css" rel="stylesheet" />
+
+    <script src="~/JS/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <script src="~/js/login.js" type="text/jscript"></script>
+    <script src="~/JS/jquery.als-1.2.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbartab" aria-expanded="false" aria-controls="navbartab">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="~/Home/Index">PERSONAL HEALTH RECORD MANAGEMENT SYSTEM</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse" id="navbartab">
+
+
+                <ul class="nav navbar-nav navbar-right" style="font-family: Tahoma; font-size: 10px; color: #000000;">
+                    <li><a href="#">EXPLORE PHRS</a>
+                    <li><a href="#">APPS &amp; DEVICES</a>
+                    <li><a href="#">HELP</a>
+                    <li>
+                        <a href="#">GET IN TOUCH</a>
+
+                        <!--<li >
+                            <div class="input-group custom-search-form" style="padding-top: 8px;">
+                               <input class="form-control" placeholder="Search..." type="text" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" style="background-color:#2491a6;colo:#ffffff;border:0px;">
+                                       <img src="Images/search.png" style="width:20px;height:20px"/>
+                                    </button>
+                                </span>
+                            </div>
+
+                        -->
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5" style="background: transparent url('@Url.Content("~/images/transparent-bg.png")') repeat center top; height: 250px">
+                    <!--  <h2>Heading</h2>-->
+                    <div id="myCarousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active">
+                            <li data-target="#myCarousel" data-slide-to="1">
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <h2 style="font-family: 'Segoe UI',Tahoma,'Comic Sans MS', cursive; color: #000;">
+                                    Personal Health Record Management System
+                                </h2>
+                                <hr>
+                                <h4 class="text-center" style="font-family: 'Segoe UI',Tahoma,'Comic Sans MS', cursive; color: #000; text-align: justify">
+                                    Funded by Department of Electronics and Information Technology, Ministry of Communications & Information Technology, Government of India.
+                                </h4>
+                            </div>
+
+                            <div class="item">
+                                <br>
+                                <br>
+                                <hr>
+                                <h2 style="font-family: 'Segoe UI',Tahoma,'Comic Sans MS', cursive; color: #000; text-align: center">
+                                    We're Your Ideal Health & Fitness Partner.
+                                </h2>
+                                <hr>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                    </div>
+                    <!--<p class="pull-right"><a class="btn btn-primary" href="#" role="button" >More »</a></p>-->
+                </div>
+
+                <div class="col-md-3">
+                    <br />
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color: #ffffff">
+                            <div class="row">
+                                <div class="col-lg-8 pull-left ">
+
+                                    <img src="~/images/user_icon.png" alt="Login Image" class="login_logo">
+                                    LOGIN
+                                </div>
+                                <div class="col-lg-4 pull-right">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <div id="LoginTable">
+                                @using (Html.BeginForm("ValidateUser", "Index", FormMethod.Post, new { id = "frmLogin" }))
+                                {
+                                    <div class="row">
+                                        <div class="col-lg-12">
+
+                                            @Html.AntiForgeryToken()
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                                    @*<input type="text" name="username" id="txtUname" placeholder="Email or Mobile No." class="form-control" />*@
+                                                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeholder = "Email or Mobile No." })
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                                    @*<input type="password" name="password" id="txtpassword" placeholder="Password" class="form-control" />*@
+                                                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="cusErrors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group ">
+                                                <input type="submit" value="Sign In" class="btn btn-primary btn-block" />
+                                                @*<asp:Label ID="lblmsg" runat="server" ForeColor="Red"></asp:Label>*@
+                                            </div>
+                                            @Html.ValidationMessage("CustomValidation")
+                                        </div>
+                                    </div>
+                                }
+                                <div class="clearfix">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group ">
+                                            <div class="col-md-6 text-left">
+                                                <a id="forgotpassbutton" href="ForgotPassword.aspx">Forgot password?</a>
+                                            </div>
+                                            <div class="col-md-6 text-right">
+                                                <a href="~/Account/Register"><span>Register</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row" style="background: transparent url('@Url.Content("~/images/transparent_update.png")') repeat center top;">
+            <div class="col-md-12 update_news">
+                Update:
+                <span class="update_news_info">
+                    Be better prepare for doctor visists and unexpected emergencies, Organize for family's helath information.
+                </span>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-md-3 imgouter text-center">
+                <br />
+                <br />
+                <img src="~/Images/icon_1.png" style="width: 58px; height: 53px">
+                <p class="text-center">
+                    organize for family's helath information<br />
+                    <br />
+                </p>
+            </div>
+            <div class="col-md-3 imgouter text-center">
+                <br />
+                <br />
+                <img src="~/Images/icon_2.png" style="width: 58px; height: 53px">
+                <p class="text-center">
+                    Be better prepare for doctor visists and unexpected emergencies
+                </p>
+            </div>
+            <div class="col-md-3 imgouter text-center">
+                <br />
+                <br />
+                <img src="~/Images/icon_3.png" style="width: 58px; height: 53px">
+                <p class="text-center">
+                    create a more complete picture of your health<br />
+                </p>
+            </div>
+            <div class="col-md-3 imgouter text-center">
+                <br />
+                <br />
+                <img src="~/Images/icon_4.png" style="width: 58px; height: 53px">
+                <p class="text-center">
+                    Achive your fitness goals<br />
+                    <br />
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- /container -->
+    <div style="background-color: #192B39; color: #FFF;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navdiv" id="navtab">
+                        <ul>
+                            <li><a href="#" target="_self">About Us</a></li>
+                            <li>|</li>
+                            <li><a href="#" target="_self">Website Policies</a></li>
+                            <li>|</li>
+                            <li><a href="#" target="_self">Help</a></li>
+                            <li>|</li>
+                            <li><a href="#" target="_self">Terms and Conditions </a></li>
+                            <li>|</li>
+                            <li><a href="#" target="_self">Downloads</a></li>
+                            <li>|</li>
+                            <li><a href="#" target="_self">App Store</a></li>
+                            <li>|</li>
+                            <li><a href="#" target="_self">Feedback</a></li>
+                            <li>|</li>
+                            <li><a href="#" target="_self">Sitemap</a></li>
+                            <li>|</li>
+                            <li><a href="#" target="_self">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="margin-top: 5px; margin-bottom: 5px;">
+            <div class="col-md-4 text-left footer_text">
+                &copy; 2017 PHRMS. All Rights Reserved
+            </div>
+            <div class="col-md-4 text-center footer_text">
+                &copy; Content Owned, Updated and Maintained by PHRMS
+            </div>
+            @*<div class="col-md-4 text-right footer_text">
+                &copy; D&amp;D by C-DAC Mohali
+            </div>*@
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+</body>
+</html>
+<script src="~/phr_css/bower_components/jquery/dist/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="~/phr_css/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="@Url.Content("~/js/jquery.validate.js")"></script>
+<script src="@Url.Content("~/js/jquery.validate.unobtrusive.js")"></script>
+<script src="~/js/jquery.login.js"></script>

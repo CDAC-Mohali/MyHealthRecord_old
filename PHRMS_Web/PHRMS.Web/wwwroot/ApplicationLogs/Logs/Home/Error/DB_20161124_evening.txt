@@ -1,0 +1,12 @@
+
+
+ERROR OCCURRED
+
+DATE & TIME: 11-24-2016 17:47:43
+
+SOURCE: PHRMS.Web
+
+METHOD: Microsoft.AspNet.Mvc.ActionResult VerifyLoginOTP(System.String)
+ERROR: Object reference not set to an instance of an object.
+STACKTRACE:    at PHRMS.Web.Controllers.HomeController.VerifyLoginOTP(String OTP) in E:\WokingDirectory\VSSPHRMS\PHRMS\PHRMS.Web\Controllers\HomeController.cs:line 500
+

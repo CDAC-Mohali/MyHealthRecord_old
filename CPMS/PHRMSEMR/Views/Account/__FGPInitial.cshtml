@@ -1,0 +1,31 @@
+﻿
+
+@{
+    ViewBag.Title = "__FGPInitial";
+}
+
+@model EMRViewModels.ForgotPasswordModel
+
+<div id="DivSendOTP">
+    @Html.AntiForgeryToken()
+    <div class="form-group col-lg-12">
+        <label>Registered Mobile No. or Email Id</label>
+        <span class="text-danger"> *</span>
+        @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeholder = "abc@example.com" })
+        @Html.ValidationMessageFor(m => m.UserName)
+    </div>
+    <div class="col-lg-12">
+        <input type="button" id="SendOTP" class="btn btn-success" value="Next" />
+        <a class="btn btn-default" href="@Url.Action("Login")">Cancel</a>
+    </div>
+
+
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+

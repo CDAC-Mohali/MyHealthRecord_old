@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNet.Http
+<div id="right-sidebar" class="animated fadeInRight">
+
+    <div class="p-m">
+        <button id="sidebar-close" class="right-sidebar-toggle sidebar-button btn btn-default m-b-md">
+            <i class="pe pe-7s-close"></i>
+        </button>
+        <div>
+            <span class="font-bold no-margins"> Profile Status </span>
+            <br>
+            <small> Please complete your user profile to get access to the premium services</small>
+        </div>
+   
+        <div class="progress m-t-xs full ">
+            <div style="width: 0%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" role="progressbar"
+                 class="progress-bar progress-bar-success" id="setProgress">
+                <span id="setValue">0% Completed </span>
+            </div>
+        </div>
+    </div>
+    <div class="p-m bg-light border-bottom border-top">
+        <span class="font-bold no-margins"> Recent Activities </span>
+        <br>
+        <small> Here is a list of Acitivites that you just Performed.</small>
+        <div class="m-t-md" id="recentActivities">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+﻿@model IPagedList<EMRViewModels.DoctorUserMappingViewModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+
+<div id="ManageGrid">
+    <div class="table-responsive project-list">
+        <table class="table table-striped">
+
+            <thead style="background-color: #4f6f8f; color: white;">
+                <tr>
+                    <th width="20%">
+                        Patient Name
+                    </th>
+
+
+                    <th width="20%">
+                        Email Address
+                    </th>
+                    <th width="20%">
+                        Mobile Number
+                    </th>
+                    <th width="20%">
+                       Visited On
+                    </th>
+                    <th width="8%">
+
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+            {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(Item => item.UsersViewModel.FirstName) @Html.DisplayFor(Item => item.UsersViewModel.LastName)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(Item => item.UsersViewModel.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(Item => item.UsersViewModel.MobileNo)
+                        </td>
+                        <td>
+                        @item.CreatedDate.ToString("dd/MM/yyyy")
+                        </td>
+                        <td><a href="/Prescription/ViewDetail/@item.PrescriptionId" target="_blank" style="color:blue;text-decoration:underline">View Detail</a></td>
+
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    <div class="panel-footer">
+        @Html.Partial("_GridPaging", Model)
+    </div>
+    @Html.Partial("_MessageDialog", 1)
+</div>

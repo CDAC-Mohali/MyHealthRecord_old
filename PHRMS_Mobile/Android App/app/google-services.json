@@ -1,0 +1,49 @@
+// For security reason user have to register own integartion fcm json wit api keys
+// check fcm console for this
+{
+  "project_info": {
+    "project_number": "123456789123",
+    "firebase_url": "https://fcmpackagename-37cd1.firebaseio.com",
+    "project_id": "fcmpackagename-37cd1",
+    "storage_bucket": "fcmpackagename-37cd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "appid",
+        "android_client_info": {
+          "package_name": "com.pkg.healthrecordappname.appfinalname"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123456789123-db97nmujdquot6v7iv31tsoauccelria.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "APIFCMPackageKey"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123456789123-db97nmujdquot6v7iv31tsoauccelria.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

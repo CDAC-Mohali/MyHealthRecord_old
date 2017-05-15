@@ -1,0 +1,1225 @@
+body
+{
+	width:100%;
+	margin:auto;
+    font-size:100%;
+	text-size-adjust: auto;
+	border:0px solid black;
+	font-family:"Tahoma" , "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+	color: #333;
+}
+
+.landscape
+{
+	width:100%;
+	background-color:#fff;
+    font-size:100%;
+	border:0px solid red;
+}
+.imgborder
+{
+	background-color:#f5f5f5;
+	border:1px solid #e3e3e3;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.05);
+	-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.05);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,0.05);
+}
+
+
+.header_strip
+{
+	width:100%;
+	height:58px; /* new */
+	background-image:url(../images/top_bg_blue.png); /* new */
+	background-repeat:repeat-x; /* new */
+    border:0px solid red;
+}
+
+.header_container
+{
+	float: left; 
+    width: 50%;
+	height:auto;
+	border:0px solid black;
+    margin-top:5px;
+}
+
+.header_con_left
+{
+	height:auto;
+	float:left;
+	margin-top:-57px;
+}
+
+#header_con_left_title
+{
+	float:left;
+	margin-left:10px;
+	display:none;
+	color:#691430;
+	font-weight:400;
+	font-size:1.2em;
+}
+
+.swasthya_logo
+{
+ max-width:100%;
+ float:left;
+ border:none;
+}
+
+
+.header_con_right
+{
+    float:right;
+	border:0px solid red;
+    margin-right:45px;
+    
+}
+.header_con_right_search
+{
+  float:right;
+ border:0px solid red;
+}
+.header_con_inner_right
+{
+	height:auto;
+	float:right;
+	position:relative;
+	margin-top:-57px;
+	border:0px solid red;
+
+}
+.header_con_inner_right .header_right_upper
+{
+  width :auto;
+  height:auto;
+  float:left;
+  position:relative;
+  border:0px solid red;	
+	
+}
+
+.header_right_upper
+{
+  width:100%;
+  /*width:200px;*/
+  height:auto;
+  float:left;
+  position:relative;
+  border:0px solid red;	
+	
+}
+
+.header_login_srtip
+{
+	width:100%;
+	position:relative;
+	color:#fff;
+	border:0px solid blue;
+}
+
+ .header_inner_srtip
+{
+	height:45px;
+	/*background-color:#fdf1d4;*/
+	position:relative;
+	color:#fff;
+	border:0px solid blue;
+}
+
+.header_inner_srtip div
+{ 
+    display:inline-block;
+    float:left;
+	color:#fff;
+    position:relative; 
+    z-index:30;
+	cursor:pointer;
+	padding:0 10px;
+	height:40px;
+}
+
+
+
+.header_con_inner_right .header_right_lower
+{
+  /*width:100%;*/
+  clear:both;
+  width:auto;
+  height:auto;
+  float:right;
+  border:0px solid red;	
+	
+}
+
+.header_inner_srtip a
+ {
+	text-decoration:none;
+	color:#fff; 
+	
+ }
+ 
+.header_login_srtip a
+ {
+	text-decoration:none;
+	color:#fff; 
+	
+ }
+
+.login_img_div
+{
+	
+	height:auto;
+	float:left;
+	margin-left:15px;
+	border:0px solid red;
+}
+
+.login_img_div_search
+{
+	float:right;
+    width:24px;
+    height:24px;
+	margin-left:2px;
+	border:0px solid red;
+}
+
+.login_logo
+ {
+	max-width:100%; 
+	float:left;
+	border:none;
+    width:20px;
+height:20px;
+ }
+ 
+
+
+.header_menu_logo
+{
+	/*width:15%;*/
+	width:35px;
+	height:auto;
+    float:right;
+	position:relative;
+	margin-top:-40px;
+    border:0px solid red;
+}
+
+.menu_logo
+ {
+	max-width:100%; 
+	float:right;
+	margin:2%;
+	border:none;
+ }
+
+
+
+.header_right_lower
+{
+  /*width:100%;*/
+  width:200px;
+  height:auto;
+  float:left;
+  border:0px solid red;	
+	
+}
+
+.header_cdac_logo
+{
+/*width:30%;*/
+width:85px;
+height:auto;
+float:right;
+padding:10px 0px 8px 0px;
+border:0px solid black;
+}
+
+ .cdac_logo
+ {
+	max-width:100%; 
+	float:right;
+	margin:2%;
+	border:none;
+ }
+
+ .header_text
+{
+	padding-left:10px;
+    font-family:Segoe UI;
+    font-size:20px;
+    color: #162758;
+    height:auto;
+    margin-top:5px;
+}
+
+
+/* CSS for Clickable Login box at header starts*/
+
+#loginContainer 
+{
+    position:relative;
+    float:left;
+    font-size:12px;
+	border:0px solid red;
+}
+
+/* Login Button */
+#loginButton 
+{ 
+    
+    display:inline-block;
+    float:left;
+	color:#000000;
+    position:relative;
+    z-index:30;
+	margin-top:4px;
+    cursor:pointer;
+	border:0px solid red;
+}
+
+/* Login Button Text */
+#loginButton span 
+{
+    color:#000000; 
+	font-family:"Tahoma","Helvetica Neue",Helvetica, Arial, sans-serif;
+    font-size:12px;
+	
+    /*display:block*/
+	border:0px solid red;
+
+}
+
+#logoutButton 
+{ 
+    
+    display:inline-block;
+    float:left;
+	color:#000000;
+    position:relative;
+    z-index:30;
+    cursor:pointer;
+	margin-top:8px; 
+	border:0px solid red;
+}
+
+#registerButton 
+{ 
+    display:inline-block;
+    float:left;
+	color:#691430;
+    position:relative;
+    z-index:30;
+    cursor:pointer;
+	margin-top:4px; 
+	border:0px solid red;
+}
+.forgot_pass a
+{ 
+    
+    display:inline-block;
+    float:left;
+	color:#fff !important;
+    position:relative;
+    z-index:30;
+    cursor:pointer;
+	d
+	border:0px solid red;
+	font-size:11px !important; 
+	font-family:"Helvetica Neue",Helvetica, Arial, sans-serif ;
+}
+
+#registerButton span 
+{
+    color:#000000; 
+    font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+    font-size:12px; 
+	padding-left:0px;
+	border:0px solid red;
+}
+
+
+/* If the Login Button has been clicked */    
+#loginButton.active 
+{
+    border-radius:3px 3px 0 0;
+}
+
+#loginButton.active span 
+{
+    background-position:53px -76px;
+}
+
+/* A Line added to overlap the border */
+#loginButton.active em
+{
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:#d2e0ea;
+    bottom:-1px;
+}
+
+/* If the Register Button has been clicked */    
+#registerButton.active 
+{
+    border-radius:3px 3px 0 0;
+}
+
+#registerButton.active span 
+{
+    background-position:53px -76px;
+}
+
+/* A Line added to overlap the border */
+#registerButton.active em
+{
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:#d2e0ea;
+    bottom:-1px;
+}
+
+/* Login Box */
+#loginBox 
+{
+    position:absolute;
+    top:40px;
+    left:0px;
+    display:none;
+    z-index:999999;
+	border:0px solid black;
+    background:#192b39;
+
+}
+
+/* Registration Box */
+
+#registerBox 
+{
+    position:absolute;
+    top:40px;
+    left:0px;
+    display:none;
+    z-index:999999;
+	border:0px solid black;
+    background:#192b39;
+}
+
+
+/* Registration Form */
+
+#registerForm 
+{
+    width:150px;
+    border-radius:3px 3px 3px 3px;
+    -moz-border-radius:3px 3px 3px 3px;
+    margin-top:-1px;
+	background:#192b39;/*new */
+    padding:6px;
+	border:0px solid red;
+}
+
+#registerForm fieldset 
+{
+    margin:0 0 0 0;
+    display:block;
+    border:0;
+    padding:0;
+}
+
+fieldset#registerbody 
+{  
+	background:#192b39; 
+    border-radius:3px;
+    -moz-border-radius:3px;
+    padding:10px 13px;
+    margin:0;
+}
+
+#registerForm #checkbox 
+{
+    width:auto;
+    margin:1px 9px 0 0;
+    float:left;
+    padding:0;
+    border:0;
+    *margin:-3px 9px 0 0; /* IE7 Fix */
+}
+
+#registerbody label 
+{
+    color:#3a454d;
+    margin:9px 0 0 0;
+    display:block;
+    float:left;
+}
+
+#registerForm #registerbody fieldset label
+{
+    display:block;
+    float:none;
+    margin:0 0 6px 0;
+}
+
+/* Default Input */
+#registerForm input 
+{
+    width:90%;
+    border:1px solid #899caa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    color:#3a454d;
+    font-weight:normal;
+	font-style:italic;
+	margin-bottom:9px;
+    padding:8px 8px;
+    font-size:12px;
+}
+
+/* Register Button */
+#registerForm #register 
+{
+    width:auto;
+    float:left;
+	background-color:#262626;
+    color:#fff;
+    padding:7px 10px 8px 10px;
+	font-style:normal;
+    margin:0 12px 0 0;
+    cursor:pointer;
+	border:0px solid #fff;
+    *padding:7px 2px 8px 2px; /* IE7 Fix */
+}
+
+#registerForm span 
+{
+    text-align:center;
+    display:block;
+    padding:7px 0 4px 0;
+}
+
+#registerForm span a 
+{
+    color:#3a454d;
+    text-shadow:1px 1px #fff;
+    font-size:12px;
+}
+
+/* Login Form */
+
+#loginForm 
+{
+    width:150px;
+    border-radius:3px 3px 3px 3px;
+    -moz-border-radius:3px 3px 3px 3px;
+    margin-top:-1px;
+	background:#192b39;/*new */
+    padding:6px;
+	border:0px solid red;
+}
+
+#loginForm fieldset 
+{
+    margin:0 0 0 0;
+    display:block;
+    border:0;
+    padding:0;
+}
+
+fieldset#body 
+{
+   /* background:#87898A;*/
+	background:#192b39; /*new */
+    border-radius:3px;
+    -moz-border-radius:3px;
+    padding:10px 13px;
+    margin:0;
+}
+
+#loginForm #checkbox 
+{
+    width:auto;
+    margin:1px 9px 0 0;
+    float:left;
+    padding:0;
+    border:0;
+    *margin:-3px 9px 0 0; /* IE7 Fix */
+}
+
+#body label 
+{
+    color:#3a454d;
+    margin:9px 0 0 0;
+    display:block;
+    float:left;
+}
+
+#loginForm #body fieldset label
+{
+    display:block;
+    float:none;
+    margin:0 0 6px 0;
+}
+
+/* Default Input */
+#loginForm input 
+{
+    width:90%;
+    border:1px solid #899caa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    color:#3a454d;
+    font-weight:normal;
+	font-style:italic;
+	margin-bottom:9px;
+    padding:8px 8px;
+    font-size:12px;
+}
+
+/* Sign In Button */
+#loginForm #login 
+{
+    width:auto;
+    float:left;
+	background-color:#262626;
+    color:#fff;
+    padding:7px 10px 8px 10px;
+	font-style:normal;
+    margin:0 12px 0 0;
+    cursor:pointer;
+	border:0px solid #fff;
+    *padding:7px 2px 8px 2px; /* IE7 Fix */
+}
+
+/* Forgot your password */
+#loginForm span 
+{
+    text-align:center;
+    display:block;
+    padding:7px 0 4px 0;
+}
+
+#loginForm span a 
+{
+    color:#3a454d;
+    text-shadow:1px 1px #fff;
+    font-size:12px;
+}
+
+input:focus 
+{
+    outline:none;
+}
+
+.forgot_pass
+{
+	width:55%;
+	float:left;
+	border:0px solid black;
+	font-size:9px;
+	padding-top:8px;
+	font-family:Verdana, Geneva, sans-serif;
+	
+}
+
+
+
+/* CSS for Clickable Login box ends */
+
+.img_static_bar
+{
+  width:65%;
+  height:40px;
+  margin:auto;
+  margin-top:-40px;
+  margin-bottom:20px;
+  border:0px solid red;
+  position:relative;
+  max-width:1000px;
+  background-position:center;
+  z-index:999999;
+
+}
+
+.static_bar_left
+{
+  width:45%;
+  height:40px;
+  float:left;
+  font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+  color:#fff;
+  z-index:999999;
+  border:0px solid black;
+}
+
+.download_img_div
+{
+width:15%;
+float:left;
+height:auto;
+border:0px solid black;
+}
+
+
+.download_img
+{
+float:left;
+max-width:100%;
+border:none;
+
+}
+
+
+.download_text
+{
+width:80%;
+float:left;
+font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+font-size:12px;
+border:0px solid red;
+padding-top:20px;
+padding-left:0px;
+border:0px solid black;
+}
+
+
+.static_bar_right
+{
+ width:50%;
+ height:40px;
+ float:right;
+ z-index:999999;
+ border:0px solid black;
+}
+
+.static_bar_right_new
+{
+ width:50%;
+ height:40px;
+ float:right;
+ padding-top:10px;
+ z-index:999999;
+ border:0px solid black;
+}
+
+
+
+.search_input
+{
+	width:60%;
+	float:right;
+	padding:.5%;
+	border:none;
+	background-color:#FFF;
+	font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+	color:#969798;
+	font-style:italic;
+	font-size:90%;
+	border:1px solid #ccc;
+   
+}
+
+
+.search_input_div
+{
+  width:80%;
+  float:left;
+  height:auto;
+  border:0px solid blue;
+}
+
+.search_input_box
+{
+  width:100%;
+  height:20px;
+  padding-top:5px;
+  border:none;
+  color:#333;
+  font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+  font-size:12px;
+  font-style:italic;
+  padding-left:5px;
+}
+
+.search_img_div
+{
+float:right;
+height:auto;
+border:0px solid blue;
+margin-left:14px;
+margin-right:45px;
+}
+
+.search_img
+{
+float:right;
+width:18px;
+height:18px;
+border:none;
+mar
+}
+
+.links_div
+{
+	width:100%;
+	float:left;
+	margin-top:40px;
+	border:0px solid black;
+}
+
+.links_div_new
+{
+	width:100%;
+	float:left;
+	margin-top:20px;
+	border:0px solid black;
+}
+
+
+
+
+.links_div_inner
+{
+	width:65%;
+	max-width:1000px;
+	background-position:center;
+	margin:auto;
+	font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+	font-size:12px;
+	border:0px solid red;
+}
+
+.links_div_inner_new
+{
+	width:65%;
+	max-width:1000px;
+	background-position:center;
+	margin:auto;
+	font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+	font-size:12px;
+	border-top:1px solid #ccc;
+}
+
+
+.links_div_inner_new a
+{
+
+	text-decoration:none;
+	color:#333;
+}
+
+
+.links_div_inner_new a:hover
+{
+	text-decoration:none;
+	color:#986215;
+}
+
+
+.links_div_inner a
+{
+
+	text-decoration:none;
+	color:#333;
+}
+
+
+.links_div_inner a:hover
+{
+	text-decoration:none;
+	color:#986215;
+}
+
+
+
+.dashboard_panel
+{
+	width:65%;
+	height:auto;
+	max-width:1000px;
+	margin:auto;
+	margin-top:10px;
+	border:0px solid black;
+}
+
+.dashboard_divs
+{
+	width:15%;
+	display:block;
+	float:left;
+	margin:2%;
+	border:0px solid black;
+	
+}
+
+.dashboard_text
+{
+  width:90%;
+  margin:auto;
+  text-align:center;
+  font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+  font-size:11px;
+  border:0px solid red;
+}
+
+.dashboard_text a
+{
+  text-decoration:none;
+  text-align:center;
+  color:#333;
+}
+
+.dashboard_text a:hover
+{
+	text-decoration:none;
+    color:#986215;
+}
+ 
+
+ .view_all
+{
+	width:100%;
+	margin:auto;
+	border:0px solid black;
+}
+
+.view_all_inner
+{
+	width:65%;
+	margin:auto;
+	max-width:1000px;
+	background-position:center;
+	border:0px solid black;
+}
+
+.view_all_text
+{
+  width:40%;
+  float:right;
+  font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+  font-size:85%;
+  color:#B75A59;
+  text-align:right;
+  padding-right:10px;
+  /*font-style:italic;*/
+  border:0px solid black;
+}
+
+.view_all_text a
+{
+  text-decoration:none;font-weight:bold;
+   color:#0495D4;
+}
+
+
+.view_all_text a:hover
+{
+  text-decoration:none;
+   color:#0495D4;
+}
+
+
+.footer_strip
+{
+	width:100%;
+	height:5px;
+	float:left;
+	background-color:#E9B73B;
+	margin-top:10px;
+}
+
+.footer_band
+{
+	width:100%;
+	/*background-color:#F7EED7;*/
+/*	background-image:url(../images/footer.png);
+	background-repeat:repeat-x;*/
+	border:0px solid red;
+    
+}
+
+.footer_band_upper
+{
+	width:100%;
+    background-color:#192b39;
+    
+}
+
+#updates_ads 
+{
+ position: absolute;
+ z-index: 1;
+ margin-bottom:10px;
+}
+
+.footer_band_upper_updates
+{
+   width:100%;  
+   background: #942911;
+   opacity: 0.7;
+   border: 0px solid #F00;
+   height: 30px;
+}
+
+.footer_container_upper_updates
+{
+	width:80%;
+	margin:auto;
+    
+	color:#fff;
+    font-size:13px;
+    font-family:Tahoma;
+}
+
+.footer_container
+{
+	width:90%;
+	color:#333;
+    font-size:10px;
+    font-family:Tahoma;
+    background-position:center;
+
+margin-left: 5%;
+
+font-family: Tahoma;
+margin-right: 5%;
+
+
+
+}
+
+.footer_container_upper
+{
+	width:90%;
+	margin-left:5%;
+    margin-right:5%;
+    height: 40px;
+	color:#fff;
+    font-size:11px;
+    font-family:Tahoma;
+    
+}
+
+.footer_band_feature
+{
+	width:100%;
+    background-color:#fff;
+    
+}
+
+.footer_container_feature
+{
+	width:80%;
+	margin:auto;
+    color:#192b39;
+    font-size:13px;
+    font-family:Tahoma;
+    
+}
+
+.footer_container_upper_menu 
+{
+   text-align:center;
+}
+
+.footer_container_upper_menu ul {
+    float: left;
+    display: inline;
+    border: 0px solid #F00;
+}
+
+.footer_container_upper_menu ul li {
+    display: inline;
+    float: left;
+    min-height: 30px;
+    border: 0px solid #F00;
+}
+
+.footer_container_upper_menu a {
+    padding: 0px 10px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer_container_left
+{
+	width:20%;
+	float:left;
+	text-align:left;
+	padding-left:1%;
+	padding-top:1%;
+	padding-bottom:1%;
+	
+}
+
+.footer_container_middle
+{
+	width:50%;
+    float:left;
+	text-align:center;
+	padding-left:1%;
+	padding-top:1%;
+	padding-bottom:1%;
+    
+}
+
+.footer_container_right
+{
+	width:20%;
+    float:right;
+	text-align:right;
+	padding-right:1%;
+	padding-bottom:1%;
+	padding-top:1%;
+
+}
+
+.footer_container_left a
+{
+	text-decoration:none;
+	color:#000;
+}
+
+.footer_container_left a:hover
+{
+	text-decoration:none;
+	color:#986215;
+}
+
+
+
+.menu_back_color
+{
+	margin-top:15px;
+  margin-left:20px; 
+  font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+  font-size:12px;
+  color:#2D5C77;
+}
+
+
+.thumbnails_repeater
+{
+        float:left;
+		width:100%;       
+        background-color:#FFFFFF;/*#616B61*/	
+        padding:10px 0px 10px 0px;
+        margin:20px auto;
+        text-align:center;
+        border:1px solid #B3BC86;
+        -moz-box-shadow:inset 0 0 10px #7E926A;
+		-webkit-box-shadow:inset 0 0 10px #7E926A;
+		box-shadow:inset 0 0 10px #7E926A;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+}
+
+.thumbdiv_repeater
+{
+        float:left;
+        width: 80px;
+        height:80px;
+        margin: 0px 5px 0px 5px;
+        text-align:center;
+        border:1px solid #666666;
+        cursor:pointer;
+        -moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+}
+        
+.thumbdiv_repeater:hover
+{
+        background-color: #666666;
+}
+        
+.thumbdiv_repeater_sel
+{
+      	width: 70px;
+        height: 70px;
+        border:5px solid #666666;
+}
+
+.img1
+{
+        width: 70px;
+        height: 70px;
+        border:0px solid #B3BC86;
+        margin:5px;
+}
+
+.link_dashboard
+{
+	color:#691430 !important;
+	display:inline-block;
+    float:left;
+    font-weight:bold;
+    padding:6px;
+	position:relative;
+    z-index:30;
+	margin-top:10px;
+    cursor:pointer;
+	border:0px solid red;	
+}
+
+.link_dashboard:hover
+{	 
+	/*color:#fff !important;*/
+	background-color:#fdf1d4;
+	text-decoration: none;	
+}
+
+
+
+
+.row_links {
+    color: #FFF;
+    font-size: 11px;
+    font-family: Tahoma;
+    background-color: #192B39;
+    height: 30px;
+}
+
+.row_links ul {
+    list-style-type: none;
+    margin: 5px 0px 0px;
+    padding: 0px;
+}
+
+.row_links li {
+    display: inline;
+}
+
+.row_links a {
+    padding: 0px 10px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.row_links_footer {
+    color: #192B39;
+    font-size: 10px;
+    font-family: Tahoma;
+    background-color: #FFF;
+}
+
+
+.imgouter 
+{
+  	text-align: justify;
+vertical-align: middle;
+border:1px solid #d4d4d4;
+font-family: Tahoma;
+font-size: 9px;
+color: #333 ;
+
+
+}

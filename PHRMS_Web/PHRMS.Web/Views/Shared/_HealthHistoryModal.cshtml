@@ -1,0 +1,158 @@
+﻿<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header text-center">
+                <h4 class="modal-title">Print Report</h4>
+                <small class="font-bold">Select Report Options</small>
+            </div>
+            <div class="modal-body content animate-panel">
+                <form method="get" class="form-horizontal" id="frmHealthHistory">
+                    <label>Select the information to include in your report:</label>
+                    <div><a href="javascript:void(0);" style="color:limegreen;text-decoration:underline">Select all</a>|<a href="javascript:void(0);" style="color:limegreen;text-decoration:underline">Deselect all</a></div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" checked="checked" disabled="disabled" value="1" id="inlineCheckbox1"> Personal Information
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="2" id="inlineCheckbox2"> Emergency Information
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="3" id="inlineCheckbox3"> Employer Information
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="4" id="inlineCheckbox4"> Insurance Information
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                @*<input type="checkbox" value="5" id="inlineCheckbox5"> Legal Information*@
+                                <input type="checkbox" value="5" id="inlineCheckbox5" /> Preferred Hospital
+                            </label>
+                        </div>
+                        @*<div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="6" id="inlineCheckbox6"> Preferences and Special Needs
+                            </label>
+                        </div>*@
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="7" id="inlineCheckbox7"> Allergies
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="8" id="inlineCheckbox8"> Immunizations
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="9" id="inlineCheckbox9"> Medications
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="10" id="inlineCheckbox10"> Procedures
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="11" id="inlineCheckbox11">Lab Tests
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="12" id="inlineCheckbox12"> Problems
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="13" id="inlineCheckbox13"> Wellness - Activities
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="14" id="inlineCheckbox14"> Wellness - Blood Pressure
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="15" id="inlineCheckbox15"> Wellness - Blood Glucose
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="16" id="inlineCheckbox16"> Wellness - BMI
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                @*<button type="button" class="btn btn-primary">View Report</button>*@
+                <a href="javascript:void(0);" onclick="ExportHealthHistory();" class="btn btn-primary">View Report</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    //function SaveHealthHistory() {
+
+    //    var str = "";
+    //    var del = "";
+    //    $("input[type='checkbox']", "#frmShareHealthHistory").each(function (idx, ui) {
+    //        if ($(this).is(':checked')) {
+    //            str = str + del + $(this).val();
+    //            del = ",";
+    //        }
+    //    });
+       
+    //    $('#sharingModal').modal('toggle');
+    //    $.ajax({
+    //        type: "Post",
+    //        contentType: "application/json; charset=utf-8",
+    //        url: ROOT + "Common/SendHealthReport",
+    //        //    data: '{"strModules" : "' + str + '",    "EmailAddress" : "' + $("#EmailAddress").val() + '", "PhoneNumber" :"' + $("#PhoneNumber").val() + '"}',
+    //        data: JSON.stringify({ strChecks: str, EmailAddress: $("#EmailAddress").val(), PhoneNumber: $("#PhoneNumber").val() }),
+           
+    //        // data: JSON.stringify(str),
+    //        dataType: "json",
+    //        success: function (data) {
+    //            swal({
+    //                title: "Health History Shared",
+    //                text: "URL: http://10.228.12.146:8082/share/" + data
+    //            });
+    //        },
+    //        error: function (result) {
+    //            alert(result);
+    //        }
+    //    });
+    //}
+
+
+</script>

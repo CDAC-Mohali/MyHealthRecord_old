@@ -1,0 +1,48 @@
+﻿@model List<EMRViewModels.LabTestViewModel>
+<div class="gj-grid-wrapper">
+    <table id="grid" class="footable table table-bordered table-hover gj-grid-table">
+        <thead>
+            <tr>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 200px;text-align: left;">
+                    <div style="float: left">Test Name</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 200px; text-align: left;">
+                    <div style="float: left">Test Performed On</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+
+                    <div style="float: left">Result/Unit</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+                    <div style="float: left">Comments</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+                    <div style="float: left">Attachments</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Item in Model)
+            {
+                <tr class="">
+                    <td style="text-align: left;"><div data-role="display">@Item.TestName</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.strPerformedDate</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.Result/@Item.Unit</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.Comments</div></td>
+                    <td style="text-align: left;">
+                        <div data-role="display" class="lightBoxGallery">
+                            @foreach (var SubItem in Item.lstFileModels)
+                            {
+                                <a href="@Url.Content("~/")Images\LabReports\@SubItem.FileName" data-gallery=""  target="_blank">
+                                    <img name="@SubItem.FileName" src="@Url.Content("~/")Images\LabReports\@SubItem.FileName" width="50%">
+                                </a>
+                            }
+                        </div>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+</div>

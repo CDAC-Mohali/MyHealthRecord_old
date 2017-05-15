@@ -1,0 +1,231 @@
+﻿@{
+    ViewBag.Title = "_MapRepresentation";
+    Layout = null;
+}
+
+@model  PHRMSEMR.Models.PatientCustomModel
+<script>
+
+    $(document).ready(function () {
+
+        var weightdata = [];
+        var temp = {};
+        @{PHRMSEMR.Models.WeekModel obj = ViewBag.Data; }
+        temp["value"] = @obj.Monday;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.Tuesday;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.Wednesdaty;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.Thursday;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.Friday;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.Saturday;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.Sunday;
+        weightdata.push(temp);
+        temp = {};
+
+
+        $("#DoctorRegistration").insertFusionCharts({
+            type: 'msline',
+            renderAt: 'chart-container',
+            //  width: '550',
+            height: '350',
+            dataFormat: 'json',
+            dataSource: {
+                "chart": {
+                    "caption": "Number of Registrations last week",
+                    //    "subCaption": "Bakersfield Central vs Los Angeles Topanga",
+                    "captionFontSize": "14",
+                    "subcaptionFontSize": "14",
+                    "subcaptionFontBold": "0",
+                    "paletteColors": "#0075c2,#1aaf5d",
+                    "bgcolor": "#ffffff",
+                    "showBorder": "0",
+                    "showShadow": "0",
+                    "showCanvasBorder": "0",
+                    "usePlotGradientColor": "0",
+                    "legendBorderAlpha": "0",
+                    "legendShadow": "0",
+                    "showAxisLines": "0",
+                    "showAlternateHGridColor": "0",
+                    "divlineThickness": "1",
+                    "divLineIsDashed": "1",
+                    "divLineDashLen": "1",
+                    "divLineGapLen": "1",
+                    "xAxisName": "Day",
+                    "showValues": "0"
+                },
+                "categories": [
+                    {
+                        "category": [
+                            { "label": "Mon" },
+                            { "label": "Tue" },
+                            { "label": "Wed" },
+                           { "label": "Thu" },
+                            { "label": "Fri" },
+                            { "label": "Sat" },
+                            { "label": "Sun" },
+
+                        ]
+                    }
+                ],
+                "dataset": [
+                    {
+                        "seriesname": "Patients",
+                        "data": weightdata
+                    }
+                ],
+                "trendlines": [
+                    {
+                        "line": [
+                            {
+                                "startvalue": "17022",
+                                "color": "#6baa01",
+                                "valueOnRight": "1",
+                                "displayvalue": "Average"
+                            }
+                        ]
+                    }
+                ]
+            }
+
+        });
+    });
+
+
+</script>
+
+<script>
+    $(document).ready(function () {
+
+        $.ajax({
+
+            type: "POST",
+
+            contentType: "application/json; charset=utf-8",
+
+            data: '{"Id" :"' + Id + '"}',
+            //
+            url: ROOT + "Appointments/GetPatientLastWeekDetail",
+
+            success: function (data) {
+                if (data) {
+                    var weightdata = [];
+                    var temp = {};
+                    for (var i in data) {
+
+                        temp["value"] = parseInt(data[i]);
+                        weightdata.push(temp);
+                        temp = {};
+                    }
+                }
+
+
+                $("#DoctorRegistration").updateFusionCharts({
+                    type: 'msline',
+                    renderAt: 'chart-container',
+                    //  width: '550',
+                    height: '350',
+                    dataFormat: 'json',
+                    dataSource: {
+                        "chart": {
+                            "caption": "Number of Registrations last week",
+                            //    "subCaption": "Bakersfield Central vs Los Angeles Topanga",
+                            "captionFontSize": "14",
+                            "subcaptionFontSize": "14",
+                            "subcaptionFontBold": "0",
+                            "paletteColors": "#0075c2,#1aaf5d",
+                            "bgcolor": "#ffffff",
+                            "showBorder": "0",
+                            "showShadow": "0",
+                            "showCanvasBorder": "0",
+                            "usePlotGradientColor": "0",
+                            "legendBorderAlpha": "0",
+                            "legendShadow": "0",
+                            "showAxisLines": "0",
+                            "showAlternateHGridColor": "0",
+                            "divlineThickness": "1",
+                            "divLineIsDashed": "1",
+                            "divLineDashLen": "1",
+                            "divLineGapLen": "1",
+                            "xAxisName": "Day",
+                            "showValues": "0"
+                        },
+                        "categories": [
+                            {
+                                "category": [
+                                    { "label": "Mon" },
+                                    { "label": "Tue" },
+                                    { "label": "Wed" },
+                                    { "label": "Thu" },
+                                    { "label": "Fri" },
+                                    { "label": "Sat" },
+                                    { "label": "Sun" },
+
+                                ]
+                            }
+                        ],
+                        "dataset": [
+                            {
+                                "seriesname": "Patients",
+                                "data": weightdata
+                            }
+                           ],
+                        "trendlines": [
+                            {
+                                "line": [
+                                    {
+                                        "startvalue": "17022",
+                                        "color": "#6baa01",
+                                        "valueOnRight": "1",
+                                        "displayvalue": "Average"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+
+                });
+
+            }
+
+        });
+
+
+
+    });
+</script>
+
+
+
+
+<div class="col-lg-6">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Patient Registration
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-8">
+                    <div id="DoctorRegistration" style="height: 425px;"></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

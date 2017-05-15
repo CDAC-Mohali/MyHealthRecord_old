@@ -1,0 +1,79 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PHRMS | Personal Health Record Management System @ViewBag.Title</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- Primary vendor style -->
+    <link href="~/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/vendor/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
+    <link href="~/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="~/icons/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    
+    <!-- Add local styles, mostly for plugins css file -->
+    @if (IsSectionDefined("Styles"))
+    {@RenderSection("Styles", required: false)}
+
+    <script src="~/vendor/jquery/dist/jquery.min.js"></script>
+
+
+    <!-- Primary HOMER style -->
+    <link href="~/content/style.css" rel="stylesheet" />
+    <script>
+        var ROOT = "@Url.Content("~/")";
+    </script>
+</head>
+<body >
+
+    <!-- Simple splash screen-->
+    <div class="splash"> <div class="color-line"></div><div class="splash-title"><h1>PHRMS</h1><p>Personal Health Record Management System</p><img src="~/Images/loading-bars.svg" width="64" height="64" /> </div> </div>
+    <!--[if lt IE 7]>
+    <p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Header -->
+    <div id="header">
+        @Html.Partial("_Header")
+    </div>
+
+    <!-- Navigation -->
+    <aside id="menu">
+        @Html.Partial("_Navigation")
+    </aside>
+
+    <!-- Main view  -->
+    <div id="wrapper">
+        <section>
+            @RenderBody()
+
+            <!-- Right Sidebar -->
+            <!-- Health History Modal -->
+            <!-- Sharing History Modal -->
+            <!-- Footer -->
+            @Html.Partial("_Footer")
+        </section>
+    </div>
+
+    <!-- Section for main scripts render -->
+
+    <script src="~/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/vendor/metismenu/dist/metismenu.min.js"></script>
+    <script src="~/vendor/icheck/icheck.min.js"></script>
+    <script src="~/vendor/peity/jquery.peity.min.js"></script>
+    <script src="~/vendor/sparkline/index.js"></script>
+    <script src="~/scripts/homer.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    @*<script src="~/js/jquery-ui-1.10.3.custom.min.js"></script>*@
+    @*<script src="~/vendor/summernote/dist/summernote.js"></script>*@
+    
+    <!-- Handler for local scripts -->
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LabTestTableViewController">
+            <connections>
+                <outlet property="searchBar" destination="jHm-E5-E3a" id="t2I-ma-hPj"/>
+                <outlet property="testNameTableView" destination="YY7-df-1yb" id="RpN-XV-w2q"/>
+                <outlet property="view" destination="uU0-Nd-WpU" id="b7V-R0-QCa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uU0-Nd-WpU">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YY7-df-1yb">
+                    <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="w7G-Wy-OSe"/>
+                        <outlet property="delegate" destination="-1" id="UtC-Pz-9yV"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTe-8H-yZ2">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Pdf-fL-FUs"/>
+                        <constraint firstAttribute="width" constant="50" id="kXs-al-nRu"/>
+                    </constraints>
+                    <state key="normal" title="Back" backgroundImage="btnBackground"/>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="Tix-Nh-AO7"/>
+                    </connections>
+                </button>
+                <searchBar contentMode="redraw" placeholder="Type minimum two Characters" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jHm-E5-E3a">
+                    <rect key="frame" x="50" y="0.0" width="364" height="44"/>
+                    <color key="backgroundColor" red="0.25369424190000001" green="0.39996370060000003" blue="0.77833017670000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="4mG-wk-4aE"/>
+                        <constraint firstAttribute="height" constant="44" id="a6a-4P-iKE"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="4mG-wk-4aE"/>
+                            <exclude reference="a6a-4P-iKE"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="a6a-4P-iKE"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="4mG-wk-4aE"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ch7-Za-mL7"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jHm-E5-E3a" secondAttribute="trailing" id="0eL-Pb-A01"/>
+                <constraint firstItem="YY7-df-1yb" firstAttribute="leading" secondItem="uU0-Nd-WpU" secondAttribute="leading" id="44D-IQ-wHJ"/>
+                <constraint firstItem="YY7-df-1yb" firstAttribute="top" secondItem="jHm-E5-E3a" secondAttribute="bottom" id="4ph-Ke-APf"/>
+                <constraint firstItem="jHm-E5-E3a" firstAttribute="top" secondItem="uU0-Nd-WpU" secondAttribute="top" id="Afs-tW-tkk"/>
+                <constraint firstAttribute="trailing" secondItem="YY7-df-1yb" secondAttribute="trailing" id="D5c-hR-lRC"/>
+                <constraint firstItem="jHm-E5-E3a" firstAttribute="top" secondItem="uU0-Nd-WpU" secondAttribute="top" id="Ihb-HX-AMZ"/>
+                <constraint firstAttribute="trailing" secondItem="jHm-E5-E3a" secondAttribute="trailing" id="LQj-uI-Oy4"/>
+                <constraint firstAttribute="trailing" secondItem="YY7-df-1yb" secondAttribute="trailing" id="QEf-5h-WoS"/>
+                <constraint firstItem="YY7-df-1yb" firstAttribute="top" secondItem="jHm-E5-E3a" secondAttribute="bottom" id="QRH-zs-QYR"/>
+                <constraint firstItem="YY7-df-1yb" firstAttribute="leading" secondItem="uU0-Nd-WpU" secondAttribute="leading" id="QVi-VQ-C00"/>
+                <constraint firstItem="rTe-8H-yZ2" firstAttribute="top" secondItem="uU0-Nd-WpU" secondAttribute="top" id="SCm-Ng-NaW"/>
+                <constraint firstAttribute="bottom" secondItem="YY7-df-1yb" secondAttribute="bottom" id="TNB-pA-3U6"/>
+                <constraint firstItem="rTe-8H-yZ2" firstAttribute="leading" secondItem="uU0-Nd-WpU" secondAttribute="leading" id="ZNf-4b-pfO"/>
+                <constraint firstItem="YY7-df-1yb" firstAttribute="centerX" secondItem="uU0-Nd-WpU" secondAttribute="centerX" id="bV8-3y-XY2"/>
+                <constraint firstItem="YY7-df-1yb" firstAttribute="centerX" secondItem="uU0-Nd-WpU" secondAttribute="centerX" id="kal-Nd-y43"/>
+                <constraint firstItem="jHm-E5-E3a" firstAttribute="leading" secondItem="rTe-8H-yZ2" secondAttribute="trailing" id="myW-Cb-TFC"/>
+                <constraint firstAttribute="bottom" secondItem="YY7-df-1yb" secondAttribute="bottom" id="rgk-sT-ssZ"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0eL-Pb-A01"/>
+                    <exclude reference="Afs-tW-tkk"/>
+                    <exclude reference="Ihb-HX-AMZ"/>
+                    <exclude reference="LQj-uI-Oy4"/>
+                    <exclude reference="44D-IQ-wHJ"/>
+                    <exclude reference="4ph-Ke-APf"/>
+                    <exclude reference="D5c-hR-lRC"/>
+                    <exclude reference="QEf-5h-WoS"/>
+                    <exclude reference="QRH-zs-QYR"/>
+                    <exclude reference="QVi-VQ-C00"/>
+                    <exclude reference="TNB-pA-3U6"/>
+                    <exclude reference="bV8-3y-XY2"/>
+                    <exclude reference="kal-Nd-y43"/>
+                    <exclude reference="rgk-sT-ssZ"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="0eL-Pb-A01"/>
+                    <include reference="Ihb-HX-AMZ"/>
+                    <include reference="44D-IQ-wHJ"/>
+                    <include reference="4ph-Ke-APf"/>
+                    <include reference="QEf-5h-WoS"/>
+                    <include reference="bV8-3y-XY2"/>
+                    <include reference="rgk-sT-ssZ"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="Afs-tW-tkk"/>
+                    <include reference="LQj-uI-Oy4"/>
+                    <include reference="D5c-hR-lRC"/>
+                    <include reference="QRH-zs-QYR"/>
+                    <include reference="QVi-VQ-C00"/>
+                    <include reference="TNB-pA-3U6"/>
+                    <include reference="kal-Nd-y43"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="384" y="132"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btnBackground" width="250" height="100"/>
+    </resources>
+</document>

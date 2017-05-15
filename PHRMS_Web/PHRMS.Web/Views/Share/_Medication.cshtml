@@ -1,0 +1,72 @@
+﻿@model List<PHRMS.ViewModels.MedicationViewModel>
+<div class="gj-grid-wrapper">
+    <table id="grid" class="footable table table-bordered table-hover gj-grid-table" data-source="/Allergies/GetAllergiesGridList">
+        <thead>
+            <tr>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 200px;text-align: left;">
+                    <div style="float: left">Medicine Name</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 40px; text-align: left;">
+                    <div style="float: left"> Having this medication now?</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+
+                    <div style="float: left">Date First Prescribed</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+                    <div style="float: left">Route</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 25px; text-align: left;">
+                    <div style="float: left">Strength</div>
+                </th>
+
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+                    <div style="float: left">Dosage Taken</div>
+                </th>
+
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+                    <div style="float: left">Frequency Taken</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+                    <div style="float: left">Label Instructions</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+                    <div style="float: left">Notes</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 10px; text-align: left;">
+                    <div style="float: left">Attachments</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Item in Model)
+            {
+                <tr class="">
+                    <td style="text-align: left;"><div data-role="display">@Item.MedicineName</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.strTakingMedicine</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.strPrescribedDate</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.strRoute</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.Strength</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.strDosValue  @Item.strDosUnit</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.strFrequency</div></td>
+
+                    <td style="text-align: left;"><div data-role="display">@Item.LabelInstructions</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.Notes</div></td>
+                    <td style="text-align: left;">
+                        <div data-role="display" class="lightBoxGallery">
+                            @foreach (var SubItem in Item.lstFileModels)
+                            {
+                                <a href= "@Url.Content("~/")Images\Medidocs\@SubItem.FileName" data-gallery=""  target="_blank">
+                                    <img name="@SubItem.FileName" src="@Url.Content("~/")Images\Medidocs\@SubItem.FileName" width="50%">
+                                </a>
+                            }
+                        </div>
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+</div>

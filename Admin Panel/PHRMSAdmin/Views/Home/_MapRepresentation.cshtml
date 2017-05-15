@@ -1,0 +1,533 @@
+﻿@{
+    ViewBag.Title = "_MapRepresentation";
+    Layout = null;
+}
+@model  List<PHRMSAdmin.Models.PatientCustomModel>
+<script>
+
+    $(document).ready(function () {
+
+        $("#Map_Reprentation").insertFusionCharts({
+            type: 'maps/india',
+            renderAt: 'chart-container',
+            width: '525',
+            height: '625',
+            dataFormat: 'json',
+            dataSource: {
+                "chart": {
+                    // "caption": "Number of Registrations",
+                    "theme": "fint",
+                    "formatNumberScale": "0",
+                    //  "numberSuffix": "M"
+                    "showLabels": "1",
+                    "labelSepChar": ": ",
+                    "includeValueInLabels": "1"
+                },
+                "colorrange": {
+                    "color": [
+                        {
+                            "minvalue": "0",
+                            "maxvalue": "1",
+                            "code": "#E0F0E0",
+                            "displayValue": "Equals 0"
+                        },
+                        {
+                            "minvalue": "1",
+                            "maxvalue": "500",
+                            "code": "#74bb74",
+                            "displayValue": "Below 500"
+                        }, {
+                            "minvalue": "500",
+                            "maxvalue": "1000",
+                            "code": "#0f5a0f",
+                            "displayValue": "500-1000"
+                        }, {
+                            "minvalue": "1000",
+                            "maxvalue": "10000",
+                            "code": "#1e441f",
+                            "displayValue": "Above 1000"
+                        }]
+                },
+                "data": [
+
+                  @foreach (var Item in Model)
+                  {
+                            <text>
+                        {</text>
+                             <text>   id: '@Item.StateId',
+                            value: '@Item.StateCount.ToString()',
+
+                            showLabel: "1",
+                            @*displayValue: 'Total : @Item.Count Male: @Item.MaleCount Female: @Item.FeMaleCount Others: @Item.OthersCount'*@
+                            </text>
+                         <text>
+                        },
+                        </text>
+                  }
+                ]
+            },
+            "events": {
+                "entityRollover": function (evt, data) {
+                    // alert(JSON.stringify(data));
+
+                },
+                "entityRollout": function (evt, data) {
+                    //$("#FullIndia").show();
+                    //$("#SingleState").hide();
+                    //  $("#message").text("Total Registration - 500");
+                },
+                "entityClick": function (evt, data) {
+                    $("#FullIndia").hide();
+                    $("#SingleState").show();
+                    GetData(data.id);
+                },
+            }
+        });
+    });
+
+
+</script>
+<script>
+
+    $(document).ready(function () {
+
+        var weightdata = [];
+        var temp = {};
+        @{PHRMSAdmin.Models.WeekModel obj = ViewBag.Data; }
+        @if (@obj != null)
+        {
+            <text>
+        temp["value"] = @obj.Jan;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.Feb;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.March;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.April;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.May;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.June;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.July;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.Aug;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.Sep;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.Oct;
+        weightdata.push(temp);
+        temp = {};
+
+        temp["value"] = @obj.Nov;
+        weightdata.push(temp);
+        temp = {};
+        temp["value"] = @obj.Dec;
+        weightdata.push(temp);
+        temp = {};
+        </text>
+        }
+
+        $("#Demo").insertFusionCharts({
+            type: 'msline',
+            renderAt: 'chart-container',
+            width: '350',
+            height: '350',
+            dataFormat: 'json',
+            dataSource: {
+                "chart": {
+                    "caption": "Number of Registrations this year",
+                    //    "subCaption": "Bakersfield Central vs Los Angeles Topanga",
+                    "captionFontSize": "14",
+                    "subcaptionFontSize": "14",
+                    "subcaptionFontBold": "0",
+                    "paletteColors": "#0075c2,#1aaf5d",
+                    "bgcolor": "#ffffff",
+                    "showBorder": "0",
+                    "showShadow": "0",
+                    "showCanvasBorder": "0",
+                    "usePlotGradientColor": "0",
+                    "legendBorderAlpha": "0",
+                    "legendShadow": "0",
+                    "showAxisLines": "0",
+                    "showAlternateHGridColor": "0",
+                    "divlineThickness": "1",
+                    "divLineIsDashed": "1",
+                    "divLineDashLen": "1",
+                    "divLineGapLen": "1",
+                    "xAxisName": "Day",
+                    "showValues": "0"
+                },
+                "categories": [
+                    {
+                        "category": [
+                            { "label": "Jan" },
+                            { "label": "Feb" },
+                            { "label": "Mar" },
+                            //{
+                            //    "vline": "true",
+                            //    "lineposition": "0",
+                            //    "color": "#6baa01",
+                            //    "labelHAlign": "center",
+                            //    "labelPosition": "0",
+                            //    "label": "National holiday",
+                            //    "dashed": "1"
+                            //},
+                            { "label": "Apr" },
+                            { "label": "May" },
+                            { "label": "June" },
+                            { "label": "July" },
+                              { "label": "Aug" },
+                            { "label": "Sep" },
+                            { "label": "Oct" },
+                            { "label": "Nov" },
+                             { "label": "Dec" },
+                        ]
+                    }
+                ],
+                "dataset": [
+                    {
+                        "seriesname": "Users",
+                        "data": weightdata
+                    }
+                ],
+                "trendlines": [
+                    {
+                        "line": [
+                            {
+                                "startvalue": "17022",
+                                "color": "#6baa01",
+                                "valueOnRight": "1",
+                                "displayvalue": "Average"
+                            }
+                        ]
+                    }
+                ]
+            }
+
+        });
+    });
+
+
+</script>
+<div class="col-lg-12">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Users Region Distribution
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div id="Map_Reprentation" style="cursor:pointer"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="panel panel-success" id="FullIndia">
+
+                                <div class="panel-heading">
+
+                                    India
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            Total
+                                        </div>
+                                        <div class="col-md-6">
+                                            @Model.Sum(s => s.Total)
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            Male
+                                        </div>
+                                        <div class="col-md-6">
+                                            @Model.Sum(s => s.MaleCount)
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            Female
+                                        </div>
+                                        <div class="col-md-6">
+                                            @Model.Sum(s => s.FeMaleCount)
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            Not Specified
+                                        </div>
+                                        <div class="col-md-6">
+                                            @Model[0].OthersCount
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="panel panel-success" id="SingleState" style="display:none;">
+
+                                <div class="panel-heading" id="UserStateName">
+
+                                    India
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            Total
+                                        </div>
+                                        <div class="col-md-6" id="UserTotal">
+                                            @Model.Sum(s => s.StateCount)
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            Male
+                                        </div>
+                                        <div class="col-md-6" id="UserMale">
+                                            @Model.Sum(s => s.MaleCount)
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            Female
+                                        </div>
+                                        <div class="col-md-6" id="UserFeMale">
+                                            @Model.Sum(s => s.FeMaleCount)
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            Not Specified
+                                        </div>
+                                        <div class="col-md-6" id="UserOthers">
+                                            @Model[0].OthersCount
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="panel panel-success" id="FullIndia">
+                                <div class="panel-heading">
+
+                                    Registration
+                                </div>
+
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div id="Demo"></div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function GetData(Id) {
+        $.ajax({
+
+            type: "POST",
+
+            contentType: "application/json; charset=utf-8",
+
+            data: '{"Id" :"' + Id + '"}',
+            //
+            url: ROOT + "Home/GetData",
+
+            success: function (data) {
+                $("#UserStateName").text(data.StateName);
+                $("#UserTotal").text(data.StateCount);
+                $("#UserMale").text(data.MaleCount);
+                $("#UserFeMale").text(data.FeMaleCount);
+                $("#UserOthers").text(data.OthersCount);
+
+            }
+
+        });
+        $.ajax({
+
+            type: "POST",
+
+            contentType: "application/json; charset=utf-8",
+
+            data: '{"Id" :"' + Id + '"}',
+            //
+            url: ROOT + "Home/GetPatientLastWeekDetail",
+
+            success: function (data) {
+                if (data) {
+                    var weightdata = [];
+                    var temp = {};
+                    for (var i in data) {
+
+                        temp["value"] = parseInt(data[i]);
+                        weightdata.push(temp);
+                        temp = {};
+                    }
+                }
+
+
+                $("#Demo").updateFusionCharts({
+                    type: 'msline',
+                    renderAt: 'chart-container',
+                    //  width: '550',
+                    height: '350',
+                    dataFormat: 'json',
+                    dataSource: {
+                        "chart": {
+                            "caption": "Number of Registrations this Year",
+                            //    "subCaption": "Bakersfield Central vs Los Angeles Topanga",
+                            "captionFontSize": "14",
+                            "subcaptionFontSize": "14",
+                            "subcaptionFontBold": "0",
+                            "paletteColors": "#0075c2,#1aaf5d",
+                            "bgcolor": "#ffffff",
+                            "showBorder": "0",
+                            "showShadow": "0",
+                            "showCanvasBorder": "0",
+                            "usePlotGradientColor": "0",
+                            "legendBorderAlpha": "0",
+                            "legendShadow": "0",
+                            "showAxisLines": "0",
+                            "showAlternateHGridColor": "0",
+                            "divlineThickness": "1",
+                            "divLineIsDashed": "1",
+                            "divLineDashLen": "1",
+                            "divLineGapLen": "1",
+                            "xAxisName": "Day",
+                            "showValues": "0"
+                        },
+                        "categories": [
+                            {
+                                "category": [
+                                   { "label": "Jan" },
+                            { "label": "Feb" },
+                            { "label": "Mar" },
+                            { "label": "Apr" },
+                            { "label": "May" },
+                            { "label": "June" },
+                            { "label": "July" },
+                              { "label": "Aug" },
+                            { "label": "Sep" },
+                            { "label": "Oct" },
+                            { "label": "Nov" },
+                             { "label": "Dec" },
+
+                                ]
+                            }
+                        ],
+                        "dataset": [
+                            {
+                                "seriesname": "Users",
+                                "data": weightdata
+                            }
+                            //},
+                            //{
+                            //    "seriesname": "FeMale",
+                            //    "data": [
+                            //        { "value": "1" },
+                            //        { "value": "3" },
+                            //        { "value": "4" },
+                            //        { "value": "5" },
+                            //        { "value": "6" },
+                            //        { "value": "7" },
+                            //        { "value": "8" }
+                            //    ]
+                            //}
+                        ],
+                        "trendlines": [
+                            {
+                                "line": [
+                                    {
+                                        "startvalue": "17022",
+                                        "color": "#6baa01",
+                                        "valueOnRight": "1",
+                                        "displayvalue": "Average"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+
+                });
+
+            }
+
+        });
+
+
+
+    }
+</script>

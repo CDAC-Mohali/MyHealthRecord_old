@@ -1,0 +1,33 @@
+﻿@model List<EMRViewModels.ImmunizationViewModel>
+<div class="gj-grid-wrapper">
+    <table id="grid" class="footable table table-bordered table-hover gj-grid-table" data-source="/Allergies/GetAllergiesGridList">
+        <thead>
+            <tr>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 200px;text-align: left;">
+                    <div style="float: left">Immunization</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 200px; text-align: left;">
+                    <div style="float: left">Take On</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 34px; text-align: left;">
+
+                    <div style="float: left">Comments</div>
+                </th>
+              
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Item in Model)
+            {
+                <tr class="">
+                    <td style="text-align: left;"><div data-role="display" >@Item.ImmunizationName</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.strImmunizationDate</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.Comments</div></td>
+                 
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+</div>

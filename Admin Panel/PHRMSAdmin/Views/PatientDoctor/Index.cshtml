@@ -1,0 +1,58 @@
+﻿@model IPagedList<PHRMSAdmin.Models.DocPatientDetailsViewModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="normalheader transition animated fadeIn small-header" style="text-align:center">
+    <div class="hpanel hgreen">
+        <div class="panel-body">
+
+            <h3 class="font-light m-b-xs" id="tipHeader">
+                <i class="fa icon-dashboard text-danger"></i> Patient List
+            </h3>
+            <div id="hbreadcrumb" class="pull-right">
+            </div>
+            <h7 id="healthTipCtrl" style="color:#B76215;"></h7>
+        </div>
+    </div>
+</div>
+
+<div id="page-wrapper">
+    <div id="page-inner">
+
+        <!-- /. ROW  -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Advanced Tables -->
+                <div class="panel panel-default">
+                    @*<div class="panel-heading">
+                        <span class="pull-right">
+
+                            <button class="btn btn-primary" onclick="location.href = '@Request.ApplicationPath.TrimEnd('/')/Doctor/Create'">
+                                Add New
+                            </button>
+                        </span>
+                        <div class="clearfix">
+                        </div>*@
+
+
+                    <div class="panel-body">
+          
+
+                        @Html.Partial("_PatientDoctorGrid", Model)
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+

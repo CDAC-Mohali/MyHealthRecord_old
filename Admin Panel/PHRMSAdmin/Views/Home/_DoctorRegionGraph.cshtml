@@ -1,0 +1,74 @@
+﻿
+
+@{
+    ViewBag.Title = "_DoctorRegionGraph";
+    Layout = null;
+}
+
+
+@model  List<PHRMSAdmin.Models.PatientCustomModel>
+<script>
+
+    $(document).ready(function () {
+        $("#DoctorRegion").insertFusionCharts({
+            type: "pie2d",
+            width: "425",
+            height: "425",
+            dataFormat: "json",
+            dataSource: {
+                chart: {
+                    caption: "",
+
+                    startingangle: "120",
+                    showlabels: "0",
+                    showlegend: "1",
+                    enablemultislicing: "0",
+                    slicingdistance: "15",
+                    showpercentvalues: "1",
+                    showpercentintooltip: "0",
+                    plottooltext: "$label  : $datavalue",
+                    theme: "fint"
+                },
+                data: [
+                    @foreach (var Item in Model)
+                    {
+                            <text>
+                            {</text>
+                             <text>   label: '@Item.StateName',
+                                value: '@Item.StateCount.ToString()'</text>
+                         <text>
+                            },
+                            </text>
+                        }
+                ]
+            }
+        });
+    });
+
+
+</script>
+
+
+
+
+<div class="col-lg-6">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+           Doctors Region Distribution
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-8">
+                    <div id="DoctorRegion" style="height: 425px;"></div>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

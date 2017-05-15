@@ -1,0 +1,52 @@
+﻿
+@model IPagedList<PHRMSAdmin.Models.NotificationModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="normalheader transition animated fadeIn small-header" style="text-align:center">
+    <div class="hpanel hgreen">
+        <div class="panel-body">
+
+            <h3 class="font-light m-b-xs" id="tipHeader">
+                <i class="fa icon-dashboard text-danger"></i>Notification List
+            </h3>
+            <div id="hbreadcrumb" class="pull-right">
+            </div>
+            <h7 id="healthTipCtrl" style="color:#B76215;"></h7>
+        </div>
+    </div>
+</div>
+
+<div id="page-wrapper">
+    <div id="page-inner">
+
+        <!-- /. ROW  -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Advanced Tables -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span class="pull-left">
+                            <span class="fa fa-user-md fa-lg text-info"></span> - Doctor   &nbsp;&nbsp; <span class="fa fa-user fa-lg text-center"></span> - User
+                        </span>
+                        <span class="pull-right">
+                            <button class="btn btn-primary" onclick="location.href = '@Request.ApplicationPath.TrimEnd('/')/Notification/AddNotification'">
+                                Add New Notification
+                            </button>
+                        </span>
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        @Html.Partial("_NotificationGrid", Model)
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

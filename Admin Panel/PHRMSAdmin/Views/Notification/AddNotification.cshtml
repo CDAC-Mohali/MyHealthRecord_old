@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "UpdateTask";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model PHRMSAdmin.Models.NotificationModel
+<div class="normalheader transition animated fadeIn small-header" style="text-align:center">
+    <div class="hpanel hgreen">
+        <div class="panel-body">
+
+            <h3 class="font-light m-b-xs" id="tipHeader">
+                <i class="fa icon-dashboard text-danger"></i> Create Notification
+            </h3>
+            <div id="hbreadcrumb" class="pull-right">
+            </div>
+            <h7 id="healthTipCtrl" style="color:#B76215;"></h7>
+        </div>
+    </div>
+</div>
+<div id="page-wrapper">
+
+    <div id="page-inner">
+
+        <!-- /. ROW  -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel">
+                    @using (Html.BeginForm("AddNotification", "Notification"))
+                    {
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.UserTypeId, "UserType")<span style="color:red">*</span>
+                                    </div>
+                                </div>
+                               
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        @Html.DropDownListFor(model => model.UserTypeId, new SelectListItem[] {
+                                   new SelectListItem() { Text = "Doctor", Value = "1" },
+                                   new SelectListItem() { Text = "Patient", Value = "2" } } ,new { @class = "form-control" })
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                   <div class="col-lg-3">
+                                       <div class="form-group">
+                                            @Html.LabelFor(model => model.Message)<span style="color:red">*</span>
+                                       </div>
+                                   </div>
+                                   
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        @Html.TextAreaFor(x => x.Message, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Message, null, new { style = "color:red" })
+                                    </div>
+                                </div>
+                                  
+
+                             </div>
+                          
+
+
+                            <!-- /.col-lg-12 -->
+
+                        </div>
+
+                    <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <button type="submit" class="btn btn-orange" id="btnSubmit">Send</button>
+                            <a href="@Request.ApplicationPath.TrimEnd('/')/Notification/Index" class="btn btn-primary">Back To List</a>
+                        </div>
+                    }
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+
+    </div>
+    <footer><p></p></footer>
+
+</div>
+
+

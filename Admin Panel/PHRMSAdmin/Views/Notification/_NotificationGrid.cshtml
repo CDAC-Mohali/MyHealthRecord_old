@@ -1,0 +1,78 @@
+﻿@model IPagedList<PHRMSAdmin.Models.NotificationModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<div id="ManageGrid">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+
+            <thead>
+                <tr style="background-color: #cacaca;">
+                    <th>
+                        User
+                    </th>
+                    <th>
+                        UserName
+                    </th>
+                    <th>
+                        Message
+                    </th>
+                    <th>
+                        Notification Date
+                    </th>
+
+                    <th width="8%">
+
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+            {
+                    <tr>
+                        <td>
+                            @{
+                                if (item.UserTypeId == 1)
+                                {
+                                    <span class="fa fa-user-md fa-lg text-info"></span>
+                                }
+                                else
+                                {
+                                    <span class="fa fa-user fa-lg text-center"></span>
+                                }
+                            }
+
+                        </td>
+                        <td>
+                            @Html.DisplayFor(Item => item.userName)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(Item => item.Message)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(Item => item.strCreatedDate)
+                        </td>
+
+                        <td>
+                            <a href="@Request.ApplicationPath.TrimEnd('/')/Notification/Details/@item.NotificationId" class="text-primary">
+                                <i title="View" class="fa fa-eye"></i>
+
+                            </a> &nbsp;
+                        </td>
+
+                    </tr>
+                                }
+
+            </tbody>
+        </table>
+    </div>
+    <div class="panel-footer">
+        @Html.Partial("_GridPaging", Model)
+
+    </div>
+    @Html.Partial("_MessageDialog", 1)
+</div>

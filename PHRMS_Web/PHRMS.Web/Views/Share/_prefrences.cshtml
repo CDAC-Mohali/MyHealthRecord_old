@@ -1,0 +1,31 @@
+﻿@model PHRMS.ViewModels.PreferencesViewModel
+<div class="row">
+    <div class="col-xs-12">
+        <div class="form-horizontal" role="form" id="PreferencesInfo">
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Pref_Hosp, new { @class = "col-xs-2 control-label" })
+                <div class="col-xs-4">
+                    <p class="form-control-static">@Html.DisplayFor(m => m.Pref_Hosp)</p>
+                </div>
+                @Html.LabelFor(m => m.Prim_Care_Prov, new { @class = "col-xs-2 control-label" })
+                <div class="col-xs-4">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static">@Html.DisplayFor(m => m.Prim_Care_Prov)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Special_Needs, new { @class = "col-xs-2 control-label" })
+                @*<label class="control-label col-xs-2" for="Email">Email Address:</label>*@
+                <div class="col-xs-10">
+                    @*<span class="control-label col-sm-4" id="spEmail" style="text-align: left">abc@example.com</span>*@
+                    <p class="form-control-static"> @Html.DisplayFor(m => m.Special_Needs)</p>
+                </div>
+            </div>
+            <div class="hr-line-dashed-Custom"></div>
+           
+        </div>
+       
+    </div>
+</div>

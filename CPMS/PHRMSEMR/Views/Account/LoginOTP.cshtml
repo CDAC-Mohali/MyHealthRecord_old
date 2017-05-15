@@ -1,0 +1,406 @@
+﻿
+@{
+    ViewBag.Title = "Forgot your password?";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>Login | PHRMS - Doctor's Panel</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" type="image/ico" href="favicon.ico" />-->
+    <!-- Vendor styles -->
+    <style type="text/css">
+        .phrmsrimg {
+            margin-top: -70px;
+            margin-left: 45px;
+        }
+
+        .bgsignup_phrms {
+            background-color: #337AB7;
+            color: #FFF;
+        }
+
+        .headerhght {
+            height: 60px;
+        }
+
+        .hdrshadow {
+            box-shadow: 0 1px 5px #ccc;
+        }
+
+        .hdrbgclr {
+            background-color: #fff;
+        }
+
+        .hdrnavcustom {
+            background-color: #fff;
+            margin-top: -20px;
+            margin-right: -43px;
+            float: right;
+        }
+    </style>
+    <link rel="stylesheet" href="~/vendor/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="~/vendor/metisMenu/dist/metisMenu.css">
+    <link rel="stylesheet" href="~/vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="~/vendor/bootstrap/dist/css/bootstrap.css">
+
+    <link href="/vendor/sweetalert/lib/sweet-alert.css" rel="stylesheet">
+    <!-- App styles -->
+    <link rel="stylesheet" href="~/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="~/fonts/pe-icon-7-stroke/css/helper.css">
+    <link href="~/content/landing.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/styles/style.css">
+    <link href="~/content/style_new.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/vendor/toastr/build/toastr.min.css">
+
+
+</head>
+<body class="blank">
+    <div class="no-padding headerhght">
+        <nav class="navbar navbar-default navbar-fixed-top hdrshadow">
+            <div class="container-fluid no-padding hdrbgclr">
+                <div class="col-md-12 col-sm-12 headerhght">
+                    <div class="col-md-6 col-sm-6 zeropadmbl">
+                        <img src="~/images/nationalemblemindia.png" class="img-responsive lionimg" width="42" style="text-align:left">
+
+                        <a href="~/Account/Login">
+                            <img src="~/images/MyHealthRecordEMR.png" class="img-responsive phrmsrimg" />
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 righthalf">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="navbar-header hdrnavcustom">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav"></ul>
+                                <ul class="nav navbar-nav navbar-right tabcntr btnsintab" style="display: flex">
+                                    <li class="lirghtup lipad">
+                                        <img src="~/images/digital_india_logo.png" class="img-responsive hdrmobile dgindiafullimg" width="102">
+                                    </li>
+                                    <li class="">
+                                        <a href="~/Account/Login">
+                                            <button class="btn btn-success btn-xs">Doctor Sign In</button>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="~/Account/Register">
+                                            <button class="btn btn-primary btn-xs">Sign Up</button>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="">
+                                            <button class="btn btn-success btn-xs">MyHealthRecord</button>
+                                        </a>
+                                    </li>
+
+                                    <!--<select class="css-select" name="language" id="language" style="height: 18px; margin-top: 25px; font-size: 13px;">
+                                        <option value="english">English</option>
+                                        <option value="hindi">हिन्दी</option>
+                                    </select>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="register-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hpanel">
+                    <div class="panel-body">
+
+                        @Html.Partial("__LoginOTPInitial")
+
+                        @Html.Partial("_LoginOTPVerification")
+
+                      
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="col-md-12 col-sm-12 col-xs-12 bgsignup_phrms">
+        <div class="col-md-9 col-sm-10 col-xs-10 bgsignup_phrms">
+            &nbsp;
+        </div>
+        <div class="col-md-3 col-sm-2 col-xs-2 bgsignup_phrms">
+            @*<img src="~/images/zeroone.jpg" class="img-responsive" alt="zeroone">*@
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 bgfooter">
+        <div class="container">
+
+            <div class="col-md-6 col-sm-6 ftrgap">
+                <div class="row">
+                    <div class="titlefooter"><strong></strong></div>
+
+                    <ul class="ftrlists">
+                        <li>&nbsp;<a class="whitetext" href="http://cdac.in/index.aspx?id=about" target="_blank">About us</a> | </li>
+                        @*<li>&nbsp;<a class="whitetext" href="#">Statistics</a> | </li>*@
+                        <li>&nbsp;<a class="whitetext" href="~/Account/FAQS" target="_blank">FAQs</a> | </li>
+                        @*<li>&nbsp;<a class="whitetext" href="#">Resource Center</a> | </li>*@
+                        <!--<li>&nbsp;<a class="whitetext" href="/news.php">/*News</a> | </li> -->
+                        <li>&nbsp;<a class="whitetext" href="~/Account/ContactUs" target="_blank">Contact us</a></li>
+                    </ul>
+
+                    <div class="securityfoot">
+                        <ul class="ftrlists">
+                            <!-- <li>&nbsp;<a href="#" target="popup"><img src="files/getseal.png" width="80px"></a> &nbsp; </li>
+                            <li>&nbsp;<img src="files/256sll.png" width="90px">&nbsp; </li>-->
+                            <li>Content Owned, Updated and Maintained by C-DAC Mohali</li>
+                        </ul>
+                        @*<ul class="ftrlists">
+                                <li> by C-DAC Mohali</li>
+                            </ul>*@
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 ftrgap">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <p style="color: #CCC; text-align: right; margin-top: 15px;">
+                            Centre For Development of Advanced Computing
+                            <br />
+                            A Scientific Society of the Ministry of Electronics &amp; Information Technology, Government of India.<br />
+                            Copyright 2016-17 MyHealthRecord. All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <p style="vertical-align: middle; margin-top: 25px;">
+                            <img src="~/images/whitetranscdac.png" class="img-responsive pull-right" width="100">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Vendor scripts -->
+    <script src="~/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="~/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/vendor/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="~/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/vendor/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="~/vendor/iCheck/icheck.min.js"></script>
+    <script src="~/vendor/sparkline/index.js"></script>
+    <script src="~/vendor/toastr/build/toastr.min.js"></script>
+
+
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+    <style>
+        .titlefooter {
+            color: #D9D8D8;
+            font-size: 17px;
+            margin-bottom: 14px;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+
+        /* Validation */
+        .form-control.error {
+            border-color: #e74c3c !important;
+        }
+
+        label.error,
+        label span.error {
+            color: #e74c3c;
+            margin: 5px 0 0 0;
+            font-weight: 400;
+        }
+
+        label span.error {
+            margin-left: 5px;
+        }
+
+        label.error:before {
+            content: "\f071";
+            font-family: 'FontAwesome';
+            margin: 0 4px;
+        }
+
+        /*Validation Custom*/
+
+        .input-validation-error {
+            border-color: #e74c3c !important;
+        }
+
+        span.field-validation-error {
+            margin-left: 5px;
+            color: #e74c3c;
+            margin: 5px 0 0 0;
+            font-weight: 400;
+        }
+
+            span.field-validation-error:before {
+                content: "\f071";
+                font-family: 'FontAwesome';
+                margin: 0 4px;
+            }
+
+        .bgsignup_phrms {
+            background-color: #337AB7;
+            color: #FFF;
+        }
+    </style>
+
+
+    <script src="~/Scripts/sweet-alert.js"></script>
+    <script>
+    $(document).ready(function () {
+        $('#SendOTP').click(function () {
+
+
+            $.ajax({
+
+                type: "Post",
+                contentType: "application/json; charset=utf-8",
+                url: "/Account/LoginOTP",
+                data: '{"UserName":' + '"' + $("#UserName").val() + '"' + "}",
+                dataType: "json",
+                success: function (data) {
+
+                    if (data == 1) {
+                        swal({
+                            title: "Success!",
+                            text: "OTP has been sent on your registered Phone.",
+                            type: "success"
+                        });
+
+                        $('#DivSendOTPLogin').hide();
+                        $('#DivScrcodeOTP').show();
+                      
+
+                    } else if (data == 0) {
+                        swal({
+                            title: "Oops!",
+                            text: "Invalid Credentials! Please try again.",
+                            type: "error"
+                        });
+                    }
+
+                },
+                error: function (result) {
+                    swal({
+                        title: "Oops!",
+                        text: "Invalid Credentials! Please try again.",
+                        type: "error"
+                    });
+                    $('#DivSendOTPLogin').show()
+                    $('#DivScrcodeOTP').hide();
+                  
+                }
+            });
+
+        })
+
+
+
+        $('#OTPVerify').click(function () {
+
+
+            $.ajax({
+
+                type: "POST",
+                url: "/Account/VerifyLoginOTP",
+                dataType: "json",
+                data: JSON.stringify({ OTP: $("#OTP").val() }),
+                contentType: "application/json; charset=utf-8",
+              success: function (data) {
+
+                    if (data == 1) {
+
+                        swal({
+                            title: "verified!",
+                            text: "OTP verified. You can now reset your password!",
+                            type: "success"
+                        });
+                        window.location.href = '@Url.Action("Index", "Appointments")';
+                       
+                    } else if (data == 0) {
+
+
+                        swal({
+                            title: "Oops!",
+                            text: "OTP mismatch. Please try again!",
+                            type: "error"
+                        });
+                        $('#DivSendOTPLogin').hide()
+                        $('#DivScrcodeOTP').show();
+                      
+                    }
+
+                },
+                error: function (result) {
+                    swal({
+                        title: "Oops!",
+                        text: "OTP mismatch. Please try again!",
+                        type: "error"
+                    });
+                    $('#DivSendOTPLogin').hide()
+                    $('#DivScrcodeOTP').show();
+                 
+                }
+            });
+
+        })
+
+
+        $("#UserName").keydown(function (e) {
+            // Allow: backspace, delete, tab, escape, enter and .
+            if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                // Allow: Ctrl+A, Command+A
+                (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+                // Allow: home, end, left, right, down, up
+                (e.keyCode >= 35 && e.keyCode <= 40)) {
+                // let it happen, don't do anything
+                return;
+            }
+            // Ensure that it is a number and stop the keypress
+            if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                e.preventDefault();
+            }
+        });
+
+    });
+    </script>
+</body>
+</html>

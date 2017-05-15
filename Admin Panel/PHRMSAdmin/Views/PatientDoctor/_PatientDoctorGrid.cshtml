@@ -1,0 +1,80 @@
+﻿@model IPagedList<PHRMSAdmin.Models.DocPatientDetailsViewModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<style>
+
+
+</style>
+<div id="ManageGrid">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+
+            <thead>
+                <tr style="background-color: #cacaca;">
+                    <th>
+                        First Name
+                    </th>
+                    <th>
+                        Last Name
+                    </th>
+                    <th>
+                        DOB
+                    </th>
+                    <th>
+                        Gender
+                    </th>
+                    <th>
+                        State
+                    </th>
+
+                    <th width="8%">
+
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+            {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(Item => item.FirstName)
+                        </td>
+                        <td>@Html.DisplayFor(Item => item.LastName)</td>
+                        <td>
+                            @item.DOB.ToString("dd/MM/yyyy")
+                        </td>
+                        <td>
+                            @Html.DisplayFor(Item => item.Gender)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(Item => item.strState)
+                        </td>
+
+
+                        <td>
+                            <a href="@Request.ApplicationPath.TrimEnd('/')/PatientDoctor/Details/@item.DocPatientId" class="text-primary">
+                                <i title="View" class="fa fa-eye"></i>
+
+                            </a> &nbsp;
+
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    <div class="panel-footer">
+        @Html.Partial("_GridPaging", Model)
+
+    </div>
+    @Html.Partial("_MessageDialog", 1)
+</div>
+
+
+

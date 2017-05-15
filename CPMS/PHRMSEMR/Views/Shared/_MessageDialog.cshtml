@@ -1,0 +1,36 @@
+﻿@model int
+<div class="modal fade" id="CustomMessageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body" id="MessageArea">
+
+            </div>
+            <div class="modal-footer">
+                @*<form action="" data-ajax="true" data-ajax-method="POST" id="DeleteForm" method="post" novalidate="novalidate" data-ajax-update="#ManageGrid" data-ajax-success="SuccessDeleteMessage()">*@
+                <form action="" method="post" id="CustomMessageForm">
+
+                    <button type="submit" class="btn btn-orange">Delete</button>
+                    <input type="hidden" id="MessageRecordId" name="Id" />
+                    <input type="hidden" name="pageNumber" value="@Model" />
+
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function SetMessageDialog(Title, URL, Id, Message) {
+        $("#myModalLabel").text(Title);
+        $("#MessageArea").text(Message);
+        $("#CustomMessageForm").attr("action", URL);
+        $("#MessageRecordId").val(Id);
+        $("#CustomMessageModal").modal('show');
+
+    }
+</script>

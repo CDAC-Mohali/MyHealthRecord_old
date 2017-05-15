@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".modules.addfragments.PHRMS_MedicalContact_Fragment_Add">
+
+    <!-- Toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_addMedicalContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:focusableInTouchMode="true">
+
+        <ProgressBar
+            android:id="@+id/ProgressBarAddMedicalContacts"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:theme="@style/Widget.AppCompat.ProgressBar"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/svMedicalContactsAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_large">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_MedicalContactsName_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".9"
+                            android:hint="@string/MedicalContactsName"
+                            android:padding="@dimen/padding_large"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+                            <EditText
+                                android:id="@+id/edMedicalContactsName_Value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                                android:inputType="text"
+                                android:textStyle="normal" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".1">
+
+                            <ImageButton
+                                android:id="@+id/imgButtonMedicalContactsphnebook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:src="@drawable/ic_contact_phone_white_36dp"
+                                android:tint="@color/colorPrimary" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_large"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/txtMedicalContactsType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:layout_weight=".30"
+                            android:text="@string/MedicalContactsType"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+                        <Spinner
+                            android:id="@+id/sp_MedicalContactsType_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:layout_weight=".70"
+                            android:spinnerMode="dialog"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_MedicalContactsClinicName_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/MedicalContactsClinicName"
+                        android:padding="@dimen/padding_large"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+                        <EditText
+                            android:id="@+id/edMedicalContactsClinicName_Value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:inputType="text"
+                            android:textStyle="normal" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_MedicalContactsAddress1_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/MedicalContactsAddress1"
+                        android:padding="@dimen/padding_large"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+                        <EditText
+                            android:id="@+id/edMedicalContactsAddress1_Value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:inputType="text"
+                            android:textStyle="normal" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_MedicalContactsAddress2_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/MedicalContactsAddress2"
+                        android:padding="@dimen/padding_large"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+                        <EditText
+                            android:id="@+id/edMedicalContactsAddress2_Value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:inputType="text"
+                            android:textStyle="normal" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_MedicalContactsCityVillage_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/MedicalContactsCityVillage"
+                        android:padding="@dimen/padding_large"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+                        <EditText
+                            android:id="@+id/edMedicalContactsCityVillage_Value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:inputType="text"
+                            android:textStyle="normal" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_MedicalContactsDistrict_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/MedicalContactsDistrict"
+                        android:padding="@dimen/padding_large"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+                        <EditText
+                            android:id="@+id/edMedicalContactsDistrict_Value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:inputType="text"
+                            android:textStyle="normal" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_large"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/txtMedicalContactsState"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:layout_weight=".30"
+                            android:text="@string/MedicalContactsState"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal" />
+
+
+                        <Spinner
+                            android:id="@+id/sp_MedicalContactsState_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:layout_weight=".70"
+                            android:spinnerMode="dialog"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_MedicalContactsPIN_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/MedicalContactsPIN"
+                        android:padding="@dimen/padding_large"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+                        <EditText
+                            android:id="@+id/edMedicalContactsPIN_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textStyle="normal" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_MedicalContactsMobile_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/MedicalContactsMobile"
+                        android:padding="@dimen/padding_large"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+                        <EditText
+                            android:id="@+id/edMedicalContactsMobile_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textStyle="normal" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_MedicalContactsEmailAddress_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/MedicalContactsEmailAddress"
+                        android:padding="@dimen/padding_large"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+                        <EditText
+                            android:id="@+id/edMedicalContactsEmailAddress_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="60"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="normal" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

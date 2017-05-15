@@ -1,0 +1,13 @@
+﻿@using (Html.BeginForm("VerifyLoginOTP", "Home", FormMethod.Post, new { id = "frmVerifyOTPLogin" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group col-lg-12">
+        <label>Enter verification code received on your registered Mobile No.:</label>
+        <span class="text-danger"> *</span>
+        @Html.TextBox("OTP", ViewBag.OTP != null ? (string)ViewBag.OTP : "", new { @class = "form-control", @placeholder = "One Time Password" })
+    </div>
+    <div class="col-lg-12">
+        <input type="submit" class="btn btn-success" value="Next" />
+        <a class="btn btn-default" href="@Url.Action("Index")">Cancel</a>
+    </div>
+}

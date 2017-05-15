@@ -1,0 +1,44 @@
+﻿@model List<EMRViewModels.HealthConditionViewModel>
+<div class="gj-grid-wrapper">
+    <table id="grid" class="footable table table-bordered table-hover gj-grid-table" data-source="/Allergies/GetAllergiesGridList">
+        <thead>
+            <tr>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 100px;text-align: left;">
+                    <div style="float: left">Problem Name</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 50px; text-align: left;">
+                    <div style="float: left">Diagnosis Date</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 50px; text-align: left;">
+
+                    <div style="float: left">Service Date</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 100px; text-align: left;">
+                    <div style="float: left">Provider or Facility</div>
+                </th>
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 200px; text-align: left;">
+                    <div style="float: left">Notes</div>
+                </th>
+
+                <th class="gj-grid-bootstrap-thead-cell" style="width: 50px; text-align: left;">
+                    <div style="float: left">Do you still have this Problem?</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Item in Model)
+            {
+                <tr class="">
+                    <td style="text-align: left;"><div data-role="display" title="Activities involving springboard and platform diving">@Item.HealthCondition</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.DiagnosisDate</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.ServiceDate</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.Provider</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.Notes</div></td>
+                    <td style="text-align: left;"><div data-role="display">@Item.strStillHaveCondition</div></td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+</div>

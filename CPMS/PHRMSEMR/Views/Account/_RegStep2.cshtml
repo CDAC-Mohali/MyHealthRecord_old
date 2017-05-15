@@ -1,0 +1,40 @@
+﻿@using (Html.BeginForm("VerifyOTP", "Account", FormMethod.Post, new { id = "VerifyOTPForm" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group col-lg-12">
+        @{string strMobile = "";}
+        @{strMobile = Session["MobileNo"].ToString(); }
+        @{strMobile = "XXXXXX" + strMobile.Substring(6);}
+        <label>Enter verification code received on registered Email-Id and mobile @strMobile</label>
+        <span class="text-danger"> *</span>
+        <input type="text" class="form-control" placeholder="OTP" name="OTP" onchange="CheckHtmlTag(this)" />
+        @*<input type="hidden" name="MobileNo" value="@Model.phone_number" />*@
+    </div>
+    <div class="col-lg-12">
+        @*@Html.ActionLink("Resend OTP", "", new { @Style = "color: #999999", @Id = "resendOTP" })*@
+        <a href="javascript:void(0)" id="resendOTP" style="color:#51CC49;"><u>Resend Verification Code</u></a>
+    </div>
+    <div class="text-center col-lg-12">
+        <input type="submit" class="btn btn-success" value="Next" />
+    </div>
+            }
+
+<script>
+        function CheckHtmlTag(Object) {
+
+            var reg = /<(.|\n)*?>/g;
+
+            if (reg.test($(Object).val()) == true) {
+
+                // var ErrorText = 'do not allow HTMLTAGS';
+                alert('Do Not Allow HTMLTAGS');
+
+                //swal({
+                //    title: "Oops!",
+                //    text: "do not allow HTMLTAGS!",
+                //    type: "error"
+                //});
+
+            }
+        }
+</script>

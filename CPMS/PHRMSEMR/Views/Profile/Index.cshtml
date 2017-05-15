@@ -1,0 +1,345 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model EMRViewModels.DoctorViewModel
+
+<link href="~/vendor/blueimp-gallery/css/blueimp-gallery.min.css" rel="stylesheet" />
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+
+            <div id="hbreadcrumb" class="pull-right m-t-lg">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="~/Dashboard/Index">Dashboard</a></li>
+                    <li class="active">
+                        <span>Profile </span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                Profile
+            </h2>
+            <small>Doctor's Profile as Stored in PHRMS</small>
+        </div>
+    </div>
+</div>
+
+<div class="content animate-panel">
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="hpanel hgreen">
+                <div class="panel-body">
+                  
+                    @{
+                        var obj = ((EMRViewModels.CustomPrincipalSerializeModel)Session["DocSessionData"]);
+                    }
+
+                    @if (!string.IsNullOrEmpty(obj.ImgPath))
+                    {
+                        <a href="~/Profile/ChangePicture">
+                            <img src="@obj.ImgPath" class="img-circle m-b m-t-md"alt="logo" height="76" width="76">
+                        </a>
+                    }
+                    else
+                    {
+                        <a href="~/Profile/ChangePicture">
+                            <img src="~/images/Doctor.jpg" class="img-circle m-b m-t-md" alt="logo" height="76" width="76">
+                        </a>
+                    }
+
+                    @*<img alt="logo" class="img-circle m-b m-t-md" src="~/images/profile.jpg">*@
+
+
+                    <h3><a href="">Dr. @Model.name.ToUpper()</a></h3>
+                    <div class="text-muted font-bold m-b-xs"><b>Clinic Name</b>: @Model.PlaceViewModel.name </div>
+                    <p>
+                        The Panel at right shows the your profile as stored in PHRMS. Hit the Edit Button below to make changes.
+                    </p>
+                    <div class="progress m-t-xs full progress-small">
+                        <div style="width: 100%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" role="progressbar" class=" progress-bar progress-bar-success">
+                            <span class="sr-only">100% Complete (success)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="panel-footer contact-footer">
+                     <div class="row">
+                         <div class="col-md-4 border-right">
+                             <div class="contact-stat"><span>Patients: </span> <strong>@ViewBag.PatientCount</strong></div>
+                         </div>
+                         <div class="col-md-4 border-right">
+                             <div class="contact-stat"><span>Prescriptions: </span> <strong>61</strong></div>
+                         </div>
+                         <div class="col-md-4">
+                             <div class="contact-stat"><span>Days Used: </span> <strong>48</strong></div>
+                         </div>
+                     </div>
+                 </div>-->
+
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="hpanel hblue">
+                <div class="panel-heading hbuilt">
+                    <div class="panel-tools">
+                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                    </div>
+                    Your Profile
+                </div>
+
+                @using (Html.BeginForm("UpdateProfile", "Profile"))
+                {
+                    <div class="panel-body">
+                        <div style="background-color: #fff;" class="modal-footer">
+                            <div class="pull-right">
+                                <a class="btn glyphicon  glyphicon-pencil" id="profile-edit" title="Edit" onclick="RemoveReadonly()"> </a>
+                                <button type="submit" class="btn btn-primary" id="profile-Save" style="display:none;">Save</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.name, "Name:")
+                                @Html.TextBoxFor(x => x.name, new { @class = "form-control", @placeholder = "Your Name", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.qualification_set, "Qualifications:")
+                                @Html.TextBoxFor(x => x.qualification_set, new { @class = "form-control", @placeholder = "Your Qualifications", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.date_of_birth, "DoB:")
+
+                                <div class="input-group date">
+                                    <input class="form-control" id="dob" name="date_of_birth" placeholder="Your DoB" readonly="readonly" type="text" value="@Model.date_of_birth.ToString("dd/MM/yyyy")">
+
+                                    @*@Html.TextBoxFor(x => x.date_of_birth, new { @class = "form-control", @placeholder = "Your DoB", @readonly = "readonly" })*@
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Gender, "Sex:")
+
+                                @Html.DropDownListFor(x => x.Gender, (IEnumerable<SelectListItem>)ViewBag.GenderList, new { @class = "form-control", @disabled = "disabled" })
+                                @*@Html.TextBoxFor(x => x.Gender, new { @class = "form-control", @placeholder = "Your Sex", @readonly = "readonly" })*@
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.phone_number, "Phone Number: ")
+                                @Html.TextBoxFor(x => x.phone_number, new { @class = "form-control", @placeholder = "Your Mobile Number", @readonly = "readonly", disabled = "disabled" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.email, "Email:")
+                                @Html.TextBoxFor(x => x.email, new { @class = "form-control", @placeholder = "Your Email", @readonly = "readonly", disabled = "disabled" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.AadhaarNo, "Aadhaar No:")
+                                @Html.TextBoxFor(x => x.AadhaarNo, new { @class = "form-control", @placeholder = "Aadhaar No", @readonly = "readonly", disabled = "disabled" })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Speciality, "Speciality:")
+                                @Html.DropDownListFor(x => x.Speciality, (IEnumerable<SelectListItem>)ViewBag.SpecialityList, new { @class = "form-control", @disabled = "disabled" })
+
+                            </div>
+
+                            <div class="form-group" id="DivOtherspec">
+                                @Html.LabelFor(model => model.OtherSpeciality, "Other Speciality:")
+                                @Html.TextBoxFor(x => x.OtherSpeciality, new { @class = "form-control", @readonly = "readonly" })
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.LastName, "Surname:")
+                                @Html.TextBoxFor(x => x.LastName, new { @class = "form-control", @placeholder = "Surname", @readonly = "readonly" })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PlaceViewModel.name, "Clinic Name:")
+                                @Html.TextBoxFor(x => x.PlaceViewModel.name, new { @class = "form-control", @placeholder = "Your Clinic Name", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PlaceViewModel.AddressLine1, "Address Line 1:")
+                                @Html.TextBoxFor(x => x.PlaceViewModel.AddressLine1, new { @class = "form-control", @placeholder = "Address Line 1", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PlaceViewModel.AddressLine2, "Address Line 2: ")
+                                @Html.TextBoxFor(x => x.PlaceViewModel.AddressLine2, new { @class = "form-control", @placeholder = "Address Line 2", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PlaceViewModel.city, "City:")
+                                @Html.TextBoxFor(x => x.PlaceViewModel.city, new { @class = "form-control", @placeholder = "Your City", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PlaceViewModel.state, "State:")
+
+                                @Html.DropDownListFor(x => x.PlaceViewModel.state, (IEnumerable<SelectListItem>)ViewBag.StatesList, new { @class = "form-control", @disabled = "disabled" })
+
+                                @*@Html.TextBoxFor(x => x.PlaceViewModel.state, new { @class = "form-control", @placeholder = "Your State", @readonly = "readonly" })*@
+
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PlaceViewModel.pincode, "Pincode:")
+                                @Html.TextBoxFor(x => x.PlaceViewModel.pincode, new { @class = "form-control", @placeholder = "Your PinCode", @readonly = "readonly" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PlaceViewModel.license_number, "MCI Registration Number:")
+                                @Html.TextBoxFor(x => x.PlaceViewModel.license_number, new { @class = "form-control", @placeholder = "Your License", @readonly = "readonly" })
+                            </div>
+
+                           @if (!string.IsNullOrEmpty(@Model.DocFile))
+                           {
+
+
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">MCI Document:</label>
+                                <div class="lightBoxGallery col-sm-4" id="divGallery"><div><a href="~/images/LicenseCopy/@Model.DocFile" data-gallery=""><img name="@Model.DocFile" height="40" src="~/images/LicenseCopy/@Model.DocFile"></a></div></div>
+                              
+                            </div>
+                           }
+
+                        </div>
+                    </div>
+           
+                }
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal Begins !-->
+    <!-- Modal Ends !-->
+    <!-- Right sidebar -->
+
+    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+    <style>
+        .lightBoxGallery a {
+            margin: 5px;
+            display: inline-block;
+            border: 1px solid black;
+        }
+
+        .lightBoxGallery img {
+            height: 80px;
+            width: 80px;
+        }
+    </style>
+    <div id="right-sidebar" class="animated fadeInRight">
+
+        <div class="p-m">
+            <a style="padding-bottom: 2%;" id="sidebar-close" class="right-sidebar-toggle sidebar-button btn btn-default m-b-md">
+                <i class="pe pe-7s-close"></i>
+            </a>
+            <div>
+                <span class="font-bold no-margins"> Clinical Records:  </span>
+                <br>
+                <small>Clinical Records Listing. Immunizations, LabTests &amp; Procedures are Entered by the User.</small>
+            </div>
+            <div class="row m-t-sm m-b-sm">
+                <div class="col-lg-6">
+                    <h3 class="no-margins font-extra-bold text-success">2</h3>
+
+                    <div class="font-bold">Allergies</div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="no-margins font-extra-bold text-success">1</h3>
+
+                    <div class="font-bold">Problem(s)</div>
+                </div>
+            </div>
+        </div>
+        <div class="p-m bg-light border-bottom border-top">
+            <a href="~/ClinicalRecords/Allergy"><span class="font-bold no-margins"> Allergies <span class="badge pull-right">2</span></span></a>
+            <br>
+            <!--<div class="m-t-md">
+                <div class="social-talk">
+                    <div class="media social-profile clearfix">
+                        <a class="pull-left">
+                            <img src="images/a1.jpg" alt="profile-picture">
+                        </a>
+
+                        <div class="media-body">
+                            <span class="font-bold">John Novak</span>
+                            <small class="text-muted">21.03.2015</small>
+                            <div class="social-content small">
+                                Injected humour, or randomised words which don't look even slightly believable.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> !-->
+        </div>
+        <div class="p-m">
+            <a href="~/ClinicalRecords/Conditions"><span class="font-bold no-margins"> Conditions <span class="badge pull-right">1</span></span></a>
+            <!--<div class="m-t-xs">
+
+            </div>-->
+        </div>
+        <div class="p-m bg-light border-bottom border-top">
+            <a href="~/ClinicalRecords/Immunization"><span class="font-bold no-margins"> Immunizations <span class="badge pull-right">1</span></span></a>
+            <br>
+        </div>
+        <div class="p-m">
+            <a href="~/ClinicalRecords/LabTests"><span class="font-bold no-margins"> Investigations <span class="badge pull-right">0</span></span></a>
+            <br>
+        </div>
+        <div class="p-m bg-light border-bottom border-top">
+            <a href="~/ClinicalRecords/Procedure"><span class="font-bold no-margins"> Procedures <span class="badge pull-right">1</span></span></a>
+            <br>
+        </div>
+    </div>
+
+    <script src="~/vendor/blueimp-gallery/js/jquery.blueimp-gallery.min.js"></script>
+
+    <!--<footer class="footer">
+                    <span class="pull-right">
+                Alpha Version</span>
+        D&amp;D by C-DAC, Mohali
+    </footer>-->
+    <!-- Footer-->
+</div>
+<!-- Vendor scripts -->
+
+<script>
+
+    var Speciality = $('#Speciality').val();
+    if (Speciality == "1051") {
+        $('#DivOtherspec').show();
+    } else {
+        $('#DivOtherspec').hide();
+    }
+
+    $('#Speciality').change(function () {
+        var Speciality = $('#Speciality').val();
+        if (Speciality == "1051") {
+            $('#DivOtherspec').show();
+        } else {
+            $('#DivOtherspec').hide();
+        }
+    });
+   function RemoveReadonly()
+    {
+        $("#profile-edit").hide();
+        $("#profile-Save").show();
+        $(".form-control").prop("readonly", false);
+        $("#Gender").prop('disabled', false);
+        $("#PlaceViewModel_license_number").prop('disabled', true);
+        $("#Speciality").prop('disabled', false);
+        $("#PlaceViewModel_state").prop('disabled', false);
+    }
+</script>

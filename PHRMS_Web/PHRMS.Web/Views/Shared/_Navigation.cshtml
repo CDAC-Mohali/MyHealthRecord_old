@@ -1,0 +1,106 @@
+﻿@using PHRMS.Web
+@using Microsoft.AspNet.Http
+<div id="navigation">
+    <div class="profile-picture">
+        @*<a href="@Url.Action("Dashboard", "Account")">*@
+        <a href="~/Profile/ChangePicture">
+            <img src="@Context.Session.GetString("UserImgPath")" class="img-circle m-b" alt="logo" height="76" width="76">
+        </a>
+
+        <div class="stats-label text-color">
+            <span class="font-extra-bold font-uppercase full-name">@Context.Session.GetString("FullName")</span>
+
+            @*<div class="dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                    <small class="text-muted">@Context.Session.GetString("MobileNo") <b class="caret"></b></small>
+                </a>
+                <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                    <li><a href="~/Profile/ChangePicture">Change Image</a></li>
+                    @*<li><a href="#">Emergency Profile</a></li>*@
+            @*<li><a href="analytics.html">Analytics</a></li>*@
+            @*<li class="divider"></li>
+                    <li><a href="~/Home/LogOff">Logout</a></li>
+                </ul>
+                        </div>*@
+            @*<div id="sparkline1" class="small-chart m-t-sm"></div>
+                <div>
+                    <h4 class="font-extra-bold m-b-xs">
+                        $260 104,200
+                    </h4>
+                    <small class="text-muted">Your income from the last year in sales product X.</small>
+                </div>*@
+        </div>
+    </div>
+
+    <ul class="nav" id="side-menu">
+        <li class="@Html.IsSelected(controller: "Account")" style="border-top: 1.5px solid #e67e22;">
+            <a href="@Url.Action("Dashboard", "Account")"> <span class="nav-label"><i class="fa fa-dashboard" style="color:#34495e;"></i> &nbsp;&nbsp;Dashboard</span> @*<span class="label label-success pull-right">v.1</span>*@ </a>
+        </li>
+      
+        <li class="@Html.IsSelected(controller: "Profile")" style="border-top: 1.5px solid #e67e22;">
+            <a href="@Url.Action("Index", "Profile")"><span class="nav-label"><i class="fa fa-user" style="color:#9b59b6;"></i> &nbsp;&nbsp;Profile</span></a>
+        </li>
+        @*<li class="@Html.IsSelected(controller: "Account")" style="border-top: 1.5px solid #e67e22;">
+            <a href="@Url.Action("ChangePassword", "Account")"><span class="nav-label"><i class="fa fa-user" style="color:#9b59b6;"></i> &nbsp;Change Password</span></a>
+        </li>*@
+
+        <li class="@Html.IsSelected(controller: "Allergies")" style="border-top: 1.5px solid #e67e22;">
+            <a href="@Url.Action("Index", "Allergies")"><span class="nav-label"><i class="fa fa-pagelines" style="color:#3498db;"></i>&nbsp;&nbsp; Allergies</span></a>
+            @*<li class="@Html.IsSelected(controller: "Prescription")" style= "border-top: 1.5px solid #e67e22;">
+                    <a href="@Url.Action("Index", "Eprescription")"><span class="nav-label"><i class="fa pe-7s-note2" style="color:#62cb31;"></i>&nbsp;&nbsp; Prescription</span></a>
+                </li>*@
+        <li class="@Html.IsSelected(controller: "HealthCondition")" style="border-top: 1.5px solid #e67e22;">
+            <a href="@Url.Action("Index", "HealthCondition")"> <span class="nav-label"><i class="fa fa-stethoscope" style="color:#ffb606;"></i>&nbsp;&nbsp; Problems</span></a>
+        </li>
+        <li class="@Html.IsSelected(controller: "Immunization")" style="border-top: 1.5px solid #e67e22;">
+            <a href="@Url.Action("Index", "Immunization")"> <span class="nav-label"><i class="fa fa-eyedropper" style="color:#e67e22;"></i>&nbsp;&nbsp; Immunization</span></a>
+        </li>
+        @*<li class="@Html.IsSelected(controller: "Medication")" style= "border-top: 1.5px solid #e67e22;">
+                <a href="@Url.Action("Index", "Medication")"> <span class="nav-label"><i class="fa fa-medkit" style="color:#e74c3c;"></i>&nbsp;&nbsp; Medication</span></a>
+            </li>*@
+        <li class="@Html.IsSelected(controller: "Procedures")" style="border-top: 1.5px solid #e67e22;">
+            <a href="@Url.Action("Index", "Procedures")"><span class="nav-label"><i class="fa pe-7s-scissors" style="color:#34495e;"></i>&nbsp;&nbsp; Procedures</span></a>
+        </li>
+        <li class="@Html.IsSelected(controller: "Lab")" style="border-top: 1.5px solid #e67e22;">
+            <a href="@Url.Action("Index", "Lab")"> <span class="nav-label"><i class="fa fa-flask" style="color:#9b59b6;"></i>&nbsp;&nbsp; Lab Tests</span></a>
+        </li>
+        <li class="@Html.IsSelected(controller: "Eprescription")" style="border-top: 1.5px solid #e67e22;">
+            <a href="#"><span class="nav-label"><i class="pe-7s-note2" style="color:#62cb31;"></i>&nbsp;&nbsp; E-Prescription</span><span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level">
+                <li class="@Html.IsSelected(action: "Index")"><a href="@Url.Action("Index", "Eprescription")">Prescription</a></li>
+            </ul>
+            <ul class="nav nav-second-level">
+                <li class="@Html.IsSelected(action: "ShareIndex")"><a href="@Url.Action("ShareIndex", "Eprescription")">Other Responses</a></li>
+            </ul>
+        </li>
+        <li class="@Html.IsSelected(controller: "Medication")" style="border-top: 1.5px solid #e67e22;">
+            <a href="@Url.Action("Index", "Medication")"><span class="nav-label"><i class="pe-7s-note2" style="color:#62cb31;"></i>&nbsp;&nbsp; Medication</span> </a>
+        </li>
+
+   
+        <li class="@Html.IsSelected(controller: "Wellness")" style="border-top: 1.5px solid #e67e22;">
+            <a href="#"><span class="nav-label"><i class="fa fa-heart" style="color:#3498db;"></i>&nbsp;&nbsp; Wellness</span><span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level">
+                <li class="@Html.IsSelected(action: "activities")"><a href="@Url.Action("activity", "Wellness" )">Activities</a></li>
+            </ul>
+            <ul class="nav nav-second-level">
+                <li class="@Html.IsSelected(action: "bloodpressure")"><a href="@Url.Action("bloodpressure", "Wellness")">Blood Pressure</a></li>
+            </ul>
+            @*<ul class="nav nav-second-level">
+                    <li class="@Html.IsSelected(action: "temperature")"><a href="@Url.Action("temperature", "Wellness")">Body Temperature</a></li>
+                </ul>*@
+            <ul class="nav nav-second-level">
+                <li class="@Html.IsSelected(action: "glucose")"><a href="@Url.Action("glucose", "Wellness")">Blood Glucose</a></li>
+            </ul>
+            @*<ul class="nav nav-second-level">
+                    <li class="@Html.IsSelected(action: "sleep")"><a href="@Url.Action("sleep", "Wellness")">Sleep</a></li>
+                </ul>*@
+            <ul class="nav nav-second-level">
+                <li class="@Html.IsSelected(action: "weight")"><a href="@Url.Action("weight", "Wellness")">BMI</a></li>
+            </ul>
+        </li>
+        @*<li class="@Html.IsSelected(controller: "OpenEMR")" style= "border-top: 1.5px solid #e67e22;">
+                <a href="@Url.Action("Index", "OpenEMR")"> <span class="nav-label"><i class="fa fa-cloud-download" style="color:#62cb31;"></i> OpenEMR-Import</span></a>
+            </li>*@
+    </ul>
+</div>
